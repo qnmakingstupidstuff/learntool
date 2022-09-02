@@ -1,0 +1,110 @@
+{
+    "#comment": "THE CHAOS DIMENSION. https://www.youtube.com/watch?v=M8mmyU1Zzcc",
+    "version": 1,
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Name": "THE CHAOS DIMENSION",
+                "Description": "Crazy Olaf's trip to the Chaos Dimension!",
+                "StageModule": "RTID(FrontYardStage@LevelModules)",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(PaddedRoomProps@CurrentLevel)",
+                    "RTID(RandomSpawner@CurrentLevel)",
+                    "RTID(CrazyOlaf@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "PaddedRoomProps"
+            ],
+            "objclass": "PaddedRoomProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "PiratePlanks"
+            ],
+            "objclass": "PiratePlankProperties",
+            "objdata": {
+                "PlankRows": [
+                    0,
+                    1,
+                    3,
+                    4
+                ]
+            }
+        },
+        {
+            "objclass": "CrazyOlafTestProperties",
+            "aliases": [
+                "CrazyOlaf"
+            ],
+            "objdata": {
+                "ActionTimer": 0.25,
+                "MaxPlantTypes": 84,
+                "MaxPerType": 2,
+                "PlantBeforeColumn": 6,
+                "Actions": [
+                    {
+                        "Action": "Shovel",
+                        "Weight": 50
+                    },
+                    {
+                        "Action": "PlantSingle",
+                        "Weight": 80
+                    },
+                    {
+                        "Action": "PlantColumn",
+                        "Weight": 15
+                    },
+                    {
+                        "Action": "PlantfoodSingle",
+                        "Weight": 25
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "SimpleZombieSpawnerProperties",
+            "aliases": [
+                "RandomSpawner"
+            ],
+            "objdata": {
+                "Stages": [
+                    {
+                        "Types": [
+                            {
+                                "ZombieType": "random"
+                            },
+                            {
+                                "ZombieType": "random"
+                            },
+                            {
+                                "ZombieType": "random"
+                            },
+                            {
+                                "ZombieType": "random"
+                            },
+                            {
+                                "ZombieType": "random"
+                            },
+                            {
+                                "ZombieType": "random"
+                            },
+                            {
+                                "ZombieType": "random"
+                            },
+                            {
+                                "ZombieType": "random"
+                            }
+                        ],
+                        "SpawnDelay": 1.0
+                    }
+                ]
+            }
+        }
+    ]
+}

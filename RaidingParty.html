@@ -1,0 +1,351 @@
+<title>Công Cụ Haruma</title>
+<html translate="no"></html>
+
+<link rel='icon' href="./icons/ganyufree.png" type='image/x-icon'/ >
+<center>
+<style> 
+
+
+@font-face {
+font-size: 55px;
+   font-family: myFirstFont;
+   src: url(fbUsv8C5eI-Black.woff);
+}
+
+* {
+   font-family: myFirstFont;
+}
+</style>
+<head>
+<meta name="google" content="notranslate">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./assets/mdui-v0.4.3/css/mdui.min.css"/>
+        <script src="./snackbar/success.js"></script>
+<script src="./snackbar/finished.js"></script>
+<script src="./snackbar/place.js"></script>
+<script src="./snackbar/copy.js"></script>
+<script src="./snackbar/clear.js"></script>
+<script src="./snackbar/recycle.js"></script>
+<link rel="stylesheet" href="./snackbar/success.css"/>
+<link rel="stylesheet" href="./snackbar/recycle.css"/>
+<link rel="stylesheet" href="./snackbar/place.css"/>
+  <link rel="stylesheet" href="./snackbar/finished.css"/>
+  <link rel="stylesheet" href="./snackbar/copy.css"/>
+  <link rel="stylesheet" href="./snackbar/clear.css"/>
+  
+</head>
+<div id="snackbar">Tải xuống hoàn tất</div>
+<div id="snackbar1">Thành công, xem mã bên dưới</div>
+<div id="snackbar2">Đã sao chép</div>
+<div id="snackbar3">Đã dọn mã</div>
+<div id="snackbar4">Hãy điền số</div>
+</head>
+<body  class="mdui-text-color-white mdui-theme-layout-dark mdui-text-color-black-icon">
+<script src="./assets/mdui-v0.4.3/js/mdui.min.js"></script>
+<div class="mdui-container">
+  <div class="mdui-tab mdui-tab-scrollable  mdui-tab">
+         <a style="font-size:20px" href="index.html" class="mdui-ripple">Hướng dẫn</a>
+  <a style="font-size:20px" href="WaveCreator.html"   class="mdui-ripple">Tạo Đợt</a>
+    <a style="font-size:20px" href="HarumaLab.html" class="mdui-ripple">Tạo Màn chơi</a>
+	<a style="font-size:20px" href="PlantSet.html" class="mdui-ripple">Chọn cây</a>
+	<a style="font-size:20px" href="Sandsnow.html" class="mdui-ripple">Sự kiện Bão</a>
+<a style="font-size:20px" href="RaidingParty.html" class="mdui-tab-active">Tiệc Đột kích</a>
+    <a style="font-size:20px" href="Tide.html" class="mdui-ripple">Tạo Thuỷ triều</a>
+    <a style="font-size:20px" href="Tidal.html" class="mdui-ripple">Đổi thủy triều</a>
+    <a style="font-size:20px" href="LowTide.html" class="mdui-ripple">Rút nước</a>
+    <a style="font-size:20px" href="Grids.html" class="mdui-ripple">Đặt Lưới</a>
+    <a style="font-size:20px" href="Necromancy.html" class="mdui-ripple">Chiêu hồn</a>
+    <a style="font-size:20px" href="ItemSpawn.html" class="mdui-ripple">Tạo vật</a>
+    <a style="font-size:20px" href="FrozenZomb.html.html" class="mdui-ripple">Thây ma đóng băng</a>
+<a style="font-size:20px" href="ParachuteRain.html" class="mdui-ripple">Mưa Dù</a>
+    <a style="font-size:20px" href="Dino.html" class="mdui-ripple">Đặt Khủng long</a>	
+	<a style="font-size:20px" href="PML.html" class="mdui-ripple">Đặt Xe mìn</a>
+    <a style="font-size:20px" href="Winds.html" class="mdui-ripple">Gió Băng</a>
+    <a style="font-size:20px" href="Planks.html" class="mdui-ripple">Đặt Ván</a>
+    <a style="font-size:20px" href="Zomboss.html" class="mdui-ripple">Tạo Zomboss</a>
+    <a style="font-size:20px" href="MoldColony.html" class="mdui-ripple">Thuộc địa Nấm mốc</a>
+    <a style="font-size:20px" href="DangerP.html" class="mdui-ripple">Cây nguy hiểm</a>
+    <a style="font-size:20px" href="PlantPlant.html" class="mdui-ripple">Đặt cây</a>
+    <a style="font-size:20px" href="PPT.html" class="mdui-ripple">Tạo Cổng</a>
+    <a style="font-size:20px" href="PlantPower.html" class="mdui-ripple">Ô Sức mạnh</a>
+    <a style="font-size:20px" href="Olaf.html" class="mdui-ripple">Chiều không gian Hỗn loạn</a>
+    <a style="font-size:20px" href="Spidy.html" class="mdui-ripple">Mưa Bot</a>
+	<a style="font-size:20px" href="jsonedit.html" class="mdui-ripple">Công cụ PVZH</a>
+	<a style="font-size:20px" href="internalcode.html" class="mdui-ripple">Mã gốc (Cây)</a>
+  <a style="font-size:20px" href="download.html" class="mdui-ripple">Tải RSB</a>
+  </div>
+</div>
+
+    <div style="margin-top: 15px">
+	<center>
+    <p style="font-size:40px"><img src="./HarumaTools/grids/vietnam.png"> Tiệc đột kích phiên bản 1.2.1 <img src="./HarumaTools/grids/vietnam.png"></p>
+	<div class="mdui-container">
+    <div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px"  class="mdui-textfield-label">Đợt Số</label>
+      <input  id="wavenumber" style="font-size:25px"  class="mdui-textfield-input" value="" type="text" required/>
+      <div style="font-size:15px" class="mdui-textfield-error">Không được bỏ trống vùng này</div>
+    </div>
+	 <div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px"  class="mdui-textfield-label">Sự Kiện Số</label>
+      <input  id="eventnumber" style="font-size:25px"  class="mdui-textfield-input" value="" type="text" required/>
+      <div style="font-size:15px" class="mdui-textfield-error">Không được bỏ trống vùng này</div>
+    </div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px"  class="mdui-textfield-label">Quy mô nhóm</label>
+      <input style="font-size:25px"  id="groupsize"  class="mdui-textfield-input" value="1" type="text" required/>
+      <div style="font-size:15px" class="mdui-textfield-error">Không được bỏ trống vùng này</div>
+    </div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px"  class="mdui-textfield-label">Số lượng Thây ma Đu Dây</label>
+      <input style="font-size:25px"  id="zombiecount"  class="mdui-textfield-input" value="" type="text" required/>
+      <div style="font-size:15px" class="mdui-textfield-error">Không được bỏ trống vùng này</div>
+    </div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px"  class="mdui-textfield-label"> Thời gian giữa các nhóm</label>
+      <input  id="time" style="font-size:25px"   class="mdui-textfield-input" value="1" type="text" required/>
+      <div style="font-size:15px" class="mdui-textfield-error">Không được bỏ trống vùng này</div>
+    </div>
+	<div>
+    </div>
+<div>
+    </p></div>
+    
+    <textarea id="xml" rows="20" cols="50" style="display: none;"></textarea> 
+     <p> </p>
+<button class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" onclick="CompileLevelXML();finishFunction()">Hoàn tất</button>
+	<button class="mdui-btn mdui-btn-dense mdui-textfiled" type="button" onclick="download();downloadFunction()">Tải xuống mã</button>
+	<input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Sao chép" id="copy" onclick="copyText();copyFunction();">
+	
+	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" type="button" value="Xóa mã" onclick="javascript:eraseText();clearFunction()"> 
+	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Tải lại" onClick="refresh(this)">
+<script>
+  function refresh(){
+        window.location.reload("Refresh")
+      }
+</script>
+	 <script>
+	 function eraseText() {
+    document.getElementById("output").value = "";
+}
+</script>
+<script type="text/javascript">
+function click (e) {
+  if (!e)
+    e = window.event;
+  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+    if (window.opera)
+      window.alert("");
+    return false;
+  }
+}
+if (document.layers)
+  document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown = click;
+document.oncontextmenu = click;
+</script>
+	 <script>
+	 function eraseText() {
+    document.getElementById("output").value = "";
+}
+</script>
+	<script>
+	//I'm lazyyyy
+	function download(){
+    var text = document.getElementById("output").value;
+    text = text.replace(/\n/g, "\r\n");
+    var blob = new Blob([text], { type: "text/plain"});
+    var anchor = document.createElement("a");
+    anchor.download = "RaidingParty.json";
+    anchor.href = window.URL.createObjectURL(blob);
+    anchor.target ="_blank";
+    anchor.style.display = "none"; 
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+ }
+ //Don't want to code this anymore
+ </script>
+<script type="text/javascript">
+
+function copyText(){
+ document.getElementById("output").select();
+ document.execCommand('copy');
+}
+</script>
+<input type="checkbox" id="icecubed" style="display: none;" onclick="" value="">
+     <p> </p>
+ <textarea id="output" style="font-size:20px"  class="mdui-textfield-input" rows="100" cols="150"></textarea> 
+	<script src="./script/js/levelgen.min.js"></script>
+        <script type="text/javascript">
+        var version = 1.0;
+        var eraser = 547;
+        var iceblock = 548;
+        var array = new Array();
+        document.getElementById('output').style.display = "none";   
+        document.getElementById("xml").value = "";
+        document.getElementById("output").value = ""
+        var mouseOverSprite = document.createElement("img");
+            mouseOverSprite.style.display="block";
+            mouseOverSprite.style.position = "absolute";
+            mouseOverSprite.style.zIndex = "-1";
+        document.body.insertBefore(mouseOverSprite,document.body.firstChild);
+        document.getElementById('xml').style.display = "none";
+        document.addEventListener("mousemove",mouseMoveFunction);
+        var lastGridId = null;
+
+        function mouseMoveFunction(e){
+            var p1 = document.getElementById("p1");
+            if(e.target.nodeName == "CANVAS"){
+                p1.innerHTML = " Grid ID: "+e.target.id
+
+                if(e.target.id == lastGridId){
+                    return;
+                }
+                lastGridId = e.target.id;
+                mouseOverSprite.style.visibility ="visible";
+                mouseOverSprite.style.top = e.target.offsetTop+"px";
+                mouseOverSprite.style.left = e.target.offsetLeft+"px";
+            }
+            else{
+                mouseOverSprite.style.visibility ="hidden";
+            }
+        }
+        document.addEventListener("click",mouseClickFunction);
+        function mouseClickFunction(e){
+            if(mouseOverSprite.style.visibility == "visible" && e.target.nodeName == "CANVAS"  && selectedSpriteId != eraser)
+            {
+                var icecubed = document.getElementById("icecubed");
+                var targetRect = e.target.getBoundingClientRect();
+                var a = e.target.id;
+                var x = a.charAt(0);
+				var d = a.charAt(0)-2;
+                var b = e.target.id;
+                var y = b.charAt(2);
+                if(selectedSpriteId != iceblock){
+                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                    "  
+                if(icecubed.checked == true) {
+                document.getElementById("xml").value += "";
+                }
+                document.getElementById("xml").value += "\{ \n                                              \"Row\"\:\ \"" + y + "\" \n                    }";
+            }
+                var icecubed = document.getElementById("icecubed");
+                var newImg = document.createElement("img");
+                newImg.src = mouseOverSprite.src;
+                newImg.style.position = "absolute";
+                newImg.style.left = targetRect.x+"px";
+                newImg.style.top = targetRect.y+"px";
+                newImg.style.zIndex = -1;
+                newImg.className = "newImg";
+                if(icecubed.checked == true){
+                    newImg.style.outline = "blue solid 0.5px";
+                    e.target.style.outline = "rgb(0, 255, 255) solid 2.5px";
+                }
+                newImg.addEventListener("click",function(){
+                if(selectedSpriteId == eraser){
+                    var victim = "";
+                    console.log(e.target.style.outline);
+                        if(e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 0.5px"){
+                         victim = "\n                    {\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
+                         e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 0.5px";
+                        }
+                        if(e.target.style.outline == "rgb(0, 255, 255) solid 2.5px"){
+                            console.log("yay");
+                         victim = "\n                    {\n                        \"Condition\"\: \"icecubed\",\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
+                         e.target.style.outlineColor = "rgba(0, 0, 0, 0.2)";
+                         e.target.style.outlineStyle = "solid";
+                         e.target.style.outlineWidth = "0.5px";
+                        }
+                         console.log(victim);
+
+                        xml = document.getElementById("xml").value;
+                        document.getElementById("xml").value = xml.substr(0,xml.indexOf(victim)) + xml.substr(xml.indexOf(victim) + victim.length + 1, xml.length);
+                        this.remove();
+                        xml3 = document.getElementById("xml").value;
+                        xml4 = xml3.slice(0, -1);
+                        if(xml3.endsWith(",")){
+                        console.log(xml4);
+                            document.getElementById("xml").value = xml4;
+                        }
+
+                   }
+                }
+            );
+                document.body.appendChild(newImg);
+                
+                if(allAddedItems[e.target.id]==null)
+                    allAddedItems[e.target.id] = new Array(newImg);
+                else
+                    allAddedItems[e.target.id].push(newImg); 
+            }
+        }
+        var allAddedItems = new Array();
+        var selectedSpriteId = 1;
+        document.getElementById(selectedSpriteId).style.outline=".5px solid blue";
+        mouseOverSprite.src = document.getElementById(selectedSpriteId).src;
+
+        function selectSprite(e){
+            document.getElementById(selectedSpriteId).style.outline="";
+            e.currentTarget.style.outline = ".5px solid blue";
+            selectedSpriteId = e.currentTarget.id;
+            mouseOverSprite.src = e.currentTarget.src;
+            var canvases = document.getElementsByClassName('newImg');
+            if(selectedSpriteId == eraser){
+                mouseOverSprite.style.pointerEvents="none";
+                //document.getElementById('gridDiv').style.pointerEvents="none";
+                for(i=0;i<canvases.length;i++){
+                    canvases[i].style.zIndex=1;
+                }
+            } else {
+                mouseOverSprite.style.pointerEvents="";
+                for(i=0;i<canvases.length;i++){
+                    canvases[i].style.zIndex=-1;
+                }
+            }
+        }
+        function togglexmlvisibility() {
+        var display = document.getElementById('xml').style.display;
+        if(display == "none") {
+              document.getElementById('xml').style.display = "block";
+        }
+        if(display == "block") {
+              document.getElementById('xml').style.display = "none";
+        }
+     }
+function toggleoutputvisibility() {
+        var display = document.getElementById('output').style.display;
+        if(display == "none")
+              document.getElementById('output').style.display = "block";
+        }
+        function CompileLevelXML() {
+		//var wavenumber = document.getElementById("wavenumber").value;
+		//var eventnumber = document.getElementById("eventnumber").value;
+		//var groupsize = document.getElementById("groupsize").value;
+		//var zombiecount = document.getElementById("zombiecount").value;
+		//var time = document.getElementById("time").value;
+    var str = document.getElementById("xml").value;
+    toggleoutputvisibility();
+        document.getElementById("output").value += "\"RTID\(Wave" + document.getElementById("wavenumber").value + "RaidingPartyEvent" + document.getElementById("eventnumber").value + "\@CurrentLevel\)\"\n    \n           {\n             \"aliases\"\: \[\n                \"Wave" + document.getElementById("wavenumber").value + 			"RaidingPartyEvent" + document.getElementById("eventnumber").value + "\"\n            \],\n            \"objclass\"\: \"RaidingPartyZombieSpawnerProps\",\n            \"objdata\"\: \{\n                \"GroupSize\": \"" + document.getElementById("groupsize").value + "\",\n                \"SwashbucklerCount\": \"" + document.getElementById("zombiecount").value + "\",\n                \"TimeBetweenGroups\": " + document.getElementById("time").value + ""  
+        document.getElementById("output").value += str;
+        document.getElementById("output").value += "\n            }\n        },";
+        console.log(allAddedItems);
+        }
+    </script><style>
+        p {
+            color: white;
+        }
+        .paragraph1 {
+            font-size: 20px;
+             font-family: myFirstFont;
+   src: url(fbUsv8C5eI-Black.woff)
+            line-height: 2px;
+        }
+        .paragraph2 {
+            font-size: 20px;
+             font-family: myFirstFont;
+   src: url(fbUsv8C5eI-Black.woff)
+        }
+    </style>
+</center>
+</div></div>
+</body></html>

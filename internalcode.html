@@ -1,0 +1,3285 @@
+<link rel="shortcut png" href="./icons/venti.png"  >
+<html translate="no"></html>
+<script type="text/javascript">
+function click (e) {
+  if (!e)
+    e = window.event;
+  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+    if (window.opera)
+      window.alert("");
+    return false;
+  }
+}
+if (document.layers)
+  document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown = click;
+document.oncontextmenu = click;
+</script>
+<style> 
+
+
+@font-face {
+font-size: 55px;
+   font-family: myFirstFont;
+   src: url(fbUsv8C5eI-Black.woff);
+}
+
+* {
+   font-family: myFirstFont;
+}
+</style>
+
+<html>
+<head>
+<meta name="google" content="notranslate">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bách Khoa Haruma</title>
+  <link rel="stylesheet" href="./assets/mdui-v0.4.2/css/mdui.min.css"/>
+  <link rel="stylesheet" href="assets/mdui-v0.4.2/css/mdui.min.css"/>
+  <link rel="stylesheet" href="assets/highlight-9.12.0/styles/github-gist.css"/>
+  <link rel="stylesheet" href="assets/highlight-9.12.0/styles/railscasts.css"/>
+  <link rel="stylesheet" href="assets/docs/css/docs.css"/>
+  <script src="./assets/mdui-v0.4.2/js/mdui.min.js"></script>
+<script src="./assets/ace-1.2.6/ace.js"></script>
+    <link rel="stylesheet" href="./assets/mdui-v0.4.2/css/mdui.min.css"/>
+    <link rel="stylesheet" href="./assets/demo/css/demo.css"/>
+<script src="./assets/ace-1.2.6/ext-language_tools.js"></script>
+<script src="./assets/demo/js/live-editor.js"></script>
+<script src="./snackbar/success.js"></script>
+<script src="./snackbar/finished.js"></script>
+<script src="./snackbar/copy.js"></script>
+<script src="./snackbar/clear.js"></script>
+<link rel="stylesheet" href="./snackbar/success.css"/>
+  <link rel="stylesheet" href="./snackbar/finished.css"/>
+  <link rel="stylesheet" href="./snackbar/copy.css"/>
+  <link rel="stylesheet" href="./snackbar/clear.css"/>
+		
+		<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./assets/mdui-v0.4.3/css/mdui.min.css"/>
+</head>
+<body class="mdui-text-color-white mdui-theme-layout-dark mdui-text-color-black-icon">
+<script src="./assets/mdui-v0.4.3/js/mdui.min.js"></script>
+<div class="mdui-container">
+  <div class="mdui-tab mdui-tab-scrollable  mdui-tab">
+        <a style="font-size:20px" href="index.html" class="mdui-ripple">Hướng dẫn</a>
+  <a style="font-size:20px" href="WaveCreator.html"   class="mdui-ripple">Tạo Đợt</a>
+    <a style="font-size:20px" href="HarumaLab.html" class="mdui-ripple">Tạo Màn chơi</a>
+	<a style="font-size:20px" href="PlantSet.html" class="mdui-ripple">Chọn cây</a>
+	<a style="font-size:20px" href="Sandsnow.html" class="mdui-ripple">Sự kiện Bão</a>
+<a style="font-size:20px" href="RaidingParty.html" class="mdui-ripple">Tiệc Đột kích</a>
+    <a style="font-size:20px" href="Tide.html" class="mdui-ripple">Tạo Thuỷ triều</a>
+    <a style="font-size:20px" href="Tidal.html" class="mdui-ripple">Đổi thủy triều</a>
+    <a style="font-size:20px" href="LowTide.html" class="mdui-ripple">Rút nước</a>
+    <a style="font-size:20px" href="Grids.html" class="mdui-ripple">Đặt Lưới</a>
+    <a style="font-size:20px" href="Necromancy.html" class="mdui-ripple">Chiêu hồn</a>
+    <a style="font-size:20px" href="ItemSpawn.html" class="mdui-ripple">Tạo vật</a>
+    <a style="font-size:20px" href="FrozenZomb.html.html" class="mdui-ripple">Thây ma đóng băng</a>
+<a style="font-size:20px" href="ParachuteRain.html" class="mdui-ripple">Mưa Dù</a>
+    <a style="font-size:20px" href="Dino.html" class="mdui-ripple">Đặt Khủng long</a>	
+	<a style="font-size:20px" href="PML.html" class="mdui-ripple">Đặt Xe mìn</a>
+    <a style="font-size:20px" href="Winds.html" class="mdui-ripple">Gió Băng</a>
+    <a style="font-size:20px" href="Planks.html" class="mdui-ripple">Đặt Ván</a>
+    <a style="font-size:20px" href="Zomboss.html" class="mdui-ripple">Tạo Zomboss</a>
+    <a style="font-size:20px" href="MoldColony.html" class="mdui-ripple">Thuộc địa Nấm mốc</a>
+    <a style="font-size:20px" href="DangerP.html" class="mdui-ripple">Cây nguy hiểm</a>
+    <a style="font-size:20px" href="PlantPlant.html" class="mdui-ripple">Đặt cây</a>
+    <a style="font-size:20px" href="PPT.html" class="mdui-ripple" >Tạo Cổng</a>
+    <a style="font-size:20px" href="PlantPower.html" class="mdui-ripple">Ô Sức mạnh</a>
+    <a style="font-size:20px" href="Olaf.html" class="mdui-ripple">Chiều không gian Hỗn loạn</a>
+    <a style="font-size:20px" href="Spidy.html"class="mdui-ripple" >Mưa Bot</a>
+	<a style="font-size:20px" href="jsonedit.html" class="mdui-ripple">Công cụ PVZH</a>
+	<a style="font-size:20px" href="internalcode.html" class="mdui-tab-active">Mã gốc (Cây)</a>
+  <a style="font-size:20px" href="download.html" class="mdui-ripple">Tải RSB</a>
+  </div>
+</div>
+<div class="mdui-table-hoverable">
+        <table class="mdui-table">
+          <thead>
+            <tr>
+			<center>
+              <th  style="font-size:20px">Thứ Tự</th>
+              <th  style="font-size:20px" >Cây</th>
+              <th  style="font-size:20px">Tên phiên dịch</th>
+			  <th  style="font-size:20px" >Mã nội bộ</th>
+			  <th style="font-size:20px">Phiên bản</th>
+			  <th  style="font-size:20px">Trung Quốc</th>
+			  <th  style="font-size:20px">Chính thức</th>
+			  
+			  <th  style="font-size:20px">ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+			 <td  style="font-size:20px">1</td>
+              <td> <img src="./almanac/plants/Sunflower2C.webp" ></td>
+              <td style="color:Yellow; font-size:20px">Sunflower</td>
+			  <td style="font-size:20px" >sunflower</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">1</td>
+			   
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">2</td>
+              <td> <img src="./almanac/plants/Peashooter2C.webp" ></td>
+              <td style="color:LawnGreen ;font-size:20px">Peashooter</td>
+			  <td style="font-size:20px">peashooter</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">2</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">3</td>
+              <td> <img src="./almanac/plants/Wall-nut2C.webp" ></td>
+              <td style="color:DarkGoldenRod;font-size:20px">Wall-nut</td>
+			  <td style="font-size:20px">wallnut</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">3</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">4</td>
+              <td> <img src="./almanac/plants/Potato_Mine2.webp" ></td>
+              <td style="color:DarkGoldenRod;font-size:20px">Potato Mine</td>
+			  <td style="font-size:20px">potatomine</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">13</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">5</td>
+              <td> <img src="./almanac/plants/Flower_Pot2.webp" ></td>
+              <td style="color:GoldenRod;font-size:20px">Flower Pot</td>
+			  <td style="font-size:20px">flowerpot</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">6</td>
+              <td> <img src="./almanac/plants/Rotten_Red2.webp" ></td>
+              <td style="color:FireBrick;font-size:20px">Rotten Red</td>
+			  <td style="font-size:20px">repomegrante</td>
+			   <td style="font-size:20px">Removed Content</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">7</td>
+              <td> <img src="./almanac/plants/Cabbage-pult2C.webp" ></td>
+              <td style="color:LimeGreen;font-size:20px">Cabbage-pult</td>
+			  <td style="font-size:20px">cabbagepult</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">6</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">8</td>
+              <td> <img src="./almanac/plants/Bloomerang2.webp" ></td>
+              <td style="color:MediumSeaGreen;font-size:20px">Bloomerang</td>
+			  <td style="font-size:20px">bloomerang</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">27</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">9</td>
+              <td> <img src="./almanac/plants/Iceberg_Lettuce2.webp" ></td>
+              <td style="color:MediumTurquoise;font-size:20px">Iceberg Lettuce</td>
+			  <td style="font-size:20px">iceburg</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">11</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">10</td>
+              <td> <img src="./almanac/plants/Grave_Buster2.webp" ></td>
+              <td style="color:Olive;font-size:20px">Grave Buster</td>
+			  <td style="font-size:20px">gravebuster</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">10</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">11</td>
+              <td> <img src="./almanac/plants/Twin_Sunflower2.webp" ></td>
+              <td style="color:Yellow;font-size:20px">Twin Sunflower</td>
+			  <td style="font-size:20px">twinsunflower</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">35</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">12</td>
+              <td> <img src="./almanac/plants/Bonk_Choy2.webp" ></td>
+              <td style="color:MediumSeaGreen;font-size:20px">Bonk Choy</td>
+			  <td style="font-size:20px">bonkchoy</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">5</td>
+            </tr>
+          </tbody>
+		  		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">13</td>
+              <td> <img src="./almanac/plants/Repeater2.webp" ></td>
+              <td style="color:LawnGreen ;font-size:20px">Repeater</td>
+			  <td style="font-size:20px">repeater</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">14</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">14</td>
+              <td> <img src="./almanac/plants/Snow_Pea2C.webp" ></td>
+              <td style="color:DodgerBlue;font-size:20px">Snow Pea</td>
+			  <td style="font-size:20px">snowpea</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">21</td>
+            </tr>
+          </tbody>
+            <tr>
+			 <td  style="font-size:20px">15</td>
+              <td> <img src="./almanac/plants/Kernel-pult2.webp" ></td>
+              <td style="color:GreenYellow;font-size:20px">Kernel-pult</td>
+			  <td style="font-size:20px">kernelpult</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">19</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">16</td>
+              <td> <img src="./almanac/plants/Snapdragon2.webp" ></td>
+              <td style="color:YellowGreen;font-size:20px">Snapdragon</td>
+			  <td style="font-size:20px">snapdragon</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">15</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">17</td>
+              <td> <img src="./almanac/plants/Power_Lily2.webp" ></td>
+              <td style="color:Fuchsia;font-size:20px">	Power Lily</td>
+			  <td style="font-size:20px">powerlily</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">38</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">18</td>
+              <td> <img src="./almanac/plants/Spikeweed2.webp" ></td>
+              <td style="color:DarkGreen;font-size:20px">	Spikeweed</td>
+			  <td style="font-size:20px">spikeweed</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">16</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">19</td>
+              <td> <img src="./almanac/plants/Coconut_Cannon2.webp" ></td>
+              <td style="color:SaddleBrown;font-size:20px">	Coconut Cannon</td>
+			  <td style="font-size:20px">coconutcannon</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">9</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">20</td>
+              <td> <img src="./almanac/plants/Cherry_Bomb2.webp" ></td>
+              <td style="color:Crimson;font-size:20px">	Cherry Bomb</td>
+			  <td style="font-size:20px">cherry_bomb</td>
+			   <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">8</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">21</td>
+              <td> <img src="./almanac/plants/Spring_Bean2.webp" ></td>
+              <td style="color:LawnGreen ;font-size:20px">Spring Bean</td>
+			  <td style="font-size:20px">springbean</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">20</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">22</td>
+              <td> <img src="./almanac/plants/Spikerock2.webp" ></td>
+              <td style="color:DimGray   ;font-size:20px">Spikerock</td>
+			  <td style="font-size:20px">spikerock</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">37</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">23</td>
+              <td> <img src="./almanac/plants/Threepeater2.webp" ></td>
+              <td style="color:LawnGreen ;font-size:20px">Threepeater</td>
+			  <td style="font-size:20px">threepeater</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">17</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">24</td>
+              <td> <img src="./almanac/plants/Squash2.webp" ></td>
+              <td style="color:LimeGreen ;font-size:20px">Squash	</td>
+			  <td style="font-size:20px">squash	</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">39</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">25</td>
+              <td> <img src="./almanac/plants/Split_Pea2.webp" ></td>
+              <td style="color:LawnGreen ;font-size:20px">Split Pea	</td>
+			  <td style="font-size:20px">splitpea	</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">23</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">26</td>
+              <td> <img src="./almanac/plants/Chili_Bean2.webp" ></td>
+              <td style="color:Crimson;font-size:20px">Chili Bean	</td>
+			  <td style="font-size:20px">chilibean	</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">22</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">27</td>
+              <td> <img src="./almanac/plants/Torchwood2C.webp" ></td>
+              <td style="color:Gold ;font-size:20px">Torchwood	</td>
+			  <td style="font-size:20px">torchwood	</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">18</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">28</td>
+              <td> <img src="./almanac/plants/Lightning_Reed2.webp" ></td>
+              <td style="color:DarkTurquoise ;font-size:20px">Lightning Reed	</td>
+			  <td style="font-size:20px">lightningreed	</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">24</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">29</td>
+              <td> <img src="./almanac/plants/Tall-nut2.webp" ></td>
+              <td style="color:DarkGoldenRod;font-size:20px">Tall-nut	</td>
+			  <td style="font-size:20px">tallnut	</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">4</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">30</td>
+              <td> <img src="./almanac/plants/Jalapeno2.webp" ></td>
+              <td style="color:Red;font-size:20px">Jalapeno	</td>
+			  <td style="font-size:20px">jalapeno	</td>
+			  <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">33</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">31</td>
+              <td> <img src="./almanac/plants/Pea_Pod2.webp" ></td>
+              <td style="color:LawnGreen ;font-size:20px">Pea Pod</td>
+			  <td style="font-size:20px">peapod	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">25</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">32</td>
+              <td> <img src="./almanac/plants/Melon-pult2.webp" ></td>
+              <td style="color:LawnGreen ;font-size:20px">Melon-pult	</td>
+			  <td style="font-size:20px">melonpult	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">7</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">33</td>
+              <td> <img src="./almanac/plants/Winter_Melon2.webp" ></td>
+              <td style="color:DodgerBlue;font-size:20px">	Winter Melon	</td>
+			  <td style="font-size:20px">wintermelon	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">34</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">35</td>
+              <td> <img src="./almanac/plants/Radish2.webp" ></td>
+              <td style="color:DimGray   ;font-size:20px">Radish	</td>
+			  <td style="font-size:20px">turnip	</td>
+			  <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">36</td>
+              <td> <img src="./almanac/plants/Fire_Gourd2.webp" ></td>
+              <td style="color:Gold;font-size:20px">Fire Gourd	</td>
+			  <td style="font-size:20px">firegourd	</td>
+			  <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">37</td>
+              <td> <img src="./almanac/plants/Heavenly_Peach2.webp" ></td>
+              <td style="color:DeepPink ;font-size:20px">Heavenly Peach	</td>
+			  <td style="font-size:20px">peach	</td>
+			  <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">38</td>
+              <td> <img src="./almanac/plants/Bamboo-shoot2.webp" ></td>
+              <td style="color:GreenYellow ;font-size:20px">Bamboo Shoot	</td>
+			  <td style="font-size:20px">bamboo	</td>
+			  <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">39</td>
+              <td> <img src="./almanac/plants/Imitater2.webp" ></td>
+              <td style="color:DimGray    ;font-size:20px">Imitater	</td>
+			  <td style="font-size:20px">imitater	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">32</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">40</td>
+              <td> <img src="./almanac/plants/Marigold2.webp" ></td>
+              <td style="color:DimGray     ;font-size:20px">Marigold	</td>
+			  <td style="font-size:20px">marigold	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">36</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">41</td>
+              <td> <img src="./almanac/plants/Laser_Bean2.webp" ></td>
+              <td style="color:LawnGreen   ;font-size:20px">Laser Bean	</td>
+			  <td style="font-size:20px">laser_bean	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">12</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">42</td>
+              <td> <img src="./almanac/plants/Blover2.webp" ></td>
+              <td style="color:Gold  ;font-size:20px">Blover	</td>
+			  <td style="font-size:20px">blover	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">30</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">43</td>
+              <td> <img src="./almanac/plants/Citron2.webp" ></td>
+              <td style="color:DarkOrange   ;font-size:20px">Citron	</td>
+			  <td style="font-size:20px">citron	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">40</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">44</td>
+              <td> <img src="./almanac/plants/E.M.Peach2.webp" ></td>
+              <td style="color:DarkOrange  ;font-size:20px">E.M.Peach	</td>
+			  <td style="font-size:20px">empea	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">29</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">45</td>
+              <td> <img src="./almanac/plants/Starfruit2.webp" ></td>
+              <td style="color:Gold  ;font-size:20px">Starfruit	</td>
+			  <td style="font-size:20px">starfruit	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">31</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">46</td>
+              <td> <img src="./almanac/plants/Infi-nut2.webp" ></td>
+              <td style="color:DarkTurquoise   ;font-size:20px">Infi-nut	</td>
+			  <td style="font-size:20px">holonut	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">28</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">47</td>
+              <td> <img src="./almanac/plants/Magnifying_Grass2.webp" ></td>
+              <td style="color:DimGray     ;font-size:20px">Magnifying Grass		</td>
+			  <td style="font-size:20px">magnifyinggrass	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">26</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">48</td>
+              <td> <img src="./almanac/plants/Tile_Turnip2.webp" ></td>
+              <td style="color:DeepPink    ;font-size:20px">	Tile Turnip	</td>
+			  <td style="font-size:20px">powerplant	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">41</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">49</td>
+              <td> <img src="./almanac/plants/Old_Puff.webp" ></td>
+              <td style="color:MediumOrchid    ;font-size:20px">Puff-shroom	</td>
+			  <td style="font-size:20px">puffshroom	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unused</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">50</td>
+              <td> <img src="./almanac/plants/Old_Sunshroom2.webp" ></td>
+              <td style="color:Gold  ;font-size:20px">	Sun-shroom	</td>
+			  <td style="font-size:20px">sunshroom	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unused</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">51</td>
+              <td> <img src="./almanac/plants/Scaredy_Shroom2.webp" ></td>
+              <td style="color:DarkViolet    ;font-size:20px">	Scaredy-shroom	</td>
+			  <td style="font-size:20px">scaredyshroom	</td>
+		 <td style="font-size:20px">1.4.2</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Scrapped</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">52</td>
+              <td> <img src="./almanac/plants/Hypno-shroom2.webp" ></td>
+              <td style="color:MediumOrchid     ;font-size:20px">		Hypno-shroom	</td>
+			  <td style="font-size:20px">hypnoshroom	</td>
+		 <td style="font-size:20px">2.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">52</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">53</td>
+              <td> <img src="./almanac/plants/Sun-shroom2.webp" ></td>
+              <td style="color:Gold    ;font-size:20px">		Sun-shroom	</td>
+			  <td style="font-size:20px">sunshroom	</td>
+		 <td style="font-size:20px">2.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">42</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">54</td>
+              <td> <img src="./almanac/plants/Puff-shroom2.webp" ></td>
+              <td style="color:MediumOrchid    ;font-size:20px">Puff-shroom	</td>
+			  <td style="font-size:20px">puffshroom	</td>
+		 <td style="font-size:20px">2.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">44</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">55</td>
+              <td> <img src="./almanac/plants/Fume-shroom2.webp" ></td>
+              <td style="color:DarkViolet    ;font-size:20px">Fume-shroom	</td>
+			  <td style="font-size:20px">fumeshroom	</td>
+		 <td style="font-size:20px">2.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">55</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">56</td>
+              <td> <img src="./almanac/plants/Sun_Bean2.webp" ></td>
+              <td style="color:Gold   ;font-size:20px">Sun Bean	</td>
+			  <td style="font-size:20px">sunbean	</td>
+		 <td style="font-size:20px">2.2.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">50</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">57</td>
+              <td> <img src="./almanac/plants/Pea-nut2.webp" ></td>
+              <td style="color:BurlyWood    ;font-size:20px">Pea-nut	</td>
+			  <td style="font-size:20px">peanut	</td>
+		 <td style="font-size:20px">2.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">54</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">58</td>
+              <td> <img src="./almanac/plants/Magnet-shroom2.webp" ></td>
+              <td style="color:MediumOrchid     ;font-size:20px">Magnet-shroom	</td>
+			  <td style="font-size:20px">magnetshroom	</td>
+		 <td style="font-size:20px">2.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">51</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">59</td>
+              <td> <img src="./almanac/plants/Oak_Archer2.webp" ></td>
+              <td style="color:SaddleBrown     ;font-size:20px">Oak Archer	</td>
+			  <td style="font-size:20px">oakshooter	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">60</td>
+              <td> <img src="./almanac/plants/Coffee_Bean2.webp" ></td>
+              <td style="color:DarkGoldenRod     ;font-size:20px">Coffee Bean	</td>
+			  <td style="font-size:20px">coffeebean	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">61</td>
+              <td> <img src="./almanac/plants/Plantern2.webp" ></td>
+              <td style="color:GoldenRod      ;font-size:20px">Plantern	</td>
+			  <td style="font-size:20px">streetlamp	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">62</td>
+              <td> <img src="./almanac/plants/Chomper2.webp" ></td>
+              <td style="color:DarkViolet     ;font-size:20px">Chomper	</td>
+			  <td style="font-size:20px">chomper	</td>
+		 <td style="font-size:20px">2.7.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">63</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">63</td>
+              <td> <img src="./almanac/plants/Lily_Pad2C.webp" ></td>
+              <td style="color:LawnGreen     ;font-size:20px">Lily Pad	</td>
+			  <td style="font-size:20px">lilypad	</td>
+		 <td style="font-size:20px">2.4.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">58</td>
+            </tr>
+          </tbody>
+		  
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">64</td>
+              <td> <img src="./almanac/plants/Tangle_Kelp2C.webp" ></td>
+              <td style="color:SeaGreen     ;font-size:20px">Tangle Kelp	</td>
+			  <td style="font-size:20px">tanglekelp	</td>
+		 <td style="font-size:20px">2.7.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">61</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">65</td>
+              <td> <img src="./almanac/plants/Bowling_Bulb2.webp" ></td>
+              <td style="color:LightBlue     ;font-size:20px">Bowling Bulb	</td>
+			  <td style="font-size:20px">bowlingbulb	</td>
+		 <td style="font-size:20px">2.7.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">59</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">66</td>
+              <td> <img src="./almanac/plants/Homing_Thistle2.webp" ></td>
+              <td style="color:LawnGreen     ;font-size:20px">Homing Thistle 	</td>
+			  <td style="font-size:20px">homingthistle 	</td>
+		 <td style="font-size:20px">2.7.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">62</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">67</td>
+              <td> <img src="./almanac/plants/Guacodile2C.webp" ></td>
+              <td style="color:LimeGreen     ;font-size:20px">Guacodile	</td>
+			  <td style="font-size:20px">guacodile	</td>
+		 <td style="font-size:20px">2.7.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">64</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">68</td>
+              <td> <img src="./almanac/plants/Banana_Launcher2.webp" ></td>
+              <td style="color:Gold    ;font-size:20px">Banana Launcher	</td>
+			  <td style="font-size:20px">banana	</td>
+		 <td style="font-size:20px">2.7.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">60</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">69</td>
+              <td> <img src="./almanac/plants/Ghost_Pepper2.webp" ></td>
+              <td style="color:DimGray       ;font-size:20px">Ghost Pepper	</td>
+			  <td style="font-size:20px">ghostpepper	</td>
+		 <td style="font-size:20px">2.9.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">65</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">70</td>
+              <td> <img src="./almanac/plants/Sweet_Potato2.webp" ></td>
+              <td style="color:LightSalmon     ;font-size:20px">Sweet Potato	</td>
+			  <td style="font-size:20px">sweetpotato	</td>
+		 <td style="font-size:20px">3.0.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">66</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">71</td>
+              <td> <img src="./almanac/plants/Acidic_Citrus2.webp" ></td>
+              <td style="color:Gold     ;font-size:20px">Acidic Citrus	</td>
+			  <td style="font-size:20px">lemon	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">72</td>
+              <td> <img src="./almanac/plants/Lotuspot2.webp" ></td>
+              <td style="color:LawnGreen      ;font-size:20px">Lotuspot	</td>
+			  <td style="font-size:20px">lotusshower	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">73</td>
+              <td> <img src="./almanac/plants/Old_FirePea2.webp" ></td>
+              <td style="color:OrangeRed      ;font-size:20px">Fire Peashooter	</td>
+			  <td style="font-size:20px">firepeashooter	</td>
+		 <td style="font-size:20px">2.3.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unused</td>
+			   
+			   <td style="font-size:20px">53</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">74</td>
+              <td> <img src="./almanac/plants/Sap-fling2.webp" ></td>
+              <td style="color:Chocolate       ;font-size:20px">Sap-fling	</td>
+			  <td style="font-size:20px">sapfling	</td>
+		 <td style="font-size:20px">3.1.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">67</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">75</td>
+              <td> <img src="./almanac/plants/Hurrikale2.webp" ></td>
+              <td style="color:DarkTurquoise        ;font-size:20px">Hurrikale	</td>
+			  <td style="font-size:20px">hurrikale	</td>
+		 <td style="font-size:20px">3.1.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">68</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">76</td>
+              <td> <img src="./almanac/plants/Hot_Potato2.webp" ></td>
+              <td style="color:SandyBrown        ;font-size:20px">Hot Potato	</td>
+			  <td style="font-size:20px">hotpotato	</td>
+		 <td style="font-size:20px">3.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">72</td>
+            </tr>
+          </tbody>
+		  		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">77</td>
+              <td> <img src="./almanac/plants/Pepper-pult2.webp" ></td>
+              <td style="color:DarkOrange          ;font-size:20px">Pepper-pult	</td>
+			  <td style="font-size:20px">pepperpult	</td>
+		 <td style="font-size:20px">3.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">71</td>
+            </tr>
+          </tbody>
+		  		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">78</td>
+              <td> <img src="./almanac/plants/Chard_Guard2.webp" ></td>
+              <td style="color:Tomato         ;font-size:20px">	Chard Guard	</td>
+			  <td style="font-size:20px">chardguard	</td>
+		 <td style="font-size:20px">3.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">70</td>
+            </tr>
+          </tbody>
+		  		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">79</td>
+              <td> <img src="./almanac/plants/Fire_Peashooter2.webp" ></td>
+              <td style="color:OrangeRed         ;font-size:20px">Fire Peashooter	</td>
+			  <td style="font-size:20px">firepeashooter	</td>
+		 <td style="font-size:20px">3.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">53</td>
+            </tr>
+          </tbody>
+		  		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">80</td>
+              <td> <img src="./almanac/plants/Stunion2.webp" ></td>
+              <td style="color:SandyBrown        ;font-size:20px">Stunion	</td>
+			  <td style="font-size:20px">stunion	</td>
+		 <td style="font-size:20px">3.3.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">74</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">81</td>
+              <td> <img src="./almanac/plants/Rafflesia2.webp" ></td>
+              <td style="color:Coral         ;font-size:20px">Rafflesia	</td>
+			  <td style="font-size:20px">rafflesia	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">82</td>
+              <td> <img src="./almanac/plants/Rotobaga2.webp" ></td>
+              <td style="color:HotDeepPink          ;font-size:20px">Rotobaga	</td>
+			  <td style="font-size:20px">xshot	</td>
+		 <td style="font-size:20px">3.1.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">69</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">83</td>
+              <td> <img src="./almanac/plants/Tornacorn2.webp" ></td>
+              <td style="color:SandyBrown        ;font-size:20px">Tornacorn	</td>
+			  <td style="font-size:20px">acorn	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">84</td>
+              <td> <img src="./almanac/plants/Dandelion2.webp" ></td>
+              <td style="color:GreenYellow         ;font-size:20px">	Dandelion	</td>
+			  <td style="font-size:20px">dandelion	</td>
+		 <td style="font-size:20px">3.4.4</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">76</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">85</td>
+              <td> <img src="./almanac/plants/Dandelion2C.webp" ></td>
+              <td style="color:LawnGreen         ;font-size:20px">	Dandelion (Chinese version)	</td>
+			  <td style="font-size:20px">dandelion	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">86</td>
+              <td> <img src="./almanac/plants/Cycloque2.webp" ></td>
+              <td style="color:Gold         ;font-size:20px">Cycloque	</td>
+			  <td style="font-size:20px">doublesamara	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">87</td>
+              <td> <img src="./almanac/plants/Aspiragus2.webp" ></td>
+              <td style="color:LawnGreen          ;font-size:20px">Aspiragus	</td>
+			  <td style="font-size:20px">asparagus	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">88</td>
+              <td> <img src="./almanac/plants/Saucer_Squash2.webp" ></td>
+              <td style="color:Gold         ;font-size:20px">Saucer Squash	</td>
+			  <td style="font-size:20px">saucer	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">89</td>
+              <td> <img src="./almanac/plants/Lantern_Cherry2.webp" ></td>
+              <td style="color:DeepPink            ;font-size:20px">Lantern Cherry	</td>
+			  <td style="font-size:20px">groundcherry	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">90</td>
+              <td> <img src="./almanac/plants/Board_Beans2.webp" ></td>
+              <td style="color:LawnGreen          ;font-size:20px">Board Beans	</td>
+			  <td style="font-size:20px">horsebean	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">91</td>
+              <td> <img src="./almanac/plants/Ampthurium2.webp" ></td>
+              <td style="color:Crimson          ;font-size:20px">Ampthurium	</td>
+			  <td style="font-size:20px">anthurium	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">92</td>
+              <td> <img src="./almanac/plants/Spinnapple2.webp" ></td>
+              <td style="color:gold          ;font-size:20px">Spinnapple	</td>
+			  <td style="font-size:20px">pineapple	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+<tbody>
+            <tr>
+			 <td  style="font-size:20px">93</td>
+              <td> <img src="./almanac/plants/Lava_Guava2.webp" ></td>
+              <td style="color:LimeGreen          ;font-size:20px">		Lava Guava	</td>
+			  <td style="font-size:20px">lavaguava	</td>
+		 <td style="font-size:20px">3.5.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">82</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">94</td>
+              <td> <img src="./almanac/plants/Red_Stinger2.webp" ></td>
+              <td style="color:Crimson          ;font-size:20px">		Red Stinger</td>
+			  <td style="font-size:20px">redstinger	</td>
+		 <td style="font-size:20px">3.6.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">78</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">95</td>
+              <td> <img src="./almanac/plants/A.K.E.E.2.webp" ></td>
+              <td style="color:DarkOrange           ;font-size:20px">	A.K.E.E.</td>
+			  <td style="font-size:20px">akee	</td>
+		 <td style="font-size:20px">3.5.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">81</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">96</td>
+              <td> <img src="./almanac/plants/Endurian2.webp" ></td>
+              <td style="color:GoldenRod           ;font-size:20px">		Endurian</td>
+			  <td style="font-size:20px">endurian	</td>
+		 <td style="font-size:20px">3.6.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">84</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">97</td>
+              <td> <img src="./almanac/plants/Toadstool2.webp" ></td>
+              <td style="color:Orange           ;font-size:20px">		Toadstool</td>
+			  <td style="font-size:20px">toadstool	</td>
+		 <td style="font-size:20px">3.6.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">83</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">98</td>
+              <td> <img src="./almanac/plants/Stallia2.webp" ></td>
+              <td style="color:DarkMagenta            ;font-size:20px">			Stallia</td>
+			  <td style="font-size:20px">stallia	</td>
+		 <td style="font-size:20px">3.7.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">85</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">99</td>
+              <td> <img src="./almanac/plants/Gold_Leaf2.webp" ></td>
+              <td style="color:gold           ;font-size:20px">		Gold Leaf</td>
+			  <td style="font-size:20px">goldleaf	</td>
+		 <td style="font-size:20px">3.7.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">79</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">100</td>
+              <td> <img src="./almanac/plants/Jackfruit2.webp" ></td>
+              <td style="color:ForestGreen            ;font-size:20px">		Jackfruit</td>
+			  <td style="font-size:20px">jackfruit	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">101</td>
+              <td> <img src="./almanac/plants/Strawburst2.webp" ></td>
+              <td style="color:Red            ;font-size:20px">		Strawburst</td>
+			  <td style="font-size:20px">strawburst	</td>
+		 <td style="font-size:20px">3.8.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">86</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">102</td>
+              <td> <img src="./almanac/plants/Cactus2.webp" ></td>
+              <td style="color:LimeGreen            ;font-size:20px">		Cactus</td>
+			  <td style="font-size:20px">cactus	</td>
+		 <td style="font-size:20px">3.8.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">87</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">103</td>
+              <td> <img src="./almanac/plants/Phat_Beet2.webp" ></td>
+              <td style="color:DarkOrchid             ;font-size:20px">		Phat Beet</td>
+			  <td style="font-size:20px">phatbeet	</td>
+		 <td style="font-size:20px">3.8.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">88</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">104</td>
+              <td> <img src="./almanac/plants/Celery_Stalker2.webp" ></td>
+              <td style="color:LimeGreen            ;font-size:20px">		Celery Stalker</td>
+			  <td style="font-size:20px">celerystalker	</td>
+		 <td style="font-size:20px">3.9.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">90</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">105</td>
+              <td> <img src="./almanac/plants/Thyme_Warp2.webp" ></td>
+              <td style="color:DarkTurquoise            ;font-size:20px">		Thyme Warp</td>
+			  <td style="font-size:20px">thymewarp	</td>
+		 <td style="font-size:20px">3.9.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">89</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">106</td>
+              <td> <img src="./almanac/plants/Electric_Blueberry2.webp" ></td>
+              <td style="color:SteelBlue             ;font-size:20px">	Electric Blueberry</td>
+			  <td style="font-size:20px">electricblueberry	</td>
+		 <td style="font-size:20px">3.9.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">91</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">107</td>
+              <td> <img src="./almanac/plants/Garlic2.webp" ></td>
+              <td style="color:DimGray             ;font-size:20px">Garlic</td>
+			  <td style="font-size:20px">garlic	</td>
+		 <td style="font-size:20px">4.0.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">93</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">108</td>
+              <td> <img src="./almanac/plants/Spore-shroom2.webp" ></td>
+              <td style="color:Purple             ;font-size:20px">Spore-shroom</td>
+			  <td style="font-size:20px">sporeshroom	</td>
+		 <td style="font-size:20px">4.0.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">92</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">109</td>
+              <td> <img src="./almanac/plants/Intensive_Carrot2.webp" ></td>
+              <td style="color:OrangeRed              ;font-size:20px">	Intensive Carrot</td>
+			  <td style="font-size:20px">intensivecarrot	</td>
+		 <td style="font-size:20px">4.0.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">94</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">110</td>
+              <td> <img src="./almanac/plants/MC_Glory2.webp" ></td>
+              <td style="color:MediumSpringGreen              ;font-size:20px">MC Glory</td>
+			  <td style="font-size:20px">morningglory	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">111</td>
+              <td> <img src="./almanac/plants/Jack_O%2527_Lantern2.webp" ></td>
+              <td style="color:OrangeRed              ;font-size:20px">	Jack O' Lantern</td>
+			  <td style="font-size:20px">jackolantern	</td>
+		 <td style="font-size:20px">4.1.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">95</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">112</td>
+              <td> <img src="./almanac/plants/Grapeshot2.webp" ></td>
+              <td style="color:MediumVioletRed              ;font-size:20px">	Grapeshot</td>
+			  <td style="font-size:20px">grapeshot	</td>
+		 <td style="font-size:20px">4.1.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">97</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">113</td>
+              <td> <img src="./almanac/plants/Primal_Peashooter2.webp" ></td>
+              <td style="color:LimeGreen              ;font-size:20px">	Primal Peashooter</td>
+			  <td style="font-size:20px">primalpeashooter	</td>
+		 <td style="font-size:20px">4.1.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">96</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">114</td>
+              <td> <img src="./almanac/plants/Primal_Wall-nut2.webp" ></td>
+              <td style="color:SaddleBrown              ;font-size:20px">	Primal Wall-nut</td>
+			  <td style="font-size:20px">primalwallnut	</td>
+		 <td style="font-size:20px">4.1.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">98</td>
+            </tr>
+          </tbody>
+		  <tbody>
+            <tr>
+			 <td  style="font-size:20px">115</td>
+              <td> <img src="./almanac/plants/Perfume-shroom2.webp" ></td>
+              <td style="color:MediumVioletRed              ;font-size:20px">	Perfume-shroom</td>
+			  <td style="font-size:20px">perfumeshroom	</td>
+		 <td style="font-size:20px">4.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">100</td>
+            </tr>
+          </tbody>
+		   <tbody>
+            <tr>
+			 <td  style="font-size:20px">116</td>
+              <td> <img src="./almanac/plants/Cold_Snapdragon2.webp" ></td>
+              <td style="color:DarkTurquoise               ;font-size:20px">	Cold Snapdragon</td>
+			  <td style="font-size:20px">coldsnapdragon	</td>
+		 <td style="font-size:20px">4.1.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">99</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">117</td>
+              <td> <img src="./almanac/plants/Primal_Sunflower2.webp" ></td>
+              <td style="color:Gold               ;font-size:20px">Primal Sunflower</td>
+			  <td style="font-size:20px">primalsunflower	</td>
+		 <td style="font-size:20px">4.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">101</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">118</td>
+              <td> <img src="./almanac/plants/Primal_Potato_Mine2.webp" ></td>
+              <td style="color:Gold               ;font-size:20px">Primal Potato Mine</td>
+			  <td style="font-size:20px">primalpotatomine	</td>
+		 <td style="font-size:20px">4.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">102</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">119</td>
+              <td> <img src="./almanac/plants/Shrinking_Violet2.webp" ></td>
+              <td style="color:MediumVioletRed               ;font-size:20px">Shrinking Violet</td>
+			  <td style="font-size:20px">shrinkingviolet	</td>
+		 <td style="font-size:20px">4.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">103</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">120</td>
+              <td> <img src="./almanac/plants/Primal_Rafflesia2.webp" ></td>
+              <td style="color:MediumVioletRed               ;font-size:20px">Primal Rafflesia</td>
+			  <td style="font-size:20px">primalrafflesia	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">121</td>
+              <td> <img src="./almanac/plants/Dinonip2.webp" ></td>
+              <td style="color:LimeGreen                ;font-size:20px">Dinonip</td>
+			  <td style="font-size:20px">dragonroar	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">122</td>
+              <td> <img src="./almanac/plants/Thorns2.webp" ></td>
+              <td style="color:DarkGreen                 ;font-size:20px">Thorns</td>
+			  <td style="font-size:20px">bramble	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">123</td>
+              <td> <img src="./almanac/plants/Mastercane2.webp" ></td>
+              <td style="color:MediumVioletRed                 ;font-size:20px">Mastercane</td>
+			  <td style="font-size:20px">dragoncane	</td>
+		 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Unknown</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">124</td>
+              <td> <img src="./almanac/plants/Moonflower2.webp" ></td>
+              <td style="color:DarkTurquoise                  ;font-size:20px">Moonflower</td>
+			  <td style="font-size:20px">moonflower	</td>
+		 <td style="font-size:20px">4.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">104</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">125</td>
+              <td> <img src="./almanac/plants/Nightshade2.webp" ></td>
+              <td style="color:MediumOrchid                   ;font-size:20px">Nightshade</td>
+			  <td style="font-size:20px">nightshade	</td>
+		 <td style="font-size:20px">4.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">105</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">126</td>
+              <td> <img src="./almanac/plants/Shadow-shroom2.webp" ></td>
+              <td style="color:DarkOrchid                   ;font-size:20px">	Shadow-shroom</td>
+			  <td style="font-size:20px">shadowshroom	</td>
+		 <td style="font-size:20px">4.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">106</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">127</td>
+              <td> <img src="./almanac/plants/Blooming_Heart2.webp" ></td>
+              <td style="color:MediumVioletRed                    ;font-size:20px">	Blooming Heart</td>
+			  <td style="font-size:20px">bloominghearts	</td>
+		 <td style="font-size:20px">4.4.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">107</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">128</td>
+              <td> <img src="./almanac/plants/Dusk_Lobber2.webp" ></td>
+              <td style="color:LimeGreen                     ;font-size:20px">	Dusk Lobber</td>
+			  <td style="font-size:20px">dusklobber	</td>
+		 <td style="font-size:20px">4.5.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">110</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">129</td>
+              <td> <img src="./almanac/plants/Escape_Root2.webp" ></td>
+              <td style="color:DarkGoldenRod                      ;font-size:20px">	Escape Root</td>
+			  <td style="font-size:20px">escaperoot	</td>
+		 <td style="font-size:20px">4.5.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">108</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">130</td>
+              <td> <img src="./almanac/plants/Grimrose2.webp" ></td>
+              <td style="color:DarkViolet                      ;font-size:20px">	Grimrose</td>
+			  <td style="font-size:20px">grimrose	</td>
+		 <td style="font-size:20px">4.5.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">109</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">131</td>
+              <td> <img src="./almanac/plants/Gold_Bloom2.webp" ></td>
+              <td style="color:Gold                      ;font-size:20px">	Gold Bloom</td>
+			  <td style="font-size:20px">goldbloom	</td>
+		 <td style="font-size:20px">4.5.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">111</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">132</td>
+              <td> <img src="./almanac/plants/Electric_Currant2.webp" ></td>
+              <td style="color:Red                      ;font-size:20px">		Electric Currant</td>
+			  <td style="font-size:20px">electriccurrant	</td>
+		 <td style="font-size:20px">4.6.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">112</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">133</td>
+              <td> <img src="./almanac/plants/Wasabi_Whip2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">		Wasabi Whip</td>
+			  <td style="font-size:20px">wasabiwhip	</td>
+		 <td style="font-size:20px">4.8.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">114</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">134</td>
+              <td> <img src="./almanac/plants/Explode-O-Nut2.webp" ></td>
+              <td style="color:Red                      ;font-size:20px">		Explode-O-Nut</td>
+			  <td style="font-size:20px">explodeonut	</td>
+		 <td style="font-size:20px">4.8.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">115</td>
+            </tr>
+          </tbody>
+		  <tr>
+			 <td  style="font-size:20px">135</td>
+              <td> <img src="./almanac/plants/Kiwibeast2.webp" ></td>
+              <td style="color:DarkGoldenRod                      ;font-size:20px">Kiwibeast</td>
+			  <td style="font-size:20px">kiwibeast	</td>
+		 <td style="font-size:20px">	3.3.2</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">116</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">136</td>
+              <td> <img src="./almanac/plants/Aloe2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">Aloe</td>
+			  <td style="font-size:20px">aloe	(vanilla), aloes  (cn)</td>
+		 <td style="font-size:20px">	4.7.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">113	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">137</td>
+              <td> <img src="./almanac/plants/Apple_Mortar2.webp" ></td>
+              <td style="color:Red                      ;font-size:20px">Apple Mortar</td>
+			  <td style="font-size:20px">applemortar	</td>
+		 <td style="font-size:20px">	5.1.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">117	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">138</td>
+              <td> <img src="./almanac/plants/Bombegranate2.webp" ></td>
+              <td style="color:Red                      ;font-size:20px">Bombegranate</td>
+			  <td style="font-size:20px">bombegranate	</td>
+		 <td style="font-size:20px">	5.2.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">118	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">139</td>
+              <td> <img src="./almanac/plants/Witch_Hazel2.webp" ></td>
+              <td style="color:Red                      ;font-size:20px">Witch Hazel</td>
+			  <td style="font-size:20px">witchhazel	</td>
+		 <td style="font-size:20px">	5.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">121	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">140</td>
+              <td> <img src="./almanac/plants/Parsnip2.webp" ></td>
+              <td style="color:DimGray                      ;font-size:20px">Parsnip</td>
+			  <td style="font-size:20px">parsnip	</td>
+		 <td style="font-size:20px">	5.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">120	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">141</td>
+              <td> <img src="./almanac/plants/Missile_Toe2.webp" ></td>
+              <td style="color:DarkTurquoise                      ;font-size:20px">Missile Toe</td>
+			  <td style="font-size:20px">missiletoe	</td>
+		 <td style="font-size:20px">	5.3.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">119	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">142</td>
+              <td> <img src="./almanac/plants/Hot_Date2.webp" ></td>
+              <td style="color:OrangeRed                      ;font-size:20px">Hot Date</td>
+			  <td style="font-size:20px">hotdate	</td>
+		 <td style="font-size:20px">	5.8.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">122	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">143</td>
+              <td> <img src="./almanac/plants/Caulipower2.webp" ></td>
+              <td style="color:DimGray                      ;font-size:20px">Caulipower</td>
+			  <td style="font-size:20px">caulipower	</td>
+		 <td style="font-size:20px">	5.8.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">123	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">144</td>
+              <td> <img src="./almanac/plants/Solar_Tomato2.webp" ></td>
+              <td style="color:Gold                      ;font-size:20px">Solar Tomato</td>
+			  <td style="font-size:20px">solartomato	</td>
+		 <td style="font-size:20px">	6.1.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">124	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">145</td>
+              <td> <img src="./almanac/plants/Electric_Peashooter2.webp" ></td>
+              <td style="color:DarkTurquoise                      ;font-size:20px">Electric Peashooter</td>
+			  <td style="font-size:20px">electricpeashooter	</td>
+		 <td style="font-size:20px">	6.1.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">125	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">146</td>
+              <td> <img src="./almanac/plants/Holly_Barrier2.webp" ></td>
+              <td style="color:Red                      ;font-size:20px">Holly Barrier</td>
+			  <td style="font-size:20px">hollyknight	</td>
+		 <td style="font-size:20px">	6.5.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">126	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">147</td>
+              <td> <img src="./almanac/plants/Holly_Barrier_Leaf2.webp" ></td>
+              <td style="color:White                     ;font-size:20px">Holly Barrier Leaf</td>
+			  <td style="font-size:20px">hollybarrierleaf	</td>
+		 <td style="font-size:20px">	6.5.1</td>
+			   <td style="font-size:20px">Hidden</td>
+			   <td style="font-size:20px">Hidden</td>
+			   
+			   <td style="font-size:20px">127	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">148</td>
+              <td> <img src="./almanac/plants/Holly_Barrier_Leaf_Plant_Food2.webp" ></td>
+              <td style="color:White                     ;font-size:20px">Holly Barrier Leaf Plant Food</td>
+			  <td style="font-size:20px">hollybarrierleafplantfood	</td>
+		 <td style="font-size:20px">	6.5.1</td>
+			   <td style="font-size:20px">Hidden</td>
+			   <td style="font-size:20px">Hidden</td>
+			   
+			   <td style="font-size:20px">128	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">149</td>
+              <td> <img src="./almanac/plants/Fila-mint2.webp" ></td>
+              <td style="color:DarkTurquoise                      ;font-size:20px">Fila-mint</td>
+			  <td style="font-size:20px">filamint	</td>
+		 <td style="font-size:20px">	6.7.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">129	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">150</td>
+              <td> <img src="./almanac/plants/Pepper-mint2.webp" ></td>
+              <td style="color:OrangeRed                      ;font-size:20px">Pepper-mint</td>
+			  <td style="font-size:20px">peppermint	</td>
+		 <td style="font-size:20px">	6.7.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">130	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">151</td>
+              <td> <img src="./almanac/plants/Winter-mint2.webp" ></td>
+              <td style="color:DarkTurquoise                      ;font-size:20px">Winter-mint</td>
+			  <td style="font-size:20px">wintermint	</td>
+		 <td style="font-size:20px">	6.7.1</td>
+			  <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">131	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">152</td>
+              <td> <img src="./almanac/plants/Enlighten-mint2.webp" ></td>
+              <td style="color:Gold                      ;font-size:20px">Enlighten-mint</td>
+			  <td style="font-size:20px">enlightenmint	</td>
+		 <td style="font-size:20px">	6.7.1</td>
+			  <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">132	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">153</td>
+              <td> <img src="./almanac/plants/Reinforce-mint2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">Reinforce-mint</td>
+			  <td style="font-size:20px">reinforcemint	</td>
+		 <td style="font-size:20px">	6.7.1</td>
+			 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">133	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">153</td>
+              <td> <img src="./almanac/plants/Bombard-mint2.webp" ></td>
+              <td style="color:Gold                      ;font-size:20px">Bombard-mint</td>
+			  <td style="font-size:20px">bombardmint	</td>
+		 <td style="font-size:20px">	6.7.1</td>
+			  <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">134	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">154</td>
+              <td> <img src="./almanac/plants/Ail-mint2.webp" ></td>
+              <td style="color:DarkViolet                      ;font-size:20px">Ail-mint</td>
+			  <td style="font-size:20px">ailmint	</td>
+		 <td style="font-size:20px">	6.7.1</td>
+			<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   
+			   <td style="font-size:20px">135	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">155</td>
+              <td> <img src="./almanac/plants/Enchant-mint2.webp" ></td>
+              <td style="color:Purple                      ;font-size:20px">Enchant-mint</td>
+			  <td style="font-size:20px">enchantmint	</td>
+		 <td style="font-size:20px">	6.7.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">136	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">156</td>
+              <td> <img src="./almanac/plants/Contain-mint2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">Contain-mint</td>
+			  <td style="font-size:20px">containmint	</td>
+		 <td style="font-size:20px">	6.7.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">137	</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">157</td>
+              <td> <img src="./almanac/plants/Enforce-mint2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">Enforce-mint</td>
+			  <td style="font-size:20px">enforcemint	</td>
+		 <td style="font-size:20px">	6.7.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">138</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">158</td>
+              <td> <img src="./almanac/plants/Arma-mint2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">Arma-mint</td>
+			  <td style="font-size:20px">armamint	</td>
+		 <td style="font-size:20px">	6.7.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">139</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">159</td>
+              <td> <img src="./almanac/plants/Conceal-mint2.webp" ></td>
+              <td style="color:DarkViolet                      ;font-size:20px">Conceal-mint</td>
+			  <td style="font-size:20px">concealmint	</td>
+		 <td style="font-size:20px">	6.7.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">140</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">160</td>
+              <td> <img src="./almanac/plants/Spear-mint2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">Spear-mint</td>
+			  <td style="font-size:20px">spearmint	</td>
+		 <td style="font-size:20px">	6.7.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">141</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">161</td>
+              <td> <img src="./almanac/plants/Appease-mint2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">Appease-mint</td>
+			  <td style="font-size:20px">appeasemint	</td>
+		 <td style="font-size:20px">	6.9.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">145</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">162</td>
+              <td> <img src="./almanac/plants/Shadow_Peashooter2.webp" ></td>
+              <td style="color:DarkViolet                      ;font-size:20px">Shadow Peashooter</td>
+			  <td style="font-size:20px">shadowpeashooter	</td>
+		 <td style="font-size:20px">	6.9.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">142</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">163</td>
+              <td> <img src="./almanac/plants/Goo_Peashooter2.webp" ></td>
+              <td style="color:DarkViolet                      ;font-size:20px">	Goo Peashooter</td>
+			  <td style="font-size:20px">poisonpeashooter	</td>
+		 <td style="font-size:20px">	6.9.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">143</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">164</td>
+              <td> <img src="./almanac/plants/Sling_Pea2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">		Sling Pea</td>
+			  <td style="font-size:20px">slingpea	</td>
+		 <td style="font-size:20px">	7.0.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">144</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">165</td>
+              <td> <img src="./almanac/plants/Snap_Pea2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">		Snap Pea</td>
+			  <td style="font-size:20px">snappea	</td>
+		 <td style="font-size:20px">	6.9.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">147</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">166</td>
+              <td> <img src="./almanac/plants/Zoybean_Pod2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">		Zoybean Pod</td>
+			  <td style="font-size:20px">zoybeanpod	</td>
+		 <td style="font-size:20px">	7.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">149</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">167</td>
+              <td> <img src="./almanac/plants/Mini_Peashooter2.webp" ></td>
+              <td style="color:White                     ;font-size:20px">		Mini Peashooter</td>
+			  <td style="font-size:20px">minipeashooter	</td>
+		 <td style="font-size:20px">	6.9.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Hidden (Obtaintable)</td>
+			   <td style="font-size:20px">146</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">168</td>
+              <td> <img src="./almanac/plants/Burnade2.webp" ></td>
+              <td style="color:White                     ;font-size:20px">	Burnade</td>
+			  <td style="font-size:20px">burnade	</td>
+		 <td style="font-size:20px">	6.9.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   
+			   <td style="font-size:20px">Hidden (Obtaintable)</td>
+			   <td style="font-size:20px">148</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">169</td>
+              <td> <img src="./almanac/plants/Electrici-tea2.webp" ></td>
+              <td style="color:DarkTurquoise                      ;font-size:20px">	Electrici-tea</td>
+			  <td style="font-size:20px">electricitea	</td>
+		 <td style="font-size:20px">	7.4.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">152</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">170</td>
+              <td> <img src="./almanac/plants/Dazey_Chain2.webp" ></td>
+              <td style="color:DeepPink                       ;font-size:20px">	Dazey Chain</td>
+			  <td style="font-size:20px">dazeychain	</td>
+		 <td style="font-size:20px">	7.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">150</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">171</td>
+              <td> <img src="./almanac/plants/Blastberry_Vine2.webp" ></td>
+              <td style="color:DarkViolet                       ;font-size:20px">		Blastberry Vine</td>
+			  <td style="font-size:20px">blastberry	</td>
+		 <td style="font-size:20px">	7.5.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">151</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">172</td>
+              <td> <img src="./almanac/plants/Pokra2.webp" ></td>
+              <td style="color:LimeGreen                       ;font-size:20px">		Pokra</td>
+			  <td style="font-size:20px">pokra	</td>
+		 <td style="font-size:20px">	7.5.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">154</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">173</td>
+              <td> <img src="./almanac/plants/Imp_Pear2.webp" ></td>
+              <td style="color:DarkViolet                       ;font-size:20px">		Imp Pear</td>
+			  <td style="font-size:20px">imppear	</td>
+		 <td style="font-size:20px">	7.5.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">153</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">174</td>
+              <td> <img src="./almanac/plants/Pumpkin2.webp" ></td>
+              <td style="color:Orange                       ;font-size:20px">		Pumpkin</td>
+			  <td style="font-size:20px">pumpkin	</td>
+		 <td style="font-size:20px">	7.7.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">157</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">175</td>
+              <td> <img src="./almanac/plants/Pyre_Vine2.webp" ></td>
+              <td style="color:OrangeRed                       ;font-size:20px">		Pyre Vine</td>
+			  <td style="font-size:20px">pyrevine	</td>
+		 <td style="font-size:20px">		7.6.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">156</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">176</td>
+              <td> <img src="./almanac/plants/Ice_Bloom2.webp" ></td>
+              <td style="color:DarkTurquoise                       ;font-size:20px">		Ice Bloom</td>
+			  <td style="font-size:20px">icebloom	</td>
+		 <td style="font-size:20px">		7.7.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">155</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">177</td>
+              <td> <img src="./almanac/plants/Dartichoke2.webp" ></td>
+              <td style="color:LimeGreen                       ;font-size:20px">	Dartichoke</td>
+			  <td style="font-size:20px">dartichoke	</td>
+		 <td style="font-size:20px">		7.9.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">159</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">178</td>
+              <td> <img src="./almanac/plants/Ultomato2.webp" ></td>
+              <td style="color:OrangeRed                       ;font-size:20px">	Ultomato</td>
+			  <td style="font-size:20px">ultomato	</td>
+		 <td style="font-size:20px">		7.9.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">158</td>
+            </tr>
+		  <tbody>
+		  <tr>
+			 <td  style="font-size:20px">179</td>
+              <td> <img src="./almanac/plants/Gumnut2.webp" ></td>
+              <td style="color:GoldenRod                        ;font-size:20px">	Gumnut</td>
+			  <td style="font-size:20px">gumnut	</td>
+		 <td style="font-size:20px">		8.0.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">160</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">180</td>
+              <td> <img src="./almanac/plants/Shine_Vine2.webp" ></td>
+              <td style="color:Gold                        ;font-size:20px">		Shine Vine</td>
+			  <td style="font-size:20px">shinevine	</td>
+		 <td style="font-size:20px">		8.0.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">161</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">181</td>
+              <td> <img src="./almanac/plants/Tumbleweed2.webp" ></td>
+              <td style="color:GoldenRod                        ;font-size:20px">		Tumbleweed</td>
+			  <td style="font-size:20px">tumbleweed	</td>
+		 <td style="font-size:20px">		8.1.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">162</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">182</td>
+              <td> <img src="./almanac/plants/Puffball2.webp" ></td>
+              <td style="color:DarkViolet                        ;font-size:20px">		Puffball</td>
+			  <td style="font-size:20px">puffball	</td>
+		 <td style="font-size:20px">		8.2.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">163</td>
+            </tr>
+		  <tbody>
+		  <tr>
+			 <td  style="font-size:20px">183</td>
+              <td> <img src="./almanac/plants/Olive_Pit2.webp" ></td>
+              <td style="color:Brown                        ;font-size:20px">			Olive Pit</td>
+			  <td style="font-size:20px">olivepit	</td>
+		 <td style="font-size:20px">		8.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">164</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">184</td>
+              <td> <img src="./almanac/plants/Explode-o-Vine2.webp" ></td>
+              <td style="color:Gold                        ;font-size:20px">				Explode-o-Vine</td>
+			  <td style="font-size:20px">explodeovine	</td>
+		 <td style="font-size:20px">		8.3.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">166</td>
+            </tr>
+			<tr>
+			 <td  style="font-size:20px">185</td>
+              <td> <img src="./almanac/plants/Murkadamia_Nut2.webp" ></td>
+              <td style="color:GoldenRod                     ;font-size:20px">Murkadamia Nut</td>
+			  <td style="font-size:20px">murkadamia	</td>
+		 <td style="font-size:20px">		8.3.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">165</td>
+            </tr>
+			<td  style="font-size:20px">186</td>
+              <td> <img src="./almanac/plants/Turkey-pult2.webp" ></td>
+              <td style="color:LimeGreen                     ;font-size:20px">	Turkey-pult</td>
+			  <td style="font-size:20px">turkeypult	</td>
+		 <td style="font-size:20px">		8.4.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">167</td>
+            </tr>
+			<td  style="font-size:20px">187</td>
+              <td> <img src="./almanac/plants/Headbutter_Lettuce2.webp" ></td>
+              <td style="color:LimeGreen                     ;font-size:20px">	Headbutter Lettuce</td>
+			  <td style="font-size:20px">headbutter	</td>
+		 <td style="font-size:20pxs">		8.5.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">168</td>
+            </tr>
+			<td  style="font-size:20px">188</td>
+              <td> <img src="./almanac/plants/Boingsetta2.webp" ></td>
+              <td style="color:DarkTurquoise                     ;font-size:20px">	Boingsetta</td>
+			  <td style="font-size:20px">boingsetta	</td>
+		 <td style="font-size:20px">		8.5.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">169</td>
+            </tr>
+			<td  style="font-size:20px">189</td>
+              <td> <img src="./almanac/plants/Stickybomb_Rice2.webp" ></td>
+              <td style="color:Gold                     ;font-size:20px">		Stickybomb Rice</td>
+			  <td style="font-size:20px">stickybombrice	</td>
+		 <td style="font-size:20px">		8.6.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">170</td>
+            </tr>
+			<td  style="font-size:20px">190</td>
+              <td> <img src="./almanac/plants/Hocus_Crocus2.webp" ></td>
+              <td style="color:DeepPink                     ;font-size:20px">		Hocus Crocus</td>
+			  <td style="font-size:20px">hocus	</td>
+		 <td style="font-size:20px">		8.6.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">171</td>
+			   </tr>
+			<td  style="font-size:20px">191</td>
+              <td> <img src="./almanac/plants/Gloom_Vine2.webp" ></td>
+              <td style="color:DarkViolet                     ;font-size:20px">Gloom Vine</td>
+			  <td style="font-size:20px">gloomvine	</td>
+			  
+		 <td style="font-size:20px">		8.7.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   
+			   <td style="font-size:20px">172</td>
+			   </tr>
+			   <td  style="font-size:20px">192</td>
+              <td> <img src="./almanac/plants/Draftodil2.webp" ></td>
+              <td style="color:Gold                     ;font-size:20px">Draftodil</td>
+			  <td style="font-size:20px">draftodil	</td>
+				<td style="font-size:20px">8.7.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">173</td>
+			   </tr>
+			   <td  style="font-size:20px">193</td>
+              <td> <img src="./almanac/plants/Boom_Balloon_Flower2.webp" ></td>
+              <td style="color:LimeGreen                     ;font-size:20px">Boom Balloon Flower</td>
+			  <td style="font-size:20px">boomflower	</td>
+				<td style="font-size:20px">8.8.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">174</td>
+			   </tr>
+			   <td  style="font-size:20px">194</td>
+              <td> <img src="./almanac/plants/Pea_Vine2.webp" ></td>
+              <td style="color:LimeGreen                     ;font-size:20px">	Pea Vine</td>
+			  <td style="font-size:20px">pvine	</td>
+				<td style="font-size:20px">8.8.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">175</td>
+			   </tr>
+			   <td  style="font-size:20px">195</td>
+              <td> <img src="./almanac/plants/Inferno2.webp" ></td>
+              <td style="color:Crimson                     ;font-size:20px">	Inferno</td>
+			  <td style="font-size:20px">inferno	</td>
+				<td style="font-size:20px">8.9.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">176</td>
+			   </tr>
+			   <td  style="font-size:20px">196</td>
+              <td> <img src="./almanac/plants/Solar_Sage2.webp" ></td>
+              <td style="color:Gold                     ;font-size:20px">	Solar Sage</td>
+			  <td style="font-size:20px">solarsage	</td>
+				<td style="font-size:20px">9.0.1</td><td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">177</td>
+			   </tr>
+			   <td  style="font-size:20px">197</td>
+              <td> <img src="./almanac/plants/Power_Vine2.webp" ></td>
+              <td style="color:DarkTurquoise                     ;font-size:20px">Power Vine</td>
+			  <td style="font-size:20px">powervine	</td>
+				<td style="font-size:20px">9.1.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">178</td>
+			   </tr>
+			    <td  style="font-size:20px">198</td>
+              <td> <img src="./almanac/plants/Noctarine2.webp" ></td>
+              <td style="color:Orange                     ;font-size:20px">	Noctarine</td>
+			  <td style="font-size:20px">noctarine	</td>
+				<td style="font-size:20px">9.1.1</td>
+			 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">179</td>
+			   </tr>
+			   
+			   <td  style="font-size:20px">199</td>
+              <td> <img src="./almanac/plants/Noctarine_Cloud2.webp" ></td>
+              <td style="color:White                    ;font-size:20px">	Noctarine Cloud</td>
+			  <td style="font-size:20px">noctarinecloud	</td>
+				<td style="font-size:20px">9.1.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Hidden</td>
+			   <td style="font-size:20px">180</td>
+			   </tr>
+			   <td  style="font-size:20px">200</td>
+              <td> <img src="./almanac/plants/Heath_Seeker2.webp" ></td>
+              <td style="color:DeepPink                     ;font-size:20px">	Heath Seeker</td>
+			  <td style="font-size:20px">heathseeker	</td>
+				<td style="font-size:20px">9.2.1</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">181</td>
+			   </tr>
+			   <td  style="font-size:20px">201</td>
+              <td> <img src="./almanac/plants/Iceweed2.webp" ></td>
+              <td style="color:DarkTurquoise                     ;font-size:20px">	Iceweed</td>
+			  <td style="font-size:20px">iceweed	</td>
+				<td style="font-size:20px">9.3.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">182</td>
+			   </tr>
+			   <td  style="font-size:20px">202</td>
+              <td> <img src="./almanac/plants/Tiger_Grass2.webp" ></td>
+              <td style="color:LimeGreen                     ;font-size:20px">	Tiger Grass</td>
+			  <td style="font-size:20px">tigergrass	</td>
+				<td style="font-size:20px">9.4.1</td>
+			 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">183</td>
+			   </tr>
+			   <td  style="font-size:20px">203</td>
+              <td> <img src="./almanac/plants/Teleportato_Mine2.webp" ></td>
+              <td style="color:DarkGoldenRod                     ;font-size:20px">		Teleportato Mine</td>
+			  <td style="font-size:20px">teleportatomine	</td>
+				<td style="font-size:20px">9.4.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">184</td>
+			   </tr>
+			   <td  style="font-size:20px">204</td>
+              <td> <img src="./almanac/plants/Blockoli2.webp" ></td>
+              <td style="color:LimeGreen                     ;font-size:20px">		Blockoli</td>
+			  <td style="font-size:20px">blockoli	</td>
+				<td style="font-size:20px">9.5.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">186</td>
+			   </tr>
+			   <td  style="font-size:20px">205</td>
+              <td> <img src="./almanac/plants/Buttercup2.webp" ></td>
+              <td style="color:Gold                     ;font-size:20px">			Buttercup</td>
+			  <td style="font-size:20px">buttercup	</td>
+				<td style="font-size:20px">9.5.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">185</td>
+			   </tr>
+			   <td  style="font-size:20px">206</td>
+              <td> <img src="./almanac/plants/Bramble_Bush2.webp" ></td>
+              <td style="color:DarkGoldenRod                     ;font-size:20px">				Bramble Bush</td>
+			  <td style="font-size:20px">bramblebush	</td>
+				<td style="font-size:20px">9.6.1</td>
+			  <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">187</td>
+			   </tr>
+			   <td  style="font-size:20px">207</td>
+              <td> <img src="./almanac/plants/Rhubarbarian2.webp" ></td>
+              <td style="color:Red                     ;font-size:20px">				Rhubarbarian</td>
+			  <td style="font-size:20px">rhubarbarian	</td>
+				<td style="font-size:20px">9.7.1</td>
+	<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">188</td>
+			   </tr>
+			   <td  style="font-size:20px">208</td>
+              <td> <img src="./almanac/plants/Mega_Gatling_Pea2.webp" ></td>
+              <td style="color:LimeGreen                     ;font-size:20px">				Mega Gatling Pea</td>
+			  <td style="font-size:20px">megagatling	</td>
+				<td style="font-size:20px">9.7.1</td>
+			  <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">189</td>
+			   </tr>
+			   <td  style="font-size:20px">209</td>
+              <td> <img src="./almanac/plants/Levitater2.webp" ></td>
+              <td style="color:Gold                     ;font-size:20px">				Levitater</td>
+			  <td style="font-size:20px">levitater	</td>
+				<td style="font-size:20px">9.8.1</td>
+			 <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">190</td>
+			   </tr>
+			   <td  style="font-size:20px">210</td>
+              <td> <img src="./almanac/plants/Tomb_Tangler2.webp" ></td>
+              <td style="color:DarkGoldenRod                     ;font-size:20px">				Tomb Tangler</td>
+			  <td style="font-size:20px">tombtangler	</td>
+				<td style="font-size:20px">9.9.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">191</td>
+			   </tr>
+			   <td  style="font-size:20px">211</td>
+              <td> <img src="./almanac/plants/Flat-shroom2.webp" ></td>
+              <td style="color:Red                     ;font-size:20px">				Flat-shroom</td>
+			  <td style="font-size:20px">flattenedshroom	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">212</td>
+              <td> <img src="./almanac/plants/Lotus_Root2.webp" ></td>
+              <td style="color:DarkGoldenRod                     ;font-size:20px">Lotus Root</td>
+			  <td style="font-size:20px">lotusshooter	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">213</td>
+              <td> <img src="./almanac/plants/Passionflower2.webp" ></td>
+              <td style="color:Gold                     ;font-size:20px">Passionflower</td>
+			  <td style="font-size:20px">passionflower	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   
+			    <td  style="font-size:20px">214</td>
+              <td> <img src="./almanac/plants/Fanilla2.webp" ></td>
+              <td style="color:Gold                     ;font-size:20px">Fanilla</td>
+			  <td style="font-size:20px">vanilla	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">215</td>
+              <td> <img src="./almanac/plants/Berry_Blaster2.webp" ></td>
+              <td style="color:FireBrick                      ;font-size:20px">Berry Blaster</td>
+			  <td style="font-size:20px">mulberry	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">216</td>
+              <td> <img src="./almanac/plants/Lily_of_Alchemy2.webp" ></td>
+              <td style="color:DarkTurquoise                      ;font-size:20px">Lily of Alchemy</td>
+			  <td style="font-size:20px">convallariachemist	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">217</td>
+              <td> <img src="./almanac/plants/Sun_Gun2.webp" ></td>
+              <td style="color:White                     ;font-size:20px">Sun Gun</td>
+			  <td style="font-size:20px">sungun	</td>
+				<td style="font-size:20px">3.4.4</td>
+			   <td style="font-size:20px">Disabled</td>
+			   <td style="font-size:20px">Disabled</td>
+			   <td style="font-size:20px">80</td>
+			   </tr>
+			   <td  style="font-size:20px">218</td>
+              <td> <img src="./almanac/plants/Sun_Pod2.webp" ></td>
+              <td style="color:White                     ;font-size:20px">Sun Pod</td>
+			  <td style="font-size:20px">sunpod	</td>
+				<td style="font-size:20px">3.4.4</td>
+			   <td style="font-size:20px">Disabled</td>
+			   <td style="font-size:20px">Disabled</td>
+			   <td style="font-size:20px">	77</td>
+			   </tr>
+			   <td  style="font-size:20px">219</td>
+              <td> <img src="./almanac/plants/Sprout2.webp" ></td>
+              <td style="color:White                     ;font-size:20px">Sprout</td>
+			  <td style="font-size:20px">sprout	</td>
+				<td style="font-size:20px">3.4.4</td>
+			   <td style="font-size:20px">Disabled</td>
+			   <td style="font-size:20px">Disabled</td>
+			   <td style="font-size:20px">	75</td>
+			   </tr>
+			   <td  style="font-size:20px">220</td>
+              <td> <img src="./almanac/plants/Zorrose2.webp" ></td>
+              <td style="color:DeepPink                      ;font-size:20px">Zorrose</td>
+			  <td style="font-size:20px">roseswordman	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">221</td>
+              <td> <img src="./almanac/plants/Kinnikannon2.webp" ></td>
+              <td style="color:DeepPink                      ;font-size:20px">Kinnikannon</td>
+			  <td style="font-size:20px">bearberry	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">222</td>
+              <td> <img src="./almanac/plants/Wax_Guard2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">Wax Guard</td>
+			  <td style="font-size:20px">waxgourd	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">223</td>
+              <td> <img src="./almanac/plants/Oil_Olive2.webp" ></td>
+              <td style="color:LimeGreen                      ;font-size:20px">Oil Olive</td>
+			  <td style="font-size:20px">olive	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   
+			   <td  style="font-size:20px">224</td>
+              <td> <img src="./almanac/plants/Ruby_Red2.webp" ></td>
+              <td style="color:Red                      ;font-size:20px">Ruby Red</td>
+			  <td style="font-size:20px">pomegranatejeweler	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    
+			   <td  style="font-size:20px">225</td>
+              <td> <img src="./almanac/plants/Dripphylleia2.webp" ></td>
+              <td style="color:DarkTurquoise                       ;font-size:20px">Dripphylleia</td>
+			  <td style="font-size:20px">icelotus	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">226</td>
+              <td> <img src="./almanac/plants/Windbreak_Dendrobium2.webp" ></td>
+              <td style="color:LimeGreen                       ;font-size:20px">Windbreak Dendrobium</td>
+			  <td style="font-size:20px">dendrobiumguard	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">227</td>
+              <td> <img src="./almanac/plants/Splitting_Stephania2.webp" ></td>
+              <td style="color:DarkGoldenRod                       ;font-size:20px">Splitting Stephania</td>
+			  <td style="font-size:20px">stephania	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">228</td>
+              <td> <img src="./almanac/plants/Kunai_Tupistra2.webp" ></td>
+              <td style="color:LimeGreen                       ;font-size:20px">Kunai Tupistra</td>
+			  <td style="font-size:20px">tupistrastalker	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">229</td>
+              <td> <img src="./almanac/plants/Orchid_Chef2.webp" ></td>
+              <td style="color:Red                       ;font-size:20px">Orchid Chef</td>
+			  <td style="font-size:20px">cypripedium	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">230</td>
+              <td> <img src="./almanac/plants/Geisha_Flower2.webp" ></td>
+              <td style="color:DimGray                       ;font-size:20px">Geisha Flower</td>
+			  <td style="font-size:20px">boophonegeisha	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">231</td>
+              <td> <img src="./almanac/plants/Ents2.webp" ></td>
+              <td style="color:DarkGoldenRod                       ;font-size:20px">Ents</td>
+			  <td style="font-size:20px">ents	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">232</td>
+              <td> <img src="./almanac/plants/Hat_Mushroom2.webp" ></td>
+              <td style="color:MediumVioletRed                       ;font-size:20px">Hat Mushroom</td>
+			  <td style="font-size:20px">hatmushroom	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">233</td>
+              <td> <img src="./almanac/plants/Spring_Princess2.webp"></td>
+              <td style="color:LimeGreen                       ;font-size:20px">Spring Princess</td>
+			  <td style="font-size:20px">springprincess	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">234</td>
+              <td> <img src="./almanac/plants/Bamzooka2.webp"></td>
+              <td style="color:DarkTurquoise                       ;font-size:20px">Bamzooka</td>
+			  <td style="font-size:20px">riflebamboo	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">235</td>
+              <td> <img src="./almanac/plants/Aggro_Brocco2.webp"></td>
+              <td style="color:LimeGreen                       ;font-size:20px">Aggro Brocco</td>
+			  <td style="font-size:20px">broccoli	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">236</td>
+              <td> <img src="./almanac/plants/Cryo-shroom2.webp"></td>
+              <td style="color:DarkTurquoise                       ;font-size:20px">Cyro-shroom</td>
+			  <td style="font-size:20px">iceshroom	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">237</td>
+              <td> <img src="./almanac/plants/Pyro-shroom2.webp"></td>
+              <td style="color:OrangeRed                       ;font-size:20px">Pyro-shroom</td>
+			  <td style="font-size:20px">fireshroom	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">238</td>
+              <td> <img src="./almanac/plants/Carrotillery2.webp"></td>
+              <td style="color:Orange                       ;font-size:20px">Carrotillery</td>
+			  <td style="font-size:20px">carrotlauncher	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">239</td>
+              <td> <img src="./almanac/plants/Pomegunate2.webp"></td>
+              <td style="color:OrangeRed                       ;font-size:20px">Pomegunate</td>
+			  <td style="font-size:20px">pamegranate	</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">240</td>
+              <td> <img src="./almanac/plants/Lord_Bamboo2.webp"></td>
+              <td style="color:DarkGreen                        ;font-size:20px">Lord Bamboo</td>
+			  <td style="font-size:20px">cracker						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">241</td>
+              <td> <img src="./almanac/plants/Chest-nut2.webp"></td>
+              <td style="color:SeaGreen                          ;font-size:20px">Chest-nut</td>
+			  <td style="font-size:20px">chestnut						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">242</td>
+              <td> <img src="./almanac/plants/Bambrook2.webp"></td>
+              <td style="color:LimeGreen                          ;font-size:20px">Bambrook</td>
+			  <td style="font-size:20px">sugarcane						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">243</td>
+              <td> <img src="./almanac/plants/Magic-shroom2.webp"></td>
+              <td style="color:DimGray                          ;font-size:20px">Magic-shroom</td>
+			  <td style="font-size:20px">magicshroom						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">244</td>
+              <td> <img src="./almanac/plants/Pumpkin_Witch2.webp"></td>
+              <td style="color:OrangeRed                          ;font-size:20px">Pumpkin Witch</td>
+			  <td style="font-size:20px">pumpkinwitch						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">245</td>
+              <td> <img src="./almanac/plants/Sunflower_Singer2.webp"></td>
+              <td style="color:Gold                          ;font-size:20px">Sunflower Singer</td>
+			  <td style="font-size:20px">birthsunflower						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">246</td>
+              <td> <img src="./almanac/plants/Snowy_Cotton2.webp"></td>
+              <td style="color:DimGray                          ;font-size:20px">Snowy Cotton</td>
+			  <td style="font-size:20px">cottonyeti						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">247</td>
+              <td> <img src="./almanac/plants/Guerrequila2.webp"></td>
+              <td style="color:DarkGreen                           ;font-size:20px">Guerrequila</td>
+			  <td style="font-size:20px">agave						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">248</td>
+              <td> <img src="./almanac/plants/Monkeyfruit2.webp"></td>
+              <td style="color:GoldenRod                            ;font-size:20px">Monkeyfruit</td>
+			  <td style="font-size:20px">kiwifruit						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">249</td>
+              <td> <img src="./almanac/plants/Carrot_Missile2.webp"></td>
+              <td style="color:Orange                            ;font-size:20px">Carrot Missile</td>
+			  <td style="font-size:20px">carrotmissile						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Disabled</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">250</td>
+              <td> <img src="./almanac/plants/Plumping_Plummy2.webp"></td>
+              <td style="color:SaddleBrown                             ;font-size:20px">Plumping Plummy</td>
+			  <td style="font-size:20px">wintersweet						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">251</td>
+              <td> <img src="./almanac/plants/Dragonfruit2.webp"></td>
+              <td style="color:MediumVioletRed                              ;font-size:20px">Dragonfruit</td>
+			  <td style="font-size:20px">dragonfruit						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">252</td>
+              <td> <img src="./almanac/plants/Angel_Starfruit2.webp"></td>
+              <td style="color:DeepPink                               ;font-size:20px">Angel Starfruit</td>
+			  <td style="font-size:20px">pinkstarfruit						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">253</td>
+              <td> <img src="./almanac/plants/Firebloom_Queen2.webp"></td>
+              <td style="color:Crimson                               ;font-size:20px">Firebloom Queen</td>
+			  <td style="font-size:20px">flamelady						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">254</td>
+              <td> <img src="./almanac/plants/Match_Flower2.webp"></td>
+              <td style="color:OrangeRed                               ;font-size:20px">Match Flower</td>
+			  <td style="font-size:20px">matchflower						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">255</td>
+              <td> <img src="./almanac/plants/Gatling_Pea2.webp"></td>
+              <td style="color:LimeGreen                               ;font-size:20px">Gatling Pea</td>
+			  <td style="font-size:20px">gatlingpea						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">256</td>
+              <td> <img src="./almanac/plants/Cattail2.webp"></td>
+              <td style="color:DeepPink                               ;font-size:20px">Cattail</td>
+			  <td style="font-size:20px">nekotail						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">257</td>
+              <td> <img src="./almanac/plants/Cob_Cannon2.webp"></td>
+              <td style="color:Gold                                ;font-size:20px">Cob Cannon</td>
+			  <td style="font-size:20px">cobcannon						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">258</td>
+              <td> <img src="./almanac/plants/Sumo_Melon2.webp"></td>
+              <td style="color:ForestGreen                                ;font-size:20px">Sumo Melon</td>
+			  <td style="font-size:20px">whitemelon						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">259</td>
+              <td> <img src="./almanac/plants/Icy_Currant2.webp"></td>
+              <td style="color:DarkTurquoise                                ;font-size:20px">Icy Currant</td>
+			  <td style="font-size:20px">icycurrant						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">260</td>
+              <td> <img src="./almanac/plants/Trump_Tulip2.webp"></td>
+              <td style="color:Crimson                                 ;font-size:20px">Trump Tulip</td>
+			  <td style="font-size:20px">tuliptrumpeter						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">261</td>
+              <td> <img src="./almanac/plants/Auberninja2.webp"></td>
+              <td style="color:DarkViolet                                ;font-size:20px">Auberninja</td>
+			  <td style="font-size:20px">eggplantninja						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">262</td>
+              <td> <img src="./almanac/plants/Banana_Dancer2.webp"></td>
+              <td style="color:Gold                                ;font-size:20px">Banana Dancer</td>
+			  <td style="font-size:20px">plantain						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">263</td>
+              <td> <img src="./almanac/plants/Dual_Pistol_Pinecone2.webp"></td>
+              <td style="color:SaddleBrown                                 ;font-size:20px">Dual Pistol Pinecone</td>
+			  <td style="font-size:20px">pinecone						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">264</td>
+              <td> <img src="./almanac/plants/Narcissus2.webp"></td>
+              <td style="color:  ForestGreen                               ;font-size:20px">Narcissus</td>
+			  <td style="font-size:20px">narcissusshooter						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">265</td>
+              <td> <img src="./almanac/plants/Alarm_Arrowhead2.webp"></td>
+              <td style="color:  LimeGreen                                ;font-size:20px">Alarm Arrowhead</td>
+			  <td style="font-size:20px">alarmsagittifolia						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">266</td>
+              <td> <img src="./almanac/plants/Zapdragon2.webp"></td>
+              <td style="color:  DarkTurquoise                                ;font-size:20px">Zapdragon</td>
+			  <td style="font-size:20px">thundersnapdragon						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">267</td>
+              <td> <img src="./almanac/plants/Frostbloom_Queen2.webp"></td>
+              <td style="color:  DarkTurquoise                                ;font-size:20px">Frostbloom Queen</td>
+			  <td style="font-size:20px">monotropa						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">268</td>
+              <td> <img src="./almanac/plants/Egrett_Flower2.webp"></td>
+              <td style="color:  LimeGreen                                ;font-size:20px">Egrett Flower</td>
+			  <td style="font-size:20px">egretflower						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">269</td>
+              <td> <img src="./almanac/plants/Bud-minton2.webp"></td>
+              <td style="color:  LimeGreen                                ;font-size:20px">Bud-minton</td>
+			  <td style="font-size:20px">elaeocarpus						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">270</td>
+              <td> <img src="./almanac/plants/Curling_Corms2.webp"></td>
+              <td style="color:    SaddleBrown                              ;font-size:20px">Curling Corms</td>
+			  <td style="font-size:20px">eleocurling						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">271</td>
+              <td> <img src="./almanac/plants/Dollarweed_Drummer2.webp"></td>
+              <td style="color:    LimeGreen                              ;font-size:20px">Dollarweed Drummer</td>
+			  <td style="font-size:20px">hydrocotyledrummer						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">272</td>
+              <td> <img src="./almanac/plants/Shadow_Fanilla2.webp"></td>
+              <td style="color:    Gold                              ;font-size:20px">Shadow Fanilla</td>
+			  <td style="font-size:20px">shadowvanilla						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">273</td>
+              <td> <img src="./almanac/plants/Bromel_Blade2.webp"></td>
+              <td style="color:    OrangeRed                              ;font-size:20px">Bromel Blade</td>
+			  <td style="font-size:20px">bromelblade						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">274</td>
+              <td> <img src="./almanac/plants/Nuclear_Earthstar2.webp"></td>
+              <td style="color:    OliveDrab                               ;font-size:20px">Nuclear Earthstar</td>
+			  <td style="font-size:20px">nukelauncher						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">275</td>
+              <td> <img src="./almanac/plants/Soda_Bottle_Palm2.webp"></td>
+              <td style="color:    Gold                              ;font-size:20px">Soda Bottle Palm</td>
+			  <td style="font-size:20px">beercoconut						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">276</td>
+              <td> <img src="./almanac/plants/Tiger_Claw2.webp"></td>
+              <td style="color:    OrangeRed                               ;font-size:20px">Tiger Claw</td>
+			  <td style="font-size:20px">clawgloriosa						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">277</td>
+              <td> <img src="./almanac/plants/Impaintiens2.webp"></td>
+              <td style="color:    DimGray                               ;font-size:20px">Impaintiens</td>
+			  <td style="font-size:20px">impatiensshooter						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">278</td>
+              <td> <img src="./almanac/plants/Hammerflower2.webp"></td>
+              <td style="color:    LimeGreen                               ;font-size:20px">Hammerflower</td>
+			  <td style="font-size:20px">hammerflower						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">279</td>
+              <td> <img src="./almanac/plants/Tigerstool2.webp"></td>
+              <td style="color:    OrangeRed                               ;font-size:20px">Tigerstool</td>
+			  <td style="font-size:20px">tigerstool						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			    <td  style="font-size:20px">280</td>
+              <td> <img src="./almanac/plants/Mangosteen2.webp"></td>
+              <td style="color:    MediumVioletRed                                ;font-size:20px">Mangosteen</td>
+			  <td style="font-size:20px">mangosteen						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">280</td>
+              <td> <img src="./almanac/plants/Gardenergrass2.webp"></td>
+              <td style="color:    DeepPink                                ;font-size:20px">Gardenergrass</td>
+			  <td style="font-size:20px">gardenergrass						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">281</td>
+              <td> <img src="./almanac/plants/Fishhook_Grass2.webp"></td>
+              <td style="color:    LimeGreen                                ;font-size:20px">Fishhook Grass</td>
+			  <td style="font-size:20px">fishhookgrass						</td>
+				<td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Unknown</td>
+			   </tr>
+			   <td  style="font-size:20px">282</td>
+              <td> <img src="./almanac/plants/Vamporcini2.webp"></td>
+              <td style="color:    DarkOrchid                                 ;font-size:20px">Vamporcini</td>
+			  <td style="font-size:20px">vamporcini						</td>
+				<td style="font-size:20px">10.0.1</td>
+			   <td style="font-size:20px">Unknown</td>
+			   <td style="font-size:20px">Yes</td>
+			   <td style="font-size:20px">192</td>
+			   </tr>
+			   </tr>
+            </tr>
+		  <tbody>
+        </table>
+      </div>
+	  <div class="doc-footer-nav mdui-color-theme">
+  <div class="mdui-container ">
+    <div class="mdui-row ">
+            <a  class="mdui-ripple mdui-color-theme mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left">
+        <div class="doc-footer-nav-text">
+		<i class="mdui-icon material-icons">copyright</i>
+          <span class="doc-footer-nav-direction mdui-hidden-xs-down" style="font-size:20px">Từ chối trách nhiệm</span>
+          <div class="doc-footer-nav-chapter mdui-hidden-xs-down">Hình ảnh thuộc về EA, PopCap, PopCap Thượng Hải và TalkWeb</div>
+        </div>
+      </a>
+
+            <a class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
+        <div class="doc-footer-nav-text">
+		<i class="mdui-icon material-icons">network_wifi</i>
+          <span class="doc-footer-nav-direction" style="font-size:20px">Lỗi</span>
+          <div class="doc-footer-nav-chapter">Kiểm tra lại kết nối mạng và thử lại</div>
+        </div>
+      </a>
+          </div>
+  </div>
+</div>
+</center>
+<script src="./assets/mdui-v0.4.2/js/mdui.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,471 @@
+{"#comment": "^~ Middle Ages ~^ | ELM: Ver-9.2 [ECL Alpha 3.5]",
+"#zombies": "dark, dark_armor1, dark_armor2, dark_armor3, dark_imp_dragon, night_camel, beach_armor4, hellbird",
+"objects": [{
+    "objclass": "LevelDefinition",
+    "objdata": {
+    "StartingSun": 50,
+    "Description": "MY EYESSSS",
+    "FirstRewardParam": "big_moneybag",
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+        "DelayLoad_Background_Beach",
+        "DelayLoad_Background_Beach_Compressed",
+        "Tombstone_Dark_Special",
+        "Tombstone_Dark_Effects"
+    ],
+    "Modules": [
+        "RTID(TechnicalZombieOverride@LevelModules)",
+        "RTID(DarkMowers@LevelModules)",
+        "RTID(StandardIntro@LevelModules)",
+        "RTID(GI@CurrentLevel)",
+        "RTID(SeedBank@CurrentLevel)",
+        "RTID(DefaultSunDropper@LevelModules)",
+        "RTID(Escalation@CurrentLevel)",
+        "RTID(NewWaves@CurrentLevel)",
+        "RTID(ZombiesDeadWinCon@LevelModules)",
+        "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+    "Name": "^~ Middle Ages ~^",
+    "StageModule": "RTID(DarkDayStage@LevelModules)",
+    "MusicType": "MiniGame_A"
+}},
+{"aliases": ["SeedBank"],
+"objclass": "SeedBankProperties",
+"objdata": {
+    "PresetPlantList": [
+        {"PlantType": "sunflower", "Level":2},
+        {"PlantType": "puffshroom", "Level":0},
+        {"PlantType": "primalwallnut", "Level":0},
+        {"PlantType": "fumeshroom", "Level":0},
+        {"PlantType": "sunshroom", "Level":0},
+        {"PlantType": "peanut", "Level":0},
+        {"PlantType": "primalpeashooter", "Level":0}
+    ],
+    "SelectionMethod": "preset"
+}},
+{"aliases":["BeatTheLevel"],
+"objclass": "StarChallengeBeatTheLevelProps",
+"objdata": {
+    "Description": "Survive the zombie attack with the given plants",
+    "DescriptiveName": "Custom Objective"
+}},
+{"aliases":["GI"],
+"objclass":"InitialGridItemProperties",
+"objdata":{
+    "InitialGridItemPlacements": [
+        {"GridX": 5, "GridY": 0, "TypeName":"gravestone_dark"},
+        {"GridX": 6, "GridY": 0, "TypeName":"gravestone_dark"},
+        {"GridX": 7, "GridY": 1, "TypeName":"gravestone_dark"},
+        {"GridX": 8, "GridY": 1, "TypeName":"gravestone_dark"},
+        {"GridX": 5, "GridY": 2, "TypeName":"gravestone_dark"},
+        {"GridX": 7, "GridY": 2, "TypeName":"gravestone_dark"},
+        {"GridX": 4, "GridY": 3, "TypeName":"gravestone_dark"},
+        {"GridX": 6, "GridY": 3, "TypeName":"gravestone_dark"},
+        {"GridX": 8, "GridY": 3, "TypeName":"gravestone_dark"},
+        {"GridX": 6, "GridY": 4, "TypeName":"gravestone_dark"},
+        {"GridX": 7, "GridY": 4, "TypeName":"gravestone_dark"}
+    ]
+}},
+{"aliases": ["Escalation"],
+"objclass": "LevelEscalationModuleProperties",
+"objdata": {
+    "FlagCount": 3,
+    "WavesPerFlag": 7,
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0,
+    "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+    "ZombiePool": [
+        "RTID(tutorial@ZombieTypes)"
+    ]
+}},
+{"aliases": ["NewWaves"],
+"objclass": "WaveManagerModuleProperties",
+"objdata": {}
+},
+{"aliases": ["WaveManager"],
+"objclass": "WaveManagerProperties",
+"objdata": {
+    "FlagWaveInterval": 7,
+    "WaveCount": 21,
+    "SuppressFlagZombie": false,
+    "Waves": [
+        ["RTID(Wave1@.)"],
+        ["RTID(Wave2@.)"],
+        ["RTID(Wave3@.)"],
+        ["RTID(Wave4@.)"],
+        ["RTID(Wave5@.)", "RTID(SpidRain5@.)"],
+        ["RTID(Wave6@.)"],
+        ["RTID(Wave7@.)"],
+        ["RTID(Wave8@.)"],
+        ["RTID(Wave9@.)"],
+        ["RTID(Wave10@.)", "RTID(SpidRain10@.)"],
+        ["RTID(Wave11@.)", "RTID(SpidRain11@.)"],
+        ["RTID(Wave12@.)"],
+        ["RTID(Wave13@.)"],
+        ["RTID(Wave14@.)", "RTID(SpidRain14@.)"],
+        ["RTID(Wave15@.)"],
+        ["RTID(Wave16@.)"],
+        ["RTID(Wave17@.)"],
+        ["RTID(Wave18@.)"],
+        ["RTID(Wave19@.)"],
+        ["RTID(Wave20@.)"],
+        ["RTID(Wave21@.)", "RTID(SpidRain21@.)"]
+    ]
+}},
+{"aliases":["Wave1"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave2"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave3"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave4"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave5"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave6"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dark@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave7"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_imp_dragon@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave8"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dark@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave9"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_armor1@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave10"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(night_camel@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave11"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_armor3@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave12"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(night_camel@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave13"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor3@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_armor3@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dark@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave14"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dark_armor3@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_armor3@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_armor3@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave15"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_armor3@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_armor3@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave16"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "3", "Type": "RTID(beach_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(hellbird@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave17"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(beach_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(beach_armor4@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave18"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_imp_dragon@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_imp_dragon@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave19"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark_armor3@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(hellbird@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(beach_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_armor3@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave20"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "2", "Type": "RTID(beach_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(beach_armor4@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(beach_armor4@ZombieTypes)"}
+    ]
+}},
+
+{"aliases":["Wave21"],
+"objclass": "SpawnZombiesJitteredWaveActionProps",
+"objdata":{
+    "AdditionalPlantfood": 0,
+    "Zombies": [
+        {"Row": "1", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor1@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(dark_armor3@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(dark_armor3@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(dark_armor2@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(beach_armor4@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(night_camel@ZombieTypes)"},
+        {"Row": "1", "Type": "RTID(hellbird@ZombieTypes)"},
+        {"Row": "2", "Type": "RTID(beach_armor4@ZombieTypes)"},
+        {"Row": "3", "Type": "RTID(hellbird@ZombieTypes)"},
+        {"Row": "4", "Type": "RTID(hellbird@ZombieTypes)"},
+        {"Row": "5", "Type": "RTID(night_camel@ZombieTypes)"}
+    ]
+}},
+{"aliases":["SpidRain5"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 5,
+    "ColumnEnd": 9,
+    "SpiderCount": 3,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "dark_imp_dragon",
+    "WaveStartMessage": "Dragon Raiders!"
+}},
+{"aliases":["SpidRain10"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 5,
+    "ColumnEnd": 9,
+    "SpiderCount": 8,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "dark_imp_dragon",
+    "WaveStartMessage": "Dragon Raiders!"
+}},
+{"aliases":["SpidRain11"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 5,
+    "ColumnEnd": 9,
+    "SpiderCount": 8,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "dark_imp_dragon",
+    "WaveStartMessage": "Dragon Raiders!"
+}},
+{"aliases":["SpidRain14"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 5,
+    "ColumnEnd": 9,
+    "SpiderCount": 15,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "dark_imp_dragon",
+    "WaveStartMessage": "Dragon Raiders!"
+}},
+{"aliases":["SpidRain21"],
+"objclass": "SpiderRainZombieSpawnerProps",
+"objdata": {
+    "ColumnStart": 5,
+    "ColumnEnd": 9,
+    "SpiderCount": 75,
+    "GroupSize": 1,
+    "TimeBetweenGroups": "0",
+    "ZombieFallTime": "2",
+    "SpiderZombieName": "dark_imp_dragon",
+    "WaveStartMessage": "Dragon Raiders!"
+}},
+        {}
+    ],
+    "version": 1
+}

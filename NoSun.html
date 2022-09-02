@@ -1,0 +1,579 @@
+<title>Công Cụ Haruma</title>
+<html translate="no"></html>
+<head><meta name="google" content="notranslate"></head>
+<link rel="shortcut png" href="./icons/raiden1.png"  >
+<style> 
+
+
+@font-face {
+font-size: 55px;
+   font-family: myFirstFont;
+   src: url(fbUsv8C5eI-Black.woff);
+}
+
+* {
+   font-family: myFirstFont;
+}
+</style>
+
+<link rel="stylesheet" href="./assets/mdui-v0.4.3/css/mdui.min.css"/>
+
+<script src="./assets/mdui-v0.4.3/js/mdui.min.js"></script>
+<script src="./snackbar/success.js"></script>
+<script src="./snackbar/finished.js"></script>
+<script src="./snackbar/copy.js"></script>
+<script src="./snackbar/clear.js"></script>
+<link rel="stylesheet" href="./snackbar/success.css"/>
+  <link rel="stylesheet" href="./snackbar/finished.css"/>
+  <link rel="stylesheet" href="./snackbar/copy.css"/>
+  <link rel="stylesheet" href="./snackbar/clear.css"/>
+<div class="mdui-container">
+  <div class="mdui-tab mdui-tab-scrollable  mdui-tab">
+        <a style="font-size:20px" href="index.html" class="mdui-ripple">Hướng dẫn</a>
+  <a style="font-size:20px" href="WaveCreator.html"   class="mdui-ripple">Tạo Đợt</a>
+    <a style="font-size:20px" href="HarumaLab.html"class="mdui-tab-active" >Tạo Màn chơi</a>
+	<a style="font-size:20px" href="PlantSet.html" class="mdui-ripple">Chọn cây</a>
+	<a style="font-size:20px" href="Sandsnow.html" class="mdui-ripple">Sự kiện Bão</a>
+<a style="font-size:20px" href="RaidingParty.html" class="mdui-ripple">Tiệc Đột kích</a>
+    <a style="font-size:20px" href="Tide.html" class="mdui-ripple">Tạo Thuỷ triều</a>
+    <a style="font-size:20px" href="Tidal.html" class="mdui-ripple">Đổi thủy triều</a>
+    <a style="font-size:20px" href="LowTide.html" class="mdui-ripple">Rút nước</a>
+    <a style="font-size:20px" href="Grids.html" class="mdui-ripple">Đặt Lưới</a>
+    <a style="font-size:20px" href="Necromancy.html" class="mdui-ripple">Chiêu hồn</a>
+    <a style="font-size:20px" href="ItemSpawn.html" class="mdui-ripple">Tạo vật</a>
+    <a style="font-size:20px" href="FrozenZomb.html.html" class="mdui-ripple">Thây ma đóng băng</a>
+<a style="font-size:20px" href="ParachuteRain.html" class="mdui-ripple">Mưa Dù</a>
+    <a style="font-size:20px" href="Dino.html" class="mdui-ripple">Đặt Khủng long</a>	
+	<a style="font-size:20px" href="PML.html" class="mdui-ripple">Đặt Xe mìn</a>
+    <a style="font-size:20px" href="Winds.html" class="mdui-ripple">Gió Băng</a>
+    <a style="font-size:20px" href="Planks.html" class="mdui-ripple">Đặt Ván</a>
+    <a style="font-size:20px" href="Zomboss.html" class="mdui-ripple">Tạo Zomboss</a>
+    <a style="font-size:20px" href="MoldColony.html" class="mdui-ripple">Thuộc địa Nấm mốc</a>
+    <a style="font-size:20px" href="DangerP.html" class="mdui-ripple">Cây nguy hiểm</a>
+    <a style="font-size:20px" href="PlantPlant.html" class="mdui-ripple">Đặt cây</a>
+    <a style="font-size:20px" href="PPT.html" class="mdui-ripple">Tạo Cổng</a>
+    <a style="font-size:20px" href="PlantPower.html" class="mdui-ripple">Ô Sức mạnh</a>
+    <a style="font-size:20px" href="Olaf.html" class="mdui-ripple">Chiều không gian Hỗn loạn</a>
+    <a style="font-size:20px" href="Spidy.html" class="mdui-ripple">Mưa Bot</a>
+	<a style="font-size:20px" href="jsonedit.html" class="mdui-ripple">Công cụ PVZH</a>
+	<a style="font-size:20px" href="internalcode.html" class="mdui-ripple">Mã gốc (Cây)</a>
+  <a style="font-size:20px" href="download.html" class="mdui-ripple">Tải RSB</a>
+  </div>
+</div>
+<body  class="mdui-text-color-white mdui-theme-layout-dark mdui-text-color-black-icon">
+<center>
+	<p style="font-size:40px" ><img src="./HarumaTools/grids/vietnam.png"> Tạo cấp độ phiên bản 1.6.5 <img src="./HarumaTools/grids/vietnam.png"></p>
+<p style="font-size:40px"><img src="./HarumaTools/grids/nosun.png"> Đây là phiên bản không có Mặt Trời <img src="./HarumaTools/grids/nosun.png"></p>
+<input type="button" style="font-size:20px"  onclick="location.href='HarumaLab.html';" class="mdui-btn mdui-btn-dense mdui-textfiled" value="Chuyển sang có mặt trời rơi" />
+</p>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+	<label style="font-size:25px" class="mdui-textfield-label">Bình luận</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="Cap do nay duoc lam boi Cong Cu Haruma phien ban 1.6.5" id="comment" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label">Mô tả màn</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="descripsion" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+    <div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label">Cấp độ của Lưới</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="1" id="grid" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label"> Phần thưởng đầu tiên</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="rewardparam" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Loại hình của phần thưởng</label>
+    <select  id="rewardtype" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="">Không có</option>
+      <option style="font-size:25px" value="unlock_plant">Mở khóa Thực Phẩm</option>
+      <option style="font-size:25px" value="powerupgadget">Sức mạnh</option>
+      <option style="font-size:25px" value="mapgadget">Mở khóa Bản đồ</option>
+      <option style="font-size:25px" value="pinata">Pinata</option>
+      <option style="font-size:25px" value="upgrade">Nâng cấp</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Giới Thiệu Màn</label>
+    <select  id="intro" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="StandardIntro">Mặc Định</option>
+      <option style="font-size:25px" value="ZombossIntro">Zomboss</option>
+      <option style="font-size:25px" value="EightiesZombossIntro">Thập Niên 80's Zomboss</option>
+      <option style="font-size:25px" value="LevelOfTheDayIntro">Sự Kiện</option>
+      <option style="font-size:25px" value="VaseBreakerArcade">Đập Bình</option>
+      <option style="font-size:25px" value="BeghouledIntro">Xếp Hình</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Sức mạnh đặt sẵn</label>
+    <select  id="powerupset" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="LevelPowerupsDefault">Mặc Định</option>
+      <option style="font-size:25px" value="LevelPowerupsDisabled">Vô hiệu hóa</option>
+      <option style="font-size:25px" value="LevelPowerupsVasebreaker">Đập Bình</option>
+      <option style="font-size:25px" value="LevelPowerupsUnlimited">Vô Hạn</option>
+      <option style="font-size:25px" value="LevelPowerupsFlameThrower">Có Lửa</option>
+      <option style="font-size:25px" value="LevelPowerupsBeghouled">Xếp Hình</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Tắt tăng cường thực vật </label>
+    <select  id="boost" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="false">Sai</option>
+      <option style="font-size:25px" value="true">Đúng</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Bắt buộc về Bản đồ</label>
+    <select  id="mapforce" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="false">Sai</option>
+      <option style="font-size:25px" value="true">Đúng</option>
+    </select>
+	</div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label"> Cấp độ của Màn</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="levelnumber" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Thông số Nhặt xu</label>
+    <select  id="loot" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="DefaultLoot">Mặc Định</option>
+      <option style="font-size:25px" value="WhackLoot">Đập một thây ma</option>
+      <option style="font-size:25px" value="NoLoot">Tắt Nhặt</option>
+      <option style="font-size:25px" value="DangerRoomLoot">Phòng Nguy Hiểm</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Tăng tốc Thây ma</label>
+    <select  id="speedtest" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="false">Sai</option>
+      <option style="font-size:25px" value="true">Đúng</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Máy cắt cỏ</label>
+    <select  id="mower" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="EgyptMowers">Ai Cập</option>
+      <option style="font-size:25px" value="PirateMowers">Cướp Biển</option>
+      <option style="font-size:25px" value="WestMowers">Cao Bồi</option>
+      <option style="font-size:25px" value="FutureMowers">Tương lai xa</option>
+      <option style="font-size:25px" value="DarkMowers">Kỉ nguyên Bóng tối</option>
+      <option style="font-size:25px" value="BeachMowers">Bãi biển</option>
+      <option style="font-size:25px" value="IceageMowers">Kỉ Băng Hà</option>
+      <option style="font-size:25px" value="LostCityMowers">Thành phố mất tích</option>
+      <option style="font-size:25px" value="EightiesMowers">Thập niên 80's</option>
+      <option style="font-size:25px" value="DinoMowers">Thời kì Đồ Đá</option>
+      <option style="font-size:25px" value="ModernMowers">Ngày Hiện đại</option>
+      <option style="font-size:25px" value="SaveMowers">Không Có</option>
+      <option style="font-size:25px" value="KongFuMowers">Thế Giới KongFu</option>
+      <option style="font-size:25px" value="SteamMowers">Kỉ Nguyên Hơi nước</option>
+      <option style="font-size:25px" value="RenaiMowers">Thời Phục Hưng </option>
+      <option style="font-size:25px" value="HeianMowers">Thời Heiankyo</option>
+      <option style="font-size:25px" value="FairyTaleMowers">Khu rừng Truyện Cổ Tích</option>
+    </select>
+	</div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label"> Tên cấp độ</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="levelname" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Chơi lại buộc về Bản đồ</label>
+    <select  id="playmap" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="false">Sai</option>
+      <option style="font-size:25px" value="true">Đúng</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Cảnh trong Màn</label>
+    <select  id="levelstage" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="EgyptStage">Ai Cập</option>
+      <option style="font-size:25px" value="PirateStage">Cướp Biển</option>
+      <option style="font-size:25px" value="WestStage">Cao Bồi</option>
+      <option style="font-size:25px" value="FutureStage">Tương lai xa</option>
+      <option style="font-size:25px" value="DarkStage">Kỉ nguyên Bóng tối</option>
+      <option style="font-size:25px" value="BeachStage">Bãi biển</option>
+      <option style="font-size:25px" value="IceageStage">Kỉ Băng Hà</option>
+      <option style="font-size:25px" value="LostCityStage">Thành phố mất tích</option>
+      <option style="font-size:25px" value="EightiesStage">Thập niên 80's</option>
+      <option style="font-size:25px" value="DinoStage">Thời kì Đồ Đá</option>
+      <option style="font-size:25px" value="ModernStage">Ngày Hiện đại</option>
+      <option style="font-size:25px" value="SaveStage">Không Có</option>
+      <option style="font-size:25px" value="KongFuStage">Thế Giới KongFu</option>
+      <option style="font-size:25px" value="SteamStage">Kỉ Nguyên Hơi nước</option>
+      <option style="font-size:25px" value="RenaiStage">Thời Phục Hưng </option>
+      <option style="font-size:25px" value="HeianStage">Thời Heiankyo</option>
+      <option style="font-size:25px" value="FairyTaleStage">Khu rừng Truyện Cổ Tích</option>
+      <option style="font-size:25px" value="Stage">Tự Chọn</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Có phải Cảnh Tự Chọn ?</label>
+    <select  id="stagequiz" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="LevelModules">Sai</option>
+      <option style="font-size:25px" value="CurrentLevel">Đúng</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Tắt nâng cấp sẵn</label>
+    <select  id="accountup" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="false">Sai</option>
+      <option style="font-size:25px" value="true">Đúng</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Loại bỏ Hướng dẫn</label>
+    <select  id="dynamictuto" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="false">Sai</option>
+      <option style="font-size:25px" value="true">Đúng</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Tắt mua Thực phẩm Thực vật</label>
+    <select  id="plantfoodbuy" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="false">Sai</option>
+      <option style="font-size:25px" value="true">Đúng</option>
+    </select>
+	</div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label">Sửa lại cấp độ Thực vật</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="-1" id="fixplant" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label">Sửa lại cấp độ Thây ma</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="1" id="zombielevel" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label">Khoảng thời gian giữa một đợt sóng lớn</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="flagwave" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label">Số Đợt</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="wavecount" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label"> Đếm ngược thời gian trước Đợt đầu tiên</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="wavesecond" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label"> Mức tăng điểm chi tiêu của Đợt</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="75" id="wavebuff" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+	<div class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label"> Điểm chi tiêu của Đợt</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="100" id="wavepoint" />
+      <div class="mdui-textfield-error">Hãy nhập lại</div>
+    </div>
+    </p>
+	<div>
+    </div>
+<div>
+    </p></div>
+    <style type="text/css">
+textarea {
+ width: 410px; height: 250px; font-size: 18px; font-family: myFirstFont;
+   src: url(fbUsv8C5eI-Black.woff);
+}
+</style>
+    <textarea id="xml" rows="20" cols="50" style="display: none;"></textarea> 
+     <p> </p>
+ <button class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" onclick="CompileLevelXML();finishFunction()">Hoàn tất</button>
+	<button class="mdui-btn mdui-btn-dense mdui-textfiled" type="button" onclick="download();downloadFunction()">Tải xuống mã</button>
+	<input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Sao chép" id="copy" onclick="copyText();copyFunction();">
+	
+	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" type="button" value="Xóa mã" onclick="javascript:eraseText();clearFunction()"> 
+	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Tải lại" onClick="refresh(this)">
+<script>
+  function refresh(){
+        window.location.reload("Refresh")
+      }
+</script>
+	 <script>
+	 function eraseText() {
+    document.getElementById("output").value = "";
+}
+</script>
+<script type="text/javascript">
+function click (e) {
+  if (!e)
+    e = window.event;
+  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+    if (window.opera)
+      window.alert("");
+    return false;
+  }
+}
+if (document.layers)
+  document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown = click;
+document.oncontextmenu = click;
+</script>
+<div id="snackbar">Tải xuống hoàn tất</div>
+<div id="snackbar1">Thành công, xem mã ở dưới</div>
+<div id="snackbar2">Đã sao chép</div>
+<div id="snackbar3">Đã xóa vùng</div>
+<div id="snackbar8"></div>
+	 <script>
+	 function eraseText() {
+    document.getElementById("output").value = "";
+}
+</script>
+	<script>
+	//I'm lazyyyy
+	function download(){
+    var text = document.getElementById("output").value;
+    text = text.replace(/\n/g, "\r\n");
+    var blob = new Blob([text], { type: "text/plain"});
+    var anchor = document.createElement("a");
+    anchor.download = "Level.json";
+    anchor.href = window.URL.createObjectURL(blob);
+    anchor.target ="_blank";
+    anchor.style.display = "none"; 
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+ }
+ </script>
+<script type="text/javascript">
+
+function copyText(){
+ document.getElementById("output").select();
+ document.execCommand('copy');
+}
+</script>
+<input type="checkbox" id="icecubed" style="display:none" onclick="" value="">
+     <p> </p>
+    <textarea id="output" style="font-size:20px"  class="mdui-textfield-input" rows="100" cols="150" style="display: none;"></textarea>
+	<script>
+	function download(){
+    var text = document.getElementById("output").value;
+	var f = "object" == typeof window && window.window === window ? window : "object" == typeof self && self.self === self ? self : "object" == typeof global && global.global === global ? global : void 0,
+    text = text.replace(/\n/g, "\r\n");
+    var blob = new Blob([text], { type: "text/plain"});
+    var anchor = document.createElement("a");
+    anchor.download = "Level.json";
+    anchor.href = window.URL.createObjectURL(blob);
+    anchor.target ="_blank";
+    anchor.style.display = "none"; 
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+ }</script>
+        <script type="text/javascript">
+        var version = 1.0;
+        var eraser = 547;
+        var iceblock = 548;
+        var array = new Array();
+        document.getElementById('output').style.display = "none";   
+        document.getElementById("xml").value = "";
+        document.getElementById("output").value = ""
+        var mouseOverSprite = document.createElement("img");
+            mouseOverSprite.style.display="block";
+            mouseOverSprite.style.position = "absolute";
+            mouseOverSprite.style.zIndex = "-1";
+        document.body.insertBefore(mouseOverSprite,document.body.firstChild);
+        document.getElementById('xml').style.display = "none";
+        document.addEventListener("mousemove",mouseMoveFunction);
+        var lastGridId = null;
+
+        function mouseMoveFunction(e){
+            var p1 = document.getElementById("p1");
+            if(e.target.nodeName == "CANVAS"){
+                p1.innerHTML = " Grid ID: "+e.target.id
+
+                if(e.target.id == lastGridId){
+                    return;
+                }
+                lastGridId = e.target.id;
+                mouseOverSprite.style.visibility ="visible";
+                mouseOverSprite.style.top = e.target.offsetTop+"px";
+                mouseOverSprite.style.left = e.target.offsetLeft+"px";
+            }
+            else{
+                mouseOverSprite.style.visibility ="hidden";
+            }
+        }
+        document.addEventListener("click",mouseClickFunction);
+        function mouseClickFunction(e){
+            if(mouseOverSprite.style.visibility == "visible" && e.target.nodeName == "CANVAS"  && selectedSpriteId != eraser)
+            {
+                var icecubed = document.getElementById("icecubed");
+                var targetRect = e.target.getBoundingClientRect();
+                var a = e.target.id;
+                var x = a.charAt(0);
+				var d = a.charAt(0)-2;
+                var b = e.target.id;
+                var y = b.charAt(2);
+                if(selectedSpriteId != iceblock){
+                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                    "  
+                if(icecubed.checked == true) {
+                document.getElementById("xml").value += "";
+                }
+                document.getElementById("xml").value += "\{ \n                                              \"Row\"\:\ \"" + y + "\" \n                    }";
+            }
+                var icecubed = document.getElementById("icecubed");
+                var newImg = document.createElement("img");
+                newImg.src = mouseOverSprite.src;
+                newImg.style.position = "absolute";
+                newImg.style.left = targetRect.x+"px";
+                newImg.style.top = targetRect.y+"px";
+                newImg.style.zIndex = -1;
+                newImg.className = "newImg";
+                if(icecubed.checked == true){
+                    newImg.style.outline = "blue solid 0.5px";
+                    e.target.style.outline = "rgb(0, 255, 255) solid 2.5px";
+                }
+                newImg.addEventListener("click",function(){
+                if(selectedSpriteId == eraser){
+                    var victim = "";
+                    console.log(e.target.style.outline);
+                        if(e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 0.5px"){
+                         victim = "\n                    {\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
+                         e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 0.5px";
+                        }
+                        if(e.target.style.outline == "rgb(0, 255, 255) solid 2.5px"){
+                            console.log("yay");
+                         victim = "\n                    {\n                        \"Condition\"\: \"icecubed\",\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
+                         e.target.style.outlineColor = "rgba(0, 0, 0, 0.2)";
+                         e.target.style.outlineStyle = "solid";
+                         e.target.style.outlineWidth = "0.5px";
+                        }
+                         console.log(victim);
+
+                        xml = document.getElementById("xml").value;
+                        document.getElementById("xml").value = xml.substr(0,xml.indexOf(victim)) + xml.substr(xml.indexOf(victim) + victim.length + 1, xml.length);
+                        this.remove();
+                        xml3 = document.getElementById("xml").value;
+                        xml4 = xml3.slice(0, -1);
+                        if(xml3.endsWith(",")){
+                        console.log(xml4);
+                            document.getElementById("xml").value = xml4;
+                        }
+
+                   }
+                }
+            );
+                document.body.appendChild(newImg);
+                
+                if(allAddedItems[e.target.id]==null)
+                    allAddedItems[e.target.id] = new Array(newImg);
+                else
+                    allAddedItems[e.target.id].push(newImg); 
+            }
+        }
+        var allAddedItems = new Array();
+        var selectedSpriteId = 1;
+        document.getElementById(selectedSpriteId).style.outline=".5px solid blue";
+        mouseOverSprite.src = document.getElementById(selectedSpriteId).src;
+
+        function selectSprite(e){
+            document.getElementById(selectedSpriteId).style.outline="";
+            e.currentTarget.style.outline = ".5px solid blue";
+            selectedSpriteId = e.currentTarget.id;
+            mouseOverSprite.src = e.currentTarget.src;
+            var canvases = document.getElementsByClassName('newImg');
+            if(selectedSpriteId == eraser){
+                mouseOverSprite.style.pointerEvents="none";
+                //document.getElementById('gridDiv').style.pointerEvents="none";
+                for(i=0;i<canvases.length;i++){
+                    canvases[i].style.zIndex=1;
+                }
+            } else {
+                mouseOverSprite.style.pointerEvents="";
+                for(i=0;i<canvases.length;i++){
+                    canvases[i].style.zIndex=-1;
+                }
+            }
+        }
+        function togglexmlvisibility() {
+        var display = document.getElementById('xml').style.display;
+        if(display == "none") {
+              document.getElementById('xml').style.display = "block";
+        }
+        if(display == "block") {
+              document.getElementById('xml').style.display = "none";
+        }
+     }
+function toggleoutputvisibility() {
+        var display = document.getElementById('output').style.display;
+        if(display == "none")
+              document.getElementById('output').style.display = "block";
+        }
+        function CompileLevelXML() {
+		//var descripsion = document.getElementById("descripsion").value;
+		//var comment = document.getElementById("comment").value;
+		//var rewardparam = document.getElementById("rewardparam").value;
+		//var rewardtype = document.getElementById("rewardtype").value;
+		//var levelnumber = document.getElementById("levelnumber").value;
+		//var loot = document.getElementById("loot").value;
+		//var mower = document.getElementById("mower").value;
+		//var levelname = document.getElementById("levelname").value;
+		//var levelstage = document.getElementById("levelstage").value;
+		//var flagwave = document.getElementById("flagwave").value;
+		//var wavecount = document.getElementById("wavecount").value;
+		//var boost = document.getElementById("boost").value;
+		//var grid = document.getElementById("grid").value;
+		//var powerupset = document.getElementById("powerupset").value;
+		//var accountup = document.getElementById("accountup").value;
+		//var dynamictuto = document.getElementById("dynamictuto").value;
+		//var plantfoodbuy = document.getElementById("plantfoodbuy").value;
+		//var fixplant = document.getElementById("fixplant").value;
+		//var zombielevel = document.getElementById("zombielevel").value;
+		//var mapforce = document.getElementById("mapforce").value;
+		//var playmap = document.getElementById("playmap").value;
+		//var speedtest = document.getElementById("speedtest").value;	
+		//var wavesecond = document.getElementById("wavesecond").value;
+		//var wavebuff = document.getElementById("wavebuff").value;
+		//var wavepoint = document.getElementById("wavepoint").value;
+		//var stagequiz = document.getElementById("stagequiz").value;
+    var str = document.getElementById("xml").value;
+	var wavemax = document.getElementById("wavecount").value;
+	var m = parseInt(wavemax);
+	var n = m+1;
+    toggleoutputvisibility();
+        document.getElementById("output").value += "{\ \n    \"#comment\":\ \"" + document.getElementById("comment").value + "\",\   \n    \"objects\":\ [\  \n        {     \n            \"objclass\":\ \"LevelDefinition\",\ \n            \"objdata\":\ {\  \n                \"Description\": \"" + document.getElementById("descripsion").value + "\",\n                \"ForceToWorldMap\": " + document.getElementById("mapforce").value + ",\n                \"DisablePlantBoosts\": " + document.getElementById("boost").value + ",\n                \"GridItemLevel\": " + document.getElementById("grid").value + ",\n                \"LevelPowerupSet\": \"" + document.getElementById("powerupset").value + "\",\n                \"FirstRewardParam\": \"" + document.getElementById("rewardparam").value + "\",\n                \"FirstRewardType\": \"" + document.getElementById("rewardtype").value + "\",\n                \"LevelNumber\": " + document.getElementById("levelnumber").value + ",\n                \"Loot\": \"RTID(" + document.getElementById("loot").value + "\@LevelModules)\"\,\n                \"Modules\": [  \n                    \"RTID(" + document.getElementById("intro").value + "\@LevelModules)\",\n                    \"RTID(\ZombiesDeadWinCon@LevelModules)\",\n                    \"RTID(\SeedBank@CurrentLevel)\",\n                    \"RTID(\DefaultZombieWinCondition@LevelModules)\",\n                    \"RTID(SpeedZom@CurrentLevel)\",\n                    \"RTID(" + document.getElementById("mower").value + "\@LevelModules)\",\n                    \"RTID(\NewWaves@CurrentLevel)\"\n                ],\n                \"Name\": \"" + document.getElementById("levelname").value + "\",\n                \"NormalPresentTable\": \"egypt_normal_01\",\n                \"ShinyPresentTable\": \"egypt_shiny_01\",\n                \"RepeatPlayForceToWorldMap\": " + document.getElementById("playmap").value + ",\n                \"StageModule\": \"RTID(" + document.getElementById("levelstage").value + "\@" + document.getElementById("stagequiz").value + ")\",\n                \"FixedPlantLevel\": " + document.getElementById("fixplant").value + ",\n                \"ZombieLevel\": " + document.getElementById("zombielevel").value + ",\n                \"SuppressAccountUpgrades\": " + document.getElementById("accountup").value + ",\n                \"SuppressDynamicTutorial\": " + document.getElementById("dynamictuto").value + ",\n                \"SuppressPlantfoodPurchase\": " + document.getElementById("plantfoodbuy").value + "\,\n            }\n        },\n        {\n            \"objclass\": \"ZombieModifierProperties\",\n            \"aliases\": [\n                \"SpeedZom\"\n            ],\n            \"objdata\": {\n                \"Speedy\": " + document.getElementById("speedtest").value + "\n            }\n        },\n        {\n            \"aliases\": [\n                \"SeedBank\" \n            ],\n            \"objclass\": \"SeedBankProperties\",\n            \"objdata\": \{\n                \"PlantIncludeList\": \[\],\n                \"PlantExcludeList\": \[\],\n                \"SelectionMethod\": \"chooser\"\n            }\n        },\n        {\n            \"aliases\": [\n                \"NewWaves\"\n            ],\n            \"objclass\": \"WaveManagerModuleProperties\",\n            \"objdata\": {\n                \"WaveManagerProps\": \"RTID(WaveManagerProps@CurrentLevel)\"\n            \}\n        \},\n        {\n            \"aliases\": [\n                \"WaveManagerProps\"\n            ],\n            \"objclass\": \"WaveManagerProperties\",\n            \"objdata\": {\n                \"FlagWaveInterval\": " + document.getElementById("flagwave").value + ",\n                \"ZombieCountdownFirstWaveSecs\": " + document.getElementById("wavesecond").value + ",\n                \"WaveCount\": " + document.getElementById("wavecount").value + ",\n                \"WaveSpendingPointIncrement\": " + document.getElementById("wavebuff").value + ",\n                \"WaveSpendingPoints\": " + document.getElementById("wavepoint").value + ",\n                \"Waves\": [\n"  
+        for(i=1;i<n;i++){
+						if(i==m){document.getElementById("output").value += "                    [\n                        \"RTID(Wave"+i+"@CurrentLevel)\"\n                    ]\n"
+						
+						break
+						}
+                        document.getElementById("output").value += "                    [\n                        \"RTID(Wave"+i+"@CurrentLevel)\"\n                    ],\n"
+						
+                    
+					}
+		document.getElementById("output").value += "                ]\n            }\n        }\n    ],\n    \"version\": 1\n}"
+		document.getElementById("output").value += str;
+        document.getElementById("output").value += "";
+        console.log(allAddedItems);
+        }
+//Tool Test
+    </script>
+	<style>
+        p {
+            color: white;
+        }
+        .paragraph1 {
+            font-size: 20px;
+             font-family: myFirstFont;
+   src: url(fbUsv8C5eI-Black.woff)
+            line-height: 2px;
+        }
+        .paragraph2 {
+            font-size: 20px;
+             font-family: myFirstFont;
+   src: url(fbUsv8C5eI-Black.woff)
+        }
+    </style>
+ </center>
+</div></div>
+</body></html>
