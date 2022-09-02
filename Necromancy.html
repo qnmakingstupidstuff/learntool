@@ -168,11 +168,7 @@ font-size: 55px;
 <link rel="stylesheet" href="./necromancy/cleopatra.css"/>
 <script src="./necromancy/boostile1000.js"></script>
      <p> </p>
-     <img src="./HarumaTools/grids/goldtile.png">
-	 <label class="mdui-switch">
-          <input onclick="goldFunction()" type="checkbox" id="goldtile" style="width: 1%" value="">
-          <i class="mdui-switch-icon"></i>
-        </label>
+
      
 <div id="goldtile_pick">Ấn vào goldtile</div>
 <div id="flame_spreader_trap_pick">Ấn vào flame_spreader_trap</div>
@@ -214,6 +210,13 @@ font-size: 55px;
 <div id="snackbar3">Đã dọn mã</div>
 <div id="snackbar4">Hãy nhập số</div>
 <div id="cleopatra_warning">Chỉ dùng ở Ultimate OBB</div>
+<div style="background-image:url('./HarumaTools/grids/gridbackground.png');border-radius:10px;border:3px solid #f0f0f0; width: 500; height: 650px;margin-top: 10px;">
+<p></p>
+     <img src="./HarumaTools/grids/goldtile.png">
+	 <label class="mdui-switch">
+          <input onclick="goldFunction()" type="checkbox" id="goldtile" style="width: 1%" value="">
+          <i class="mdui-switch-icon"></i>
+        </label>
      <img src="./HarumaTools/grids/flame_spreader_trap.png">
 	 <label class="mdui-switch">
           <input type="checkbox" onclick="fireFunction()" id="flame_spreader_trap" style="width: 1%" value="">
@@ -386,7 +389,9 @@ font-size: 55px;
 	  <input type="checkbox" onclick="beachFunction()" id="gravestone_beach" style="width: 1%" value="">
           <i class="mdui-switch-icon"></i>
         </label>
+</div>
      <p> </p>
+	<div style="background-image:url('./HarumaTools/grids/brainbackground.png');border-radius:10px;border:2px solid #17171c; width: 700; height: 5500px;margin-top: 10px;">
      <img src="./HarumaTools/zombies/mummy.png" >
      <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="mummy" style="width: 3%" value="0">
      <img src="./HarumaTools/zombies/mummy_armor1.png" >
@@ -567,7 +572,7 @@ font-size: 55px;
      <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="beach_snorkel" style="width: 3%" value="0">
      <img src="./HarumaTools/zombies/beach_surfer.png" >
      <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="beach_surfer" style="width: 3%" value="0">
-     <img src="./HarumaTools/zombies/beach_imp.png" style="width: 48px; height: 43px">
+     <img src="./HarumaTools/zombies/beach_imp.png">
      <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="beach_imp" style="width: 3%" value="0">
      <img src="./HarumaTools/zombies/beach_octopus.png" >
      <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="beach_octopus" style="width: 3%" value="0">
@@ -1189,6 +1194,7 @@ font-size: 55px;
 	 <p>
 	 <img src="./HarumaTools/zombies/zombie_snowpea.png" >
      <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="zombie_snowpea" style="width: 3%" value="0">
+</div>
      <p> </p>
 	 <p></p>
 <script>
