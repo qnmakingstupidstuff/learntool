@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h3>Download Live RSB</h3>
+<p> Version Number:
+<input type="text" id="versionnumber" value="">
+<p>
+<p> Device:
+<input type="text" id="device" value="ipad3">
+<p>
+<p>Click the button to get the link</p>
+
+<button onclick="myFunction()">GIVE ME THE DOWNLOAD LINK</button>
+</center>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("versionnumber").value;
+  var y = document.getElementById("device").value;
+  document.getElementById("demo").innerHTML = "https://pvz2-live.ecs.popcap.com/" + y + "_" + x + "_main.rsb";
+}
+</script>
+
+</body>
+</html>
