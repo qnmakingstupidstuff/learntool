@@ -1,0 +1,11 @@
+{
+  "name": "Haruma's Tool",
+  "version": "1.0.1 VN Public",
+  "res": "resources.json",
+  "time": "1661794545",
+  "plants": "all",
+  "zombies": "all",
+  "project": "HarumaTool",
+  "readDatabase": true,
+  "isUpdate": true
+}
