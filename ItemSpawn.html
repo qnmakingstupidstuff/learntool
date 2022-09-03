@@ -547,12 +547,12 @@ function copyText(){
         }
         var allAddedItems = new Array();
         var selectedSpriteId = 1;
-        document.getElementById(selectedSpriteId).style.outline="2px dotted white";
+        document.getElementById(selectedSpriteId).style.outline="2px solid white";
         mouseOverSprite.src = document.getElementById(selectedSpriteId).src;
 
         function selectSprite(e){
             document.getElementById(selectedSpriteId).style.outline="";
-            e.currentTarget.style.outline = "2px dotted white";
+            e.currentTarget.style.outline = "2px solid white";
             selectedSpriteId = e.currentTarget.id;
             mouseOverSprite.src = e.currentTarget.src;
             var canvases = document.getElementsByClassName('newImg');

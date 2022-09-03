@@ -206,7 +206,7 @@ font-size: 55px;
 </style></div>
     <div style="margin-top: 15px">
 	</div>
-        <img src="./HarumaTools/grids/wind.png" id="1" onclick="selectSprite(event);placeFunction()" style="outline: white dotted 2px;">
+        <img src="./HarumaTools/grids/wind.png" id="1" onclick="selectSprite(event);placeFunction()" style="outline: white solid 2px;">
     </div>
 	<div class="mdui-container">
     <div id="first" style="width:700px;height:100px">
@@ -375,12 +375,12 @@ function copyText(){
         }
         var allAddedItems = new Array();
         var selectedSpriteId = 1;
-        document.getElementById(selectedSpriteId).style.outline="white dotted 2px";
+        document.getElementById(selectedSpriteId).style.outline="white solid 2px";
         mouseOverSprite.src = document.getElementById(selectedSpriteId).src;
 
         function selectSprite(e){
             document.getElementById(selectedSpriteId).style.outline="";
-            e.currentTarget.style.outline = "white dotted 2px";
+            e.currentTarget.style.outline = "white solid 2px";
             selectedSpriteId = e.currentTarget.id;
             mouseOverSprite.src = e.currentTarget.src;
             var canvases = document.getElementsByClassName('newImg');

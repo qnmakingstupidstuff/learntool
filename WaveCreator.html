@@ -230,7 +230,7 @@ font-size: 55px;
         <div>
 <img src="./HarumaTools/grids/eraser.png" id="547" onclick="selectSprite(event)" style="margin-left: 15px;">
 <p></p>
-<div style="background-image:url('./HarumaTools/grids/zombiepacket.png');border-radius:10px;border:4px dotted #6362b1; width: 465; height: 1600px;margin-top: 10px;">
+<div style="background-image:url('./HarumaTools/grids/zombiepacket.png');border-radius:10px;border:4px solid #6362b1; width: 465; height: 1600px;margin-top: 10px;">
         <div>
         <img src="./HarumaTools/zombies/mummy.png" id="1" onclick="selectSprite(event);placeFunction()" ">
         <img src="./HarumaTools/zombies/mummy_armor1.png" id="2" onclick="selectSprite(event);placeFunction()"">
@@ -783,7 +783,7 @@ function copyText(){
                 newImg.style.zIndex = -1;
                 newImg.className = "newImg";
                 if(icecubed.checked == true){
-                    newImg.style.outline = "white dotted 2px";
+                    newImg.style.outline = "white solid 2px";
                     e.target.style.outline = "rgb(0, 255, 255) solid 2.5px";
                 }
                 newImg.addEventListener("click",function(){
@@ -826,12 +826,12 @@ function copyText(){
         }
         var allAddedItems = new Array();
         var selectedSpriteId = 1;
-        document.getElementById(selectedSpriteId).style.outline="2px dotted white";
+        document.getElementById(selectedSpriteId).style.outline="2px solid white";
         mouseOverSprite.src = document.getElementById(selectedSpriteId).src;
 
         function selectSprite(e){
             document.getElementById(selectedSpriteId).style.outline="";
-            e.currentTarget.style.outline = "2px dotted white";
+            e.currentTarget.style.outline = "2px solid white";
             selectedSpriteId = e.currentTarget.id;
             mouseOverSprite.src = e.currentTarget.src;
             var canvases = document.getElementsByClassName('newImg');
