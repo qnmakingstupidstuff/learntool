@@ -1,8 +1,7 @@
-<title>Công Cụ Haruma</title>
+<title>Haruma's Tool</title>
 <html translate="no"></html>
 
-<link rel='icon' href="./icons/ningphuba.png" type='image/x-icon'/ >
-
+<link rel='icon' href="./icons/raiden2.png" type='image/x-icon'/ >
 <style> 
 
 
@@ -16,61 +15,189 @@ font-size: 55px;
    font-family: myFirstFont;
 }
 </style>
+
 <head>
 <meta name="google" content="notranslate">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="./assets/mdui-v0.4.3/css/mdui.min.css"/>
- <script src="./snackbar/success.js"></script>
+  <script src="./snackbar/success.js"></script>
 <script src="./snackbar/finished.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/AspieSoft/random-number-js@1.3.1/script.min.js"></script>
-
 <script src="./snackbar/place.js"></script>
 <script src="./snackbar/copy.js"></script>
 <script src="./snackbar/clear.js"></script>
+<script src="./snackbar/recycle.js"></script>
 <link rel="stylesheet" href="./snackbar/success.css"/>
-
+<link rel="stylesheet" href="./snackbar/recycle.css"/>
+<link rel="stylesheet" href="./snackbar/place.css"/>
+  <link rel="stylesheet" href="./snackbar/finished.css"/>
+  <link rel="stylesheet" href="./snackbar/copy.css"/>
+  <link rel="stylesheet" href="./snackbar/clear.css"/>        <script src="./snackbar/success.js"></script>
+<script src="./snackbar/finished.js"></script>
+<script src="./snackbar/place.js"></script>
+<script src="./snackbar/copy.js"></script>
+<script src="./snackbar/clear.js"></script>
+<script src="./snackbar/warning.js"></script>
+<link rel="stylesheet" href="./snackbar/warning.css"/>
+<script src="./snackbar/note.js"></script>
+<link rel="stylesheet" href="./snackbar/note.css"/>
+<script src="./snackbar/jam.js"></script>
+<link rel="stylesheet" href="./snackbar/jam.css"/>
+<script src="./snackbar/recycle.js"></script>
+<link rel="stylesheet" href="./snackbar/success.css"/>
+<link rel="stylesheet" href="./snackbar/recycle.css"/>
 <link rel="stylesheet" href="./snackbar/place.css"/>
   <link rel="stylesheet" href="./snackbar/finished.css"/>
   <link rel="stylesheet" href="./snackbar/copy.css"/>
   <link rel="stylesheet" href="./snackbar/clear.css"/>
 </head>
-<body  class="mdui-text-color-white mdui-theme-layout-dark mdui-text-color-black-icon">
+<div id="snackbar">Successfully Downloaded</div>
+<div id="snackbar1">Success Build</div>
+<div id="snackbar2">Copied</div>
+<div id="snackbar3">Cleared</div>
+<div id="snackbar4">Input Number</div>
+<div id="snackbar5">Input Number</div>
+<div id="snackbar7">Input Number</div>
+<div id="snackbar6">Always True</div>
+<div id="snackbar8"></div>
+</head>
+<body  class="mdui-text-color-white mdui-theme-layout-dark mdui-text-color-black-icon mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto"> 
 <script src="./assets/mdui-v0.4.3/js/mdui.min.js"></script>
-<div class="mdui-container">
-  <div class="mdui-tab mdui-tab-scrollable  mdui-tab">
-          <a style="font-size:20px" href="index.html" class="mdui-ripple">Hướng dẫn</a>
-  <a style="font-size:20px" href="WaveCreator.html"   >Tạo Đợt</a>
-    <a style="font-size:20px" href="HarumaLab.html" class="mdui-ripple">Tạo Màn chơi</a>
-	<a style="font-size:20px" href="PlantSet.html" class="mdui-ripple">Chọn cây</a>
-	<a style="font-size:20px" href="Sandsnow.html" class="mdui-ripple"class="mdui-tab-active">Sự kiện Bão</a>
-<a style="font-size:20px" href="RaidingParty.html" class="mdui-ripple">Tiệc Đột kích</a>
-    <a style="font-size:20px" href="Tide.html" class="mdui-ripple">Tạo Thuỷ triều</a>
-    <a style="font-size:20px" href="Tidal.html" class="mdui-ripple">Đổi thủy triều</a>
-    <a style="font-size:20px" href="LowTide.html" class="mdui-ripple">Rút nước</a>
-    <a style="font-size:20px" href="Grids.html" class="mdui-ripple">Đặt Lưới</a>
-    <a style="font-size:20px" href="Necromancy.html" class="mdui-ripple">Chiêu hồn</a>
-    <a style="font-size:20px" href="ItemSpawn.html" class="mdui-ripple">Tạo vật</a>
-    <a style="font-size:20px" href="FrozenZomb.html" class="mdui-ripple">Zombie đóng băng</a>
-<a style="font-size:20px" href="ParachuteRain.html" class="mdui-ripple">Mưa Dù</a>
-    <a style="font-size:20px" href="Dino.html" class="mdui-ripple">Đặt Khủng long</a>	
-	<a style="font-size:20px" href="PML.html" class="mdui-ripple">Đặt Xe mìn</a>
-    <a style="font-size:20px" href="Winds.html" class="mdui-ripple">Gió Băng</a>
-    <a style="font-size:20px" href="Planks.html" class="mdui-ripple">Đặt Ván</a>
-    <a style="font-size:20px" href="Zomboss.html" class="mdui-ripple">Tạo Zomboss</a>
-    <a style="font-size:20px" href="MoldColony.html" class="mdui-ripple">Thuộc địa Nấm mốc</a>
-    <a style="font-size:20px" href="DangerP.html" class="mdui-ripple">Cây nguy hiểm</a>
-    <a style="font-size:20px" href="PlantPlant.html" class="mdui-ripple">Đặt cây</a>
-    <a style="font-size:20px" href="PPT.html" class="mdui-ripple">Tạo Cổng</a>
-    <a style="font-size:20px" href="PlantPower.html" class="mdui-ripple">Ô Sức mạnh</a>
-    <a style="font-size:20px" href="Olaf.html" class="mdui-ripple">Chiều không gian Hỗn loạn</a>
-    <a style="font-size:20px" href="Spidy.html" class="mdui-ripple">Mưa Bot</a>
-	<a style="font-size:20px" href="jsonedit.html" class="mdui-ripple">Công cụ PVZH</a>
-	<a style="font-size:20px" href="internalcode.html" class="mdui-ripple">Mã gốc (Cây)</a>
-  <a style="font-size:20px" href="download.html" class="mdui-ripple">Tải RSB</a>
-  </div>
+<header class="appbar mdui-appbar mdui-appbar-fixed">
+  <div class="mdui-toolbar mdui-color-theme">
+    <span
+      class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+      mdui-drawer="{target: '#main-drawer', swipe: true}"
+    >
+      <i class="mdui-icon material-icons">menu</i>
+    </span>
+    <a href="./index.html" class="mdui-typo-headline mdui-hidden-xs"> Haruma's Tool</a>
+    <div class="mdui-toolbar-spacer"></div>
 
+	 <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" style="font-size:15px" value="" onClick="refresh(this)"><i class="mdui-icon material-icons">refresh</i></button>
+  </div>
+</header>
+<div></div>
+<div class="mdui-drawer" id="main-drawer">
+  <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+    <div class=" mdui-collapse-item mdui-collapse-item-open">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-blue"
+            ><img src="./toolbar/raiden1.png" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Waves Option</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+				<a style="font-size:20px" href="./WaveCreator.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecre.png" /> Wave Creator</a>
+				<a style="font-size:20px" href="./WaveCreatorJam.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecrejam.png" /> Wave Creator (J)</a>
+				<a style="font-size:20px" href="./Sandsnow.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/stormevent.png" /> Storm Event</a>
+				<a style="font-size:20px" href="./RaidingParty.html"class=" mdui-list-item mdui-ripple"> <img src="./toolbar/fly.png" /> Raiding Party</a>
+				<a style="font-size:20px" href="./Tidal.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/fishimp.png" /> Absolute Event</a>
+				<a style="font-size:20px" href="./LowTide.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/lowtide.png" /> Low Tide</a>
+				<a style="font-size:20px" href="./Necromancy.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/spiralabyss.png" /> Necromancy</a>
+				<a style="font-size:20px" href="./ItemSpawn.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wizardmagic.png" />Item Spawn</a>
+				<a style="font-size:20px" href="./ParachuteRain.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/parachuterain.png" />Parachute Rain</a>
+				<a style="font-size:20px" href="./Dino.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/dino.png" />Dino Event</a>
+				<a style="font-size:20px" href="./Spidy.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/spiderrain.png" />Spider Rain</a>
+				<a style="font-size:20px" href="./Winds.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/winds.png" />Winds</a>
+				<a style="font-size:20px" href="./PPT.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/portals.png" />Portals</a>
+				<a style="font-size:20px" href="./RNG.html"class=" mdui-list-item mdui-ripple mdui-list-item-active"><img src="./toolbar/qigongkongfu.png" />Wave RNG (Beta)</a>
+				<a style="font-size:20px" href="./Escalation.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/escalation.png" /> Escalation</a>
+          </div>
+        </div>
+<div class=" mdui-collapse-item">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-deep-orange"
+            ><img src="./toolbar/raiden2.png" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Level Gen</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+				<a style="font-size:20px" href="./HarumaLab.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/kongfublade.png" /> Level Generator</a>
+				<a style="font-size:20px" href="./Tide.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/lemon.png" /> Adding Tide</a>
+				<a style="font-size:20px" href="./Grids.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/kinggrid.png" /> Placing Grid Item</a>
+				<a style="font-size:20px" href="./FrozenZomb.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/juicyyeti.png" /> Frozen Zombie</a>
+				<a style="font-size:20px" href="./PML.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chinesesunwukong.png" /> Rail Cart</a>
+				<a style="font-size:20px" href="./Planks.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/coconut.png" /> Planks</a>
+				<a style="font-size:20px" href="./Zomboss.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/zomboss.png" /> Zomboss</a>
+				<a style="font-size:20px" href="./Olaf.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chaodimension.png" /> Chao Dimension</a>
+          </div>
+        </div><div class="
+          mdui-collapse-item
+          "
+        >
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-green"
+            ><img src="./toolbar/raiden3.png" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Plants Option</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+				<a  style="font-size:20px" href="./MoldColony.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/radish.png" />Mold Colonies</a>
+				<a style="font-size:20px" href="./PlantSet.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/pokra.png" />SeedBank</a>
+				<a style="font-size:20px" href="./DangerP.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/beast.png" />Danger Plants</a>
+				<a style="font-size:20px" href="PlantPlant.html" class="mdui-list-item mdui-ripple"><img src="./toolbar/mf.png" />Planting Plants</a>
+				<a style="font-size:20px" href="PlantPower.html" class="mdui-list-item mdui-ripple"><img src="./toolbar/powerplant.png" />Power Tiles</a>
+				<a style="font-size:20px" href="internalcode.html" class="mdui-list-item mdui-ripple"><img src="./toolbar/thundersnap.png" />Internal Codename</a>
+          </div>
+        </div><div class="mdui-collapse-item">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-purple"
+            ><img src="./toolbar/raiden5.png" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Update</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+
+              <a style="font-size:20px" href="./index.html" class=" mdui-list-item mdui-ripple"><img src="./toolbar/cobcannon.png" />Home</a>
+          </div>
+        </div>
+		<div class="
+          mdui-collapse-item
+          "
+        >
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-brown"
+            ><img src="./toolbar/raiden4.png" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Other Option</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+
+              <a style="font-size:20px" href="./download.html" class=" mdui-list-item mdui-ripple"><img src="./toolbar/hocus.png" />RSB Download</a>
+
+              <a style="font-size:20px" href="./jsonedit.html" class=" mdui-list-item mdui-ripple"><img src="./toolbar/sexyjapan.png" />JSON Editor</a>
+          </div>
+        </div>
 </div>
+  </div>
+</div>
+<a id="anchor-top"></a>
+</div>
+<center>
+<p></p>
    <center>
 
 <script src="./necromancy/cleopatra.js"></script>
@@ -82,33 +209,31 @@ font-size: 55px;
           <input onclick="goldFunction()" type="checkbox" id="snowstorm" style="width: 1%" value="" >
           <i class="mdui-switch-icon"></i>
         </label>
-     
-<div id="snackbar">Tải xuống hoàn tất</div>
-<div id="snackbar1">Thành công, xem mã bên dưới</div>
-<div id="snackbar2">Đã sao chép</div>
-<div id="snackbar3">Đã dọn mã</div>
-<div id="snackbar4">Hãy điền số</div>
-<div id="cleopatra_warning">Chỉ dùng trong Ultimate OBB</div>
+    
+<div id="cleopatra_warning">Only Use With Ultimate OBB</div>
      <img src="./HarumaTools/grids/sandstorm.png"  style="display: none;">
 	 <label class="mdui-switch"  style="display: none;">
           <input type="checkbox" onclick="fireFunction()" id="sandstorm" style="width: 1%" value="">
           <i class="mdui-switch-icon"></i>
         </label>
      <p> </p>
-	     <p style="font-size:40px"><img src="./HarumaTools/grids/vietnam.png"> RNG Đợt Phiên bản 0.0.1 Beta <img src="./HarumaTools/grids/vietnam.png"></p>
-<div style="font-size:25px" class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label">Đợt số</label>
+	     <p style="font-size:40px"><img src="./HarumaTools/grids/vietnam.png"> RNG Wave Creator Version 0.7.1 Public Beta <img src="./HarumaTools/grids/vietnam.png"></p>
+<div id="input-rng" style="width:1000px;height: 80px">
+<div style="font-size:25px;width:450px;height:80px;float:left" class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label">Wave Number</label>
       <input style="font-size:25px" class="mdui-textfield-input" onclick="recycleFunction()" id="wavenumber"  type="text"/>
     </div>
-		<div style="font-size:25px" class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label">Thực phẩm Cây Bổ sung</label>
+	<div style="font-size:25px;width:450px;height:80px;float:right" class="mdui-textfield mdui-textfield-floating-label">
+      <label style="font-size:25px" class="mdui-textfield-label">Additional Plantfood</label>
       <input style="font-size:25px" onclick="warningFunction()" class="mdui-textfield-input" id="plantfood" value="0" type="text"/>
     </div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Tắt triệu hồi bừa bãi </label>
+	
+</div>
+	<div  class="mdui-container mdui-valign" style="font-size:25px;width:350px;height:80px;float:padding" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Disable Random Spawns</label>
     <select  id="random" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="true">Đúng</option>
-      <option style="font-size:25px" value="false">Sai</option>
+      <option style="font-size:25px" value="true">True</option>
+      <option style="font-size:25px" value="false">False</option>
     </select>
 	</div>
 <div style="background-image:url('./HarumaTools/grids/brainbackground.png');border-radius:10px;border:2px solid #17171c; width: 700; height: 5500px;margin-top: 10px;">
@@ -985,12 +1110,15 @@ function myFunction() {
     document.getElementById("output").value = "";
 }
 </script>
-	<button class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" onclick="CompileLevelXML();finishFunction()">Hoàn tất</button>
-	<button class="mdui-btn mdui-btn-dense mdui-textfiled" type="button" onclick="download();downloadFunction()">Tải xuống mã</button>
-	<input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Sao chép" id="copy" onclick="copyText();copyFunction();">
-	
-	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" type="button" value="Xóa mã" onclick="javascript:eraseText();clearFunction()"> 
-	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Tải lại" onClick="refresh(this)">
+	<div style="width:750px;height:50px">
+ <button class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left" onclick="CompileLevelXML();finishFunction()">Build Code</button>
+ <div style="width:50px;height:100px;float:left"></div>
+	<button class="mdui-btn mdui-btn-dense mdui-textfiled"  style="font-size:15px;width:200px;height:100px;float:left"  type="button" onclick="download();downloadFunction()">Download Build</button>
+	<div style="width:50px;height:100px;float:left"></div>
+	<input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left"  type="button" value="Copy Build" id="copy" onclick="copyText();copyFunction();">
+	<div style="width:50px;height:100px;float:left"></div>
+	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left"  type="button" value="Clear Build" onclick="javascript:eraseText();clearFunction()"> 
+</div>
 <script>
   function refresh(){
         window.location.reload("Refresh")

@@ -1,7 +1,7 @@
-<title>Công Cụ Haruma</title>
+<title>Haruma's Tool</title>
 <html translate="no"></html>
-<head><meta name="google" content="notranslate"></head>
-<link rel="shortcut png" href="./icons/raiden1.png"  >
+
+<link rel='icon' href="./icons/raiden2.png" type='image/x-icon'/ >
 <style> 
 
 
@@ -16,79 +16,226 @@ font-size: 55px;
 }
 </style>
 
-<link rel="stylesheet" href="./assets/mdui-v0.4.3/css/mdui.min.css"/>
-
-<script src="./assets/mdui-v0.4.3/js/mdui.min.js"></script>
-<script src="./snackbar/success.js"></script>
+<head>
+<meta name="google" content="notranslate">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./assets/mdui-v0.4.3/css/mdui.min.css"/>
+  <script src="./snackbar/success.js"></script>
 <script src="./snackbar/finished.js"></script>
+<script src="./snackbar/place.js"></script>
 <script src="./snackbar/copy.js"></script>
 <script src="./snackbar/clear.js"></script>
+<script src="./snackbar/recycle.js"></script>
 <link rel="stylesheet" href="./snackbar/success.css"/>
+<link rel="stylesheet" href="./snackbar/recycle.css"/>
+<link rel="stylesheet" href="./snackbar/place.css"/>
+  <link rel="stylesheet" href="./snackbar/finished.css"/>
+  <link rel="stylesheet" href="./snackbar/copy.css"/>
+  <link rel="stylesheet" href="./snackbar/clear.css"/>        <script src="./snackbar/success.js"></script>
+<script src="./snackbar/finished.js"></script>
+<script src="./snackbar/place.js"></script>
+<script src="./snackbar/copy.js"></script>
+<script src="./snackbar/clear.js"></script>
+<script src="./snackbar/warning.js"></script>
+<link rel="stylesheet" href="./snackbar/warning.css"/>
+<script src="./snackbar/note.js"></script>
+<link rel="stylesheet" href="./snackbar/note.css"/>
+<script src="./snackbar/jam.js"></script>
+<link rel="stylesheet" href="./snackbar/jam.css"/>
+<script src="./snackbar/recycle.js"></script>
+<link rel="stylesheet" href="./snackbar/success.css"/>
+<link rel="stylesheet" href="./snackbar/recycle.css"/>
+<link rel="stylesheet" href="./snackbar/place.css"/>
   <link rel="stylesheet" href="./snackbar/finished.css"/>
   <link rel="stylesheet" href="./snackbar/copy.css"/>
   <link rel="stylesheet" href="./snackbar/clear.css"/>
-<div class="mdui-container">
-  <div class="mdui-tab mdui-tab-scrollable  mdui-tab">
-        <a style="font-size:20px" href="index.html" class="mdui-ripple">Hướng dẫn</a>
-  <a style="font-size:20px" href="WaveCreator.html"   class="mdui-ripple">Tạo Đợt</a>
-    <a style="font-size:20px" href="HarumaLab.html"class="mdui-tab-active" >Tạo Màn chơi</a>
-	<a style="font-size:20px" href="PlantSet.html" class="mdui-ripple">Chọn cây</a>
-	<a style="font-size:20px" href="Sandsnow.html" class="mdui-ripple">Sự kiện Bão</a>
-<a style="font-size:20px" href="RaidingParty.html" class="mdui-ripple">Tiệc Đột kích</a>
-    <a style="font-size:20px" href="Tide.html" class="mdui-ripple">Tạo Thuỷ triều</a>
-    <a style="font-size:20px" href="Tidal.html" class="mdui-ripple">Đổi thủy triều</a>
-    <a style="font-size:20px" href="LowTide.html" class="mdui-ripple">Rút nước</a>
-    <a style="font-size:20px" href="Grids.html" class="mdui-ripple">Đặt Lưới</a>
-    <a style="font-size:20px" href="Necromancy.html" class="mdui-ripple">Chiêu hồn</a>
-    <a style="font-size:20px" href="ItemSpawn.html" class="mdui-ripple">Tạo vật</a>
-    <a style="font-size:20px" href="FrozenZomb.html" class="mdui-ripple">Zombie đóng băng</a>
-<a style="font-size:20px" href="ParachuteRain.html" class="mdui-ripple">Mưa Dù</a>
-    <a style="font-size:20px" href="Dino.html" class="mdui-ripple">Đặt Khủng long</a>	
-	<a style="font-size:20px" href="PML.html" class="mdui-ripple">Đặt Xe mìn</a>
-    <a style="font-size:20px" href="Winds.html" class="mdui-ripple">Gió Băng</a>
-    <a style="font-size:20px" href="Planks.html" class="mdui-ripple">Đặt Ván</a>
-    <a style="font-size:20px" href="Zomboss.html" class="mdui-ripple">Tạo Zomboss</a>
-    <a style="font-size:20px" href="MoldColony.html" class="mdui-ripple">Thuộc địa Nấm mốc</a>
-    <a style="font-size:20px" href="DangerP.html" class="mdui-ripple">Cây nguy hiểm</a>
-    <a style="font-size:20px" href="PlantPlant.html" class="mdui-ripple">Đặt cây</a>
-    <a style="font-size:20px" href="PPT.html" class="mdui-ripple">Tạo Cổng</a>
-    <a style="font-size:20px" href="PlantPower.html" class="mdui-ripple">Ô Sức mạnh</a>
-    <a style="font-size:20px" href="Olaf.html" class="mdui-ripple">Chiều không gian Hỗn loạn</a>
-    <a style="font-size:20px" href="Spidy.html" class="mdui-ripple">Mưa Bot</a>
-	<a style="font-size:20px" href="jsonedit.html" class="mdui-ripple">Công cụ PVZH</a>
-	<a style="font-size:20px" href="internalcode.html" class="mdui-ripple">Mã gốc (Cây)</a>
-  <a style="font-size:20px" href="download.html" class="mdui-ripple">Tải RSB</a>
+</head>
+<div id="snackbar">Successfully Downloaded</div>
+<div id="snackbar1">Success Build</div>
+<div id="snackbar2">Copied</div>
+<div id="snackbar3">Cleared</div>
+<div id="snackbar4">Selected Zombie</div>
+<div id="snackbar5">Input Number</div>
+<div id="snackbar7">Input Number</div>
+<div id="snackbar6">Always True</div>
+<div id="snackbar8"></div>
+</head>
+<body  class="mdui-text-color-white mdui-theme-layout-dark mdui-text-color-black-icon mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto"> 
+<script src="./assets/mdui-v0.4.3/js/mdui.min.js"></script>
+<header class="appbar mdui-appbar mdui-appbar-fixed">
+  <div class="mdui-toolbar mdui-color-theme">
+    <span
+      class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+      mdui-drawer="{target: '#main-drawer', swipe: true}"
+    >
+      <i class="mdui-icon material-icons">menu</i>
+    </span>
+    <a href="./index.html" class="mdui-typo-headline mdui-hidden-xs"> Haruma's Tool</a>
+    <div class="mdui-toolbar-spacer"></div>
+
+	 <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" style="font-size:15px" value="" onClick="refresh(this)"><i class="mdui-icon material-icons">refresh</i></button>
+  </div>
+</header>
+<div></div>
+<div class="mdui-drawer" id="main-drawer">
+  <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+    <div class="mdui-collapse-item mdui-collapse-item-ripple">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-blue"
+            ><img src="./toolbar/raiden1.png" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Waves Option</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+				<a style="font-size:20px" href="./WaveCreator.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecre.png" /> Wave Creator</a>
+				<a style="font-size:20px" href="./WaveCreatorJam.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecrejam.png" /> Wave Creator (J)</a>
+				<a style="font-size:20px" href="./Sandsnow.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/stormevent.png" /> Storm Event</a>
+				<a style="font-size:20px" href="./RaidingParty.html"class=" mdui-list-item mdui-ripple"> <img src="./toolbar/fly.png" /> Raiding Party</a>
+				<a style="font-size:20px" href="./Tidal.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/fishimp.png" /> Absolute Event</a>
+				<a style="font-size:20px" href="./LowTide.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/lowtide.png" /> Low Tide</a>
+				<a style="font-size:20px" href="./Necromancy.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/spiralabyss.png" /> Necromancy</a>
+				<a style="font-size:20px" href="./ItemSpawn.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wizardmagic.png" />Item Spawn</a>
+				<a style="font-size:20px" href="./ParachuteRain.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/parachuterain.png" />Parachute Rain</a>
+				<a style="font-size:20px" href="./Dino.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/dino.png" />Dino Event</a>
+				<a style="font-size:20px" href="./Spidy.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/spiderrain.png" />Spider Rain</a>
+				<a style="font-size:20px" href="./Winds.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/winds.png" />Winds</a>
+				<a style="font-size:20px" href="./PPT.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/portals.png" />Portals</a>
+				<a style="font-size:20px" href="./RNG.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/qigongkongfu.png" />Wave RNG (Beta)</a>
+				<a style="font-size:20px" href="./Escalation.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/escalation.png" /> Escalation</a>
+          </div>
+        </div>
+<div class="mdui-collapse-item mdui-collapse-item-open">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-deep-orange"
+            ><img src="./toolbar/raiden2.png" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Level Gen</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+				<a style="font-size:20px" href="./HarumaLab.html"class=" mdui-list-item mdui-ripple mdui-list-item-active"><img src="./toolbar/kongfublade.png" /> Level Generator</a>
+				<a style="font-size:20px" href="./Tide.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/lemon.png" /> Adding Tide</a>
+				<a style="font-size:20px" href="./Grids.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/kinggrid.png" /> Placing Grid Item</a>
+				<a style="font-size:20px" href="./FrozenZomb.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/juicyyeti.png" /> Frozen Zombie</a>
+				<a style="font-size:20px" href="./PML.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chinesesunwukong.png" /> Rail Cart</a>
+				<a style="font-size:20px" href="./Planks.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/coconut.png" /> Planks</a>
+				<a style="font-size:20px" href="./Zomboss.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/zomboss.png" /> Zomboss</a>
+				<a style="font-size:20px" href="./Olaf.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chaodimension.png" /> Chao Dimension</a>
+          </div>
+        </div><div class="
+          mdui-collapse-item
+          "
+        >
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-green"
+            ><img src="./toolbar/raiden3.png" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Plants Option</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+				<a  style="font-size:20px" href="./MoldColony.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/radish.png" />Mold Colonies</a>
+				<a style="font-size:20px" href="./PlantSet.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/pokra.png" />SeedBank</a>
+				<a style="font-size:20px" href="./DangerP.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/beast.png" />Danger Plants</a>
+				<a style="font-size:20px" href="PlantPlant.html" class="mdui-list-item mdui-ripple"><img src="./toolbar/mf.png" />Planting Plants</a>
+				<a style="font-size:20px" href="PlantPower.html" class="mdui-list-item mdui-ripple"><img src="./toolbar/powerplant.png" />Power Tiles</a>
+				<a style="font-size:20px" href="internalcode.html" class="mdui-list-item mdui-ripple"><img src="./toolbar/thundersnap.png" />Internal Codename</a>
+          </div>
+        </div><div class="mdui-collapse-item">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-purple"
+            ><img src="./toolbar/raiden5.png" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Update</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+
+              <a style="font-size:20px" href="./index.html" class=" mdui-list-item mdui-ripple"><img src="./toolbar/cobcannon.png" />Home</a>
+          </div>
+        </div>
+		<div class="
+          mdui-collapse-item
+          "
+        >
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-brown"
+            ><img src="./toolbar/raiden4.png" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Other Option</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+
+              <a style="font-size:20px" href="./download.html" class=" mdui-list-item mdui-ripple"><img src="./toolbar/hocus.png" />RSB Download</a>
+
+              <a style="font-size:20px" href="./jsonedit.html" class=" mdui-list-item mdui-ripple"><img src="./toolbar/sexyjapan.png" />JSON Editor</a>
+          </div>
+        </div>
+</div>
   </div>
 </div>
+<a id="anchor-top"></a>
+</div>
+<center>
+<p></p>
 <body  class="mdui-text-color-white mdui-theme-layout-dark mdui-text-color-black-icon">
 <center>
-	<p style="font-size:40px" ><img src="./HarumaTools/grids/vietnam.png"> Tạo cấp độ phiên bản 1.6.5 <img src="./HarumaTools/grids/vietnam.png"></p>
-<p style="font-size:40px"><img src="./HarumaTools/grids/sun.png"> Đây là phiên bản có Mặt Trời <img src="./HarumaTools/grids/sun.png"></p>
-<input type="button" style="font-size:20px"  onclick="location.href='NoSun.html';" class="mdui-btn mdui-btn-dense mdui-textfiled" value="Chuyển sang không mặt trời rơi" />
+	<p style="font-size:40px" ><img src="./HarumaTools/grids/vietnam.png"> Level Gen version 1.6.5 <img src="./HarumaTools/grids/vietnam.png"></p>
+<p style="font-size:40px"><img src="./HarumaTools/grids/sun.png"> Sun Version <img src="./HarumaTools/grids/sun.png"></p>
+<input type="button" style="font-size:20px"  onclick="location.href='NoSun.html';" class="mdui-btn mdui-btn-dense mdui-textfiled" value="No Sun Swap" />
 </p>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-	<label style="font-size:25px" class="mdui-textfield-label">Bình luận</label>
-      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="Cap do nay duoc lam boi Cong Cu Haruma phien ban 1.6.5" id="comment" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
+<div id="first" style="width:1000px;height:100px">
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:500px;height:100px;float:left">
+	<label style="font-size:25px" class="mdui-textfield-label">Comment</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="This level was build by Haruma's Tool Version 1.6.5" id="comment" />
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label">Mô tả màn</label>
-      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="descripsion" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
-    </div>
-    <div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label">Cấp độ của Lưới</label>
+	<div style="width:50px;height:100px;float:left"></div>
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:300px;height:100px;float:right">
+      <label style="font-size:25px" class="mdui-textfield-label">Grid Item Levels</label>
       <input style="font-size:25px" class="mdui-textfield-input" type="text" value="1" id="grid" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label">Mặt trời khởi đầu</label>
-      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="50" id="sunstart" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
-    </div>
-	<div class="mdui-textfield mdui-textfield-floating-label" style="">
 	
-      <label style="font-size:30px" class="mdui-textfield-label"> Phần thưởng đầu tiên</label>
+</div>
+<div id="second" style="width:1000px;height:100px">
+    <div class="mdui-textfield mdui-textfield-floating-label" style="width:500px;height:100px;float:left">
+      <label style="font-size:25px" class="mdui-textfield-label">Description</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="descripsion" />
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
+    </div>
+	<div style="width:50px;height:100px;float:left"></div>
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:300px;height:100px;float:right">
+      <label style="font-size:25px" class="mdui-textfield-label">Sun Start</label>
+      <input style="font-size:25px" class="mdui-textfield-input" type="text" value="50" id="sunstart" />
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
+    </div>
+</div>
+
+<div id="third" style="width:1000px;height:100px">
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:300px;height:100px;float:left">
+	
+      <label style="font-size:30px"  class="mdui-textfield-label"> First Reward Param</label>
   <input  style="font-size:30px" class="mdui-textfield-input" list="reward" id="rewardparam">
   <datalist id="reward">
     <option style="font-size:25px" id="sunflower" value="sunflower">
@@ -466,207 +613,253 @@ font-size: 55px;
     <option style="font-size:25px" id="collectable_bacon" value="collectable_bacon">
   </datalist>
 </div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Loại hình của phần thưởng</label>
+
+	<div style="width:50px;height:100px;float:left"></div>
+	<div  class="mdui-container mdui-valign" style="width:300px;height:100px;float:left" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Reward Type</label>
     <select  id="rewardtype" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="">Không có</option>
-      <option style="font-size:25px" value="unlock_plant">Mở khóa Thực Phẩm</option>
-      <option style="font-size:25px" value="powerupgadget">Sức mạnh</option>
-      <option style="font-size:25px" value="mapgadget">Mở khóa Bản đồ</option>
+      <option style="font-size:25px" value="">null</option>
+      <option style="font-size:25px" value="unlock_plant">Unlock Plant</option>
+      <option style="font-size:25px" value="powerupgadget">Powerups</option>
+      <option style="font-size:25px" value="mapgadget">Mapgadget</option>
       <option style="font-size:25px" value="pinata">Pinata</option>
-      <option style="font-size:25px" value="upgrade">Nâng cấp</option>
-      <option style="font-size:25px" value="collectable">Thu thập</option>
-      <option style="font-size:25px" value="worldtrophy">Cúp</option>
+      <option style="font-size:25px" value="upgrade">Upgrade</option>
+      <option style="font-size:25px" value="collectable">Collectable</option>
+      <option style="font-size:25px" value="worldtrophy">Trophy</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Giới Thiệu Màn</label>
+
+	<div style="width:50px;height:100px;float:left"></div>
+	<div  class="mdui-container mdui-valign" style="width:300px;height:100px;float:right" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Intro</label>
     <select  id="intro" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="StandardIntro">Mặc Định</option>
-      <option style="font-size:25px" value="ZombossIntro">Zomboss</option>
-      <option style="font-size:25px" value="EightiesZombossIntro">Thập Niên 80's Zomboss</option>
-      <option style="font-size:25px" value="LevelOfTheDayIntro">Sự Kiện</option>
-      <option style="font-size:25px" value="VaseBreakerArcade">Đập Bình</option>
-      <option style="font-size:25px" value="BeghouledIntro">Xếp Hình</option>
+      <option style="font-size:25px" value="StandardIntro">Default</option>
+      <option style="font-size:25px" value="ZombossIntro">Zomboss Default</option>
+      <option style="font-size:25px" value="EightiesZombossIntro">Neon Mixtape Zomboss</option>
+      <option style="font-size:25px" value="LevelOfTheDayIntro">Events</option>
+      <option style="font-size:25px" value="VaseBreakerArcade">Vasebreaker</option>
+      <option style="font-size:25px" value="BeghouledIntro">Beghouled</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Sức mạnh đặt sẵn</label>
+</div> 
+<div id="whatever" style="width:1000px;height:100px">
+	<div  class="mdui-container mdui-valign" style="width:300px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">Powerups Option</label>
     <select  id="powerupset" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="LevelPowerupsDefault">Mặc Định</option>
-      <option style="font-size:25px" value="LevelPowerupsDisabled">Vô hiệu hóa</option>
-      <option style="font-size:25px" value="LevelPowerupsVasebreaker">Đập Bình</option>
-      <option style="font-size:25px" value="LevelPowerupsUnlimited">Vô Hạn</option>
-      <option style="font-size:25px" value="LevelPowerupsFlameThrower">Có Lửa</option>
-      <option style="font-size:25px" value="LevelPowerupsBeghouled">Xếp Hình</option>
+      <option style="font-size:25px" value="LevelPowerupsDefault">Default</option>
+      <option style="font-size:25px" value="LevelPowerupsDisabled">Disable</option>
+      <option style="font-size:25px" value="LevelPowerupsVasebreaker">Vasebreaker</option>
+      <option style="font-size:25px" value="LevelPowerupsUnlimited">Unlimited</option>
+      <option style="font-size:25px" value="LevelPowerupsFlameThrower">Frostbite Cave</option>
+      <option style="font-size:25px" value="LevelPowerupsBeghouled">Beghouled</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Tắt Cường Hóa Cây </label>
+	<div style="width:100px;height:100px;float:left"></div>
+
+	<div  class="mdui-container mdui-valign" style="width:300px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">No Boosting Plants </label>
     <select  id="boost" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="false">Sai</option>
-      <option style="font-size:25px" value="true">Đúng</option>
+      <option style="font-size:25px" value="false">False</option>
+      <option style="font-size:25px" value="true">True</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Bắt buộc về Bản đồ</label>
+</div>
+<div id="bakana" style="width:1000px;height:100px">
+	<div  class="mdui-container mdui-valign" style="width:250px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">Force to Map</label>
     <select  id="mapforce" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="false">Sai</option>
-      <option style="font-size:25px" value="true">Đúng</option>
+      <option style="font-size:25px" value="false">False</option>
+      <option style="font-size:25px" value="true">True</option>
     </select>
 	</div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label"> Cấp độ của Màn</label>
+	<div style="width:50px;height:100px;float:left"></div>
+
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:250px;height:100px;float:left">
+      <label style="font-size:25px" class="mdui-textfield-label"> Level Number</label>
       <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="levelnumber" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Thông số Nhặt xu</label>
+	<div style="width:50px;height:100px;float:left"></div>
+	<div  class="mdui-container mdui-valign" style="width:350px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">Coin Loot Option</label>
     <select  id="loot" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="DefaultLoot">Mặc Định</option>
-      <option style="font-size:25px" value="WhackLoot">Đập một Zombie</option>
-      <option style="font-size:25px" value="NoLoot">Tắt Nhặt</option>
-      <option style="font-size:25px" value="DangerRoomLoot">Phòng Nguy Hiểm</option>
+      <option style="font-size:25px" value="DefaultLoot">Default</option>
+      <option style="font-size:25px" value="WhackLoot">Whack A Zombie</option>
+      <option style="font-size:25px" value="NoLoot">Disabled</option>
+      <option style="font-size:25px" value="DangerRoomLoot">Dangerroom</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Rơi mặt trời</label>
+</div>
+<div id="pikachu" style="width:1000px;height:100px">
+	<div  class="mdui-container mdui-valign" style="width:500px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">Sun Drop Option</label>
     <select  id="sundropper" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="DefaultSunDropper">Mặc Định</option>
-      <option style="font-size:25px" value="VerySlowSunDropper">Rất Chậm</option>
-      <option style="font-size:25px" value="SlowSunDropper">Chậm</option>
-      <option style="font-size:25px" value="FastSunDropper">Nhanh</option>
-      <option style="font-size:25px" value="VeryFastSunDropper">Rất Nhanh</option>
-      <option style="font-size:25px" value="SunBombs">Mặt Trời Phát Nổ</option>
+      <option style="font-size:25px" value="DefaultSunDropper">Default</option>
+      <option style="font-size:25px" value="VerySlowSunDropper">Very Slow</option>
+      <option style="font-size:25px" value="SlowSunDropper">Slow</option>
+      <option style="font-size:25px" value="FastSunDropper">Fast</option>
+      <option style="font-size:25px" value="VeryFastSunDropper">Very Fast</option>
+      <option style="font-size:25px" value="SunBombs">SunBombs</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Tăng tốc Zombie</label>
+	<div style="width:50px;height:100px;float:left"></div>
+	<div  class="mdui-container mdui-valign"  style="width:300px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">Speedup Zombie</label>
     <select  id="speedtest" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="false">Sai</option>
-      <option style="font-size:25px" value="true">Đúng</option>
+      <option style="font-size:25px" value="false">False</option>
+      <option style="font-size:25px" value="true">True</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Máy cắt cỏ</label>
+</div>
+<div id="hutao"  style="width:1000px;height:100px">
+	<div style="width:50px;height:100px;float:left"></div>
+	<div  class="mdui-container mdui-valign"  style="width:250px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">Mowers</label>
     <select  id="mower" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="EgyptMowers">Ai Cập</option>
-      <option style="font-size:25px" value="PirateMowers">Cướp Biển</option>
-      <option style="font-size:25px" value="WestMowers">Cao Bồi</option>
-      <option style="font-size:25px" value="FutureMowers">Tương lai xa</option>
-      <option style="font-size:25px" value="DarkMowers">Kỉ nguyên Bóng tối</option>
-      <option style="font-size:25px" value="BeachMowers">Bãi biển</option>
-      <option style="font-size:25px" value="IceageMowers">Kỉ Băng Hà</option>
-      <option style="font-size:25px" value="LostCityMowers">Thành phố mất tích</option>
-      <option style="font-size:25px" value="EightiesMowers">Thập niên 80's</option>
-      <option style="font-size:25px" value="DinoMowers">Thời kì Đồ Đá</option>
-      <option style="font-size:25px" value="ModernMowers">Ngày Hiện đại</option>
-      <option style="font-size:25px" value="SaveMowers">Không Có</option>
-      <option style="font-size:25px" value="KongFuMowers">Thế Giới KongFu</option>
-      <option style="font-size:25px" value="SteamMowers">Kỉ Nguyên Hơi nước</option>
-      <option style="font-size:25px" value="RenaiMowers">Thời Phục Hưng </option>
-      <option style="font-size:25px" value="HeianMowers">Thời Heiankyo</option>
-      <option style="font-size:25px" value="FairyTaleMowers">Khu rừng Truyện Cổ Tích</option>
+      <option style="font-size:25px" value="EgyptMowers">Ancient Egypt</option>
+      <option style="font-size:25px" value="PirateMowers">Pirate Seas</option>
+      <option style="font-size:25px" value="WestMowers">Wild West</option>
+      <option style="font-size:25px" value="FutureMowers">Far Future</option>
+      <option style="font-size:25px" value="DarkMowers">Dark Ages</option>
+      <option style="font-size:25px" value="BeachMowers">Big Wave Beach</option>
+      <option style="font-size:25px" value="IceageMowers">Frostbite Cave</option>
+      <option style="font-size:25px" value="LostCityMowers">Lost City</option>
+      <option style="font-size:25px" value="EightiesMowers">Neon Mixtape Tour</option>
+      <option style="font-size:25px" value="DinoMowers">Jurrassic Marsh</option>
+      <option style="font-size:25px" value="ModernMowers">Modern Day</option>
+      <option style="font-size:25px" value="SaveMowers">No Mowers</option>
+      <option style="font-size:25px" value="KongFuMowers">KongFu World</option>
+      <option style="font-size:25px" value="SteamMowers">Steam Ages</option>
+      <option style="font-size:25px" value="RenaiMowers">Renaissance Ages </option>
+      <option style="font-size:25px" value="HeianMowers">Heian Ages</option>
+      <option style="font-size:25px" value="FairyTaleMowers">Fairytale Forest</option>
     </select>
 	</div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label"> Tên cấp độ</label>
+	
+	<div style="width:50px;height:100px;float:left"></div>
+
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:400px;height:100px;float:left">
+      <label style="font-size:25px" class="mdui-textfield-label"> Level Name</label>
       <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="levelname" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Chơi lại buộc về Bản đồ</label>
-    <select  id="playmap" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="false">Sai</option>
-      <option style="font-size:25px" value="true">Đúng</option>
-    </select>
-	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Cảnh trong Màn</label>
+	<div  class="mdui-container mdui-valign" style="width:300px;height:100px;float:left" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Level Stage</label>
     <select  id="levelstage" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="EgyptStage">Ai Cập</option>
-      <option style="font-size:25px" value="PirateStage">Cướp Biển</option>
-      <option style="font-size:25px" value="WestStage">Cao Bồi</option>
-      <option style="font-size:25px" value="FutureStage">Tương lai xa</option>
-      <option style="font-size:25px" value="DarkStage">Kỉ nguyên Bóng tối</option>
-      <option style="font-size:25px" value="BeachStage">Bãi biển</option>
-      <option style="font-size:25px" value="IceageStage">Kỉ Băng Hà</option>
-      <option style="font-size:25px" value="LostCityStage">Thành phố mất tích</option>
-      <option style="font-size:25px" value="EightiesStage">Thập niên 80's</option>
-      <option style="font-size:25px" value="DinoStage">Thời kì Đồ Đá</option>
-      <option style="font-size:25px" value="ModernStage">Ngày Hiện đại</option>
-      <option style="font-size:25px" value="SaveStage">Không Có</option>
-      <option style="font-size:25px" value="KongFuStage">Thế Giới KongFu</option>
-      <option style="font-size:25px" value="SteamStage">Kỉ Nguyên Hơi nước</option>
-      <option style="font-size:25px" value="RenaiStage">Thời Phục Hưng </option>
-      <option style="font-size:25px" value="HeianStage">Thời Heiankyo</option>
-      <option style="font-size:25px" value="FairyTaleStage">Khu rừng Truyện Cổ Tích</option>
-      <option style="font-size:25px" value="Stage">Tự Chọn</option>
+      <option style="font-size:25px" value="EgyptStage">Ancient Egypt</option>
+      <option style="font-size:25px" value="PirateStage">Pirate Seas</option>
+      <option style="font-size:25px" value="WestStage">Wild West</option>
+      <option style="font-size:25px" value="FutureStage">Far Future</option>
+      <option style="font-size:25px" value="DarkStage">Dark Ages</option>
+      <option style="font-size:25px" value="BeachStage">Big Wave Beach</option>
+      <option style="font-size:25px" value="IceageStage">Frostbite Cave</option>
+      <option style="font-size:25px" value="LostCityStage">Lost City</option>
+      <option style="font-size:25px" value="EightiesStage">Neon Mixtape Tour</option>
+      <option style="font-size:25px" value="DinoStage">Jurrassic Marsh</option>
+      <option style="font-size:25px" value="ModernStage">Modern Day</option>
+      <option style="font-size:25px" value="SaveStage">No Stage</option>
+      <option style="font-size:25px" value="KongFuStage">KongFu World</option>
+      <option style="font-size:25px" value="SteamStage">Steam Ages</option>
+      <option style="font-size:25px" value="RenaiStage">Renaissance Ages </option>
+      <option style="font-size:25px" value="HeianStage">Heian Ages</option>
+      <option style="font-size:25px" value="FairyTaleStage">Fairytale Forest</option>
+      <option style="font-size:25px" value="Stage">Custom</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Có phải Cảnh Tự Chọn ?</label>
+</div>
+
+<div id="chinese" style="width:1000px;height:100px">
+	
+	
+	<div style="width:50px;height:100px;float:left"></div>
+	<div  class="mdui-container mdui-valign" style="width:350px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">Do you use custom Stage ?</label>
     <select  id="stagequiz" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="LevelModules">Sai</option>
-      <option style="font-size:25px" value="CurrentLevel">Đúng</option>
+      <option style="font-size:25px" value="LevelModules">False</option>
+      <option style="font-size:25px" value="CurrentLevel">True</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Tắt nâng cấp sẵn</label>
+	
+	<div style="width:50px;height:100px;float:left"></div>
+	<div  class="mdui-container mdui-valign" style="width:300px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">No Account Upgrade</label>
     <select  id="accountup" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="false">Sai</option>
-      <option style="font-size:25px" value="true">Đúng</option>
+      <option style="font-size:25px" value="false">False</option>
+      <option style="font-size:25px" value="true">True</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Loại bỏ Hướng dẫn</label>
+	
+<div  class="mdui-container mdui-valign" style="width:300px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px" >Replay Force to Map</label>
+    <select  id="playmap" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="false">False</option>
+      <option style="font-size:25px" value="true">True</option>
+    </select>
+	</div>
+</div>
+<div id="ban" style="width:1000px;height:100px">
+	<div  class="mdui-container mdui-valign" style="width:400px;height:100px;float:left" >
+	<label  class="mdui-textfield-label" style="font-size:30px">No Dynamic Tutorial</label>
     <select  id="dynamictuto" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="false">Sai</option>
-      <option style="font-size:25px" value="true">Đúng</option>
+     <option style="font-size:25px" value="false">False</option>
+      <option style="font-size:25px" value="true">True</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" >
-	<label  class="mdui-textfield-label" style="font-size:30px">Tắt mua Thực phẩm Cây</label>
+	
+	<div style="width:50px;height:100px;float:left"></div>
+	<div  class="mdui-container mdui-valign" style="width:400px;height:100px;float:left" >
+	<label  class="mdui-textfield-label" style="font-size:30px">No Buy Plantfood</label>
     <select  id="plantfoodbuy" class="mdui-select" mdui-select>
-      <option style="font-size:25px" value="false">Sai</option>
-      <option style="font-size:25px" value="true">Đúng</option>
+      <option style="font-size:25px" value="false">False</option>
+      <option style="font-size:25px" value="true">True</option>
     </select>
 	</div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label">Sửa lại cấp độ Cây</label>
+<div id="levels" style="width:1000px;height:100px">
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:400px;height:100px;float:left">
+      <label style="font-size:25px" class="mdui-textfield-label">Fixed All Plants Level</label>
       <input style="font-size:25px" class="mdui-textfield-input" type="text" value="-1" id="fixplant" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label">Sửa lại cấp độ Zombie</label>
+	<div style="width:50px;height:100px;float:left"></div>
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:400px;height:100px;float:left">
+      <label style="font-size:25px" class="mdui-textfield-label">Fixed All Zombies Level</label>
       <input style="font-size:25px" class="mdui-textfield-input" type="text" value="1" id="zombielevel" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label">Khoảng thời gian giữa một đợt sóng lớn</label>
+</div>
+
+<div id="stupidwave" style="width:1000px;height:100px">
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:300px;height:100px;float:left">
+      <label style="font-size:25px" class="mdui-textfield-label">Flag Wave Internal</label>
       <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="flagwave" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label">Số Đợt</label>
+	<div style="width:50px;height:100px;float:left"></div>
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:250px;height:100px;float:left">
+      <label style="font-size:25px" class="mdui-textfield-label">Wave Count</label>
       <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="wavecount" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label"> Đếm ngược thời gian trước Đợt đầu tiên</label>
+	<div style="width:50px;height:100px;float:left"></div>
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:250px;height:100px;float:left">
+      <label style="font-size:25px" class="mdui-textfield-label"> Count Before First Wave</label>
       <input style="font-size:25px" class="mdui-textfield-input" type="text" value="" id="wavesecond" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label"> Mức tăng điểm chi tiêu của Đợt</label>
+</div>
+<div id="countpoint" style="width:1000px;height:100px" >
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:400px;height:100px;float:left">
+      <label style="font-size:25px" class="mdui-textfield-label"> Point Increasement</label>
       <input style="font-size:25px" class="mdui-textfield-input" type="text" value="75" id="wavebuff" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:25px" class="mdui-textfield-label"> Điểm chi tiêu của Đợt</label>
+	<div style="width:50px;height:100px;float:left"></div>
+	<div class="mdui-textfield mdui-textfield-floating-label" style="width:400px;height:100px;float:left">
+      <label style="font-size:25px" class="mdui-textfield-label"> Point Spend</label>
       <input style="font-size:25px" class="mdui-textfield-input" type="text" value="100" id="wavepoint" />
-      <div class="mdui-textfield-error">Hãy nhập lại</div>
+      <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
+</div>
     </p>
 	<div>
     </div>
@@ -680,12 +873,15 @@ textarea {
 </style>
     <textarea id="xml" rows="20" cols="50" style="display: none;"></textarea> 
      <p> </p>
- <button class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" onclick="CompileLevelXML();finishFunction()">Hoàn tất</button>
-	<button class="mdui-btn mdui-btn-dense mdui-textfiled" type="button" onclick="download();downloadFunction()">Tải xuống mã</button>
-	<input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Sao chép" id="copy" onclick="copyText();copyFunction();">
-	
-	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" type="button" value="Xóa mã" onclick="javascript:eraseText();clearFunction()"> 
-	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Tải lại" onClick="refresh(this)">
+ <div style="width:750px;height:50px">
+ <button class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left" onclick="CompileLevelXML();finishFunction()">Build Code</button>
+ <div style="width:50px;height:100px;float:left"></div>
+	<button class="mdui-btn mdui-btn-dense mdui-textfiled"  style="font-size:15px;width:200px;height:100px;float:left"  type="button" onclick="download();downloadFunction()">Download Build</button>
+	<div style="width:50px;height:100px;float:left"></div>
+	<input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left"  type="button" value="Copy Build" id="copy" onclick="copyText();copyFunction();">
+	<div style="width:50px;height:100px;float:left"></div>
+	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left"  type="button" value="Clear Build" onclick="javascript:eraseText();clearFunction()"> 
+</div>
 <script>
   function refresh(){
         window.location.reload("Refresh")
