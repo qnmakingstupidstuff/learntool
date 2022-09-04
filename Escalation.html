@@ -56,7 +56,7 @@ font-size: 55px;
 <div id="snackbar2">Copied</div>
 <div id="snackbar3">Cleared</div>
 <div id="snackbar4">Selected Zombie</div>
-<div id="snackbar5">Input Number</div>
+<div id="snackbar5">Selected Trash Bin</div>
 <div id="snackbar7">Input Number</div>
 <div id="snackbar6">Always True</div>
 <div id="snackbar8"></div>
@@ -92,7 +92,7 @@ font-size: 55px;
             <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
-				<a style="font-size:20px" href="./WaveCreator.html"class=" mdui-list-item mdui-ripple mdui-list-item-active"><img src="./toolbar/wavecre.png" /> Wave Creator</a>
+				<a style="font-size:20px" href="./WaveCreator.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecre.png" /> Wave Creator</a>
 				<a style="font-size:20px" href="./WaveCreatorJam.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecrejam.png" /> Wave Creator (J)</a>
 				<a style="font-size:20px" href="./Sandsnow.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/stormevent.png" /> Storm Event</a>
 				<a style="font-size:20px" href="./RaidingParty.html"class=" mdui-list-item mdui-ripple"> <img src="./toolbar/fly.png" /> Raiding Party</a>
@@ -106,7 +106,7 @@ font-size: 55px;
 				<a style="font-size:20px" href="./Winds.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/winds.png" />Winds</a>
 				<a style="font-size:20px" href="./PPT.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/portals.png" />Portals</a>
 				<a style="font-size:20px" href="./RNG.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/qigongkongfu.png" />Wave RNG (Beta)</a>
-				<a style="font-size:20px" href="./Escalation.html"class=" mdui-list-item mdui-ripple"><img src="./toolbar/escalation.png" /> Escalation</a>
+				<a style="font-size:20px" href="./Escalation.html"class=" mdui-list-item mdui-ripple mdui-list-item-active"><img src="./toolbar/escalation.png" /> Escalation</a>
           </div>
         </div>
 <div class=" mdui-collapse-item">
@@ -243,7 +243,7 @@ font-size: 55px;
 </div>
 	<p></p>
 <div>
-<img src="./HarumaTools/grids/eraser.png" id="547" style="margin-left: 15px;">
+<img src="./HarumaTools/grids/eraser.png" id="547" onclick="selectSprite(event);recycleFunction()" style="margin-left: 15px;">
 <p></p>
 <div style="background-image:url('./HarumaTools/grids/zombiepacket.png');border-radius:10px;border:4px solid #6362b1; width: 465; height: 1600px">
        <div>
@@ -799,7 +799,7 @@ function copyText(){
                 newImg.style.zIndex = -1;
                 newImg.className = "newImg";
                 if(icecubed.checked == true){
-                    newImg.style.outline = "red solid 0.5px";
+                    newImg.style.outline = "white solid 2px";
                     e.target.style.outline = "rgb(0, 255, 255) solid 2.5px";
                 }
                 newImg.addEventListener("click",function(){
@@ -842,12 +842,12 @@ function copyText(){
         }
         var allAddedItems = new Array();
         var selectedSpriteId = 1;
-        document.getElementById(selectedSpriteId).style.outline=".5px solid red";
+        document.getElementById(selectedSpriteId).style.outline="white solid 2px";
         mouseOverSprite.src = document.getElementById(selectedSpriteId).src;
 
         function selectSprite(e){
             document.getElementById(selectedSpriteId).style.outline="";
-            e.currentTarget.style.outline = ".5px solid red";
+            e.currentTarget.style.outline = "white solid 2px";
             selectedSpriteId = e.currentTarget.id;
             mouseOverSprite.src = e.currentTarget.src;
             var canvases = document.getElementsByClassName('newImg');
