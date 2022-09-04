@@ -347,7 +347,7 @@ function copyText(){
                 console.log(b);
                 var y = b.charAt(2);
                 console.log(y);
-                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                \"RailcartType\"\: \""+ mouseOverSprite.src.substring(mouseOverSprite.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                \"Railcarts\": [\n                  {\n                      \"Column\"\: " + x + ",\n                      \"Row\"\: " + y + "\n                   }\n               ],\n                 \"Rails\": [\n                  {\n                      \"Column\"\: " + x + ",";
+                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                \"RailcartType\"\: \""+ mouseOverSprite.src.substring(mouseOverSprite.src.lastIndexOf('/')+1).split('.')[0] + "\",\n                \"Railcarts\": [\n                  {\n                      \"Column\"\: " + x + ",\n                      \"Row\"\: " + y + "\n                   }\n               ],\n                 \"Rails\": [\n                  {\n                      \"Column\"\: " + x + ",";
                 var newImg = document.createElement("img");
                 newImg.src = mouseOverSprite.src;
                 newImg.style.position = "absolute";

@@ -377,11 +377,15 @@ function copyText(){
                 console.log(a);
                 var x = a.charAt(0);
                 console.log(x);
+				var xi = parseInt(x);
+				console.log(xi);
                 var b = e.target.id;
                 console.log(b);
                 var y = b.charAt(2);
                 console.log(y);
-                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                \"PortalRow\"\: " + y + ",\n                \"PortalColumn\": " + x + "\,\n                \"PortalType\"\: \""+ mouseOverSprite.src.substring(mouseOverSprite.src.lastIndexOf('/')+1).split('.')[0] + "\"";
+                var yi = parseInt(y)-1;
+				console.log(yi);
+                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                \"PortalRow\"\: " + yi + ",\n                \"PortalColumn\": " + xi + "\,\n                \"PortalType\"\: \""+ mouseOverSprite.src.substring(mouseOverSprite.src.lastIndexOf('/')+1).split('.')[0] + "\"";
                 var newImg = document.createElement("img");
                 newImg.src = mouseOverSprite.src;
                 newImg.style.position = "absolute";
