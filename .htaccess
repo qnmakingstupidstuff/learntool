@@ -2,6 +2,9 @@
 Options +FollowSymLinks -MultiViews
 
 RewriteEngine on
+RewriteBase /
+
+RewriteEngine on
 RewriteCond %{REQUEST_URI} ^/oldsite1.php$ [OR]
 RewriteCond %{REQUEST_URI} ^/oldsite2.html$ [OR]
 RewriteCond %{QUERY_STRING} ^site=old$
