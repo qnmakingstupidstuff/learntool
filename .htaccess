@@ -20,7 +20,7 @@ RewriteRule ^index.html$ / [L,R=301]
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*?[^/])$ %{REQUEST_URI}/ [L,R=301,NE]
-
+RewriteRule ^([a-zA-z0-9]+).html$ /$1/   [L,R=301]
 # add html internally
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d 
