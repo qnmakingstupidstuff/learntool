@@ -777,7 +777,7 @@ function copyText(){
                 if(icecubed.checked == true) {
                 document.getElementById("xml").value += "";
                 }
-                document.getElementById("xml").value += "{\n                        \"Type\"\: \"RTID("+ mouseOverSprite.src.substring(mouseOverSprite.src.lastIndexOf('/')+1).split('.')[0] + "\@ZombieTypes)\", \n                        \"Row\"\:\ \"" + y + "\" \n                    }";
+                console.log(document.getElementById("xml").value += "{\n                        \"Type\"\: \"RTID("+ mouseOverSprite.src.substring(mouseOverSprite.src.lastIndexOf('/')+1).split('.')[0] + "\@ZombieTypes)\", \n                        \"Row\"\:\ \"" + y + "\" \n                    }");
             }
                 var icecubed = document.getElementById("icecubed");
                 var newImg = document.createElement("img");
