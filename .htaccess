@@ -55,6 +55,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^((?!subdirectory/).*)$ subdirectory/$1 [L,NC]
 
-ErrorDocument 404 /404.php
+ErrorDocument 404 /index.html
 </IfModule>
 
