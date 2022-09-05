@@ -2,7 +2,7 @@
 <script src="https://cmp.osano.com/AzZmS6TGVY3D6IPM/654c4c7d-7d40-4afb-8f34-c45989e74f87/osano.js"></script>
 <html translate="no"></html>
 
-<link rel='icon' href="./icons/raiden2.png" type='image/x-icon'/ >
+<link rel='icon' href="./icons/raiden2.png" draggable="false" type='image/x-icon'/ >
 <style> 
 
 
@@ -27,6 +27,7 @@ font-size: 55px;
 <script src="./snackbar/place.js"></script>
 <script src="./snackbar/copy.js"></script>
 <script src="./snackbar/clear.js"></script>
+<script src="./picture.js"></script>
 <script src="./snackbar/recycle.js"></script>
 <link rel="stylesheet" href="./snackbar/success.css"/>
 <link rel="stylesheet" href="./snackbar/recycle.css"/>
@@ -92,6 +93,7 @@ font-size: 55px;
 	 <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" style="font-size:15px" value="" onClick="refresh(this)"><i class="mdui-icon material-icons">refresh</i></button>
   </div>
 </header>
+
 <div></div>
 <div class="mdui-drawer" id="main-drawer">
   <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
@@ -102,26 +104,26 @@ font-size: 55px;
               mdui-icon
               material-icons
               mdui-text-color-blue"
-            ><img src="./toolbar/raiden1.png" /></i>
+            ><img src="./toolbar/raiden1.png" draggable="false"  /></i>
             <div style="font-size:20px" class="mdui-list-item-content">Waves Option</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" draggable="false" /></i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
-				<a style="font-size:20px" href="./WaveCreator"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecre.png" /> Wave Creator</a>
-				<a style="font-size:20px" href="./WaveCreatorJam"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecrejam.png" /> Wave Creator (J)</a>
-				<a style="font-size:20px" href="./Sandsnow"class=" mdui-list-item mdui-ripple"><img src="./toolbar/stormevent.png" /> Storm Event</a>
-				<a style="font-size:20px" href="./RaidingParty"class=" mdui-list-item mdui-ripple"> <img src="./toolbar/fly.png" /> Raiding Party</a>
-				<a style="font-size:20px" href="./Tidal"class=" mdui-list-item mdui-ripple"><img src="./toolbar/fishimp.png" /> Absolute Event</a>
-				<a style="font-size:20px" href="./LowTide"class=" mdui-list-item mdui-ripple"><img src="./toolbar/lowtide.png" /> Low Tide</a>
-				<a style="font-size:20px" href="./Necromancy"class=" mdui-list-item mdui-ripple"><img src="./toolbar/spiralabyss.png" /> Necromancy</a>
-				<a style="font-size:20px" href="./ItemSpawn"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wizardmagic.png" />Item Spawn</a>
-				<a style="font-size:20px" href="./ParachuteRain"class=" mdui-list-item mdui-ripple"><img src="./toolbar/parachuterain.png" />Parachute Rain</a>
-				<a style="font-size:20px" href="./Dino"class=" mdui-list-item mdui-ripple"><img src="./toolbar/dino.png" />Dino Event</a>
-				<a style="font-size:20px" href="./Spidy"class=" mdui-list-item mdui-ripple"><img src="./toolbar/spiderrain.png" />Spider Rain</a>
-				<a style="font-size:20px" href="./Winds"class=" mdui-list-item mdui-ripple"><img src="./toolbar/winds.png" />Winds</a>
-				<a style="font-size:20px" href="./PPT"class=" mdui-list-item mdui-ripple"><img src="./toolbar/portals.png" />Portals</a>
-				<a style="font-size:20px" href="./RNG"class=" mdui-list-item mdui-ripple"><img src="./toolbar/qigongkongfu.png" />Wave RNG (Beta)</a>
-				<a style="font-size:20px" href="./Escalation"class=" mdui-list-item mdui-ripple"><img src="./toolbar/escalation.png" /> Escalation</a>
+				<a style="font-size:20px" href="./WaveCreator"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecre.png" draggable="false" /> Wave Creator</a>
+				<a style="font-size:20px" href="./WaveCreatorJam"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecrejam.png" draggable="false" /> Wave Creator (J)</a>
+				<a style="font-size:20px" href="./Sandsnow"class=" mdui-list-item mdui-ripple"><img src="./toolbar/stormevent.png" draggable="false" /> Storm Event</a>
+				<a style="font-size:20px" href="./RaidingParty"class=" mdui-list-item mdui-ripple"> <img src="./toolbar/fly.png" draggable="false" /> Raiding Party</a>
+				<a style="font-size:20px" href="./Tidal"class=" mdui-list-item mdui-ripple"><img src="./toolbar/fishimp.png" draggable="false" /> Absolute Event</a>
+				<a style="font-size:20px" href="./LowTide"class=" mdui-list-item mdui-ripple"><img src="./toolbar/lowtide.png" draggable="false" /> Low Tide</a>
+				<a style="font-size:20px" href="./Necromancy"class=" mdui-list-item mdui-ripple"><img src="./toolbar/spiralabyss.png" draggable="false" /> Necromancy</a>
+				<a style="font-size:20px" href="./ItemSpawn"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wizardmagic.png" draggable="false" />Item Spawn</a>
+				<a style="font-size:20px" href="./ParachuteRain"class=" mdui-list-item mdui-ripple"><img src="./toolbar/parachuterain.png" draggable="false" />Parachute Rain</a>
+				<a style="font-size:20px" href="./Dino"class=" mdui-list-item mdui-ripple"><img src="./toolbar/dino.png" draggable="false" />Dino Event</a>
+				<a style="font-size:20px" href="./Spidy"class=" mdui-list-item mdui-ripple"><img src="./toolbar/spiderrain.png" draggable="false" />Spider Rain</a>
+				<a style="font-size:20px" href="./Winds"class=" mdui-list-item mdui-ripple"><img src="./toolbar/winds.png" draggable="false" />Winds</a>
+				<a style="font-size:20px" href="./PPT"class=" mdui-list-item mdui-ripple"><img src="./toolbar/portals.png" draggable="false" />Portals</a>
+				<a style="font-size:20px" href="./RNG"class=" mdui-list-item mdui-ripple"><img src="./toolbar/qigongkongfu.png" draggable="false" />Wave RNG (Beta)</a>
+				<a style="font-size:20px" href="./Escalation"class=" mdui-list-item mdui-ripple"><img src="./toolbar/escalation.png" draggable="false" /> Escalation</a>
           </div>
         </div>
 		<div class="mdui-collapse-item">
@@ -132,20 +134,20 @@ font-size: 55px;
               mdui-icon
               material-icons
               mdui-text-color-deep-orange"
-            ><img src="./toolbar/raiden2.png" /></i>
+            ><img src="./toolbar/raiden2.png" draggable="false" /></i>
             <div style="font-size:20px" class="mdui-list-item-content">Level Gen</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" draggable="false" /></i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
             
-				<a style="font-size:20px" href="./HarumaLab"class=" mdui-list-item mdui-ripple"><img src="./toolbar/kongfublade.png" /> Level Generator</a>
-				<a style="font-size:20px" href="./Tide"class=" mdui-list-item mdui-ripple"><img src="./toolbar/lemon.png" /> Adding Tide</a>
-				<a style="font-size:20px" href="./Grids"class=" mdui-list-item mdui-ripple"><img src="./toolbar/kinggrid.png" /> Placing Grid Item</a>
-				<a style="font-size:20px" href="./FrozenZomb"class=" mdui-list-item mdui-ripple"><img src="./toolbar/juicyyeti.png" /> Frozen Zombie</a>
-				<a style="font-size:20px" href="./PML"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chinesesunwukong.png" /> Rail Cart</a>
-				<a style="font-size:20px" href="./Planks"class=" mdui-list-item mdui-ripple"><img src="./toolbar/coconut.png" /> Planks</a>
-				<a style="font-size:20px" href="./Zomboss"class=" mdui-list-item mdui-ripple"><img src="./toolbar/zomboss.png" /> Zomboss</a>
-				<a style="font-size:20px" href="./Olaf"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chaodimension.png" /> Chao Dimension</a>
+				<a style="font-size:20px" href="./HarumaLab"class=" mdui-list-item mdui-ripple"><img src="./toolbar/kongfublade.png" draggable="false" /> Level Generator</a>
+				<a style="font-size:20px" href="./Tide"class=" mdui-list-item mdui-ripple"><img src="./toolbar/lemon.png" draggable="false" /> Adding Tide</a>
+				<a style="font-size:20px" href="./Grids"class=" mdui-list-item mdui-ripple"><img src="./toolbar/kinggrid.png" draggable="false" /> Placing Grid Item</a>
+				<a style="font-size:20px" href="./FrozenZomb"class=" mdui-list-item mdui-ripple"><img src="./toolbar/juicyyeti.png" draggable="false" /> Frozen Zombie</a>
+				<a style="font-size:20px" href="./PML"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chinesesunwukong.png" draggable="false" /> Rail Cart</a>
+				<a style="font-size:20px" href="./Planks"class=" mdui-list-item mdui-ripple"><img src="./toolbar/coconut.png" draggable="false" /> Planks</a>
+				<a style="font-size:20px" href="./Zomboss"class=" mdui-list-item mdui-ripple"><img src="./toolbar/zomboss.png" draggable="false" /> Zomboss</a>
+				<a style="font-size:20px" href="./Olaf"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chaodimension.png" draggable="false" /> Chao Dimension</a>
           </div>
         </div>
 		<div class="mdui-collapse-item">
@@ -155,18 +157,18 @@ font-size: 55px;
               mdui-icon
               material-icons
               mdui-text-color-green"
-            ><img src="./toolbar/raiden3.png" /></i>
+            ><img src="./toolbar/raiden3.png" draggable="false" /></i>
             <div style="font-size:20px" class="mdui-list-item-content">Plants Option</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" draggable="false" /></i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
             
-				<a  style="font-size:20px" href="./MoldColony"class=" mdui-list-item mdui-ripple "><img src="./toolbar/radish.png" />Mold Colonies</a>
-				<a style="font-size:20px" href="./PlantSet"class=" mdui-list-item mdui-ripple"><img src="./toolbar/pokra.png" />SeedBank</a>
-				<a style="font-size:20px" href="./DangerP"class=" mdui-list-item mdui-ripple"><img src="./toolbar/beast.png" />Danger Plants</a>
-				<a style="font-size:20px" href="PlantPlant" class="mdui-list-item mdui-ripple"><img src="./toolbar/mf.png" />Planting Plants</a>
-				<a style="font-size:20px" href="PlantPower" class="mdui-list-item mdui-ripple"><img src="./toolbar/powerplant.png" />Power Tiles</a>
-				<a style="font-size:20px" href="internalcode" class="mdui-list-item mdui-ripple"><img src="./toolbar/thundersnap.png" />Internal Codename</a>
+				<a  style="font-size:20px" href="./MoldColony"class=" mdui-list-item mdui-ripple "><img src="./toolbar/radish.png" draggable="false" />Mold Colonies</a>
+				<a style="font-size:20px" href="./PlantSet"class=" mdui-list-item mdui-ripple"><img src="./toolbar/pokra.png" draggable="false" />SeedBank</a>
+				<a style="font-size:20px" href="./DangerP"class=" mdui-list-item mdui-ripple"><img src="./toolbar/beast.png" draggable="false" />Danger Plants</a>
+				<a style="font-size:20px" href="PlantPlant" class="mdui-list-item mdui-ripple"><img src="./toolbar/mf.png" draggable="false" />Planting Plants</a>
+				<a style="font-size:20px" href="PlantPower" class="mdui-list-item mdui-ripple"><img src="./toolbar/powerplant.png" draggable="false" />Power Tiles</a>
+				<a style="font-size:20px" href="internalcode" class="mdui-list-item mdui-ripple"><img src="./toolbar/thundersnap.png" draggable="false" />Internal Codename</a>
           </div>
         </div>		<div class="mdui-collapse-item mdui-collapse-item-open">
       <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
@@ -175,13 +177,13 @@ font-size: 55px;
               mdui-icon
               material-icons
               mdui-text-color-purple"
-            ><img src="./toolbar/raiden5.png" /></i>
+            ><img src="./toolbar/raiden5.png" draggable="false" /></i>
             <div style="font-size:20px" class="mdui-list-item-content ">Update</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" draggable="false" /></i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
 
-              <a style="font-size:20px" href="./index" class=" mdui-list-item mdui-ripple   mdui-list-item-active"><img src="./toolbar/cobcannon.png" />Home</a>
+              <a style="font-size:20px" href="./index" class=" mdui-list-item mdui-ripple   mdui-list-item-active"><img src="./toolbar/cobcannon.png" draggable="false" />Home</a>
           </div>
         </div>
 		<div class="
@@ -194,15 +196,15 @@ font-size: 55px;
               mdui-icon
               material-icons
               mdui-text-color-brown"
-            ><img src="./toolbar/raiden4.png" /></i>
+            ><img src="./toolbar/raiden4.png" draggable="false" /></i>
             <div style="font-size:20px" class="mdui-list-item-content">Other Option</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" /></i>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" draggable="false" /></i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
 
-              <a style="font-size:20px" href="./download" class=" mdui-list-item mdui-ripple"><img src="./toolbar/hocus.png" />RSB Download</a>
+              <a style="font-size:20px" href="./download" class=" mdui-list-item mdui-ripple"><img src="./toolbar/hocus.png" draggable="false" />RSB Download</a>
 
-              <a style="font-size:20px" href="./jsonedit" class=" mdui-list-item mdui-ripple"><img src="./toolbar/sexyjapan.png" />JSON Editor</a>
+              <a style="font-size:20px" href="./jsonedit" class=" mdui-list-item mdui-ripple"><img src="./toolbar/sexyjapan.png" draggable="false" />JSON Editor</a>
           </div>
         </div>
 </div>
@@ -227,7 +229,7 @@ font-size: 55px;
                 <div class="mdui-card-header-subtitle">Main Coder</div>
               </div>
               <div class="mdui-card-media">
-                <img src="./profile/card3.png">
+                <img src="./profile/card3.png" draggable="false">
                 <div class="mdui-card-menu">
                 </div>
               </div>
@@ -241,12 +243,12 @@ font-size: 55px;
 	 <div class="mdui-col-sm-6 mdui-col-md-4">
             <div class="mdui-card">
               <div class="mdui-card-header">
-                <img class="mdui-card-header-avatar" src="./profile/radish.png">
+                <img class="mdui-card-header-avatar" src="./profile/radish.png" draggable="false">
                 <div class="mdui-card-header-title">ShangHai Radish</div>
                 <div class="mdui-card-header-subtitle">Co-Coder</div>
               </div>
               <div class="mdui-card-media">
-                <img src="./profile/card2kongfu.png">
+                <img src="./profile/card2kongfu.png" draggable="false">
                 <div class="mdui-card-menu">
                 </div>
               </div>
@@ -265,7 +267,7 @@ font-size: 55px;
                 <div class="mdui-card-header-subtitle">Beta Tester</div>
               </div>
               <div class="mdui-card-media">
-                <img src="./profile/card1.png">
+                <img src="./profile/card1.png" draggable="false">
                 <div class="mdui-card-menu">
                 </div>
               </div>
@@ -285,7 +287,7 @@ font-size: 55px;
                 <div class="mdui-card-header-subtitle">Beta Tester</div>
               </div>
               <div class="mdui-card-media">
-                <img src="./profile/card2.png">
+                <img src="./profile/card2.png" draggable="false">
                 <div class="mdui-card-menu">
                 </div>
               </div>
@@ -304,7 +306,7 @@ font-size: 55px;
                 <div class="mdui-card-header-subtitle">Beta Tester</div>
               </div>
               <div class="mdui-card-media">
-                <img src="./profile/card4.png">
+                <img src="./profile/card4.png" draggable="false">
                 <div class="mdui-card-menu">
                 </div>
               </div>
@@ -323,7 +325,7 @@ font-size: 55px;
                 <div class="mdui-card-header-subtitle">Beta Tester</div>
               </div>
               <div class="mdui-card-media">
-                <img src="./profile/card5.png">
+                <img src="./profile/card5.png" draggable="false">
                 <div class="mdui-card-menu">
                 </div>
               </div>
