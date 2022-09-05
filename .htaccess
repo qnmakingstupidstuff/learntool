@@ -49,12 +49,12 @@ RewriteRule ^(.+)/$ /$1 [NE,R=301,L]
 # Open page without php extension
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^((?!subdirectory/).*)$ subdirectory/$1 [L,NC]
 
-ErrorDocument 404 /index.html
+ErrorDocument 404 "<H1>Page not found</H1>"
 </IfModule>
 
