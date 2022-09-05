@@ -12,6 +12,9 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ 
 RewriteRule ^index\.html$ http://%{HTTP_HOST}/ [R=301,L]
 
+RewriteRule ^index.html$ / [L,R=301]
+
+
 # add a trailing slash to non files
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{REQUEST_FILENAME} !-f
