@@ -230,7 +230,10 @@ font-size: 55px;
 	</div>
 	
 <div style="background-image:url('./HarumaTools/grids/zombiepacket.png');border-radius:10px;border:4px solid #6362b1; width: 465; height: 500px;margin-top: 10px;">
-	<img src="./HarumaTools/grids/nothing.png" draggable="false" style="margin-left: 15px;">
+	<img src="./HarumaTools/grids/nothing.png"  draggable="false" style="margin-left: 15px;">
+	<div>
+	<img src="./HarumaTools/grids/eraser.png"  draggable="false" id="547" onclick="selectSprite(event)" style="margin-left: 15px;">
+	</div>
 	<p style="font-size:30px">Normal Zomboss</p>
 	<div>
         <img src="./HarumaTools/zombies/zombossmech_egypt.png" draggable="false" id="1" onclick="selectSprite(event);placeFunction()" style="outline: white solid 2px;">
@@ -332,10 +335,12 @@ function copyText(){
     <textarea   style="display: none;" id="xml" rows="20" cols="50"></textarea> 
      <p> </p>
      <p> </p>
-    <textarea   style="font-size:20px"  class="mdui-textfield-input"  style="display: none;" id="output" rows="100" cols="150"></textarea> 
+  <div style="width: 600px;height:200px">
+    <textarea id="output" style="font-size:20px"  class="mdui-textfield-input" rows="100" cols="150"></textarea> 
+	</div>
         <script type="text/javascript">
         var version = 1.0;
-        var eraser = 47;
+        var eraser = 547;
         document.getElementById('output').style.display = "none";	
         document.getElementById("xml").value = "";
 		document.getElementById("output").value = "";
@@ -389,8 +394,12 @@ function copyText(){
                 newImg.className = "newImg";
                 newImg.addEventListener("click",function(){
                 if(selectedSpriteId == eraser){
-
-             			 victim = "";
+                    var victim = "";
+                    console.log(e.target.style.outline);
+                        if(e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px"){
+                         victim = "                \"ZombossMechType\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\",\n                \"ZombossSpawnGridPosition\": {\n                        \"mX\"\: " + x + ",\n                        \"mY\"\: " + y + "\n           }";
+                         e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px";
+                        }
              			 console.log(victim);
 
                 		xml = document.getElementById("xml").value;

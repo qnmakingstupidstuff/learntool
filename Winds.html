@@ -212,6 +212,7 @@ font-size: 55px;
     <div style="margin-top: 15px">
 	</div>
         <img src="./HarumaTools/grids/wind.png" draggable="false" id="1" onclick="selectSprite(event);placeFunction()" style="outline: white solid 2px;">
+		<img src="./HarumaTools/grids/eraser.png" id="547" onclick="selectSprite(event)" style="margin-left: 15px;">
     </div>
 	<div class="mdui-container">
     <div id="first" style="width:700px;height:100px">
@@ -303,7 +304,7 @@ function copyText(){
 	</div>
         <script type="text/javascript">
         var version = 1.0;
-        var eraser = 47;
+        var eraser = 547;
         document.getElementById('output').style.display = "none";	
         document.getElementById("xml").value = "";
 		document.getElementById("output").value = "";
@@ -357,8 +358,12 @@ function copyText(){
                 newImg.className = "newImg";
                 newImg.addEventListener("click",function(){
                 if(selectedSpriteId == eraser){
-
-             			 victim = "";
+                    var victim = "";
+                    console.log(e.target.style.outline);
+                        if(e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px"){
+                         victim = "                      \n                 {\n                         \"Direction\": \"right\",\n                         \"Row\"\: " + y + "\n                  }";
+                         e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px";
+                        }
              			 console.log(victim);
 
                 		xml = document.getElementById("xml").value;

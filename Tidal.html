@@ -207,6 +207,7 @@ font-size: 55px;
     <div style="margin-top: 15px">
 	</div>
         <img src="./HarumaTools/grids/aquatic.png" draggable="false" id="1" onclick="selectSprite(event);placeFunction()" style="outline: 2px dotted green;">
+		<img src="./HarumaTools/grids/eraser.png" id="547" onclick="selectSprite(event)" style="margin-left: 15px;">
     </div>
 <div id="only" style="width:1000px;height:100px">
 	<div class="mdui-container">
@@ -302,7 +303,7 @@ function copyText(){
 	</div>
         <script type="text/javascript">
         var version = 1.0;
-        var eraser = 47;
+        var eraser = 547;
         document.getElementById('output').style.display = "none";	
         document.getElementById("xml").value = "";
 		document.getElementById("output").value = "";
@@ -346,7 +347,7 @@ function copyText(){
                 console.log(b);
                 var y = b.charAt(2);
                 console.log(y);
-                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                      \n                    \"ChangeAmount\"\: " + x + ",\n";
+                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + ",\n                    \"ChangeAmount\"\: " + x + "";
                 var newImg = document.createElement("img");
                 newImg.src = mouseOverSprite.src;
                 newImg.style.position = "absolute";
@@ -356,10 +357,12 @@ function copyText(){
                 newImg.className = "newImg";
                 newImg.addEventListener("click",function(){
                 if(selectedSpriteId == eraser){
-
-             			 victim = "";
-             			 console.log(victim);
-
+                    var victim = "";
+                    console.log(e.target.style.outline);
+                        if(e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px"){
+                         victim = ",\n                    \"ChangeAmount\"\: " + x + "";
+                         e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px";
+                        }
                 		xml = document.getElementById("xml").value;
                 		document.getElementById("xml").value = xml.substr(0,xml.indexOf(victim)) + xml.substr(xml.indexOf(victim) + victim.length + 1, xml.length);
                		    this.remove();
@@ -414,9 +417,9 @@ function toggleoutputvisibility() {
 		//var tidalchange = document.getElementById("tidalchange").value;
     var str = document.getElementById("xml").value;
     toggleoutputvisibility();
-	    document.getElementById("output").value += "\"RTID\(Wave" + document.getElementById("wavenumber").value + "TidalChangeEvent" + document.getElementById("eventnumber").value + "\@CurrentLevel\)\"\n    \n           {\n             \"aliases\"\: \[\n                \"Wave" + document.getElementById("wavenumber").value + 			"TidalChangeEvent" + document.getElementById("eventnumber").value + "\"\n            \],\n            \"objclass\"\: \"TidalChangeWaveActionProps\",\n            \"objdata\"\: \{\n                \"TidalChange\": {";
+	    document.getElementById("output").value += "\"RTID\(Wave" + document.getElementById("wavenumber").value + "TidalChangeEvent" + document.getElementById("eventnumber").value + "\@CurrentLevel\)\"\n    \n           {\n             \"aliases\"\: \[\n                \"Wave" + document.getElementById("wavenumber").value + 			"TidalChangeEvent" + document.getElementById("eventnumber").value + "\"\n            \],\n            \"objclass\"\: \"TidalChangeWaveActionProps\",\n            \"objdata\"\: \{\n                \"TidalChange\": {\n                    \"ChangeType\":\ \""+ document.getElementById("tidalchange").value +"\"";
         document.getElementById("output").value += str;
-        document.getElementById("output").value += "                    \"ChangeType\":\ \""+ document.getElementById("tidalchange").value +"\"\n                }\n            \}\n        \},";
+        document.getElementById("output").value += "\n                }\n            \}\n        \},";
         console.log(allAddedItems);
 		}
     </script>

@@ -685,11 +685,11 @@ function copyText(){
                 var b = e.target.id;
                 var y = b.charAt(2);
                 if(selectedSpriteId != iceblock){
-                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                    {"  
+                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + ""  
                 if(icecubed.checked == true) {
                 document.getElementById("xml").value += "";
                 }
-                document.getElementById("xml").value += "\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"PlantType\"\: \""+ mouseOverSprite.src.substring(mouseOverSprite.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
+                document.getElementById("xml").value += "                    {\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"PlantType\"\: \""+ mouseOverSprite.src.substring(mouseOverSprite.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
             }
             //if(selectedSpriteId = iceblock){
             //    array.push(e.target.id);
@@ -710,16 +710,9 @@ function copyText(){
                 if(selectedSpriteId == eraser){
                     var victim = "";
                     console.log(e.target.style.outline);
-                        if(e.target.style.outline == "rgba(1, 1, 1, 1.2) solid 1px"){
-                         victim = "\n                    {\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
-                         e.target.style.outline == "rgba(1, 1, 1, 1.2) solid 1px";
-                        }
-                        if(e.target.style.outline == "rgb(0, 255, 255) solid 2.5px"){
-                            console.log("yay");
-                         victim = "\n                    {\n                        \"Condition\"\: \"icecubed\",\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
-                         e.target.style.outlineColor = "rgba(1, 1, 1, 1.2)";
-                         e.target.style.outlineStyle = "solid";
-                         e.target.style.outlineWidth = "0.5px";
+                        if(e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px"){
+                         victim = "                    {\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"PlantType\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
+                         e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px";
                         }
                          console.log(victim);
 

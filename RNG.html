@@ -222,25 +222,51 @@ font-size: 55px;
           <i class="mdui-switch-icon"></i>
         </label>
      <p> </p>
-	     <p style="font-size:40px"><img src="./HarumaTools/grids/vietnam.png" draggable="false"> RNG Wave Creator Version 0.7.1 Public Beta <img src="./HarumaTools/grids/vietnam.png" draggable="false"></p>
+	     <p style="font-size:40px"><img src="./HarumaTools/grids/vietnam.png" draggable="false"> RNG Wave Creator Version 1.0.1 Public Beta <img src="./HarumaTools/grids/vietnam.png" draggable="false"></p>
 <div id="input-rng" style="width:1000px;height: 80px">
 <div style="font-size:25px;width:450px;height:80px;float:left" class="mdui-textfield mdui-textfield-floating-label">
       <label style="font-size:25px" class="mdui-textfield-label">Wave Number</label>
       <input style="font-size:25px" class="mdui-textfield-input" onclick="recycleFunction()" id="wavenumber"  type="text"/>
     </div>
-	<div style="font-size:25px;width:450px;height:80px;float:right" class="mdui-textfield mdui-textfield-floating-label">
+	<div style="width:50px;height:100px;float:left"></div>
+	<div style="font-size:25px;width:450px;height:80px;float:left" class="mdui-textfield mdui-textfield-floating-label">
       <label style="font-size:25px" class="mdui-textfield-label">Additional Plantfood</label>
       <input style="font-size:25px" onclick="warningFunction()" class="mdui-textfield-input" id="plantfood" value="0" type="text"/>
     </div>
 	
 </div>
-	<div  class="mdui-container mdui-valign" style="font-size:25px;width:350px;height:80px;float:padding" >
+<div id="d-rng" style="width:1000px;height: 100px">
+	<div  class="mdui-container mdui-valign" style="font-size:25px;width:320px;height100px;float:left" >
 	<label  class="mdui-textfield-label" style="font-size:30px">Disable Random Spawns</label>
     <select  id="random" class="mdui-select" mdui-select>
       <option style="font-size:25px" value="true">True</option>
       <option style="font-size:25px" value="false">False</option>
     </select>
 	</div>
+	<div style="width:50px;height:100px;float:left"></div>
+	<div  class="mdui-container mdui-valign" style="font-size:25px;width:250px;height100px;float:left" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Jam Enabled</label>
+    <select  id="jamquiz" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="false">False</option>
+      <option style="font-size:25px" value="true">True</option>
+    </select>
+	</div>
+	<div style="width:50px;height:100px;float:left"></div>
+	<div style="width:50px;height:100px;float:left"></div>
+	<div  class="mdui-container mdui-valign" style="font-size:25px;width:250px;height100px;float:right" >
+	<label  class="mdui-textfield-label" style="font-size:30px">Jam Mode</label>
+    <select  id="jam" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="null">null</option>
+      <option style="font-size:25px" value="jam_rap">Rap</option>
+      <option style="font-size:25px" value="jam_pop">Pop</option>
+	  <option style="font-size:25px" value="jam_metal">Metalhead</option>
+      <option style="font-size:25px" value="jam_punk">Punk</option>
+	  <option style="font-size:25px" value="jam_ballad">Ballad</option>
+	  <option style="font-size:25px" value="jam_8bit">8bit</option>
+    </select>
+	</div>
+</div>
+<img src="./HarumaTools/grids/nothing.png" draggable="false" />
 <div style="background-image:url('./HarumaTools/grids/brainbackground.png');border-radius:10px;border:2px solid #17171c; width: 700; height: 5500px;margin-top: 10px;">
      <img src="./HarumaTools/zombies/mummy.png" draggable="false" >
      <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="mummy" style="width: 3%" value="0">
@@ -1170,7 +1196,7 @@ function copyText(){
 
         <script type="text/javascript">
         var version = 1.0;
-        var eraser = 47;
+        var eraser = 547;
         document.getElementById('xml').style.display = "none";      
         document.getElementById('output').style.display = "none";	
         document.getElementById("xml").value = "";
@@ -1195,10 +1221,17 @@ function toggleoutputvisibility() {
     }
      }
         function CompileLevelXML() {
+		var jamquiz = document.getElementById("jamquiz").value;
+		console.log(jamquiz);
+		var jamenabling = (jamquiz === 'true');
         toggleoutputvisibility();
         DoShitWithItemInputs();
         DoShitWithZombieInputs();
-        document.getElementById("output").value += "        \{\n            \"aliases\"\: [\n                \"Wave" + document.getElementById("wavenumber").value + "\"\n            \],\n            \"objclass\"\: \"SpawnZombiesJitteredWaveActionProps\",\n            \"objdata\"\: \{\n                \"DisableRandomSpawns\": " + document.getElementById("random").value + ",\n                \"AdditionalPlantfood\": " + document.getElementById("plantfood").value + ", \n                \"Zombies\"\: \[\n" + document.getElementById("xml").value + "\n                \]\n            \}\n        \},";
+        document.getElementById("output").value += "        {\n            \"aliases\"\: \[\n                \"Wave" + document.getElementById("wavenumber").value +"\"\n            \],\n            \"objclass\"\: \"SpawnZombiesJitteredWaveActionProps\",\n            \"objdata\"\: { \n                \"DisableRandomSpawns\": " + document.getElementById("random").value + ",\n                \"AdditionalPlantfood\": " + document.getElementById("plantfood").value + ", \n"
+		if(jamenabling == true){
+                document.getElementById("output").value += "                \"NotificationEvents\": [\n                    \"" + document.getElementById("jam").value + "\"\n                ],\n";
+            }
+		document.getElementById("output").value += "                \"Zombies\"\: \[\n" + document.getElementById("xml").value + "\n                \]\n            \}\n        \},";
 		}
 
         function DoShitWithItemInputs() {
