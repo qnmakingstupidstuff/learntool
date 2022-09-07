@@ -700,7 +700,7 @@ function copyText(){
                 var b = e.target.id;
                 var y = b.charAt(2);
                 if(selectedSpriteId != iceblock){
-                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + ""  
+                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? "," : "") + ""  
                 if(icecubed.checked == true) {
                 document.getElementById("xml").value += "";
                 }
@@ -799,12 +799,16 @@ function toggleoutputvisibility() {
         }
         function CompileLevelXML() {
 		//var method = document.getElementById("method").value;
-		//var excludesun = document.getElementById("excludesun").value;
+		var excludesun = document.getElementById("excludesun").value;
     var str = document.getElementById("xml").value;
     toggleoutputvisibility();
         document.getElementById("output").value += "        \{\n            \"aliases\"\: \[\n                \"SeedBank\"\n            \],\n            \"objclass\"\: \"SeedBankProperties\",\n            \"objdata\"\: {\n                \"PresetPlantList\"\: \["
         document.getElementById("output").value += str;
-        document.getElementById("output").value += "\n                \],\n                \"SelectionMethod\": \"" + document.getElementById("method").value  +  "\",\n                \"ExcludeListSunProducers\": \"" + document.getElementById("excludesun").value  +  "\"\n            \}\n        \},";
+        document.getElementById("output").value += "\n                \],\n                \"SelectionMethod\": \"" + document.getElementById("method").value  +  "\"";
+		if(excludesun === "true"){
+		document.getElementById("output").value += ",\n                \"ExcludeListSunProducers\": \"" + document.getElementById("excludesun").value  +  "\""
+		}
+		document.getElementById("output").value += "\n            \}\n        \},"
         console.log(allAddedItems);
         }
     </script><style>
