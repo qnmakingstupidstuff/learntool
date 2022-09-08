@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h3>Download PVZ3 Files</h3>
+<p> FileID:
+<input type="text" id="id" value="">
+<p>
+<p> Type:
+<input type="text" id="type" value="Android">
+<p>
+<p>Click the button to get the link</p>
+
+<button onclick="myFunction()">GIVE ME THE DOWNLOAD LINK</button>
+<p><a href="./DownloadPVZ3.txt">Content Unpacked</a></p>
+<p id="demo"></p>
+</center>
+<script>
+function myFunction() {
+  var x = document.getElementById("id").value;
+  var y = document.getElementById("type").value;
+  document.getElementById("demo").innerHTML = "http://pvz3-prod-origin.awspopcap.com/"+ y +"/"+ x +"";
+}
+</script>
+
+</body>
+</html>

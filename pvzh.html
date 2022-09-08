@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h3>Download PVZH Files</h3>
+<p> Server:
+<input type="text" id="server" value="dev">
+<p>
+<p> Type:
+<input type="text" id="type" value="android">
+<p>
+<p> Version:
+<input type="text" id="version" value="">
+<p>
+<p> Folder:
+<input type="text" id="folder" value="">
+<p>
+<p> FileID:
+<input type="text" id="id" value="">
+<p>
+<p>Click the button to get the link</p>
+
+<button onclick="myFunction()">GIVE ME THE DOWNLOAD LINK</button>
+<p><a href="./DownloadPVZH.txt">MANIFEST Unpacked</a></p>
+</center>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("id").value;
+  var c = document.getElementById("folder").value;
+  var y = document.getElementById("type").value;
+  var a = document.getElementById("server").value;
+  var b = document.getElementById("version").value;
+  document.getElementById("demo").innerHTML = "https://pvzheroes-"+ a +".ecs.popcap.com/assetbundles/"+ y +"/"+ b +"/"+ c +"/"+ x +"";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<title>GK's Tool</title>
+    <div style="margin-top: 15px">
+	<center>
+	<h3>Shop Item Creator</h3>
+	<p>
+	<p> Product Name:
+    <input type="text" id="zombiename" style="width: 8%" value="">
+    </p>
+	<p> IsAdPlacement:
+    <input type="text" id="class" style="width: 15%" value="">
+    </p>
+	<p> IsFree:
+    <input type="text" id="resgroup1" style="width: 10%" value="">
+    </p>
+	<p> IsOneTimePurchase:
+    <input type="text" id="resgroup2" style="width: 10%" value="">
+    </p>
+	<p> LawnDescription:
+    <input type="text" id="prop" style="width: 10%" value="">
+    </p>
+	<p> LawnShortDescription:
+    <input type="text" id="custom" style="width: 10%" value="">
+    </p>
+	<p> Name:
+    <input type="text" id="anim" style="width: 15%" value="">
+    </p>
+	<p> NoTooltip:
+    <input type="text" id="popanim" style="width: 20%" value="">
+    </p>
+	<p> ObjectCount:
+    <input type="text" id="home" style="width: 10%" value="modern">
+    </p>
+	<p> ObjectItem:
+    <input type="text" id="basic" style="width: 6%" value="false">
+    </p>
+	<p> ObjectType:
+    <input type="text" id="objecttype" style="width: 20%" value="">
+    </p>
+	<p> OneTimeDays:
+    <input type="text" id="onetime" style="width: 10%" value="modern">
+    </p>
+	<p> Price:
+    <input type="text" id="pay" style="width: 6%" value="false">
+    </p>
+	<p> PriceCoins:
+    <input type="text" id="coin" style="width: 20%" value="">
+    </p>
+	<p> PriceGems:
+    <input type="text" id="gem" style="width: 10%" value="modern">
+    </p>
+	<p> PriceMints:
+    <input type="text" id="mint" style="width: 6%" value="false">
+    </p>
+    </p>
+	<div>
+    </div>
+<div>
+    </p></div>
+    <style type="text/css">
+textarea {
+ width: 410px; height: 250px; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+    </style>
+    <textarea id="xml" rows="20" cols="50" style="display: none;"></textarea> 
+     <p> </p>
+    <button onclick="CompileLevelXML()">Finished</button>
+	<button type="button" onclick="download()">Download File</button>
+	<script>
+	//I'm lazyyyy
+	function download(){
+    var text = document.getElementById("output").value;
+    text = text.replace(/\n/g, "\r\n");
+    var blob = new Blob([text], { type: "text/plain"});
+    var anchor = document.createElement("a");
+    anchor.download = "ZombieType.json";
+    anchor.href = window.URL.createObjectURL(blob);
+    anchor.target ="_blank";
+    anchor.style.display = "none"; 
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+ }
+ //Don't want to code this anymore
+ </script>
+ <input type="button" value="Copy" id="copy" onclick="copyText();" >
+<script type="text/javascript">
+
+function copyText(){
+ document.getElementById("output").select();
+ document.execCommand('copy');
+}
+</script>
+<input type="checkbox" id="icecubed" style="" onclick="" value="">
+     <p> </p>
+    <textarea id="output" rows="10" cols="50" style="display: none;"></textarea>
+	<script src="./script/js/levelgen.min.js"></script>
+        <script type="text/javascript">
+        var version = 1.0;
+        var eraser = 547;
+        var iceblock = 548;
+        var array = new Array();
+        document.getElementById('output').style.display = "none";   
+        document.getElementById("xml").value = "";
+        document.getElementById("output").value = ""
+        var mouseOverSprite = document.createElement("img");
+            mouseOverSprite.style.display="block";
+            mouseOverSprite.style.position = "absolute";
+            mouseOverSprite.style.zIndex = "-1";
+        document.body.insertBefore(mouseOverSprite,document.body.firstChild);
+        document.getElementById('xml').style.display = "none";
+        document.addEventListener("mousemove",mouseMoveFunction);
+        var lastGridId = null;
+
+        function mouseMoveFunction(e){
+            var p1 = document.getElementById("p1");
+            if(e.target.nodeName == "CANVAS"){
+                p1.innerHTML = " Grid ID: "+e.target.id
+
+                if(e.target.id == lastGridId){
+                    return;
+                }
+                lastGridId = e.target.id;
+                mouseOverSprite.style.visibility ="visible";
+                mouseOverSprite.style.top = e.target.offsetTop+"px";
+                mouseOverSprite.style.left = e.target.offsetLeft+"px";
+            }
+            else{
+                mouseOverSprite.style.visibility ="hidden";
+            }
+        }
+        document.addEventListener("click",mouseClickFunction);
+        function mouseClickFunction(e){
+            if(mouseOverSprite.style.visibility == "visible" && e.target.nodeName == "CANVAS"  && selectedSpriteId != eraser)
+            {
+                var icecubed = document.getElementById("icecubed");
+                var targetRect = e.target.getBoundingClientRect();
+                var a = e.target.id;
+                var x = a.charAt(0);
+				var d = a.charAt(0)-2;
+                var b = e.target.id;
+                var y = b.charAt(2);
+                if(selectedSpriteId != iceblock){
+                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                    "  
+                if(icecubed.checked == true) {
+                document.getElementById("xml").value += "";
+                }
+                document.getElementById("xml").value += "\{ \n                                              \"Row\"\:\ \"" + y + "\" \n                    }";
+            }
+                var icecubed = document.getElementById("icecubed");
+                var newImg = document.createElement("img");
+                newImg.src = mouseOverSprite.src;
+                newImg.style.position = "absolute";
+                newImg.style.left = targetRect.x+"px";
+                newImg.style.top = targetRect.y+"px";
+                newImg.style.zIndex = -1;
+                newImg.className = "newImg";
+                if(icecubed.checked == true){
+                    newImg.style.outline = "blue solid 0.5px";
+                    e.target.style.outline = "rgb(0, 255, 255) solid 2.5px";
+                }
+                newImg.addEventListener("click",function(){
+                if(selectedSpriteId == eraser){
+                    var victim = "";
+                    console.log(e.target.style.outline);
+                        if(e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 0.5px"){
+                         victim = "\n                    {\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
+                         e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 0.5px";
+                        }
+                        if(e.target.style.outline == "rgb(0, 255, 255) solid 2.5px"){
+                            console.log("yay");
+                         victim = "\n                    {\n                        \"Condition\"\: \"icecubed\",\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
+                         e.target.style.outlineColor = "rgba(0, 0, 0, 0.2)";
+                         e.target.style.outlineStyle = "solid";
+                         e.target.style.outlineWidth = "0.5px";
+                        }
+                         console.log(victim);
+
+                        xml = document.getElementById("xml").value;
+                        document.getElementById("xml").value = xml.substr(0,xml.indexOf(victim)) + xml.substr(xml.indexOf(victim) + victim.length + 1, xml.length);
+                        this.remove();
+                        xml3 = document.getElementById("xml").value;
+                        xml4 = xml3.slice(0, -1);
+                        if(xml3.endsWith(",")){
+                        console.log(xml4);
+                            document.getElementById("xml").value = xml4;
+                        }
+
+                   }
+                }
+            );
+                document.body.appendChild(newImg);
+                
+                if(allAddedItems[e.target.id]==null)
+                    allAddedItems[e.target.id] = new Array(newImg);
+                else
+                    allAddedItems[e.target.id].push(newImg); 
+            }
+        }
+        var allAddedItems = new Array();
+        var selectedSpriteId = 1;
+        document.getElementById(selectedSpriteId).style.outline=".5px solid blue";
+        mouseOverSprite.src = document.getElementById(selectedSpriteId).src;
+
+        function selectSprite(e){
+            document.getElementById(selectedSpriteId).style.outline="";
+            e.currentTarget.style.outline = ".5px solid blue";
+            selectedSpriteId = e.currentTarget.id;
+            mouseOverSprite.src = e.currentTarget.src;
+            var canvases = document.getElementsByClassName('newImg');
+            if(selectedSpriteId == eraser){
+                mouseOverSprite.style.pointerEvents="none";
+                //document.getElementById('gridDiv').style.pointerEvents="none";
+                for(i=0;i<canvases.length;i++){
+                    canvases[i].style.zIndex=1;
+                }
+            } else {
+                mouseOverSprite.style.pointerEvents="";
+                for(i=0;i<canvases.length;i++){
+                    canvases[i].style.zIndex=-1;
+                }
+            }
+        }
+        function togglexmlvisibility() {
+        var display = document.getElementById('xml').style.display;
+        if(display == "none") {
+              document.getElementById('xml').style.display = "block";
+        }
+        if(display == "block") {
+              document.getElementById('xml').style.display = "none";
+        }
+     }
+function toggleoutputvisibility() {
+        var display = document.getElementById('output').style.display;
+        if(display == "none")
+              document.getElementById('output').style.display = "block";
+        }
+        function CompileLevelXML() {
+		//var zombiename = document.getElementById("zombiename").value;
+		//var resgroup1 = document.getElementById("resgroup1").value;
+		//var framework = document.getElementById("framework").value;
+		//var resgroup2 = document.getElementById("resgroup2").value;
+		//var prop = document.getElementById("prop").value;
+		//var anim = document.getElementById("anim").value;
+		//var popanim = document.getElementById("popanim").value;
+		//var offset = document.getElementById("offset").value;
+		//var scale = document.getElementById("scale").value;
+		//var home = document.getElementById("home").value;
+		//var family = document.getElementById("family").value;
+		//var imitate = document.getElementById("imitate").value;
+		//var class = document.getElementById("class").value;
+		//var basic = document.getElementById("basic").value;
+		//var custom = document.getElementById("custom").value;
+		//var objecttype = document.getElementById("objecttype").value;
+		//var onetime = document.getElementById("onetime").value;
+		//var pay = document.getElementById("pay").value;
+		//var coin = document.getElementById("coin").value;
+		//var gem = document.getElementById("gem").value;
+		//var mint = document.getElementById("mint").value;
+    var str = document.getElementById("xml").value;
+    toggleoutputvisibility();
+        document.getElementById("output").value += "        {\ \n     \"#comment\":\ \"This product was made by Tuan Tran's Main Control Tool\",\   \n            \"aliases\": [\n                \"" + document.getElementById("boost").value + "\"\n            ],"  
+        document.getElementById("output").value += str;
+        document.getElementById("output").value += "";
+        console.log(allAddedItems);
+        }
+//Tool Test
+    </script>
+    <style>
+        p {
+            color: Blue;
+        }
+        .paragraph1 {
+            font-size: 12px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+            line-height: 2px;
+        }
+        .paragraph2 {
+            font-size: 13px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+    </style>
+</center>
+</div></div>
+</body></html>
