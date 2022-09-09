@@ -1,0 +1,453 @@
+<title>Haruma's Tool</title>
+<script src="https://cmp.osano.com/AzZmS6TGVY3D6IPM/654c4c7d-7d40-4afb-8f34-c45989e74f87/osano.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9643890132712137" crossorigin="anonymous"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCipslKJZFecvls5KwxQvK7rf88NyMDWDw",
+    authDomain: "harumatool.firebaseapp.com",
+    projectId: "harumatool",
+    storageBucket: "harumatool.appspot.com",
+    messagingSenderId: "464019290644",
+    appId: "1:464019290644:web:680bffdb5deb6d6bff4501",
+    measurementId: "G-6TJ8H33ZVH"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<html translate="no"></html>
+
+<link rel='icon' href="./icons/raiden2.png" draggable="false" type='image/x-icon'/ >
+<style> 
+
+
+@font-face {
+font-size: 55px;
+   font-family: myFirstFont;
+   src: url(fbUsv8C5eI-Black.woff);
+}
+
+* {
+   font-family: myFirstFont;
+}
+</style>
+
+<head>
+<meta name="google" content="notranslate">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./assets/mdui-v0.4.3/css/mdui.min.css"/>
+  <script src="./snackbar/success.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./snackbar/finished.js"></script>
+<script src="./snackbar/place.js"></script>
+<script src="./snackbar/copy.js"></script>
+<script src="./snackbar/clear.js"></script>
+<script src="./picture.js"></script>
+<script src="./snackbar/recycle.js"></script>
+<link rel="stylesheet" href="./snackbar/success.css"/>
+<link rel="stylesheet" href="./snackbar/recycle.css"/>
+<link rel="stylesheet" href="./snackbar/place.css"/>
+  <link rel="stylesheet" href="./snackbar/finished.css"/>
+  <link rel="stylesheet" href="./snackbar/copy.css"/>
+  <link rel="stylesheet" href="./snackbar/clear.css"/>        <script src="./snackbar/success.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./snackbar/finished.js"></script>
+<script src="./snackbar/place.js"></script>
+<script src="./snackbar/copy.js"></script>
+<script src="./snackbar/clear.js"></script>
+<script src="./snackbar/warning.js"></script>
+<link rel="stylesheet" href="./snackbar/warning.css"/>
+<script src="./snackbar/note.js"></script>
+<link rel="stylesheet" href="./snackbar/note.css"/>
+<script src="./snackbar/jam.js"></script>
+<link rel="stylesheet" href="./snackbar/jam.css"/>
+<script src="./snackbar/recycle.js"></script>
+<link rel="stylesheet" href="./snackbar/success.css"/>
+<link rel="stylesheet" href="./snackbar/recycle.css"/>
+<link rel="stylesheet" href="./snackbar/place.css"/>
+  <link rel="stylesheet" href="./snackbar/finished.css"/>
+  <link rel="stylesheet" href="./snackbar/copy.css"/>
+  <link rel="stylesheet" href="./snackbar/clear.css"/>
+</head>
+<div id="snackbar">Successfully Downloaded</div>
+<div id="snackbar1">Success Build</div>
+<div id="snackbar2">Copied</div>
+<div id="snackbar3">Cleared</div>
+<div id="snackbar4">Selected Mold Colony</div>
+<div id="snackbar5">Selected Trash Bin</div>
+<div id="snackbar7">Input Number</div>
+<div id="snackbar6">Always True</div>
+<div id="snackbar8"></div>
+</head>
+<script>
+  function refresh(){
+        window.location.reload("Refresh")
+      }
+</script>
+	 <script>
+	 function eraseText() {
+    document.getElementById("output").value = "";
+}
+</script>
+<script src="console.image.min.js"></script>
+<script src="disable.js"></script>
+<script src="time.js"></script>
+
+<body  class="mdui-text-color-white mdui-theme-layout-dark mdui-text-color-black-icon mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto"> 
+<script src="./assets/mdui-v0.4.3/js/mdui.min.js"></script>
+<header class="appbar mdui-appbar mdui-appbar-fixed">
+  <div class="mdui-toolbar mdui-color-theme">
+    <span
+      class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+      mdui-drawer="{target: '#main-drawer', swipe: true}"
+    >
+      <i class="mdui-icon material-icons">menu</i>
+    </span>
+    <a href="https://harumatool.fun/" class="mdui-typo-headline mdui-hidden-xs"> Haruma's Tool</a>
+    <div class="mdui-toolbar-spacer"></div>
+
+	 <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" style="font-size:15px" value="" onClick="refresh(this)"><i class="mdui-icon material-icons">refresh</i></button>
+  </div>
+</header>
+
+<div></div>
+<div class="mdui-drawer" id="main-drawer">
+  <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+    <div class="mdui-collapse-item mdui-collapse-item-ripple">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-blue"
+            ><img src="./toolbar/raiden1.png" draggable="false"  /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Waves Option</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" draggable="false" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+				<a style="font-size:20px" href="./WaveCreator"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecre.png" draggable="false" /> Wave Creator</a>
+				
+				<a style="font-size:20px" href="./Sandsnow"class=" mdui-list-item mdui-ripple"><img src="./toolbar/stormevent.png" draggable="false" /> Storm Event</a>
+				<a style="font-size:20px" href="./RaidingParty"class=" mdui-list-item mdui-ripple"> <img src="./toolbar/fly.png" draggable="false" /> Raiding Party</a>
+				<a style="font-size:20px" href="./Tidal"class=" mdui-list-item mdui-ripple"><img src="./toolbar/fishimp.png" draggable="false" /> Absolute Event</a>
+				<a style="font-size:20px" href="./LowTide"class=" mdui-list-item mdui-ripple"><img src="./toolbar/lowtide.png" draggable="false" /> Low Tide</a>
+				<a style="font-size:20px" href="./Necromancy"class=" mdui-list-item mdui-ripple"><img src="./toolbar/spiralabyss.png" draggable="false" /> Necromancy</a>
+				<a style="font-size:20px" href="./ItemSpawn"class=" mdui-list-item mdui-ripple"><img src="./toolbar/wizardmagic.png" draggable="false" />Item Spawn</a>
+				<a style="font-size:20px" href="./ParachuteRain"class=" mdui-list-item mdui-ripple"><img src="./toolbar/parachuterain.png" draggable="false" />Parachute Rain</a>
+				<a style="font-size:20px" href="./Dino"class=" mdui-list-item mdui-ripple"><img src="./toolbar/dino.png" draggable="false" />Dino Event</a>
+				<a style="font-size:20px" href="./Spidy"class=" mdui-list-item mdui-ripple"><img src="./toolbar/spiderrain.png" draggable="false" />Spider Rain</a>
+				<a style="font-size:20px" href="./Winds"class=" mdui-list-item mdui-ripple"><img src="./toolbar/winds.png" draggable="false" />Winds</a>
+				<a style="font-size:20px" href="./PPT"class=" mdui-list-item mdui-ripple"><img src="./toolbar/portals.png" draggable="false" />Portals</a>
+				<a style="font-size:20px" href="./RNG"class=" mdui-list-item mdui-ripple"><img src="./toolbar/qigongkongfu.png" draggable="false" />Wave RNG (Beta)</a>
+				<a style="font-size:20px" href="./Escalation"class=" mdui-list-item mdui-ripple"><img src="./toolbar/escalation.png" draggable="false" /> Escalation</a>
+          </div>
+        </div>
+		<div class="mdui-collapse-item">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-deep-orange"
+            ><img src="./toolbar/raiden2.png" draggable="false" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Level Gen</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" draggable="false" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+				<a style="font-size:20px" href="./HarumaLab"class=" mdui-list-item mdui-ripple"><img src="./toolbar/kongfublade.png" draggable="false" /> Level Generator</a>
+				<a style="font-size:20px" href="./Tide"class=" mdui-list-item mdui-ripple"><img src="./toolbar/lemon.png" draggable="false" /> Adding Tide</a>
+				<a style="font-size:20px" href="./Grids"class=" mdui-list-item mdui-ripple"><img src="./toolbar/kinggrid.png" draggable="false" /> Placing Grid Item</a>
+				<a style="font-size:20px" href="./FrozenZomb"class=" mdui-list-item mdui-ripple"><img src="./toolbar/juicyyeti.png" draggable="false" /> Frozen Zombie</a>
+				<a style="font-size:20px" href="./PML"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chinesesunwukong.png" draggable="false" /> Rail Cart</a>
+				<a style="font-size:20px" href="./Planks"class=" mdui-list-item mdui-ripple"><img src="./toolbar/coconut.png" draggable="false" /> Planks</a>
+				<a style="font-size:20px" href="./Zomboss"class=" mdui-list-item mdui-ripple"><img src="./toolbar/zomboss.png" draggable="false" /> Zomboss</a>
+				<a style="font-size:20px" href="./Olaf"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chaodimension.png" draggable="false" /> Chao Dimension</a>
+          </div>
+        </div>
+		<div class="mdui-collapse-item">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-green"
+            ><img src="./toolbar/raiden3.png" draggable="false" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Plants Option</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" draggable="false" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+				<a  style="font-size:20px" href="./MoldColony"class=" mdui-list-item mdui-ripple "><img src="./toolbar/radish.png" draggable="false" />Mold Colonies</a>
+				<a style="font-size:20px" href="./PlantSet"class=" mdui-list-item mdui-ripple"><img src="./toolbar/pokra.png" draggable="false" />SeedBank</a>
+				<a style="font-size:20px" href="./DangerP"class=" mdui-list-item mdui-ripple"><img src="./toolbar/beast.png" draggable="false" />Danger Plants</a>
+				<a style="font-size:20px" href="PlantPlant" class="mdui-list-item mdui-ripple"><img src="./toolbar/mf.png" draggable="false" />Planting Plants</a>
+				<a style="font-size:20px" href="PlantPower" class="mdui-list-item mdui-ripple"><img src="./toolbar/powerplant.png" draggable="false" />Power Tiles</a>
+				<a style="font-size:20px" href="internalcode" class="mdui-list-item mdui-ripple"><img src="./toolbar/thundersnap.png" draggable="false" />Internal Codename</a>
+          </div>
+        </div>		<div class="mdui-collapse-item mdui-collapse-item-open">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-purple"
+            ><img src="./toolbar/raiden5.png" draggable="false" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content ">Update</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" draggable="false" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+
+              <a style="font-size:20px" href="./index" class=" mdui-list-item mdui-ripple   mdui-list-item-active"><img src="./toolbar/cobcannon.png" draggable="false" />Home</a>
+          </div>
+        </div>
+		<div class="
+          mdui-collapse-item
+          "
+        >
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-brown"
+            ><img src="./toolbar/raiden4.png" draggable="false" /></i>
+            <div style="font-size:20px" class="mdui-list-item-content">Other Option</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png" draggable="false" /></i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+
+              <a style="font-size:20px" href="./download" class=" mdui-list-item mdui-ripple"><img src="./toolbar/hocus.png" draggable="false" />RSB Download</a>
+
+              <a style="font-size:20px" href="./jsonedit" class=" mdui-list-item mdui-ripple"><img src="./toolbar/sexyjapan.png" draggable="false" />JSON Editor</a>
+          </div>
+        </div>
+</div>
+  </div>
+<center>
+</div>
+<a id="anchor-top"></a>
+</div>
+<div class="mdui-container">
+    <div class="mdui-tab" mdui-tab>
+      <a href="#tab1" class="mdui-ripple">
+        <img src="tutorial/info.png"  style ="width: 15px;height:30px"/>
+        <label style="font-size:20px">Info</label>
+      </a>
+     <a href="#tab2" class="mdui-ripple">
+        <img src="tutorial/encrypt.png"  style ="width: 25px;height:30px"/>
+        <label style="font-size:20px">Encrypt</label>
+      </a>
+	  <a href="#tab3" class="mdui-ripple">
+        <img src="tutorial/decrypt.png"  style ="width: 25px;height:30px"/>
+        <label style="font-size:20px">Decrypt</label>
+      </a>
+	  <a href="#tab4" class="mdui-ripple">
+        <img src="tutorial/res.png"  style ="width: 30px;height:27px"/>
+        <label style="font-size:20px">Resources</label>
+      </a>
+	  <a href="#tab5" class="mdui-ripple">
+        <img src="tutorial/bnk.png"  style ="width: 30px;height:29px"/>
+        <label style="font-size:20px">BNK</label>
+      </a>
+	  <a href="#tab6" class="mdui-ripple">
+        <img src="tutorial/pam.png"  style ="width: 26px;height:30px"/>
+        <label style="font-size:20px">PAM</label>
+      </a>
+	  <a href="#tab7" class="mdui-ripple">
+        <img src="tutorial/betabug.png"  style ="width: 23px;height:30px" />
+        <label style="font-size:20px">Beta</label>
+      </a>
+	  <a href="#tab8" class="mdui-ripple">
+        <img src="tutorial/customapk.png"  style ="width: 23px;height:30px" />
+        <label style="font-size:20px">Custom APK</label>
+      </a>
+	  <a href="#tab9" class="mdui-ripple">
+        <img src="tutorial/holyjson.png"  style ="width: 24px;height:30px" />
+        <label style="font-size:20px">Holyjson</label>
+      </a>
+	  <a href="#tab10" class="mdui-ripple">
+        <img src="tutorial/1536force.png"  style ="width: 23px;height:30px" />
+        <label style="font-size:20px">Texture Force</label>
+      </a>
+	  <a href="#tab11" class="mdui-ripple">
+        <img src="tutorial/cn_port.png"  style ="width: 26px;height:30px" />
+        <label style="font-size:20px">Chinese Port</label>
+      </a>
+	  <a href="#tab12" class="mdui-ripple">
+        <img src="tutorial/cn_rton.png"  style ="width: 30px;height:29px" />
+        <label style="font-size:20px">Chinese RTON</label>
+      </a>
+	  <a href="#tab13" class="mdui-ripple">
+        <img src="tutorial/libso.png"  style ="width: 24px;height:30px" />
+        <label style="font-size:20px">Lib.so</label>
+      </a>
+	  <a href="#tab14" class="mdui-ripple">
+        <img src="tutorial/carddata.png"  style ="width: 26px;height:30px" />
+        <label style="font-size:20px">card_data</label>
+      </a>
+	  <a href="#tab15" class="mdui-ripple">
+        <img src="tutorial/playerinventory.png"  style ="width: 20px;height:30px" />
+        <label style="font-size:20px">Player Inventory</label>
+      </a>
+    </div>
+  </div>
+ <div class="mdui-container-fluid">
+    <div id="tab1">
+	<p style="font-size: 25px"> Hi, Haruma here! When i'm writing this, it is already 2AM GMT+7. No matter where you from, who you are, that doesn't matter. The game connects us together and because it is dying, many old modders has already gone. So, i will share everything here for people who want to modify the game for free.</p>
+	<p style="font-size: 25px"> Many people will ask ? What's your purpose ? Well, my answer is this. As long as we can erase the distance between a pro modders and the noob modders, that doesn't matter. </p>
+	<p style="font-size: 25px"> Special thanks to ItsPforPea, EnderallyGolem, TwinKleS, H3x4n1um, Ernesto AM and many more people who has contributued their work to the public. I will continue to keep forward their work. </p>
+	<p style="font-size: 25px"> If you just here for the tool tutorial, here is my video from youtube </p>
+	<p style="font-size: 25px"> If you are china, here is my tutorial in bilibili </p>
+    </div>
+	<div id="tab2">
+	<p><img src="tutorial/fongshua/explain.jpg" /></p>
+	<p style="font-size: 25px"> I will explain how the Encryption Method works.</p>
+	<p style="font-size: 25px"> The first type of RSGP or PGSR is called "Uncompressed". This type of Format is Popular since 1.4.2 to 3.1 but after that PopCap & EA switched into the type "Compressed". This isn't a popular type of RSGP anymore but they are still using it. One common is "StreamingWave" and "__MANIFESTGROUP__". PvZ2 Chinese still use this type of RSGP, however.</p>
+	<p><img src="tutorial/fongshua/tuto1.png" /></p>
+	<p style="font-size: 25px"> The second type of RSGP or PGSR is called "Compressed". This is the most popular structure in the RSB or OBB. If "__MANIFESTGROUP__" from "Uncompressed" to "Compressed", the game will still run normally but not include for "StreamingWave".</p>
+	<p><img src="tutorial/fongshua/tuto2.png" /></p>
+	<p style="font-size: 25px"> Infact, Encryption is very very easy. They just used the "bug" called "corruption". They will "corrupted" the tools which read header of the rsgp and see the "01" or "03" to handle the RSGP. So, they just change the number "01" or "03" to something similar to "00" or "FF"</p>
+	<p><img src="tutorial/fongshua/tuto3.png" /></p>
+	<p style="font-size: 25px">The next type of Encryption is the RSB Read Encryption. Although this Encryption method is old, people still like it and use it. Take example from the SHUTTLE OBB by CZ</p>
+	<p><img src="tutorial/fongshua/shuttle_obb.png" /></p>
+	<p style="font-size: 25px">So with this encryption, tool like Taiji, SPC-Util or TwinKleS when read will jump into the Offset "FFFFFFFF" and found nothing because that Offset doesn't existed. In order to do this kind of encryption, make a blank RSGP with anything and change the offset to "FFFFFFFFF". With this way, you are encrypting the OBB from powerful tool. However, i will teach you how to Decrypt it in the Decrypt Site. </p>
+	<p style="font-size: 25px"> The final type of Encryption is SPC-Util Encryption. Drag your RSB/OBB to Taiji, Option number "08" will help you to encrypt it entirely.</p>
+	<p style="font-size: 25px">Thanks for reading everything! </p>
+    </div>
+	<div id="tab3">
+	<p style="font-size: 25px"> I will explain how the Decryption Method works.</p>
+	<p style="font-size: 25px"> If you haven't checked the Encryption Method, you must check that first. Otherwise, i will not explain again.</p>
+	<p style="font-size: 25px">Now, just change the "encryption number" to the type that the tool can read. It is only "03" and "01"</p>
+	<p><img src="tutorial/fongshua/decrypt1.png" /></p>
+	<p style="font-size: 25px">About the 1BSR Encryption, the easiest way is you install Nintendoo's tools or j0912345's tools for RSB</p>
+	<input type="button" style="font-size:25px;width:600px;height:100px" onclick="location.href='https://github.com/Nineteendo/PVZ2tools/releases';" class="mdui-btn mdui-btn-dense mdui-textfiled" value="Check out nintendoo's tool" />
+	<input type="button" style="font-size:25px;width:600px;height:100px" onclick="location.href='https://github.com/j0912345/pvz2_obb_tools';" class="mdui-btn mdui-btn-dense mdui-textfiled" value="Check out j0912345's tools" />
+	<p style="font-size: 25px">About technical method, just change the file length to 10MB and use the tool. It should work.</p>
+	<p style="font-size: 25px">Thanks for reading everything! </p>
+    </div>
+	<div id="tab4">
+	<p style="font-size: 25px"> "Resources.json" is a file carries the data of textures, levels, pams,... In order to read files in the game, they must proceed through the "Resources.json"</p>
+	<p style="font-size: 25px"> First of all, you should visit 8A's Resources Unpacker. It's free</p>
+	<input type="button" style="font-size:25px;width:600px;height:100px" onclick="location.href='https://drive.google.com/file/d/1fnSa5U83hI2tZoY4K7nfKPa2Vb7WzBrq/view?usp=sharing';" class="mdui-btn mdui-btn-dense mdui-textfiled" value="RES Unpacker" />
+	<p style="font-size: 25px"> I will explain about the slots method here and path</p>
+	<p style="font-size: 25px">The same with folders, the path also works the same like that. Example</p>
+	<p><img src="tutorial/fongshua/restest.png" /></p>
+	<p style="font-size:25px">Is just "images/1536/initial/space_spiral/radial_space_gradient.png"</p>
+	<p style="font-size:25px">Now i will explain how the slot_count system work. Let's say you have "36000" is the final slot, so the slot_count you must input is "36001", must plus one with the final slot because there is slot "0", but the count only count integer number start from 1 to infinity. So the fomula here is: slot_count = final_slot + 1</p>
+	<p style="font-size:25px">If you are lazy, just set slot_count to 999999 because that doesn't affect the game after all.</p>
+	<p style="font-size: 25px">Thanks for reading everything! </p>
+    </div>
+	<div id="tab5">
+	<p style="font-size: 25px"> EnderallyGolem already explained very detailed, so i will just paste it here!</p>
+	<input type="button" style="font-size:20px;width:150px;height:50px" onclick="location.href='https://docs.google.com/document/d/1CMVN0PnYINAGcBinCFAEPklzXYXjLwAG4kGr2PldWug/edit" class="mdui-btn mdui-btn-dense mdui-textfiled" value="ORIGINAL DOCS" />
+	<p style="font-size: 30px;color:pink">FORMAT</p>
+	<p style="font-size: 25px">SFX - Replace 37 BC B7 E2 00 00 00 00 with 00 00 00 00 E9 58 17 2F</p>
+	<p style="font-size: 25px">Music - Replace 37 BC B7 E2 00 00 00 00 with 00 00 00 00 37 53 E0 14</p>
+	<p style="font-size: 25px">Both - Replace C3 00 00 01 with C0 00 00 01 (ONLY those right of above bytes)</p>
+	<p style="font-size: 30px;color:pink">RESOURCES</p>
+	<p style="font-size: 25px">Replacing wem files in streamingwaves <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://ernestoam.fandom.com/wiki/Plants_vs._Zombies_2_Hacking_Guide/Rip_or_modify_audio">Rip or Modify Audio</a></p>
+	<p style="font-size: 25px">Wwise Version that PvZ2 uses (2014.1.6) <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://www.audiokinetic.com/downloads/previous/?id=2014.1.6_5318">Direct</a> <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://drive.google.com/file/d/1HxBbL0S5g29OqCYO5umQ4GDUV1w_HpKc/view?usp=sharing">Alternative</a></p>
+	<p style="font-size: 25px">Wwise Documentation <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://www.audiokinetic.com/library/2015.1.9_5624/?source=SDK&id=index.html">Documentation</a></p>
+	<p style="font-size: 25px">HEX sound editing resources</p>
+	<p style="font-size: 25px">Hex ⇔ Decimal Converter (Enable Little Endian) <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://www.save-editor.com/tools/wse_hex.html">Converter</a></p>
+	<p style="font-size: 25px">BNK Hex Editing Info <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://wiki.xentax.com/index.php/Wwise_SoundBank_(*.bnk)#HIRC_section">Info</a></p>
+	<p style="font-size: 25px">Editing existing music looping points and + music length <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://residentevilmodding.boards.net/thread/10415/modding-changing-points-adding-longer">Edit</a></p>
+	<p style="font-size: 30px;color:pink">Adding SFX</p>
+	<p style="font-size: 25px">Prepping the audio file</p>
+	<p style="font-size: 25px">1. Create a wav file of whatever SFX you want. (Can be mono or stereo, doesn't matter)</p>
+	<p style="font-size: 25px">2. Open Wwise (the version PvZ2 uses) and open a new project.</p>
+	<p style="font-size: 25px">3. Project (Top Left) -> Import Audio Files -> Add Files, then add all the wem files you want to play, then click Import.
+Sounds will be found in Project Explorer -> Audio -> Actor-Mixer Hierarchy -> Default Work Unit</p>
+	<p><img src="tutorial/fongshua/bnks/1.png" /></p>
+	<p style="font-size: 25px">4. Right click the Default Work Unit above the wem file -> New Child -> Actor-Mixer. Add all the sound files under that Actor-Mixer</p>
+	<p><img src="tutorial/fongshua/bnks/2.png" /></p>
+	<p style="font-size: 25px">5. Right click on the sounds and click Edit to open Property Editor and change the Mode to Define Custom. You can edit volume in General Settings as well.</p>
+	<p><img src="tutorial/fongshua/bnks/3.png" /></p>
+	<p style="font-size: 25px">Change format to Vorbis.</p>
+	<p><img src="tutorial/fongshua/bnks/4.png" /></p>
+	<p style="font-size: 25px">If you want the SFX to loop you can set it to loop in General Settings.</p>
+	<p style="font-size: 25px">6. Add a Play sound event for the SFX.</p>
+	<p style="font-size: 25px;color:blue">Right Click on sounds -> New Event -> Play</p>
+	<p style="font-size: 25px">Give the event a name (preferably play_something). Remember this event name - You need it to play the SFX. (Eg: Play_Haunter_ChainRustle)</p>
+	<p style="font-size: 25px">Alternatively, you can add an event directly from</p>
+	<p style="font-size: 25px;color:blue">Project Explorer -> Events -> Default Work Unit</p>
+	<p style="font-size: 25px;color:blue">7. Layout (top left again) -> Soundbank</p>
+	<p style="font-size: 25px; color: blue">8. Go Project Explorer -> Soundbanks -> Default Work Unit</p>
+	<p style="font-size: 25px;color:blue">Right-click Default Work Unit -> New Child -> Soundbank</p>
+	<p style="font-size: 25px">What you name this will become the name of the bnk file (remember this too, you will add it into structinfo and resources).</p>
+	<p style="font-size: 25px">9. Select the new Soundbank in Soundbank Manager, then drag Event over to the bottom right box (You can drag the parent or a folder the event is in instead)</p>
+	<p><img src="tutorial/fongshua/bnks/5.png" /></p>
+	<p style="font-size: 25px">Go back to Audio and drag the audio files (or parent) to that box too.</p>
+	<p><img src="tutorial/fongshua/bnks/6.png" /></p>
+	<p style="font-size: 25px">10. Tick the Soundbanks / Platforms / Languages then click Generate. You have generated the soundbank!</p>
+	<p><img src="tutorial/fongshua/bnks/7.png" /></p>
+	<p style="font-size: 25px">11. Find the generated bnk</p>
+	<p style="font-size: 25px">Project -> File Manager, right-click the project folder link and click Open Containing Folder</p>
+	<p style="font-size: 25px">Go to the file GeneratedSoundBanks -> Windows and copy the bnk file you created (NOT init.bnk)</p>
+	<p style="font-size: 25px">12. Add the bnk into the obb</p>
+	<p style="font-size: 25px">Find an existing rsgp audio file, copy it and rename it to whatever you want (remember the name). Unpack it and replace the bnk inside it with the one you created.</p>
+	<p style="font-size: 25px">Edit the rsgp's StructInfo as well</p>
+	<p style="font-size: 25px">Making volume slider work with the SFX/p>
+	<p style="font-size: 25px">13. Open the bnk with a hex editor.</p>
+	<p style="font-size: 25px">14. Replace all occurrences of the following bytes</p>
+	<p style="font-size: 25px">For SFX Slider</p>
+	<p style="font-size: 25px">Replace 37 BC B7 E2 00 00 00 00 with 00 00 00 00 E9 58 17 2F</p>
+	<p style="font-size: 25px">For Music Slider</p>
+	<p style="font-size: 25px">Replace 37 BC B7 E2 00 00 00 00 with 00 00 00 00 37 53 E0 14</p>
+	<p style="font-size: 25px">For Both</p>
+	<p style="font-size: 25px">Replace C3 00 00 01 with C0 00 00 01 (Located to the right of above bytes)</p>
+	<p style="font-size: 25px">Only replace the ones a few bytes to the right of 37 BC B7 E2 00 00 00 00!</p>
+	<p style="font-size: 25px">(The first 8 bytes are for the game's volume slider. The last 4 bytes allow multiple of the sound to be played at once.)</p>
+	<p style="font-size: 25px">15. Save the hex-edited bnk file and pack the rsgp file (the opened bnk is useless)</p>
+	<p style="font-size: 25px">16. Regular obb editing stuff: Add the new rsgp file you created in the obb's structinfo and resources</p>
+	<p style="font-size: 25px">Playing the SFX file</p>
+	<p style="font-size: 25px">Firstly whatever that's playing the SFX file must also load that file. (eg for Zombies, add the AudioGroups into ZombieTypes)</p>
+	<p style="font-size: 25px">Anything with animation can play whatever SFX. (You'll need to edit the animation)</p>
+	<p style="font-size: 25px">In addition, anything with an editable sound can have its sound replaced with the one you made. (Search Play_)</p>
+	<p style="font-size: 25px">Do note that in a level, objects past x=98 might not be able to affect sound.</p>
+	<p><img src="tutorial/fongshua/bnks/8.png" /></p>
+	<p style="font-size: 25px">(Here the SFX with the Play_Haunter_ChainRustle event will be played in frame 90 of the zombie's animation)</p>
+	<p style="font-size: 25px">Wherever in the game's code that asks for an event, the event you made can also be used too.</p>
+	<p style="font-size: 25px">Basically, wherever in the code where the game has Play_something you can make it play your custom audio instead.</p>
+	<p style="font-size: 25px">(Eg: Projectiles have a ImpactSoundEvent parameter, birthday song module takes in a play event (the stop event doesn't work))</p>
+	<p style="font-size: 30px;color:pink">Adding Music</p>
+	<p style="font-size: 25px">Note: Making the game play the music like normal tracks in game (changes every flag and after CYS) is difficult (aka idk how, but there's a workaround in the next section)</p>
+	<p style="font-size: 25px">Music added using this will only be playable the same way as the sfx above.
+(Most likely through the Birthday Song Module, which lets you insert an event  at the start of the level, and when the reward appears)</p>
+	<p style="font-size: 25px">Adding music is the same as adding SFX, except these steps:</p>
+	<p style="font-size: 25px">3. Import your tracks to Project Explorer -> Audio -> Interactive Music Hierarchy -> Default Work Unit -> Music Playlist Container -> Music Segment (Create child for playlist container and music segment)</p>
+	<p style="font-size: 25px">3.1. Change Layout -> Interactive Music</p>
+	<p style="font-size: 25px">Click on the Music Segment, then adjust the Music Segment Editor such that:</p>
+	<p style="font-size: 25px">Entry Cue (hold CTRL to move) is where the music starts playing (Just keep this at the start)</p>
+	<p style="font-size: 25px">Exit Cue is where the music loops (the current track will still play, but the 2nd loop track will start playing on top)</p>
+	<p style="font-size: 25px">3.2. Click on the Music Playlist Container, and look at the Music Playlist Editor</p>
+	<p style="font-size: 25px">Drag the Music Segment into the box, then change the Loop Count of the playlist (the top one) to infinite.</p>
+	<p style="font-size: 25px">The rest of the steps are the same as editing SFX</p>
+	<p style="font-size: 25px">Adding Custom Wave Music</p>
+	<p style="font-size: 25px">Note: This is NOT how PvZ2 normally does wave music. This is a work-around because we can't use the actual switches popcap uses (at least not without a lot of hex editing), hence the switches do not automatically change, nor do each level save the existing state.</p>
+	<p style="font-size: 25px">This method has these limitations:</p>
+	<p style="font-size: 25px">1. You need to change each music manually through an event constantly, if you want to prevent wrong music from playing
+(this requires spawning stuff every flag wave, so this won't work in endless)</p>
+<p style="font-size: 25px">2. Gimmicks that pause music (piano, boombox) will stop the music permanently (includes jam - music doesn't work with EightiesStageProperties at all)</p>
+<p style="font-size: 25px">3. Music for flag waves begins after the wave starts, not when the "A huge wave of zombies is approaching" message appears.</p>
+<p style="font-size: 25px">4. No sound for the huge wave text appearing.</p>
+<p style="font-size: 25px">However, an advantage of this is more control over the music: You can change the music as long as you can trigger an event. This means you can change the music at any wave, when a specific zombie appears, when a trap tile is activated, etc</p>
+<p style="font-size: 25px">For this, the Birthday Song override module will be used. (the stop event does nothing fyi)</p>
+<p style="font-size: 25px">FYI: States are used rather than just Stop/Start events is because upon a restart, changes from Stop/Start events won't save - the CYS music will play.</p>
+<p style="font-size: 25px">Changes from states won't save either, but you can constantly correct a wrong state. Whereas through Stop/Start correcting it will reset the music.</p>
+<p style="font-size: 25px">Note: Custom states are used for this.</p>
+<p style="font-size: 25px">Note: Custom states are used for this.</p>
+<p style="font-size: 25px">Note: Custom states are used for this.</p>
+<p style="font-size: 25px">DISCLAIMER: This page BNK is not written by me. It was by EnderallyGolem who spend his time on doing this. This is claimed for the right authority and no advertising purpose. Thank you!</p>
+    </div>
+</div>
