@@ -278,8 +278,8 @@ font-size: 55px;
 <center>
 <table border="21"><tbody><tr><td align="center">
 <p style="color=#000000;font-size:30px">Unix Converter</p> <input class="mdui-textfield-input" style="width: 100%;font-size:30px" type="text" name="timeStamp" size="30"><br>
-<input  type="button" style="color=#000000;font-size:20px" value="Submit" class="mdui-btn mdui-btn-dense mdui-textfiled" onclick="timeToHuman();">&nbsp;<input style="color=#000000;font-size:20px" class="mdui-btn mdui-btn-dense mdui-textfiled" type="reset" value="Reset"><br>
-<input name="result" type="text" value="" size="40"  class="mdui-textfield-input" style="color=#000000;font-size:30px"  readonly="">
+<input  type="button" style="color=#000000;font-size:20px" value="Submit" class="mdui-btn mdui-btn-dense mdui-textfiled" onclick="timeToHuman();">&nbsp;<input style="color=#000000;font-size:20px" class="mdui-btn mdui-btn-dense mdui-textfiled" type="reset" value="Reset"><input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:20px"  type="button" value="Copy Time" id="copy" onclick="copyText();copyFunction();"><br>
+<input name="result" id="output" type="text" value="" size="40"  class="mdui-textfield-input" style="color=#000000;font-size:30px"  readonly="">
 </p>
 </td></tr></tbody></table>
 </center>
@@ -322,17 +322,30 @@ font-size: 55px;
     <td><input type="text" class="mdui-textfield-input" style="width: 100%;font-size:30px" maxlength="2" name="inSec"></td>
   </tr>
   <tr>
-    <td colspan="11" align="center"><input type="button" class="mdui-btn mdui-btn-dense mdui-textfiled" class="mdui-btn mdui-btn-dense mdui-textfiled" style="color=#000000;font-size:20px" value="Submit" onclick="humanToTime();">&nbsp;<input  class="mdui-btn mdui-btn-dense mdui-textfiled" style="color=#000000;font-size:20px" type="reset" value="Reset"></td>
+    <td colspan="11" align="center"><input type="button" class="mdui-btn mdui-btn-dense mdui-textfiled" class="mdui-btn mdui-btn-dense mdui-textfiled" style="color=#000000;font-size:20px" value="Submit" onclick="humanToTime();">&nbsp;<input  class="mdui-btn mdui-btn-dense mdui-textfiled" style="color=#000000;font-size:20px" type="reset" value="Reset"><input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:20px"  type="button" value="Copy Time" id="copy" onclick="copyxText();copyFunction();"></td>
   </tr>
   <tr>
-    <td colspan="11" align="center"><input class="mdui-textfield-input"   name="result" style="color=#000000;font-size:30px" type="text" value="" size="40" readonly=""></td>
+    <td colspan="11" align="center"><input class="mdui-textfield-input" id="outline"  name="result" style="color=#000000;font-size:30px" type="text" value="" size="40" readonly=""></td>
   </tr>
 </tbody></table>
 </td></tr></tbody></table></center></form></td></tr></tbody></table></td><p>&nbsp;</p>
 
 </div>
 <!-- End Right Side Ads -->
+<script type="text/javascript">
 
+function copyText(){
+ document.getElementById("output").select();
+ document.execCommand('copy');
+}
+</script>
+<script type="text/javascript">
+
+function copyxText(){
+ document.getElementById("outline").select();
+ document.execCommand('copy');
+}
+</script>
 <!-- Right side End -->
 </td>
 </tr>
