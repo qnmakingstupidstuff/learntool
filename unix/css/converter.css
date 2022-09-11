@@ -1,0 +1,108 @@
+html>body{
+    background-color: #f4f7f6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rounded{
+    padding: 10px 10px 20px 10px;
+    background-color: rgb(230, 243, 255);
+    border: 1px solid black;
+}
+
+textarea.form-control{
+    background: rgb(240, 240, 245);
+    width: 99%;
+}
+
+input{
+    width: 99%;
+}
+
+.space{
+    padding-top: 8px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #f9bd09;
+    border-radius: 40px;
+   
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #f9bd09;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
+#style{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#bubbleStyle{
+    padding-top: 30%; 
+    width: 80%;  
+    margin: 0 0 0 15px;
+}
+
+strong{
+    color: #17a2b8;
+}
+
+.jumbotron{
+    height: 85%;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 991px) {
+    .speech-bubble:after {content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 0px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -1px;
+    margin-bottom: -2px;
+    }
+    
+    #bubbleStyle{
+        padding-top: 60%; 
+        width: 80%;  
+        margin: 0 0 0 15px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 575px) {
+    #bubbleStyle{
+        padding-top: 8%;
+        padding-left: 10%;
+        width: 80%;  
+        margin: 0 0 0 15px;
+    }
+}
+
+
+
+
+
+
