@@ -195,7 +195,12 @@ font-size: 55px;
           </div>
           <div class="mdui-collapse-item-body mdui-list">
 
-              <a style="font-size:20px" href="./index" class=" mdui-list-item mdui-ripple"><img src="./toolbar/cobcannon.png" draggable="false" />Home</a>
+              <a style="font-size:20px" href="./index" class=" mdui-list-item mdui-ripple"><img src="./toolbar/cobcannon.png" draggable="false" />Home</a> 
+			  <a style="font-size:20px" href="https://link1s.com/R6B4" class=" mdui-list-item mdui-ripple"><img src="./toolbar/donate.png" draggable="false" />Free Donate</a>
+			  <a style="font-size:20px" href="./update" class=" mdui-list-item mdui-ripple"><img src="./toolbar/update.png" draggable="false" />Update Change</a>
+			  <a style="font-size:20px" href="./downloadtool" class=" mdui-list-item mdui-ripple"><img src="./toolbar/download.png" draggable="false" />Tools Download</a>
+			  <a style="font-size:20px" href="./credit" class=" mdui-list-item mdui-ripple"><img src="./toolbar/coldsnap.png" draggable="false" />Credits</a>
+			  <a style="font-size:20px" href="./tutorial" class=" mdui-list-item mdui-ripple"><img src="./toolbar/egret.png" draggable="false" />Tutorial</a>
           </div>
         </div>
 		<div class="
@@ -217,6 +222,7 @@ font-size: 55px;
               <a style="font-size:20px" href="./download" class=" mdui-list-item mdui-ripple"><img src="./toolbar/hocus.png" draggable="false" />RSB Download</a>
 
               <a style="font-size:20px" href="./jsonedit" class=" mdui-list-item mdui-ripple"><img src="./toolbar/sexyjapan.png" draggable="false" />JSON Editor</a>
+			  <a style="font-size:20px" href="./unix" class=" mdui-list-item mdui-ripple"><img src="./toolbar/snapdragon.png" draggable="false" />Time Convert</a>
           </div>
         </div>
 </div>
@@ -974,6 +980,15 @@ function copyText(){
 <input type="checkbox" id="icecubed" style="display:none" onclick="" value="">
      <p> </p>
     <textarea id="output" style="font-size:20px"  class="mdui-textfield-input" rows="100" cols="150" style="display: none;"></textarea>
+	<script src="FileSaver.js"></script>
+	<script type="text/javascript">
+    var text = document.getElementById("output").value;
+    var f = "object" == typeof window && window.window === window ? window : "object" == typeof self && self.self === self ? self : "object" == typeof global && global.global === global ? global : void 0,
+    text = text.replace(/\n/g, "\r\n");
+    var blob = new Blob([text], { type: "text/plain"});
+    var anchor = document.createElement("a");
+    saveAs(anchor, "hello world.txt");
+</script>
 	<script>
 	function download(){
     var text = document.getElementById("output").value;
