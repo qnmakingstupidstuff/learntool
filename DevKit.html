@@ -246,11 +246,14 @@ font-size: 55px;
       <input style="font-size:25px"  id="source_zombie"  class="mdui-textfield-input" value="./ZombieLists/" type="text" required/>
       <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
-	<div style="width:50px;height:100px;float:left"></div>
-	<div class="mdui-textfield mdui-textfield-floating-label" style="width:250px;height:100px;float:left">
-      <label style="font-size:25px"  class="mdui-textfield-label">PNG name</label>
-      <input style="font-size:25px"  id="pngname"  class="mdui-textfield-input" value="" type="text" required/>
+<div style="width:50px;height:100px;float:left"></div>
+<div class="mdui-textfield mdui-textfield-floating-label" style="width:250px;height:100px;float:left">
+      <label style="font-size:25px"  class="mdui-textfield-label"> ID</label>
+      <input style="font-size:25px"  id="id"  class="mdui-textfield-input" value="" type="text" required/>
       <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
+
+    </p></div>
+</div>
     </div>
 </div>
 
@@ -275,31 +278,23 @@ font-size: 55px;
     </div>
 </div>
 <div id="final" style="width:1000px;height:100px">
-	<div  class="mdui-container mdui-valign" style="width:350px;height:100px;float:left">
+	<div  class="mdui-container mdui-valign" style="width:450px;height:100px;float:left">
       <label style="font-size:25px"  class="mdui-textfield-label"> Have in Chinese ver ?</label>
     <select  id="chingchongdingdong" class="mdui-select" mdui-select>
       <option style="font-size:25px" value="True">True</option>
       <option style="font-size:25px" value="Unknown">False</option>
     </select>
 	</div>
-	<div  class="mdui-container mdui-valign" style="width:350px;height:100px;float:left">
+	<div  class="mdui-container mdui-valign" style="width:450px;height:100px;float:left">
       <label style="font-size:25px"  class="mdui-textfield-label"> Have in Vanilla ver ?</label>
     <select  id="vanillafuckeclise" class="mdui-select" mdui-select>
       <option style="font-size:25px" value="Yes">True</option>
       <option style="font-size:25px" value="No">False</option>
     </select>
 	</div>
-<div>
-<div style="width:50px;height:100px;float:left"></div>
-<div class="mdui-textfield mdui-textfield-floating-label" style="width:150px;height:100px;float:left">
-      <label style="font-size:25px"  class="mdui-textfield-label"> ID</label>
-      <input style="font-size:25px"  id="id"  class="mdui-textfield-input" value="" type="text" required/>
-      <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
+
 
     </p></div>
-</div>
-
-    </p>
 	
 	
     
@@ -517,7 +512,7 @@ function toggleoutputvisibility() {
     toggleoutputvisibility();
 		var x = '"font-size:20px"';
 		var href = '"' + document.getElementById("source_zombie").value;
-		var pngpack = document.getElementById("pngname").value + '.png"';
+		var pngpack = document.getElementById("codename").value + '.png"';
 		var full = href + pngpack;
 		var drag = 'draggable="false"';
 		var namestyle = '"font-size:20px"';
