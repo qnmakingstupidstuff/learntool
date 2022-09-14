@@ -100,7 +100,7 @@ font-size: 55px;
     >
       <i class="mdui-icon material-icons">menu</i>
     </span>
-    <a href="https://harumatool.fun/" class="mdui-typo-headline mdui-hidden-xs"> Haruma's Tool</a>
+    <a href="https://harumatool.fun/" class="mdui-typo-headline mdui-hidden-xs"> Haruma's DevKit: Open Access</a>
     <div class="mdui-toolbar-spacer"></div>
 
 	 <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" style="font-size:15px" value="" onClick="refresh(this)"><i class="mdui-icon material-icons">refresh</i></button>
@@ -138,7 +138,7 @@ font-size: 55px;
 				<a style="font-size:20px" href="./Escalation"class=" mdui-list-item mdui-ripple"><img src="./toolbar/escalation.png" draggable="false" /> Escalation</a>
           </div>
         </div>
-<div class="mdui-collapse-item mdui-collapse-item-open">
+<div class="mdui-collapse-item mdui-collapse-item">
       <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
             <i class="
               mdui-list-item-icon
@@ -158,7 +158,7 @@ font-size: 55px;
 				<a style="font-size:20px" href="./PML"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chinesesunwukong.png" draggable="false" /> Rail Cart</a>
 				<a style="font-size:20px" href="./Planks"class=" mdui-list-item mdui-ripple"><img src="./toolbar/coconut.png" draggable="false" /> Planks</a>
 				<a style="font-size:20px" href="./Zomboss"class=" mdui-list-item mdui-ripple"><img src="./toolbar/zomboss.png" draggable="false" /> Zomboss</a>
-				<a style="font-size:20px" href="./Olaf"class=" mdui-list-item mdui-ripple  mdui-list-item-active"><img src="./toolbar/chaodimension.png" draggable="false" /> Chao Dimension</a>
+				<a style="font-size:20px" href="./Olaf"class=" mdui-list-item mdui-ripple"><img src="./toolbar/chaodimension.png" draggable="false" /> Chao Dimension</a>
           </div>
         </div><div class="
           mdui-collapse-item
@@ -232,74 +232,87 @@ font-size: 55px;
 <a id="anchor-top"></a>
 </div>
 <center>
-	<p style="font-size:40px" ><img src="./HarumaTools/grids/vietnam.png" draggable="false"> Chao Dimension Version 1.0.1 Public <img src="./HarumaTools/grids/vietnam.png" draggable="false"></p>
+	<p style="font-size:40px;margin-top:10px" ><img src="./HarumaTools/grids/vietnam.png" draggable="false"> Dev Kit: Internal Zombie <img src="./HarumaTools/grids/vietnam.png" draggable="false"></p>
    <div class="mdui-container">
  <div id="first" style="width:1000px;height:100px">
     <div class="mdui-textfield mdui-textfield-floating-label" style="width:250px;height:100px;float:left">
-      <label style="font-size:25px"  class="mdui-textfield-label">Action Time</label>
-      <input style="font-size:25px"  id="actiontime"  class="mdui-textfield-input" value="0.25" type="text" required/>
+      <label style="font-size:25px"  class="mdui-textfield-label">Haruma Number</label>
+      <input style="font-size:25px"  id="number"  class="mdui-textfield-input" value="" type="text" required/>
       <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
 	<div style="width:50px;height:100px;float:left"></div>
 	 <div class="mdui-textfield mdui-textfield-floating-label" style="width:250px;height:100px;float:left">
-      <label style="font-size:25px"  class="mdui-textfield-label">Max Plant Type</label>
-      <input style="font-size:25px"  id="maxplant"  class="mdui-textfield-input" value="84" type="text" required/>
+      <label style="font-size:25px"  class="mdui-textfield-label">Texture Source</label>
+      <input style="font-size:25px"  id="source_zombie"  class="mdui-textfield-input" value="./ZombieLists/" type="text" required/>
       <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
 	<div style="width:50px;height:100px;float:left"></div>
 	<div class="mdui-textfield mdui-textfield-floating-label" style="width:250px;height:100px;float:left">
-      <label style="font-size:25px"  class="mdui-textfield-label">Max Plant each Type</label>
-      <input style="font-size:25px"  id="typeper"  class="mdui-textfield-input" value="2" type="text" required/>
+      <label style="font-size:25px"  class="mdui-textfield-label">PNG name</label>
+      <input style="font-size:25px"  id="pngname"  class="mdui-textfield-input" value="" type="text" required/>
       <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
 </div>
+
 <div id="second" style="width:1000px;height:100px">
+
 	<div class="mdui-textfield mdui-textfield-floating-label" style="width:250px;height:100px;float:left" >
-      <label style="font-size:25px"  class="mdui-textfield-label">Column End</label>
-      <input style="font-size:25px"  id="column"  class="mdui-textfield-input" value="6" type="text" required/>
+      <label style="font-size:25px"  class="mdui-textfield-label">Zombie English Name</label>
+      <input style="font-size:25px"  id="name"  class="mdui-textfield-input" value="" type="text" required/>
       <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
 	<div style="width:50px;height:100px;float:left"></div>
 	<div class="mdui-textfield mdui-textfield-floating-label" style="width:250px;height:100px;float:left">
-      <label style="font-size:25px"  class="mdui-textfield-label"> Action Shovel</label>
-      <input style="font-size:25px"  id="shovel"  class="mdui-textfield-input" value="50" type="text" required/>
+      <label style="font-size:25px"  class="mdui-textfield-label"> Zombie Codename</label>
+      <input style="font-size:25px"  id="codename"  class="mdui-textfield-input" value="" type="text" required/>
       <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
 	<div style="width:50px;height:100px;float:left"></div>
 	<div class="mdui-textfield mdui-textfield-floating-label" style="width:250px;height:100px;float:left">
-      <label style="font-size:25px"  class="mdui-textfield-label"> Action Plant</label>
-      <input style="font-size:25px"  id="plantsingle"  class="mdui-textfield-input" value="80" type="text" required/>
+      <label style="font-size:25px"  class="mdui-textfield-label"> Version Existed</label>
+      <input style="font-size:25px"  id="version"  class="mdui-textfield-input" value="" type="text" required/>
       <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
 </div>
 <div id="final" style="width:1000px;height:100px">
-	<div class="mdui-textfield mdui-textfield-floating-label" style="width:450px;height:100px;float:left">
-	<label style="font-size:25px"  class="mdui-textfield-label">Action Plant in Column</label>
-      <input style="font-size:25px"  id="plantcolumn"  class="mdui-textfield-input" value="15" type="text" required/>
-      <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
-    </div>
-	<div style="width:50px;height:100px;float:left"></div>
-	<div class="mdui-textfield mdui-textfield-floating-label" style="width:450px;height:100px;float:left">
-      <label style="font-size:25px"  class="mdui-textfield-label"> Action Plantfood</label>
-      <input style="font-size:25px"  id="pfsingle"  class="mdui-textfield-input" value="25" type="text" required/>
-      <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
+	<div  class="mdui-container mdui-valign" style="width:350px;height:100px;float:left">
+      <label style="font-size:25px"  class="mdui-textfield-label"> Have in Chinese ver ?</label>
+    <select  id="chingchongdingdong" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="True">True</option>
+      <option style="font-size:25px" value="Unknown">False</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign" style="width:350px;height:100px;float:left">
+      <label style="font-size:25px"  class="mdui-textfield-label"> Have in Vanilla ver ?</label>
+    <select  id="vanillafuckeclise" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="Yes">True</option>
+      <option style="font-size:25px" value="No">False</option>
+    </select>
+	</div>
 <div>
-</div>
+<div style="width:50px;height:100px;float:left"></div>
+<div class="mdui-textfield mdui-textfield-floating-label" style="width:150px;height:100px;float:left">
+      <label style="font-size:25px"  class="mdui-textfield-label"> ID</label>
+      <input style="font-size:25px"  id="id"  class="mdui-textfield-input" value="" type="text" required/>
+      <div style="font-size:15px" class="mdui-textfield-error">You cannot leave this area empty</div>
 
     </p></div>
+</div>
+
+    </p>
+	
+	
     
     <textarea id="xml" rows="20" cols="50" style="display: none;"></textarea> 
      <p> </p>
     <div style="width:750px;height:50px">
 	
- <button class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left" onclick="CompileLevelXML();finishFunction()">Build Code</button>
+ <button class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left" onclick="CompileLevelXML();finishFunction()">Add</button>
  <div style="width:50px;height:100px;float:left"></div>
 	<button class="mdui-btn mdui-btn-dense mdui-textfiled"  style="font-size:15px;width:150px;height:100px;float:left"  type="button" onclick="download();downloadFunction()">Download Build</button>
 	<div style="width:50px;height:100px;float:left"></div>
 	<input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left"  type="button" value="Copy Build" id="copy" onclick="copyText();copyFunction();">
-	<div style="width:50px;height:100px;float:left"></div>
-	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left"  type="button" value="Clear Build" onclick="javascript:eraseText();clearFunction()"> 
-	 <input type="button" style="font-size:15px;width:150px;height:100px;float:left" onclick="location.href='Olaf.json';" class="mdui-btn mdui-btn-dense mdui-textfiled" value="Original Level" />
+	<input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left"  type="button" value="Clear Build" onclick="javascript:eraseText();clearFunction()"> 
 </div>
 <script>
   function refresh(){
@@ -338,7 +351,7 @@ document.oncontextmenu = click;
     text = text.replace(/\n/g, "\r\n");
     var blob = new Blob([text], { type: "text/plain"});
     var anchor = document.createElement("a");
-    anchor.download = "ChaoDimension.json";
+    anchor.download = "HarumaDevKit.html";
     anchor.href = window.URL.createObjectURL(blob);
     anchor.target ="_blank";
     anchor.style.display = "none"; 
@@ -500,17 +513,24 @@ function toggleoutputvisibility() {
               document.getElementById('output').style.display = "block";
         }
         function CompileLevelXML() {
-		//var actiontime = document.getElementById("actiontime").value;
-		//var maxplant = document.getElementById("maxplant").value;
-		//var typeper = document.getElementById("typeper").value;
-		//var column = document.getElementById("column").value;
-		//var shovel = document.getElementById("shovel").value;
-		//var plantsingle = document.getElementById("plantsingle").value;
-		//var plantcolumn = document.getElementById("plantcolumn").value;
-		//var pfsingle = document.getElementById("pfsingle").value;
     var str = document.getElementById("xml").value;
     toggleoutputvisibility();
-        document.getElementById("output").value += "\n\"RTID(CrazyOlaf@CurrentLevel)\",   \n \n    {\n\"objclass\": \"CrazyOlafTestProperties\",\n      \"aliases\": \[\n\"CrazyOlaf\"\n       ],\n      \"objdata\": \{   \n            \"ActionTimer\": " + document.getElementById("actiontime").value + ",\n            \"MaxPlantTypes\": " + document.getElementById("maxplant").value + ",\n            \"MaxPerType\": " + document.getElementById("typeper").value + ",\n            \"PlantBeforeColumn\": " + document.getElementById("column").value + ",\n            \"Actions\": [\n                                {\n                                   \"Actions\": \"Shovel\",\n                                   \"Weight\": " + document.getElementById("shovel").value + "\n                                 },\n                                 {\n                                   \"Actions\": \"PlantSingle\",\n                                   \"Weight\": " + document.getElementById("plantsingle").value + "\n                                 },\n                                 {\n                                   \"Actions\": \"PlantColumn\",\n                                   \"Weight\": " + document.getElementById("plantcolumn").value + "\n                                 },\n                                 {\n                                   \"Actions\": \"PlantfoodSingle\",\n                                   \"Weight\": " + document.getElementById("pfsingle").value + "\n                                 }\n                           ]\n                    }\n            },"  
+		var x = '"font-size:20px"';
+		var href = '"' + document.getElementById("source_zombie").value;
+		var pngpack = document.getElementById("pngname").value + '.png"';
+		var full = href + pngpack;
+		var drag = 'draggable="false"';
+		var namestyle = '"font-size:20px"';
+        document.getElementById("output").value += "		<tbody>\n			<tr>\n";  
+        document.getElementById("output").value += "				<td  style="+ x +" >"+ document.getElementById('number').value +"</td>\n";
+        document.getElementById("output").value += "				<td> <img src="+ full +" "+ drag +"></td>\n";
+		document.getElementById("output").value += "				<td style= "+ namestyle + ">"+ document.getElementById('name').value +"</td>\n";
+		document.getElementById("output").value += "				<td style= "+ namestyle + ">"+ document.getElementById('codename').value +"</td>\n";
+		document.getElementById("output").value += "				<td style= "+ namestyle + ">"+ document.getElementById('chingchongdingdong').value +"</td>\n";
+		document.getElementById("output").value += "				<td style= "+ namestyle + ">"+ document.getElementById('vanillafuckeclise').value +"</td>\n";
+		document.getElementById("output").value += "				<td style= "+ namestyle + ">"+ document.getElementById('id').value +"</td>\n";
+		document.getElementById("output").value += "			</tr>\n";
+		document.getElementById("output").value += "		</tbody>\n";
         document.getElementById("output").value += str;
         document.getElementById("output").value += "";
         console.log(allAddedItems);
