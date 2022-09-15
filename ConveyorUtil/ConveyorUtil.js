@@ -134,8 +134,8 @@ function addingFunc(){
                      forceboosted_false.innerText = "False";
                      forceboosted_true.innerText = "True";
                      forceboosted.marginTop = "30px";
-                     forceboosted.appendChild(forceboosted_true);
                      forceboosted.appendChild(forceboosted_false);
+                     forceboosted.appendChild(forceboosted_true);
                      el.appendChild(forceboosted);
                      y.innerHTML += '</br>'
               }
