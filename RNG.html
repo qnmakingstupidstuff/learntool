@@ -256,12 +256,12 @@ font-size: 55px;
 <div id="input-rng" style="width:1000px;height: 80px">
 <div style="font-size:25px;width:450px;height:80px;float:left" class="mdui-textfield mdui-textfield-floating-label">
       <label style="font-size:25px" class="mdui-textfield-label">Wave Number</label>
-      <input style="font-size:25px" class="mdui-textfield-input" onclick="recycleFunction()" id="wavenumber"  type="text"/>
+      <input style="font-size:25px;text-align:center" class="mdui-textfield-input" onclick="recycleFunction()" id="wavenumber"  type="text"/>
     </div>
 	<div style="width:50px;height:100px;float:left"></div>
 	<div style="font-size:25px;width:450px;height:80px;float:left" class="mdui-textfield mdui-textfield-floating-label">
       <label style="font-size:25px" class="mdui-textfield-label">Additional Plantfood</label>
-      <input style="font-size:25px" onclick="warningFunction()" class="mdui-textfield-input" id="plantfood" value="0" type="text"/>
+      <input style="font-size:25px;text-align:center" onclick="warningFunction()" class="mdui-textfield-input" id="plantfood" value="0" type="text"/>
     </div>
 	
 </div>
@@ -1251,14 +1251,34 @@ function toggleoutputvisibility() {
     }
      }
         function CompileLevelXML() {
-		var jamquiz = document.getElementById("jamquiz").value;
+				var jamquiz = document.getElementById("jamquiz").value;
+console.log(jamquiz);
+		var jamenabling = (jamquiz === 'true');
+		var str = document.getElementById("xml").value;
+		var pok = document.getElementById("random").value;
+		var plantfood_count = parseInt(document.getElementById("plantfood").value);
+		var randomize = (pok === 'true');
+		var jam_will_be_enabled = document.getElementById("jam").value;
 		console.log(jamquiz);
 		var jamenabling = (jamquiz === 'true');
         toggleoutputvisibility();
         DoShitWithItemInputs();
         DoShitWithZombieInputs();
-        document.getElementById("output").value += "        {\n            \"aliases\"\: \[\n                \"Wave" + document.getElementById("wavenumber").value +"\"\n            \],\n            \"objclass\"\: \"SpawnZombiesJitteredWaveActionProps\",\n            \"objdata\"\: { \n                \"DisableRandomSpawns\": " + document.getElementById("random").value + ",\n                \"AdditionalPlantfood\": " + document.getElementById("plantfood").value + ", \n"
-		if(jamenabling == true){
+        document.getElementById("output").value += "        {\n            \"aliases\"\: \[\n                \"Wave" + document.getElementById("wavenumber").value +"\"\n            \],\n            \"objclass\"\: \"SpawnZombiesJitteredWaveActionProps\",\n            \"objdata\"\: { \n";
+		
+		if(plantfood_count >= 1) {
+		document.getElementById("output").value += "                \"AdditionalPlantfood\": " + plantfood_count + ", \n";
+		}
+		else {
+			console.log("No plantfood");
+		}
+		if(randomize == false) {
+				document.getElementById("output").value += "                \"DisableRandomSpawns\": " + document.getElementById("random").value + ",\n"
+		}
+		else {
+				console.log("No Random Spawn");
+		}
+		if((jamenabling == true) && (jam_will_be_enabled != "null")){
                 document.getElementById("output").value += "                \"NotificationEvents\": [\n                    \"" + document.getElementById("jam").value + "\"\n                ],\n";
             }
 		document.getElementById("output").value += "                \"Zombies\"\: \[\n" + document.getElementById("xml").value + "\n                \]\n            \}\n        \},";
