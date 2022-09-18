@@ -1237,7 +1237,9 @@ console.log('Finished building Database');
 		                document.getElementById("output").value += "                \"LevelNumber\": " + document.getElementById("levelnumber").value + ",\n";
 		}
 		document.getElementById("output").value += "                \"Loot\": \"RTID(" + document.getElementById("loot").value + "\@LevelModules)\"\,\n                \"Modules\": [  \n                    \"RTID(" + document.getElementById("intro").value + "\@LevelModules)\",\n";
-		if(sunmeta == true){
+		document.getElementById("output").value += "                    \"RTID(SeedBank@CurrentLevel)\",\n"
+    document.getElementById("output").value += "                    \"RTID(ZombiesDeadWinCon@LevelModules)\",\n"
+    if(sunmeta == true){
                 document.getElementById("output").value += "                    \"RTID(" + document.getElementById("sundropper").value + "\@LevelModules)\",\n";
             }
 			
