@@ -1214,19 +1214,70 @@ console.log(stagequiz);
 
 console.log('Finished building Database');
     toggleoutputvisibility();
-        document.getElementById("output").value += "{\ \n    \"#comment\":\ \"" + document.getElementById("comment").value + "\",\   \n    \"objects\":\ [\  \n        {     \n            \"objclass\":\ \"LevelDefinition\",\ \n            \"objdata\":\ {\  \n                \"Description\": \"" + document.getElementById("descripsion").value + "\",\n                \"ForceToWorldMap\": " + document.getElementById("mapforce").value + ",\n                \"DisablePlantBoosts\": " + document.getElementById("boost").value + ",\n                \"GridItemLevel\": " + document.getElementById("grid").value + ",\n";
+        document.getElementById("output").value += "{\ \n    \"#comment\":\ \"" + document.getElementById("comment").value + "\",\   \n    \"objects\":\ [\  \n        {     \n            \"objclass\":\ \"LevelDefinition\",\ \n            \"objdata\":\ {\  \n";
+		if(descripsion != ""){
+			document.getElementById("output").value += "                \"Description\": \"" + document.getElementById("descripsion").value + "\",\n";
+		}
+		if(mapforce != "false"){
+			document.getElementById("output").value += "                \"ForceToWorldMap\": " + document.getElementById("mapforce").value + ",\n";
+		}
+		if(boost != "false"){
+		                document.getElementById("output").value += "                \"DisablePlantBoosts\": " + document.getElementById("boost").value + ",\n";
+		}
+		if(grid != "1"){
+		                document.getElementById("output").value += "                \"GridItemLevel\": " + document.getElementById("grid").value + ",\n";
+		}
 		if(powerupset != "LevelPowerupsDefault"){
                 document.getElementById("output").value += "                \"LevelPowerupSet\": \"" + document.getElementById("powerupset").value + "\",\n";
             }
-		document.getElementById("output").value += "                \"FirstRewardParam\": \"" + document.getElementById("rewardparam").value + "\",\n                \"FirstRewardType\": \"" + document.getElementById("rewardtype").value + "\",\n                \"LevelNumber\": " + document.getElementById("levelnumber").value + ",\n                \"Loot\": \"RTID(" + document.getElementById("loot").value + "\@LevelModules)\"\,\n                \"Modules\": [  \n                    \"RTID(" + document.getElementById("intro").value + "\@LevelModules)\",\n";
+		if((rewardparam != "") && (rewardtype != "")){
+		document.getElementById("output").value += "                \"FirstRewardParam\": \"" + document.getElementById("rewardparam").value + "\",\n                \"FirstRewardType\": \"" + document.getElementById("rewardtype").value + "\",\n";
+		}
+		if(levelnumber != ""){
+		                document.getElementById("output").value += "                \"LevelNumber\": " + document.getElementById("levelnumber").value + ",\n";
+		}
+		document.getElementById("output").value += "                \"Loot\": \"RTID(" + document.getElementById("loot").value + "\@LevelModules)\"\,\n                \"Modules\": [  \n                    \"RTID(" + document.getElementById("intro").value + "\@LevelModules)\",\n";
 		if(sunmeta == true){
                 document.getElementById("output").value += "                    \"RTID(" + document.getElementById("sundropper").value + "\@LevelModules)\",\n";
             }
-		document.getElementById("output").value += "                    \"RTID(\ZombiesDeadWinCon@LevelModules)\",\n                    \"RTID(\SeedBank@CurrentLevel)\",\n                    \"RTID(\DefaultZombieWinCondition@LevelModules)\",\n                    \"RTID(SpeedZom@CurrentLevel)\",\n                    \"RTID(" + document.getElementById("mower").value + "\@LevelModules)\",\n                    \"RTID(\NewWaves@CurrentLevel)\"\n                ],\n                \"Name\": \"" + document.getElementById("levelname").value + "\",\n                \"NormalPresentTable\": \"egypt_normal_01\",\n                \"ShinyPresentTable\": \"egypt_shiny_01\",\n                \"RepeatPlayForceToWorldMap\": " + document.getElementById("playmap").value + ",\n                \"StageModule\": \"RTID(" + document.getElementById("levelstage").value + "\@" + document.getElementById("stagequiz").value + ")\",\n                \"FixedPlantLevel\": " + document.getElementById("fixplant").value + ",\n                \"ZombieLevel\": " + document.getElementById("zombielevel").value + ",\n                \"SuppressAccountUpgrades\": " + document.getElementById("accountup").value + ",\n                \"SuppressDynamicTutorial\": " + document.getElementById("dynamictuto").value + ",\n                \"SuppressPlantfoodPurchase\": " + document.getElementById("plantfoodbuy").value + ""
-		if(sunmeta == true){
-                document.getElementById("output").value += "\,\n                \"StartingSun\": " + document.getElementById("sunstart").value + "";
+			
+		if(speedtest == "true"){
+		        document.getElementById("output").value += "                    \"RTID(SpeedZom@CurrentLevel)\",\n"
+			}
+		
+		
+		document.getElementById("output").value += "                    \"RTID(" + document.getElementById("mower").value + "\@LevelModules)\",\n                    \"RTID(\NewWaves@CurrentLevel)\"\n                ],\n";
+		if(levelname != ""){
+		        document.getElementById("output").value += "                \"Name\": \"" + document.getElementById("levelname").value + "\",\n"
+			}
+		document.getElementById("output").value += "                \"NormalPresentTable\": \"egypt_normal_01\",\n                \"ShinyPresentTable\": \"egypt_shiny_01\",\n";
+		if(playmap != "false"){
+		        document.getElementById("output").value += "                \"RepeatPlayForceToWorldMap\": " + document.getElementById("playmap").value + ",\n"
+			}
+		document.getElementById("output").value += "                \"StageModule\": \"RTID(" + document.getElementById("levelstage").value + "\@" + document.getElementById("stagequiz").value + ")\"";
+		if(parseInt(zombielevel) > 1){
+		        document.getElementById("output").value += ",\n                \"ZombieLevel\": " + document.getElementById("zombielevel").value + ""
+			}
+		if((fixplant != "-1") && (fixplant != "0")){
+		        document.getElementById("output").value += ",\n                \"FixedPlantLevel\": " + document.getElementById("fixplant").value + ""
+			}
+		if(accountup == "true"){
+                document.getElementById("output").value += ",\n                \"SuppressAccountUpgrades\": " + document.getElementById("accountup").value + "";
             }
-		document.getElementById("output").value += "\n            }\n        },\n        {\n            \"objclass\": \"ZombieModifierProperties\",\n            \"aliases\": [\n                \"SpeedZom\"\n            ],\n            \"objdata\": {\n                \"Speedy\": " + document.getElementById("speedtest").value + "\n            }\n        },\n        {\n            \"aliases\": [\n                \"SeedBank\" \n            ],\n            \"objclass\": \"SeedBankProperties\",\n            \"objdata\": \{\n                \"PlantIncludeList\": \[\],\n                \"PlantExcludeList\": \[\],\n                \"SelectionMethod\": \"chooser\"\n            }\n        },\n        {\n            \"aliases\": [\n                \"NewWaves\"\n            ],\n            \"objclass\": \"WaveManagerModuleProperties\",\n            \"objdata\": {\n                \"WaveManagerProps\": \"RTID(WaveManagerProps@CurrentLevel)\"\n            \}\n        \},\n        {\n            \"aliases\": [\n                \"WaveManagerProps\"\n            ],\n            \"objclass\": \"WaveManagerProperties\",\n            \"objdata\": {\n                \"FlagWaveInterval\": " + document.getElementById("flagwave").value + ",\n                \"ZombieCountdownFirstWaveSecs\": " + document.getElementById("wavesecond").value + ",\n                \"WaveCount\": " + document.getElementById("wavecount").value + ",\n                \"WaveSpendingPointIncrement\": " + document.getElementById("wavebuff").value + ",\n                \"WaveSpendingPoints\": " + document.getElementById("wavepoint").value + ",\n                \"Waves\": [\n"
+		if(dynamictuto == "true"){
+                document.getElementById("output").value += ",\n                \"SuppressDynamicTutorial\": " + document.getElementById("dynamictuto").value + " ";
+            }
+		if(plantfoodbuy == "true"){
+                document.getElementById("output").value += ",\n               \"SuppressPlantfoodPurchase\": " + document.getElementById("plantfoodbuy").value + "";
+            }
+		if((sunmeta == true) && (sunstart != "50")){
+                document.getElementById("output").value += ",\n                \"StartingSun\": " + document.getElementById("sunstart").value + "";
+            }
+		document.getElementById("output").value += "\n            }\n        },\n"
+		if(speedtest == "true"){
+		document.getElementById("output").value += "        {\n            \"objclass\": \"ZombieModifierProperties\",\n            \"aliases\": [\n                \"SpeedZom\"\n            ],\n            \"objdata\": {\n                \"Speedy\": " + document.getElementById("speedtest").value + "\n            }\n        },\n";
+		}
+		document.getElementById("output").value += "        {\n            \"aliases\": [\n                \"SeedBank\" \n            ],\n            \"objclass\": \"SeedBankProperties\",\n            \"objdata\": \{\n                \"PlantIncludeList\": \[\],\n                \"PlantExcludeList\": \[\],\n                \"SelectionMethod\": \"chooser\"\n            }\n        },\n        {\n            \"aliases\": [\n                \"NewWaves\"\n            ],\n            \"objclass\": \"WaveManagerModuleProperties\",\n            \"objdata\": {\n                \"WaveManagerProps\": \"RTID(WaveManagerProps@CurrentLevel)\"\n            \}\n        \},\n        {\n            \"aliases\": [\n                \"WaveManagerProps\"\n            ],\n            \"objclass\": \"WaveManagerProperties\",\n            \"objdata\": {\n                \"FlagWaveInterval\": " + document.getElementById("flagwave").value + ",\n                \"ZombieCountdownFirstWaveSecs\": " + document.getElementById("wavesecond").value + ",\n                \"WaveCount\": " + document.getElementById("wavecount").value + ",\n                \"WaveSpendingPointIncrement\": " + document.getElementById("wavebuff").value + ",\n                \"WaveSpendingPoints\": " + document.getElementById("wavepoint").value + ",\n                \"Waves\": [\n";
 		console.log('Start building Waves');
         for(i=1;i<n;i++){
 						if(i==m){document.getElementById("output").value += "                    [\n                        \"RTID(Wave"+i+"@CurrentLevel)\"\n                    ]\n";
