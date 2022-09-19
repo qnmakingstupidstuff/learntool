@@ -423,7 +423,7 @@ font-size: 55px;
 	<p style="font-size: 25px">If you don't know what's the build, just plus one number above and try. If the OBB download success, mean the Beta is released. Thanks for reading!</p>
 </div>
 <div id="tab8">
-	<p style="font-size: 25px">DISCLAIMER: Guide is by Hky, i only paste it here</p>
+	<p style="font-size: 25px">DISCLAIMER: Guide is by Hky, big thanks to Vitaliy100 for additional</p>
 	
 	<p style="font-size: 25px">First, you need an app called <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://vaibhavpandey.com/apkstudio/">APK Studio</a>  (make sure you install the required binaries correctly), as well as an app called <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://qwertycube.com/apk-editor-studio/">APK Editor</a> </p>
 	<p style="font-size: 25px">Let's say you want to change pvz2_row to pvz2_abc. (It can be any 3 letters)</p>
@@ -432,23 +432,29 @@ font-size: 55px;
 	<p style="font-size: 25px">In that file change "pvz2_row" to "pvz2_abc", also change the "row" to "abc". Don't change the one that says "rowThin"</p>
 	<p style="font-size: 25px">Now go back to APK Studio to repack the APK (click the hammer on the bottom left).</p>
 	<p style="font-size: 25px">Now, inside the unpacked APK folder (the same folder that contained the smali_classes2 from above), you should see a new folder called "dist". Open it and you should find the new packed APK inside.</p>
+	<p style="font-size: 25px">Updated by Vitaliy100: With 9.7+ you need to work with the classes3 and classes4</p>
 	<p style="font-size: 25px">For me, the APK this produces is invalid. However, there is one part of the output we want to use.</p>
 	<p style="font-size: 25px">Open the APK in the "dist" folder with an archive manager like 7-Zip, then copy the classes2.dex file. We will need it later!</p>
 	<p style="font-size: 25px">Download APK Editor Studio and open the vanilla APK (not the one produced by APK Studio). Then click the "Open Contents" button in the middle to open the folder</p>
 	<p style="font-size: 25px">Now do the following changes:</p>
-	<ol>
+	<ul>
 	<li style="font-size: 25px" >Open AndroidManifest.xml, find the line with GooglePlayExpansionEnabled and change it from true to false</li>
 	<li style="font-size: 25px">Also in AndroidManifest.xml, replace all occurrences of pvz2_row to pvz2_abc</li>
 	<li style="font-size: 25px">Copy the classes2.dex file from earlier into the APK folder, replacing the one that is already there</li>
 	<li style="font-size: 25px">Open lib/arm64-v8a/libPVZ2.so with a hex editor, search for pvz2_row and replace with pvz2_abc</li>
 	<li style="font-size: 25px">Do the same in lib/armeabi-v7a/libPVZ2.so (if using HxD delete the libPVZ2.so.bak file produced, otherwise it will make the final APK unnecessaily big)</li>
 	<li style="font-size: 25px">Click Save APK. You've got the Custom APK! (Note: if you want to change the name of the app, go in res/values/strings.xml, then change app_label and app_name)</li>
-	</ol>
+	</ul>
 	<p style="font-size: 25px">Install this APK on your device or emulator</p>
 	<p style="font-size: 25px">Rename your OBB file replacing pvz2_row with pvz2_abc. No other changes to the OBB are needed</p>
 	<p style="font-size: 25px">Create a folder on your device (Android/obb/com.ea.game.pvz2_abc). (Or you can open the app, it will instantly crash but create this folder for you)</p>
 	<p style="font-size: 25px">Paste your obb in this folder, it should be "main.563.com.ea.game.pvz2_abc.obb" (the three numbers can be different depending on your version)</p>
 	<p style="font-size: 25px">Now run the apk and it should work</p>
+	<p style="font-size: 25px;color:red">How to get "Download Finished" on the first launch by <strong style="font-size: 25px;color:pink">Vitaliy100</strong></p>
+	<p style="font-size: 25px">Go to <strong  style="font-size: 25px;color:red">/com/google/android/vending/licensing</strong></p>
+	<p style="font-size: 25px">Open LicenseChecker.smali</p>
+	<p style="font-size: 25px">search ".line 139" text and remove the string that starts with if</p>
+	<p><img src="tutorial/fongshua/vitaliy.png" style="width:640px;height:360px" /></p>
     </div>
 <div id="tab9">
 	<p style="font-size: 25px">Drag to SPC-Util</p>
