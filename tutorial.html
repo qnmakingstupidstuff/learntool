@@ -355,105 +355,122 @@ font-size: 55px;
     </div>
 	<div id="tab5">
 	<p style="font-size: 25px"> EnderallyGolem already explained very detailed, so i will just paste it here!</p>
-	<input type="button" style="font-size:20px;width:150px;height:50px" onclick="location.href='https://docs.google.com/document/d/1CMVN0PnYINAGcBinCFAEPklzXYXjLwAG4kGr2PldWug/edit" class="mdui-btn mdui-btn-dense mdui-textfiled" value="ORIGINAL DOCS" />
-	<p style="font-size: 30px;color:pink">FORMAT</p>
-	<p style="font-size: 25px">SFX - Replace 37 BC B7 E2 00 00 00 00 with 00 00 00 00 E9 58 17 2F</p>
-	<p style="font-size: 25px">Music - Replace 37 BC B7 E2 00 00 00 00 with 00 00 00 00 37 53 E0 14</p>
-	<p style="font-size: 25px">Both - Replace C3 00 00 01 with C0 00 00 01 (ONLY those right of above bytes)</p>
-	<p style="font-size: 30px;color:pink">RESOURCES</p>
-	<p style="font-size: 25px">Replacing wem files in streamingwaves <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://ernestoam.fandom.com/wiki/Plants_vs._Zombies_2_Hacking_Guide/Rip_or_modify_audio">Rip or Modify Audio</a></p>
-	<p style="font-size: 25px">Wwise Version that PvZ2 uses (2014.1.6) <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://www.audiokinetic.com/downloads/previous/?id=2014.1.6_5318">Direct</a> <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://drive.google.com/file/d/1HxBbL0S5g29OqCYO5umQ4GDUV1w_HpKc/view?usp=sharing">Alternative</a></p>
-	<p style="font-size: 25px">Wwise Documentation <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://www.audiokinetic.com/library/2015.1.9_5624/?source=SDK&id=index.html">Documentation</a></p>
-	<p style="font-size: 25px">HEX sound editing resources</p>
-	<p style="font-size: 25px">Hex ⇔ Decimal Converter (Enable Little Endian) <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://www.save-editor.com/tools/wse_hex.html">Converter</a></p>
-	<p style="font-size: 25px">BNK Hex Editing Info <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://wiki.xentax.com/index.php/Wwise_SoundBank_(*.bnk)#HIRC_section">Info</a></p>
-	<p style="font-size: 25px">Editing existing music looping points and + music length <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://residentevilmodding.boards.net/thread/10415/modding-changing-points-adding-longer">Edit</a></p>
-	<p style="font-size: 30px;color:pink">Adding SFX</p>
-	<p style="font-size: 25px">Prepping the audio file</p>
-	<p style="font-size: 25px">1. Create a wav file of whatever SFX you want. (Can be mono or stereo, doesn't matter)</p>
-	<p style="font-size: 25px">2. Open Wwise (the version PvZ2 uses) and open a new project.</p>
-	<p style="font-size: 25px">3. Project (Top Left) -> Import Audio Files -> Add Files, then add all the wem files you want to play, then click Import.
-Sounds will be found in Project Explorer -> Audio -> Actor-Mixer Hierarchy -> Default Work Unit</p>
-	<p><img src="tutorial/fongshua/bnks/1.png" /></p>
-	<p style="font-size: 25px">4. Right click the Default Work Unit above the wem file -> New Child -> Actor-Mixer. Add all the sound files under that Actor-Mixer</p>
-	<p><img src="tutorial/fongshua/bnks/2.png" /></p>
-	<p style="font-size: 25px">5. Right click on the sounds and click Edit to open Property Editor and change the Mode to Define Custom. You can edit volume in General Settings as well.</p>
-	<p><img src="tutorial/fongshua/bnks/3.png" /></p>
-	<p style="font-size: 25px">Change format to Vorbis.</p>
-	<p><img src="tutorial/fongshua/bnks/4.png" /></p>
-	<p style="font-size: 25px">If you want the SFX to loop you can set it to loop in General Settings.</p>
-	<p style="font-size: 25px">6. Add a Play sound event for the SFX.</p>
-	<p style="font-size: 25px;color:blue">Right Click on sounds -> New Event -> Play</p>
-	<p style="font-size: 25px">Give the event a name (preferably play_something). Remember this event name - You need it to play the SFX. (Eg: Play_Haunter_ChainRustle)</p>
-	<p style="font-size: 25px">Alternatively, you can add an event directly from</p>
-	<p style="font-size: 25px;color:blue">Project Explorer -> Events -> Default Work Unit</p>
-	<p style="font-size: 25px;color:blue">7. Layout (top left again) -> Soundbank</p>
-	<p style="font-size: 25px; color: blue">8. Go Project Explorer -> Soundbanks -> Default Work Unit</p>
-	<p style="font-size: 25px;color:blue">Right-click Default Work Unit -> New Child -> Soundbank</p>
-	<p style="font-size: 25px">What you name this will become the name of the bnk file (remember this too, you will add it into structinfo and resources).</p>
-	<p style="font-size: 25px">9. Select the new Soundbank in Soundbank Manager, then drag Event over to the bottom right box (You can drag the parent or a folder the event is in instead)</p>
-	<p><img src="tutorial/fongshua/bnks/5.png" /></p>
-	<p style="font-size: 25px">Go back to Audio and drag the audio files (or parent) to that box too.</p>
-	<p><img src="tutorial/fongshua/bnks/6.png" /></p>
-	<p style="font-size: 25px">10. Tick the Soundbanks / Platforms / Languages then click Generate. You have generated the soundbank!</p>
-	<p><img src="tutorial/fongshua/bnks/7.png" /></p>
-	<p style="font-size: 25px">11. Find the generated bnk</p>
-	<p style="font-size: 25px">Project -> File Manager, right-click the project folder link and click Open Containing Folder</p>
-	<p style="font-size: 25px">Go to the file GeneratedSoundBanks -> Windows and copy the bnk file you created (NOT init.bnk)</p>
-	<p style="font-size: 25px">12. Add the bnk into the obb</p>
-	<p style="font-size: 25px">Find an existing rsgp audio file, copy it and rename it to whatever you want (remember the name). Unpack it and replace the bnk inside it with the one you created.</p>
-	<p style="font-size: 25px">Edit the rsgp's StructInfo as well</p>
-	<p style="font-size: 25px">Making volume slider work with the SFX/p>
-	<p style="font-size: 25px">13. Open the bnk with a hex editor.</p>
-	<p style="font-size: 25px">14. Replace all occurrences of the following bytes</p>
-	<p style="font-size: 25px">For SFX Slider</p>
-	<p style="font-size: 25px">Replace 37 BC B7 E2 00 00 00 00 with 00 00 00 00 E9 58 17 2F</p>
-	<p style="font-size: 25px">For Music Slider</p>
-	<p style="font-size: 25px">Replace 37 BC B7 E2 00 00 00 00 with 00 00 00 00 37 53 E0 14</p>
-	<p style="font-size: 25px">For Both</p>
-	<p style="font-size: 25px">Replace C3 00 00 01 with C0 00 00 01 (Located to the right of above bytes)</p>
-	<p style="font-size: 25px">Only replace the ones a few bytes to the right of 37 BC B7 E2 00 00 00 00!</p>
-	<p style="font-size: 25px">(The first 8 bytes are for the game's volume slider. The last 4 bytes allow multiple of the sound to be played at once.)</p>
-	<p style="font-size: 25px">15. Save the hex-edited bnk file and pack the rsgp file (the opened bnk is useless)</p>
-	<p style="font-size: 25px">16. Regular obb editing stuff: Add the new rsgp file you created in the obb's structinfo and resources</p>
-	<p style="font-size: 25px">Playing the SFX file</p>
-	<p style="font-size: 25px">Firstly whatever that's playing the SFX file must also load that file. (eg for Zombies, add the AudioGroups into ZombieTypes)</p>
-	<p style="font-size: 25px">Anything with animation can play whatever SFX. (You'll need to edit the animation)</p>
-	<p style="font-size: 25px">In addition, anything with an editable sound can have its sound replaced with the one you made. (Search Play_)</p>
-	<p style="font-size: 25px">Do note that in a level, objects past x=98 might not be able to affect sound.</p>
-	<p><img src="tutorial/fongshua/bnks/8.png" /></p>
-	<p style="font-size: 25px">(Here the SFX with the Play_Haunter_ChainRustle event will be played in frame 90 of the zombie's animation)</p>
-	<p style="font-size: 25px">Wherever in the game's code that asks for an event, the event you made can also be used too.</p>
-	<p style="font-size: 25px">Basically, wherever in the code where the game has Play_something you can make it play your custom audio instead.</p>
-	<p style="font-size: 25px">(Eg: Projectiles have a ImpactSoundEvent parameter, birthday song module takes in a play event (the stop event doesn't work))</p>
-	<p style="font-size: 30px;color:pink">Adding Music</p>
-	<p style="font-size: 25px">Note: Making the game play the music like normal tracks in game (changes every flag and after CYS) is difficult (aka idk how, but there's a workaround in the next section)</p>
-	<p style="font-size: 25px">Music added using this will only be playable the same way as the sfx above.
-(Most likely through the Birthday Song Module, which lets you insert an event  at the start of the level, and when the reward appears)</p>
-	<p style="font-size: 25px">Adding music is the same as adding SFX, except these steps:</p>
-	<p style="font-size: 25px">3. Import your tracks to Project Explorer -> Audio -> Interactive Music Hierarchy -> Default Work Unit -> Music Playlist Container -> Music Segment (Create child for playlist container and music segment)</p>
-	<p style="font-size: 25px">3.1. Change Layout -> Interactive Music</p>
-	<p style="font-size: 25px">Click on the Music Segment, then adjust the Music Segment Editor such that:</p>
-	<p style="font-size: 25px">Entry Cue (hold CTRL to move) is where the music starts playing (Just keep this at the start)</p>
-	<p style="font-size: 25px">Exit Cue is where the music loops (the current track will still play, but the 2nd loop track will start playing on top)</p>
-	<p style="font-size: 25px">3.2. Click on the Music Playlist Container, and look at the Music Playlist Editor</p>
-	<p style="font-size: 25px">Drag the Music Segment into the box, then change the Loop Count of the playlist (the top one) to infinite.</p>
-	<p style="font-size: 25px">The rest of the steps are the same as editing SFX</p>
-	<p style="font-size: 25px">Adding Custom Wave Music</p>
-	<p style="font-size: 25px">Note: This is NOT how PvZ2 normally does wave music. This is a work-around because we can't use the actual switches popcap uses (at least not without a lot of hex editing), hence the switches do not automatically change, nor do each level save the existing state.</p>
-	<p style="font-size: 25px">This method has these limitations:</p>
-	<p style="font-size: 25px">1. You need to change each music manually through an event constantly, if you want to prevent wrong music from playing
-(this requires spawning stuff every flag wave, so this won't work in endless)</p>
-<p style="font-size: 25px">2. Gimmicks that pause music (piano, boombox) will stop the music permanently (includes jam - music doesn't work with EightiesStageProperties at all)</p>
-<p style="font-size: 25px">3. Music for flag waves begins after the wave starts, not when the "A huge wave of zombies is approaching" message appears.</p>
-<p style="font-size: 25px">4. No sound for the huge wave text appearing.</p>
-<p style="font-size: 25px">However, an advantage of this is more control over the music: You can change the music as long as you can trigger an event. This means you can change the music at any wave, when a specific zombie appears, when a trap tile is activated, etc</p>
-<p style="font-size: 25px">For this, the Birthday Song override module will be used. (the stop event does nothing fyi)</p>
-<p style="font-size: 25px">FYI: States are used rather than just Stop/Start events is because upon a restart, changes from Stop/Start events won't save - the CYS music will play.</p>
-<p style="font-size: 25px">Changes from states won't save either, but you can constantly correct a wrong state. Whereas through Stop/Start correcting it will reset the music.</p>
-<p style="font-size: 25px">Note: Custom states are used for this.</p>
-<p style="font-size: 25px">Note: Custom states are used for this.</p>
-<p style="font-size: 25px">Note: Custom states are used for this.</p>
-<p style="font-size: 25px">DISCLAIMER: This page BNK is not written by me. It was by EnderallyGolem who spend his time on doing this. This is claimed for the right authority and no advertising purpose. Thank you!</p>
+	<p style="font-size: 25px">Full tutorial <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://docs.google.com/document/d/1CMVN0PnYINAGcBinCFAEPklzXYXjLwAG4kGr2PldWug/edit">BNK Tutorial</a></p>
+	
+    </div>
+	<div id="tab6">
+	<p style="font-size: 25px;color:red">How to make a new PAM by Twinkles</p>
+	<p style="font-size: 24px;color:red">Use Twinkles to decode PAM file</p>
+	<p style="font-size: 24px">Drag PAM file to twinkles and choose “PopCap-Animation decode” to convert the PAM to PAM.json, then drag PAM.json choose “PopCap-Animation JSON to Flash” to convert to Xfl floder</p>
+	<p><img src="tutorial/fongshua/pams/1.png" /></p>
+	<p style="font-size: 24px">Next step, if u want use 768 textures to motify then drag Xfl flodern to Twinkles choose 33 and type 768, it will convert xfl can read 768 textures. If 1536 then type 1536</p>
+	<p><img src="tutorial/fongshua/pams/2.png" /></p>
+	<p style="font-size: 24px;color:red">Add textures to PAM </p>
+	<p><img src="tutorial/fongshua/pams/3.png" /></p>
+	<p style="font-size: 24px">Open library, create a media folder and copy all sprites of the pam here, open each source_x.xml and rename same name sprites in media folder</p>
+	<p style="font-size: 24px">If ur sprites more than source files, just copy new source and image and + 1 for them. Ur sprites should suitable for game like size doesn’t so big or small</p>
+	<p style="font-size: 24px">Ex: soruce_23 want to add new, copy source_23 rename to source_24, do same again image_x.xml</p>
+	<p><img src="tutorial/fongshua/pams/4.png" /></p>
+	<p style="font-size: 24px">Modify the DomDocument, u add or remove sprites same all sprites was added</p>
+	<p><img src="tutorial/fongshua/pams/5.png" /></p>
+	<p style="font-size: 24px;color:red">Make PAM animation </p>
+	<p style="font-size: 24px">All u done, open main.xfl by Adobe Animate. It should be noted that the XFL animations that can be processed by Twinkles currently have many limitations, such as: only PNG bitmaps, no gradients, and only frame-by-frame production (traditional complementary frames can be used, and transcoding is required when Converted to frame-by-frame animation in Animate before). Refer to the following for specific instructions.
+ If the following rules are violated, there is a high probability that the conversion of XFL to PAM will not be successful (the program will crash when doing the conversation)</p>
+	<p style="font-size: 24px">Animation main structure description The main scene of the animation is named "animation", and it has 3 Layers, from top to bottom:</p>
+	<p style="font-size: 24px">*1 flow: Label layer, used to set frame labels, the game program will locate the animation to be played through the frame labels and stop commands * stop instruction: the instruction stop() , which will stop the playback of the animation..</p>
+	<p style="font-size: 24px">*2 actions : define action commands Through the cooperation of the frame tag and stop, the game can play the animation between the two. Other action commands: fscommand command, the game can read this command and make the object perform the specified behavior: for example: fscommand("use_action"); command, which can make the shooter plant shoot a bullet and make the production plant Produce a sunlight. * audio : fscommand command, used to play sound effects, such as: fscommand("PlaySample", eventName); , where eventName is the string ID of the Event defined in SoundBank</p>
+	<p style="font-size: 24px">3* sprite  : animation layer, this layer directly calls the "movie clip" component whose ID is "main_sprite". To modify the animation content, you should directly step into the modified component for modification, and do not change the data of this layer</p>
+	<p style="font-size: 24px">Open library double click to main_sprite and u can see a lot layers then delete all layers if not u could crash when encoding to PAM</p>
+	<p><img src="tutorial/fongshua/pams/6.png" /></p>
+	<p style="font-size: 24px">Create new layer, drag a image sprite for only one layer and u should take sprites in image folder if don’t make animate for zombies or switching attack plants. Take sprite in sprite folder for a component's label can be used for <component shield>. When the game is playing the animation, the Sprite elements that specify certain labels are not displayed. The "plant dress-up switching" in the game is this principle</p>
+	<p><img src="tutorial/fongshua/pams/7.png" /></p>
+	<p style="font-size: 24px">A sprite can have the following properties: Be * Pan, zoom, rotate, tilt, alpha. Attributes other than these five attributes will be ignored in the process of encoding PAM. “Do Not take more than 1 sprite in a layer if not pam will be crash when u encode PAM again”</p>
+	<p style="font-size: 24px">Transcoding is required when Converted to frame-by-frame animation u can use montion tween, classic tween to make animation then convert all frame to frame-by-frame animation</p>
+	<p><img src="tutorial/fongshua/pams/8.png" /></p>
+	<p style="font-size: 24px;color:red">Modify extra.json file to suitable sprites </p>
+	<p style="font-size: 24px">Open the extra.json file in the xfl folder, add a new member after the last member of the "ImageSize" object, the member Key is the image ID, corresponding to the "ID" in resources.json, the image ID is only uppercase It consists of letters, arrays, and underscores; the member value is an array consisting of two unsigned integers (without decimal points), which respectively represent the width and height of the image</p>
+	<p style="font-size: 24px">Ex: raiden001 represents an image with ID IMAGE_PLANT_RAIDEN_RAIDEN001</p>
+	<p style="font-size: 24px">“size” is width 250 pixels and height 140 pixels</p>
+	<p><img src="tutorial/fongshua/pams/9.png" /></p>
+	<p style="font-size: 24px;color:red">Add each sprite to image. In W and H, the scaling ratio for >1536 resolutions is 78.125 % (percentage). So if you import a bitmap whose standard size is 100x100, the size of the actual image file should be 100x100 times 1/0.78165 (about 1.28) = 128x128, the scaling ratio for >768 resolutions is 128 %. </p>
+	<p><img src="tutorial/fongshua/pams/10.png" /></p>
+	<p style="font-size: 24px;color:red">In sprite for switching event “plant dress-up switching”, u can pass this if u didn’t use sprite when u was making PAM </p>
+	<p style="font-size: 24px;color:red">Encode PAM </p>
+	<p style="font-size: 24px">Drag xfl folder to Twinkles and choose PopCap-Animation JSON from Flash, then drag PAM.json choose PopCap-Animation encode. In case PAM fails when encoding, u need to check the PAM rules and correct them </p>
+	<p style="font-size: 24px">Try to open PAM.ripe.json by Animate Viewer if it can view, u made it correctly and it has 95% success </p>
+	<p style="font-size: 24px">DISCLAIMER: This post was written by Sarah Lydia, if you have any problems, the contact is in Credits. Thanks! </p>
     </div>
 </div>
+<div id="tab7">
+	<p style="font-size: 25px;color:red">How to download RSB Beta</p>
+	<p style="font-size: 25px">First, you should go in to RSB Download Site of the tool, it's public</p>
+	<p><img src="tutorial/fongshua/rsb/1.png" style="width:640px;height:360px" /></p>
+	<p style="font-size: 25px">Second, select one version</p>
+	<p style="font-size: 25px">By the time this tutorial is written, the beta is 10.0.1, it mean it will be outdated but make sure to follow the step so you will download beta correctly</p>
+	<p><img src="tutorial/fongshua/rsb/2.png" style="width:640px;height:360px" /></p>
+	<p style="font-size: 25px">Check Dev first, live should be checked last one</p>
+	<p><img src="tutorial/fongshua/rsb/3.png" style="width:640px;height:360px" /></p>
+	<p style="font-size: 25px">iPad3 has the resolution 1536, iPad2 and iPhone is 768 and iPod is 384</p>
+	<p style="font-size: 25px">Final, click download button to start download the rsb. If you want to port it, use SU change texture format and do some PAM modification if necessary</p>
+	<p><img src="tutorial/fongshua/rsb/4.png" style="width:640px;height:360px" /></p>
+	<p style="font-size: 25px;color:red">How to use "Beta Bug"</p>
+	<p style="font-size: 25px">The reason i called this "beta bug", because it's not completed beta, it's just the bug for people to download beta</p>
+	<p style="font-size: 25px">Open the app called APK Editor</p>
+	<p style="font-size: 25px">Choose PvZ2, Complicated edit</p>
+	<p style="font-size: 25px">It should shown like this if you correctly</p>
+	<p><img src="tutorial/fongshua/rsb/5.png" style="width:640px;height:360px" /></p>
+	<p style="font-size: 25px">Open AndroidManifest.xml</p>
+	<p style="font-size: 25px">Finally, fix the build and version number</p>
+	<p><img src="tutorial/fongshua/rsb/6.png" style="width:640px;height:360px" /></p>
+	<p style="font-size: 25px">If you don't know what's the build, just plus one number above and try. If the OBB download success, mean the Beta is released. Thanks for reading!</p>
+</div>
+<div id="tab8">
+	<p style="font-size: 25px">DISCLAIMER: Guide is by Hky, i only paste it here</p>
+	
+	<p style="font-size: 25px">First, you need an app called <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://vaibhavpandey.com/apkstudio/">APK Studio</a>  (make sure you install the required binaries correctly), as well as an app called <a  class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" href="https://qwertycube.com/apk-editor-studio/">APK Editor</a> </p>
+	<p style="font-size: 25px">Let's say you want to change pvz2_row to pvz2_abc. (It can be any 3 letters)</p>
+	<p style="font-size: 25px">Use APK Studio to unpack the APK (leave the default checkboxes). It unpacks the APK contents into a folder with the same name and location as your APK file.</p>
+	<p style="font-size: 25px">Now open the folder, go to smali_classes2/com/sexyactioncool/lawn/BuildConfig.smali</p>
+	<p style="font-size: 25px">In that file change "pvz2_row" to "pvz2_abc", also change the "row" to "abc". Don't change the one that says "rowThin"</p>
+	<p style="font-size: 25px">Now go back to APK Studio to repack the APK (click the hammer on the bottom left).</p>
+	<p style="font-size: 25px">Now, inside the unpacked APK folder (the same folder that contained the smali_classes2 from above), you should see a new folder called "dist". Open it and you should find the new packed APK inside.</p>
+	<p style="font-size: 25px">For me, the APK this produces is invalid. However, there is one part of the output we want to use.</p>
+	<p style="font-size: 25px">Open the APK in the "dist" folder with an archive manager like 7-Zip, then copy the classes2.dex file. We will need it later!</p>
+	<p style="font-size: 25px">Download APK Editor Studio and open the vanilla APK (not the one produced by APK Studio). Then click the "Open Contents" button in the middle to open the folder</p>
+	<p style="font-size: 25px">Now do the following changes:</p>
+	<ol>
+	<li style="font-size: 25px" >Open AndroidManifest.xml, find the line with GooglePlayExpansionEnabled and change it from true to false</li>
+	<li style="font-size: 25px">Also in AndroidManifest.xml, replace all occurrences of pvz2_row to pvz2_abc</li>
+	<li style="font-size: 25px">Copy the classes2.dex file from earlier into the APK folder, replacing the one that is already there</li>
+	<li style="font-size: 25px">Open lib/arm64-v8a/libPVZ2.so with a hex editor, search for pvz2_row and replace with pvz2_abc</li>
+	<li style="font-size: 25px">Do the same in lib/armeabi-v7a/libPVZ2.so (if using HxD delete the libPVZ2.so.bak file produced, otherwise it will make the final APK unnecessaily big)</li>
+	<li style="font-size: 25px">Click Save APK. You've got the Custom APK! (Note: if you want to change the name of the app, go in res/values/strings.xml, then change app_label and app_name)</li>
+	</ol>
+	<p style="font-size: 25px">Install this APK on your device or emulator</p>
+	<p style="font-size: 25px">Rename your OBB file replacing pvz2_row with pvz2_abc. No other changes to the OBB are needed</p>
+	<p style="font-size: 25px">Create a folder on your device (Android/obb/com.ea.game.pvz2_abc). (Or you can open the app, it will instantly crash but create this folder for you)</p>
+	<p style="font-size: 25px">Paste your obb in this folder, it should be "main.563.com.ea.game.pvz2_abc.obb" (the three numbers can be different depending on your version)</p>
+	<p style="font-size: 25px">Now run the apk and it should work</p>
+    </div>
+<div id="tab9">
+	<p style="font-size: 25px">Drag to SPC-Util</p>
+	<p style="font-size: 25px">Input Opt 11, RSB Unpack [Simple]</p>
+	
+	<p><img src="tutorial/fongshua/pack_dir/1.png" style="width:490px;height:256px" /></p>
+	<p style="font-size: 25px">Bool is 1</p>
+	<p><img src="tutorial/fongshua/pack_dir/2.png" style="width:490px;height:256px" /></p>
+	<p style="font-size: 25px">After that, the tool should be able to unpack entire PACKAGES easily. Good luck</p>
+    </div>
+	<div id="tab10">
+	<p style="font-size: 25px">DISCLAIMER: The tutorial is written by MDuck, i only copy paste</p>
+	<p style="font-size: 25px">Guide to force the game to only use one type of texture (384/768/1536)</p>
+	<p style="font-size: 25px">To do that you have to edit the lib file of the game in apk, which located in {libdirectory}/lib/arm64-v8a/libPVZ2.so and {libdirectory}/lib/armeabi-v7a/libPVZ2.so</p>
+	<p style="font-size: 25px">The replace all hex value of other types of texture to the type of texture you want.</p>
+	<p style="font-size: 25px">384: <strong>80 01 00 00</strong></p>
+	<p style="font-size: 25px">768: <strong>00 03 00 00</strong></p>
+	<p style="font-size: 25px">1536: <strong>00 06 00 00</strong></p>
+	<p><img src="tutorial/fongshua/1536/1.png"  /></p>
+	<p><img src="tutorial/fongshua/1536/2.png" /></p>
+	<p style="font-size: 25px">Then press Ctrl + S to save the file</p>
+	<p style="font-size: 25px">Do for both libPVZ2.so file in both folder (arm64-v8a & armeabi-v7a).</p>
+    </div>
