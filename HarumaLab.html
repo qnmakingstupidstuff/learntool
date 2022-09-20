@@ -897,6 +897,31 @@ font-size: 55px;
       <div class="mdui-textfield-error">You cannot leave this area empty</div>
     </div>
 </div>
+<div id="gk" style="width:1000px;height:100px">
+	<div  class="mdui-container mdui-valign"  style="width:300px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">Music Type</label>
+    <select  id="musictype" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="MiniGame_A">Ultimate Battle</option>
+      <option style="font-size:25px" value="MiniGame_B">DMG</option>
+      <option style="font-size:25px" value="null">null</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign"  style="width:300px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">Seed Chooser</label>
+    <select  id="seedchooser" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="SeedBank">SeedBank</option>
+      <option style="font-size:25px" value="ConveyorBelt">Conveyor</option>
+      <option style="font-size:25px" value="null">null</option>
+    </select>
+	</div>
+	<div  class="mdui-container mdui-valign"  style="width:300px;height:100px;float:left">
+	<label  class="mdui-textfield-label" style="font-size:30px">Zombie Win Type</label>
+    <select  id="wintype" class="mdui-select" mdui-select>
+      <option style="font-size:25px" value="ZombiesDeadWinCon">Default</option>
+      <option style="font-size:25px" value="null">No Win</option>
+    </select>
+	</div>
+</div>
     </p>
 	<div>
     </div>
@@ -1177,6 +1202,9 @@ function toggleoutputvisibility() {
     var str = document.getElementById("xml").value;
 	var wavemax = document.getElementById("wavecount").value;
 	var sunchooser = document.getElementById("sunchooser").value;
+	var musictype = document.getElementById("musictype").value;
+	var seedchooser = document.getElementById("seedchooser").value;
+	var wintype = document.getElementById("wintype").value;
 	var sunmeta = (sunchooser === 'true');
 	var m = parseInt(wavemax);
 	var n = m+1;
@@ -1237,12 +1265,15 @@ console.log('Finished building Database');
 		                document.getElementById("output").value += "                \"LevelNumber\": " + document.getElementById("levelnumber").value + ",\n";
 		}
 		document.getElementById("output").value += "                \"Loot\": \"RTID(" + document.getElementById("loot").value + "\@LevelModules)\"\,\n                \"Modules\": [  \n                    \"RTID(" + document.getElementById("intro").value + "\@LevelModules)\",\n";
-		document.getElementById("output").value += "                    \"RTID(SeedBank@CurrentLevel)\",\n"
-    document.getElementById("output").value += "                    \"RTID(ZombiesDeadWinCon@LevelModules)\",\n"
-    if(sunmeta == true){
+		if(sunmeta == true){
                 document.getElementById("output").value += "                    \"RTID(" + document.getElementById("sundropper").value + "\@LevelModules)\",\n";
             }
-			
+			if(wintype != "null"){
+                document.getElementById("output").value += "                    \"RTID(" + document.getElementById("wintype").value + "\@LevelModules)\",\n";
+            }
+			if(seedchooser != "null"){
+                document.getElementById("output").value += "                    \"RTID(" + document.getElementById("seedchooser").value + "\@CurrentLevel)\",\n";
+            }
 		if(speedtest == "true"){
 		        document.getElementById("output").value += "                    \"RTID(SpeedZom@CurrentLevel)\",\n"
 			}
@@ -1272,6 +1303,9 @@ console.log('Finished building Database');
 		if(plantfoodbuy == "true"){
                 document.getElementById("output").value += ",\n               \"SuppressPlantfoodPurchase\": " + document.getElementById("plantfoodbuy").value + "";
             }
+		if(musictype != "null"){
+                document.getElementById("output").value += ",\n               \"MusicType\": \"" + document.getElementById("musictype").value + "\"";
+            }
 		if((sunmeta == true) && (sunstart != "50")){
                 document.getElementById("output").value += ",\n                \"StartingSun\": " + document.getElementById("sunstart").value + "";
             }
@@ -1279,7 +1313,7 @@ console.log('Finished building Database');
 		if(speedtest == "true"){
 		document.getElementById("output").value += "        {\n            \"objclass\": \"ZombieModifierProperties\",\n            \"aliases\": [\n                \"SpeedZom\"\n            ],\n            \"objdata\": {\n                \"Speedy\": " + document.getElementById("speedtest").value + "\n            }\n        },\n";
 		}
-		document.getElementById("output").value += "        {\n            \"aliases\": [\n                \"SeedBank\" \n            ],\n            \"objclass\": \"SeedBankProperties\",\n            \"objdata\": \{\n                \"PlantIncludeList\": \[\],\n                \"PlantExcludeList\": \[\],\n                \"SelectionMethod\": \"chooser\"\n            }\n        },\n        {\n            \"aliases\": [\n                \"NewWaves\"\n            ],\n            \"objclass\": \"WaveManagerModuleProperties\",\n            \"objdata\": {\n                \"WaveManagerProps\": \"RTID(WaveManagerProps@CurrentLevel)\"\n            \}\n        \},\n        {\n            \"aliases\": [\n                \"WaveManagerProps\"\n            ],\n            \"objclass\": \"WaveManagerProperties\",\n            \"objdata\": {\n                \"FlagWaveInterval\": " + document.getElementById("flagwave").value + ",\n                \"ZombieCountdownFirstWaveSecs\": " + document.getElementById("wavesecond").value + ",\n                \"WaveCount\": " + document.getElementById("wavecount").value + ",\n                \"WaveSpendingPointIncrement\": " + document.getElementById("wavebuff").value + ",\n                \"WaveSpendingPoints\": " + document.getElementById("wavepoint").value + ",\n                \"Waves\": [\n";
+		document.getElementById("output").value += "        {\n            \"aliases\": [\n                \"NewWaves\"\n            ],\n            \"objclass\": \"WaveManagerModuleProperties\",\n            \"objdata\": {\n                \"WaveManagerProps\": \"RTID(WaveManagerProps@CurrentLevel)\"\n            \}\n        \},\n        {\n            \"aliases\": [\n                \"WaveManagerProps\"\n            ],\n            \"objclass\": \"WaveManagerProperties\",\n            \"objdata\": {\n                \"FlagWaveInterval\": " + document.getElementById("flagwave").value + ",\n                \"ZombieCountdownFirstWaveSecs\": " + document.getElementById("wavesecond").value + ",\n                \"WaveCount\": " + document.getElementById("wavecount").value + ",\n                \"WaveSpendingPointIncrement\": " + document.getElementById("wavebuff").value + ",\n                \"WaveSpendingPoints\": " + document.getElementById("wavepoint").value + ",\n                \"Waves\": [\n";
 		console.log('Start building Waves');
         for(i=1;i<n;i++){
 						if(i==m){document.getElementById("output").value += "                    [\n                        \"RTID(Wave"+i+"@CurrentLevel)\"\n                    ]\n";
