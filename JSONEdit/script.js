@@ -18,9 +18,6 @@ function getData(){
     const json_input = JSON.parse(file_call);
     const json_handle = JSON.stringify(json_input);
     json_handle.value += json_input;
-    if (json_input) {
-        alert('Valid JSON');
-    }
 }
 function stringfyData(){
     const file_call = document.getElementById("input").value;

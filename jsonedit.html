@@ -86,8 +86,8 @@ font-size: 55px;
   <link rel="stylesheet" href="./snackbar/clear.css"/>
 </head>
 <div id="snackbar">Successfully Downloaded</div>
-<div id="snackbar1">Success Build</div>
-<div id="snackbar2">Copied</div>
+<div id="snackbar1">Success</div>
+<div id="snackbar2">Valid JSON</div>
 <div id="snackbar3">Cleared</div>
 <div id="snackbar4">Selected Mold Colony</div>
 <div id="snackbar5">Selected Trash Bin</div>
@@ -249,20 +249,20 @@ font-size: 55px;
         <textarea id="input" style="width:400px;height:500px" placeholder="Insert your JSON here..."></textarea>
         <textarea underlined id="output" style="width:400px;height:500px" placeholder="Output JSON"></textarea>
 		</br>
-        <button class="mdui-btn mdui-ripple"   style="font-size:20px" onclick="getData()">Validate</button>
-        <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="formatData()">Beautify</button>
-        <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="stringfyData()">Stringfy</button>
-    <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="download()">Download JSON</button>
+        <button class="mdui-btn mdui-ripple"   style="font-size:20px" onclick="getData();copyFunction()">Validate</button>
+        <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="formatData();finishFunction()">Beautify</button>
+        <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="stringfyData();finishFunction()">Stringfy</button>
+    <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="download();downloadFunction()">Download JSON</button>
     </div>
   <div id="database2" style="display: none" >
     <textarea placeholder="All your aliases will go here" id="json_parse" style="width:250px;height:500px"></textarea>
     <textarea placeholder="Anim Rig Class goes here" id="json_ext" style="width:300px;height:500px"></textarea>
     <textarea placeholder="PopAnim Goes here" id="json_animrig" style="width:450px;height:500px"></textarea>
 	</br>
-    <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="takeDataforParse()">JSON Load</button>
-    <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="downloadAliases()">Aliases Download</button>
-    <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="downloadAnimRig()">AnimRig Download</button>
-    <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="downloadPopAnim()">PopAnim Download</button>
+    <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="takeDataforParse();finishFunction()">JSON Load</button>
+    <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="downloadAliases();downloadFunction()">Aliases Download</button>
+    <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="downloadAnimRig();downloadFunction()">AnimRig Download</button>
+    <button class="mdui-btn mdui-ripple"  style="font-size:20px" onclick="downloadPopAnim();downloadFunction()">PopAnim Download</button>
     </div>
   <script src="./JSONEdit/script.js"></script>
   <script src="./JSONEdit/download.js"></script>
