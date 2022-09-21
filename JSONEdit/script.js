@@ -105,7 +105,7 @@ function takeDataforParse(){
             json_ext.value += json_plant;
         }
         else{
-            json_ext.value += json_plant + '\n';
+            json_ext.value += json_plant + ',\n';
         }
     }
     
