@@ -7,7 +7,7 @@ function loadRipeData(){
     div_disable.style.display = "none";
     const input_data = document.getElementById("input-data").value;
     const dataArray = input_data.split(",\n");
-    const key_length = parseInt(dataArray.length)-1;
+    const key_length = parseInt(dataArray.length);
     const missing_key ="'missing.png'";
     for(let i = 0;i<key_length;i++){
         bar += '<img src="./HarumaTools/zombies/'+dataArray[i]+'.png" draggable="false" id="'+dataArray[i]+'" onclick="selectSprite(event);placeFunction()" />';
