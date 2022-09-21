@@ -39,7 +39,17 @@ function formatData(){
 }
 function takeDataforParse(){
     const file_call = document.getElementById("input").value;
-    const json_input = JSON.parse(file_call);
+	const json_fix1 = file_call.replaceAll("\n		{},\n		","");
+	const json_fix2 = json_fix1.replaceAll('\n		{\n			"######## Baseline Zombosses #######": 0\n		},\n		',"");
+	const json_fix3 = json_fix2.replaceAll('\n		{\n			"######## Modern Zombosses #######": 0\n		},\n		',"");
+	const json_fix4 = json_fix3.replaceAll('\n		{\n			"#comment": "####### Heian Zombies #######"\n		},\n		',"");
+	const json_fix5 = json_fix4.replaceAll("\n		{},\n		","");
+	const json_fix6 = json_fix5.replaceAll('{},',"");
+	const json_fix7 = json_fix6.replaceAll('        {\n            "######## Baseline Zombosses #######": 0\n        },\n',"");
+	const json_fix8 = json_fix7.replaceAll('        {\n            "######## Modern Zombosses #######": 0\n        },\n',"");
+	const json_fix9= json_fix8.replaceAll('        {\n            "comment": "Heroes LOD Zombies"\n        },\n',"");
+	console.log(json_fix9);
+    const json_input = JSON.parse(json_fix9);
     const json_handle = JSON.stringify(json_input);
     const json_parse = document.getElementById("json_parse");
     const json_ext = document.getElementById("json_ext");
