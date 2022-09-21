@@ -507,7 +507,7 @@ function copyText(){
             document.getElementById(selectedSpriteId).style.outline="";
             e.currentTarget.style.outline = "2px solid white";
             selectedSpriteId = e.currentTarget.id;
-            mouseOverSprite.src = e.currentTarget.src;
+            mouseOverSprite.src = e.currentTarget.id;
             var canvases = document.getElementsByClassName('newImg');
             if(selectedSpriteId == eraser){
                 mouseOverSprite.style.pointerEvents="none";
