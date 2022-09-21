@@ -74,7 +74,7 @@ function takeDataforParse(){
             json_parse.value += json_value.aliases;
         }
         else{
-            json_parse.value += json_value.aliases + '\n';
+            json_parse.value += json_value.aliases + ',\n';
         }
     }
     for(m=0;m<json_count;m++){
@@ -86,7 +86,7 @@ function takeDataforParse(){
             json_animrig.value += json_anim;
         }
         else{
-            json_animrig.value += json_anim + '\n';
+            json_animrig.value += json_anim + ',\n';
         }
     }
     for(k=0;k<json_count;k++){
