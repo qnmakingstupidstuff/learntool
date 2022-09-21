@@ -262,7 +262,37 @@ font-size: 55px;
 <div id="menu-bar" style="display:block">
 <textarea id="input-data"  style="width:500px;height:500px" placeholder="Your aliases goes here"></textarea>
 </br>
-<button class="mdui-btn mdui-btn-dense mdui-textfiled" onclick="loadRipeData();finishFunction()">Generate</button>
+<button class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:20px" onclick="loadRipeData();finishFunction()">Load Mod</button>
+<div class="mdui-container" style="font-size:20px">
+      <div class="mdui-col">
+        <label class="mdui-checkbox">
+<input type="checkbox" id="checkPath"  onclick="showMe()" value="Show Box"/>
+          <i class="mdui-checkbox-icon"></i>
+          Custom Server
+        </label>
+      </div>
+	 </div>
+<div id="customPath" style="display:none" class="mdui-textfield mdui-textfield-floating-label">
+      <label class="mdui-textfield-label">Import custom server</label>
+<input type="text" id="customServer" class="mdui-textfield-input" value="./HarumaTools/zombies/" style="font-size:20px;text-align:center" required/> 
+      <div class="mdui-textfield-error" style="font-size:20px;text-align:center">Blanked server, cannot load picture</div>
+</div>
+<script>
+function showMe(){
+	const showBox = document.getElementById("checkPath");
+	const showPath = document.getElementById("customPath");
+	const customServer = document.getElementById("customServer");
+	if(checkPath.checked){
+		customServer.value = '';
+		showPath.style.display = "block";
+	}
+	else{
+		customServer.value = '';
+		showPath.style.display = "none";
+		customServer.value = "./HarumaTools/zombies/"
+		}
+	}
+</script>
 </div>
 <div id="mod-hide" style="display: none" >
 <div id="input-rng" style="width:1000px;height: 80px">
@@ -316,15 +346,14 @@ font-size: 55px;
         <div>
 <img src="./HarumaTools/grids/eraser.png" id="547" onclick="selectSprite(event)" style="margin-left: 15px;">
 <p></p>
-<div style="background-image:url('./HarumaTools/grids/zombiepacket.png');border-radius:10px;border:4px solid #6362b1; width: 465; height:auto;margin-top: 10px;">
+<div style="background-image:url('./HarumaTools/grids/zombiepacket.png');border-radius:10px;border:4px solid #6362b1; width: 450px; height:auto;margin-top: 10px;">
         <div id="contain-data">
 		</div>
 	<div>
     </div>
 </div>
 </div>
-</div>
-    <div style="margin-top: 15px">
+ <div style="margin-top: 15px">
          <p id="p1" class="paragraph1" style="display: none;"> Grid ID: 7x3</p><p id="p2" class="paragraph1">
     </p></div>
     <textarea id="xml" rows="20" cols="50" style="display: none;"></textarea> 
@@ -338,6 +367,8 @@ font-size: 55px;
 	<div style="width:50px;height:100px;float:left"></div>
 	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left"  type="button" value="Clear Build" onclick="javascript:eraseText();clearFunction()"> 
 </div>
+</div>
+   
 <script src="WaveModUtil.js"></script>
 <script>
   function refresh(){
