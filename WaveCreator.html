@@ -855,7 +855,7 @@ function copyText(){
                     var victim = "";
                     console.log(e.target.style.outline);
                         if(e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px"){
-                         victim = "{\n                        \"Type\"\: \"RTID("+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\@ZombieTypes)\", \n                        \"Row\"\:\ \"" + y + "\" \n                    }";
+                         victim = ",{\n                        \"Type\"\: \"RTID("+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\@ZombieTypes)\", \n                        \"Row\"\:\ \"" + y + "\" \n                    }";
                          e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px";
                         }
                         if(e.target.style.outline == "rgb(0, 255, 255) solid 2.5px"){
