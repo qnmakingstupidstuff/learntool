@@ -10,7 +10,7 @@ function loadRipeData(){
     const key_length = parseInt(dataArray.length)-1;
     const missing_key ="'missing.png'";
     for(let i = 0;i<key_length;i++){
-        bar += '<img src="./HarumaTools/zombies/'+dataArray[i]+'.png" draggable="false" id="'+dataArray[i]+'" onclick="selectSprite(event);placeFunction()" onerror="this.src='+missing_key+'"/>';
+        bar += '<img src="./HarumaTools/zombies/'+dataArray[i]+'.png" draggable="false" id="'+dataArray[i]+'" onclick="selectSprite(event);placeFunction()" />';
     }
     contain_mod.innerHTML = bar;
 }
