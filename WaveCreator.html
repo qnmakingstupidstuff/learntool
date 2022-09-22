@@ -836,7 +836,7 @@ function copyText(){
                     if(icecubed.checked == true) {
                     document.getElementById("xml").value += "";
                     }
-                    document.getElementById("xml").value += "\n                        \"Row\"\: " + y + ",\n                        \"Type\"\:\"RTID("+ mouseOverSprite.src.substring(mouseOverSprite.src.lastIndexOf('/')+1).split('.')[0] + "\@ZombieTypes)\"\n                    }";
+                    document.getElementById("xml").value += "\n                        \"Row\"\: \"" + y + "\",\n                        \"Type\"\:\"RTID("+ mouseOverSprite.src.substring(mouseOverSprite.src.lastIndexOf('/')+1).split('.')[0] + "\@ZombieTypes)\"\n                    }";
                 }
                 var icecubed = document.getElementById("icecubed");
                 var newImg = document.createElement("img");
@@ -855,12 +855,12 @@ function copyText(){
                         var victim = "";
                         console.log(e.target.style.outline);
                             if(e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 0.5px"){
-                             victim = "\n                    {\n                        \"Row\"\: " + y + ",\n                        \"Type\"\:\"RTID("+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\@ZombieTypes)\"\n                    }";
+                             victim = "\n                    {\n                        \"Row\"\: \"" + y + "\",\n                        \"Type\"\:\"RTID("+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\@ZombieTypes)\"\n                    }";
                              e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 0.5px";
                             }
                             if(e.target.style.outline == "rgb(0, 255, 255) solid 2.5px"){
                                 console.log("yay");
-                             victim = "\n                    {\n                        \"Row\"\: " + y + ",\n                        \"Type\"\:\"RTID("+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\@ZombieTypes)\"\n                    }";
+                             victim = "\n                    {\n                        \"Row\"\: \"" + y + "\",\n                        \"Type\"\:\"RTID("+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\@ZombieTypes)\"\n                    }";
                              e.target.style.outlineColor = "rgba(0, 0, 0, 0.2)";
                              e.target.style.outlineStyle = "solid";
                              e.target.style.outlineWidth = "0.5px";
