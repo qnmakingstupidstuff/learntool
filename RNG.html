@@ -30,7 +30,7 @@
 
 <html translate="no"></html>
 
-<link rel='icon' href="./icons/raiden2.png" draggable="false" type='image/x-icon'/ >
+<link rel='icon' href="./icons/raiden2.ico" draggable="false" type='image/x-icon'/ >
 <style> 
 
 
@@ -297,7 +297,7 @@ font-size: 55px;
 	</div>
 </div>
 <img src="./HarumaTools/grids/nothing.png" draggable="false" />
-<div style="background-image:url('./HarumaTools/grids/brainbackground.png');border-radius:10px;border:2px solid #17171c; width: 700; height: 5500px;margin-top: 10px;">
+<div style="background-image:url('./HarumaTools/grids/brainbackground.png');border-radius:10px;border:2px solid #17171c; width: 700; height: auto;margin-top: 10px;">
      <img src="./HarumaTools/zombies/mummy.png" draggable="false" >
      <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="mummy" style="width: 3%" value="0">
      <img src="./HarumaTools/zombies/mummy_armor1.png" draggable="false" >
@@ -1099,8 +1099,15 @@ font-size: 55px;
 	 <p>
 	 <img src="./HarumaTools/zombies/zombie_snowpea.png" draggable="false" >
      <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="zombie_snowpea" style="width: 3%" value="0">
+	 <img src="./HarumaTools/zombies/pumpkin_knight.png" draggable="false" >
+     <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="pumpkin_knight" style="width: 3%" value="0">
+	 <img src="./HarumaTools/zombies/pumpkin_knight_ghost.png" draggable="false" >
+     <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="pumpkin_knight_ghost" style="width: 3%" value="0">
+	 <img src="./HarumaTools/zombies/pumpkin_scarecrow_bird.png" draggable="false" >
+     <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="pumpkin_scarecrow_bird" style="width: 3%" value="0">
      <p> </p>
 	 <p> </p>
+	</div>
 	 <script type="text/javascript">
 function click (e) {
   if (!e)
@@ -1645,6 +1652,9 @@ var zombie_explodenut = document.getElementById("zombie_explodenut").value;
 var zombie_gatlingpea = document.getElementById("zombie_gatlingpea").value;
 var zombie_jalapeno = document.getElementById("zombie_jalapeno").value;
 var zombie_snowpea = document.getElementById("zombie_snowpea").value;
+var pumpkin_scarecrow_bird = document.getElementById("pumpkin_scarecrow_bird").value;
+var pumpkin_knight_ghost = document.getElementById("pumpkin_knight_ghost").value;
+var pumpkin_scarecrow_bird = document.getElementById("pumpkin_scarecrow_bird").value;
 const row_number = [1,2,3,4,5];
 
 	
@@ -2052,6 +2062,27 @@ if(zcorp_fem != 0){
            const random_row = Math.floor(Math.random()*row_number.length);
 			var zombie_row = row_start + row_number[random_row] + row_end;
             document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type +  "roman_armor2" + after;
+        }
+    }
+	if(pumpkin_knight_ghost != 0){
+            for(x=0; x < pumpkin_knight_ghost; x++) {
+           const random_row = Math.floor(Math.random()*row_number.length);
+			var zombie_row = row_start + row_number[random_row] + row_end;
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type +  "pumpkin_knight_ghost" + after;
+        }
+    }
+	if(pumpkin_knight != 0){
+            for(x=0; x < pumpkin_knight; x++) {
+           const random_row = Math.floor(Math.random()*row_number.length);
+			var zombie_row = row_start + row_number[random_row] + row_end;
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type +  "pumpkin_knight" + after;
+        }
+    }
+	if(pumpkin_scarecrow_bird != 0){
+            for(x=0; x < pumpkin_scarecrow_bird; x++) {
+           const random_row = Math.floor(Math.random()*row_number.length);
+			var zombie_row = row_start + row_number[random_row] + row_end;
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type +  "pumpkin_scarecrow_bird" + after;
         }
     }
 	if(roman_armor3 != 0){

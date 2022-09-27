@@ -288,7 +288,7 @@ font-size: 55px;
      
      
      <p> </p>
-<div style="background-image:url('./HarumaTools/grids/brainbackground.png');border-radius:10px;border:2px solid #17171c; width: 700; height: 5500px;margin-top: 10px;">
+<div style="background-image:url('./HarumaTools/grids/brainbackground.png');border-radius:10px;border:2px solid #17171c; width: 700; height: auto;margin-top: 10px;">
      <img src="./HarumaTools/zombies/mummy.png" draggable="false" >
      <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="mummy" style="width: 3%" value="0">
      <img src="./HarumaTools/zombies/mummy_armor1.png" draggable="false" >
@@ -1090,8 +1090,15 @@ font-size: 55px;
 	 <p>
 	 <img src="./HarumaTools/zombies/zombie_snowpea.png" draggable="false" >
      <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="zombie_snowpea" style="width: 3%" value="0">
+	 <img src="./HarumaTools/zombies/pumpkin_knight.png" draggable="false" >
+     <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="pumpkin_knight" style="width: 3%" value="0">
+	 <img src="./HarumaTools/zombies/pumpkin_knight_ghost.png" draggable="false" >
+     <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="pumpkin_knight_ghost" style="width: 3%" value="0">
+	 <img src="./HarumaTools/zombies/pumpkin_scarecrow_bird.png" draggable="false" >
+     <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="pumpkin_scarecrow_bird" style="width: 3%" value="0">
      <p> </p>
 	 <p> </p>
+	</div>
 	 <script type="text/javascript">
 function click (e) {
   if (!e)
@@ -1620,6 +1627,9 @@ var zombie_explodenut = document.getElementById("zombie_explodenut").value;
 var zombie_gatlingpea = document.getElementById("zombie_gatlingpea").value;
 var zombie_jalapeno = document.getElementById("zombie_jalapeno").value;
 var zombie_snowpea = document.getElementById("zombie_snowpea").value;
+var pumpkin_scarecrow_bird = document.getElementById("pumpkin_scarecrow_bird").value;
+var pumpkin_knight_ghost = document.getElementById("pumpkin_knight_ghost").value;
+var pumpkin_scarecrow_bird = document.getElementById("pumpkin_scarecrow_bird").value;
         var next = "                    \{\n                        \"Type\"\: \"RTID\("
         var after = "\@ZombieTypes\)\"\n                    \}";
         if(mummy != 0){
@@ -1665,6 +1675,21 @@ var zombie_snowpea = document.getElementById("zombie_snowpea").value;
 	if(zcorp_helpdesk != 0){
             for(x=0; x < zcorp_helpdesk; x++) {
             document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "zcorp_helpdesk" + after;
+        }
+    }
+	if(pumpkin_scarecrow_bird != 0){
+            for(x=0; x < pumpkin_scarecrow_bird; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pumpkin_scarecrow_bird" + after;
+        }
+    }
+if(pumpkin_knight != 0){
+            for(x=0; x < pumpkin_knight; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pumpkin_knight" + after;
+        }
+    }
+	if(pumpkin_knight_ghost != 0){
+            for(x=0; x < pumpkin_knight_ghost; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pumpkin_knight_ghost" + after;
         }
     }
 	if(zcorp_imp != 0){
