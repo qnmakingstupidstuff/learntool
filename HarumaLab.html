@@ -1277,9 +1277,10 @@ console.log('Finished building Database');
 		if(speedtest == "true"){
 		        document.getElementById("output").value += "                    \"RTID(SpeedZom@CurrentLevel)\",\n"
 			}
-		
-		
-		document.getElementById("output").value += "                    \"RTID(" + document.getElementById("mower").value + "\@LevelModules)\",\n                    \"RTID(\NewWaves@CurrentLevel)\"\n                ],\n";
+		if(mower != "SaveMowers"){
+		document.getElementById("output").value += "                    \"RTID(" + document.getElementById("mower").value + "\@LevelModules)\",\n"
+		}
+		document.getElementById("output").value += "                    \"RTID(\NewWaves@CurrentLevel)\"\n                ],\n";
 		if(levelname != ""){
 		        document.getElementById("output").value += "                \"Name\": \"" + document.getElementById("levelname").value + "\",\n"
 			}
