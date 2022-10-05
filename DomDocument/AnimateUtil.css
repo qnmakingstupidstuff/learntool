@@ -1,0 +1,15 @@
+#label-name{
+    float: left;
+}
+#label-index{
+    float: left;
+    margin-left: 10%
+}
+#label-duration{
+    float: left;
+    margin-left: 10%
+}
+#label-total{
+    float: left;
+    margin-left: 10%
+}

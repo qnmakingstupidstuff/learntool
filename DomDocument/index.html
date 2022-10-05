@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <title>Haruma's Tool</title>
+        <script src= "script.js"></script>
+        <script src= "buttons.js"></script>
+    </head>
+    <body>
+        <div id="loadElement" style="display: block">
+            <textarea id="documentDom" style="width:500px;height:500px"></textarea>
+            <button onclick="domRead()">Submit</button>
+            <link rel="stylesheet" href="AnimateUtil.css" />
+        </div>
+        <div id = "fix-option" style="display:none">
+           <div id="fps-debug">
+                <p>FPS-Core</p>
+                <input type = "text" id = "fps_edit" value="" />
+            </div>
+            <button onclick="openImg()" value="">Open Img</button>
+            <button onclick="openImg()" value="">Close Img</button>
+            <button onclick="openImg()" value="">Open M Elements</button>
+            <button onclick="openImg()" value="">Close M Elements</button>
+            <button onclick="openImg()" value="">Open A Elements</button>
+            <button onclick="openImg()" value="">Close A Elements</button>
+            <button onclick="openImg()" value="">Open Labels</button>
+            <button onclick="openImg()" value="">Close Labels</button>
+            <button onclick="openImg()" value="">Open Actions</button>
+            <button onclick="openImg()" value="">Close Actions</button>
+            <button onclick="openImg()" value="">Open Audio</button>
+            <button onclick="openImg()" value="">Close Audio</button>
+            <p>Pictures Data</p>
+            <div id="picture_util" style="display: block">
+            </div>
+            <p>M Elements Data</p>
+            <div id="m_util" style="display: block">
+            </div>
+            <p>A Elements Data</p>
+            <div id="a_util" style="display: block">
+            </div>
+            <p>Animation Labels</p>
+            <div id="labels_util" style="display: block">
+                <div id = "label-name"> Label name</div>
+                <div id = "label-index"> Index</div>
+                <div id = "label-duration"> Duration</div>
+                <div id = "label-total"> Total</div>
+                <div >( Don't need to change this, the tool will apply with the change of index and duration )</div>
+            </div>
+            <br>
+        </div>
+        <div id = "loadProcess" style="display:none">
+        </div>
+    </body>
+</html>
