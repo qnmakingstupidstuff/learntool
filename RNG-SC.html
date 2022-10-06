@@ -1,0 +1,756 @@
+<title>Haruma's Tool</title>
+<script src="https://cmp.osano.com/AzZmS6TGVY3D6IPM/654c4c7d-7d40-4afb-8f34-c45989e74f87/osano.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCipslKJZFecvls5KwxQvK7rf88NyMDWDw",
+    authDomain: "harumatool.firebaseapp.com",
+    projectId: "harumatool",
+    storageBucket: "harumatool.appspot.com",
+    messagingSenderId: "464019290644",
+    appId: "1:464019290644:web:680bffdb5deb6d6bff4501",
+    measurementId: "G-6TJ8H33ZVH"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9643890132712137"
+  crossorigin="anonymous"></script>
+<script src="console.image.min.js"></script>
+<script src="disable.js"></script>
+<script src="time.js"></script>
+
+<html translate="no">
+
+</html>
+
+<link rel='icon' href="./icons/raiden2.ico" draggable="false" type='image/x-icon' />
+<style>
+  @font-face {
+    font-size: 55px;
+    font-family: myFirstFont;
+    src: url(fbUsv8C5eI-Black.woff);
+  }
+
+  * {
+    font-family: myFirstFont;
+  }
+</style>
+
+<head>
+  <meta name="google" content="notranslate">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./assets/mdui-v0.4.3/css/mdui.min.css" />
+  <script src="./snackbar/success.js"></script>
+  <script src="./snackbar/finished.js"></script>
+  <script src="./snackbar/place.js"></script>
+  <script src="./snackbar/copy.js"></script>
+  <script src="./snackbar/clear.js"></script>
+  <script src="./snackbar/recycle.js"></script>
+  <link rel="stylesheet" href="./snackbar/success.css" />
+  <link rel="stylesheet" href="./snackbar/recycle.css" />
+  <link rel="stylesheet" href="./snackbar/place.css" />
+  <link rel="stylesheet" href="./snackbar/finished.css" />
+  <link rel="stylesheet" href="./snackbar/copy.css" />
+  <link rel="stylesheet" href="./snackbar/clear.css" />
+  <script src="./snackbar/success.js"></script>
+  <script src="./snackbar/finished.js"></script>
+  <script src="./snackbar/place.js"></script>
+  <script src="./snackbar/copy.js"></script>
+  <script src="./snackbar/clear.js"></script>
+  <script src="./snackbar/warning.js"></script>
+  <link rel="stylesheet" href="./snackbar/warning.css" />
+  <script src="./snackbar/note.js"></script>
+  <link rel="stylesheet" href="./snackbar/note.css" />
+  <script src="./snackbar/jam.js"></script>
+  <link rel="stylesheet" href="./snackbar/jam.css" />
+  <script src="./snackbar/recycle.js"></script>
+  <link rel="stylesheet" href="./snackbar/success.css" />
+  <link rel="stylesheet" href="./snackbar/recycle.css" />
+  <link rel="stylesheet" href="./snackbar/place.css" />
+  <link rel="stylesheet" href="./snackbar/finished.css" />
+  <link rel="stylesheet" href="./snackbar/copy.css" />
+  <link rel="stylesheet" href="./snackbar/clear.css" />
+</head>
+<div id="snackbar">Successfully Downloaded</div>
+<div id="snackbar1">Success Build</div>
+<div id="snackbar2">Copied</div>
+<div id="snackbar3">Cleared</div>
+<div id="snackbar4">Input Number</div>
+<div id="snackbar5">Input Number</div>
+<div id="snackbar7">Input Number</div>
+<div id="snackbar6">Always True</div>
+<div id="snackbar8"></div>
+</head>
+
+<body
+  class="mdui-text-color-white mdui-theme-layout-dark mdui-text-color-black-icon mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto">
+  <script src="./assets/mdui-v0.4.3/js/mdui.min.js"></script>
+  <header class="appbar mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+      <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+        mdui-drawer="{target: '#main-drawer', swipe: true}">
+        <i class="mdui-icon material-icons">menu</i>
+      </span>
+      <a href="https://harumatool.com/" class="mdui-typo-headline mdui-hidden-xs"> Haruma's Tool</a>
+      <div class="mdui-toolbar-spacer"></div>
+
+      <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" style="font-size:15px" value=""
+        onClick="refresh(this)"><i class="mdui-icon material-icons">refresh</i></button>
+    </div>
+  </header>
+  <div></div>
+  <div class="mdui-drawer" id="main-drawer">
+    <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+      <div class=" mdui-collapse-item mdui-collapse-item-open">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+          <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-blue"><img src="./toolbar/raiden1.png" draggable="false" /></i>
+          <div style="font-size:20px" class="mdui-list-item-content">Waves Option</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png"
+              draggable="false" /></i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+          <a style="font-size:20px" href="./WaveCreator" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/wavecre.png" draggable="false" /> Wave Creator</a><a style="font-size:20px"
+            href="./WaveMod" class=" mdui-list-item mdui-ripple"><img src="./toolbar/wavecrejam.png"
+              draggable="false" /> Wave Mod</a>
+
+          <a style="font-size:20px" href="./Sandsnow" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/stormevent.png" draggable="false" /> Storm Event</a>
+          <a style="font-size:20px" href="./RaidingParty" class=" mdui-list-item mdui-ripple"> <img
+              src="./toolbar/fly.png" draggable="false" /> Raiding Party</a>
+          <a style="font-size:20px" href="./Tidal" class=" mdui-list-item mdui-ripple"><img src="./toolbar/fishimp.png"
+              draggable="false" /> Absolute Event</a>
+          <a style="font-size:20px" href="./LowTide" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/lowtide.png" draggable="false" /> Low Tide</a>
+          <a style="font-size:20px" href="./Necromancy" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/spiralabyss.png" draggable="false" /> Necromancy</a>
+          <a style="font-size:20px" href="./ItemSpawn" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/wizardmagic.png" draggable="false" />Item Spawn</a>
+          <a style="font-size:20px" href="./ParachuteRain" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/parachuterain.png" draggable="false" />Parachute Rain</a>
+          <a style="font-size:20px" href="./Dino" class=" mdui-list-item mdui-ripple"><img src="./toolbar/dino.png"
+              draggable="false" />Dino Event</a>
+          <a style="font-size:20px" href="./Spidy" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/spiderrain.png" draggable="false" />Spider Rain</a>
+          <a style="font-size:20px" href="./Winds" class=" mdui-list-item mdui-ripple"><img src="./toolbar/winds.png"
+              draggable="false" />Winds</a>
+          <a style="font-size:20px" href="./PPT" class=" mdui-list-item mdui-ripple"><img src="./toolbar/portals.png"
+              draggable="false" />Portals</a>
+          <a style="font-size:20px" href="./RNG" class=" mdui-list-item mdui-ripple mdui-list-item-active"><img
+              src="./toolbar/qigongkongfu.png" draggable="false" />Wave RNG</a>
+          <a style="font-size:20px" href="./Escalation" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/escalation.png" draggable="false" /> Escalation</a>
+        </div>
+      </div>
+      <div class=" mdui-collapse-item">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+          <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-deep-orange"><img src="./toolbar/raiden2.png" draggable="false" /></i>
+          <div style="font-size:20px" class="mdui-list-item-content">Level Gen</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png"
+              draggable="false" /></i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+
+          <a style="font-size:20px" href="./HarumaLab" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/kongfublade.png" draggable="false" /> Level Generator</a>
+          <a style="font-size:20px" href="./Tide" class=" mdui-list-item mdui-ripple"><img src="./toolbar/lemon.png"
+              draggable="false" /> Adding Tide</a>
+          <a style="font-size:20px" href="./Grids" class=" mdui-list-item mdui-ripple"><img src="./toolbar/kinggrid.png"
+              draggable="false" /> Placing Grid Item</a>
+          <a style="font-size:20px" href="./FrozenZomb" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/juicyyeti.png" draggable="false" /> Frozen Zombie</a>
+          <a style="font-size:20px" href="./PML" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/chinesesunwukong.png" draggable="false" /> Rail Cart</a>
+          <a style="font-size:20px" href="./Planks" class=" mdui-list-item mdui-ripple"><img src="./toolbar/coconut.png"
+              draggable="false" /> Planks</a>
+          <a style="font-size:20px" href="./Zomboss" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/zomboss.png" draggable="false" /> Zomboss</a>
+          <a style="font-size:20px" href="./Olaf" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/chaodimension.png" draggable="false" /> Chao Dimension</a>
+        </div>
+      </div>
+      <div class="
+          mdui-collapse-item
+          ">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+          <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-green"><img src="./toolbar/raiden3.png" draggable="false" /></i>
+          <div style="font-size:20px" class="mdui-list-item-content">Plants Option</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png"
+              draggable="false" /></i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+
+          <a style="font-size:20px" href="./MoldColony" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/radish.png" draggable="false" />Mold Colonies</a>
+          <a style="font-size:20px" href="./PlantSet" class=" mdui-list-item mdui-ripple"><img src="./toolbar/pokra.png"
+              draggable="false" />SeedBank</a><a style="font-size:20px" href="./ConveyorBelt"
+            class=" mdui-list-item mdui-ripple"><img src="./toolbar/conveyor.png" draggable="false" />Conveyor Util</a>
+          <a style="font-size:20px" href="./DangerP" class=" mdui-list-item mdui-ripple"><img src="./toolbar/beast.png"
+              draggable="false" />Danger Plants</a>
+          <a style="font-size:20px" href="PlantPlant" class="mdui-list-item mdui-ripple"><img src="./toolbar/mf.png"
+              draggable="false" />Planting Plants</a>
+          <a style="font-size:20px" href="PlantPower" class="mdui-list-item mdui-ripple"><img
+              src="./toolbar/powerplant.png" draggable="false" />Power Tiles</a>
+          <a style="font-size:20px" href="internalcode" class="mdui-list-item mdui-ripple"><img
+              src="./toolbar/thundersnap.png" draggable="false" />Internal Codename</a>
+        </div>
+      </div>
+      <div class="mdui-collapse-item">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+          <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-purple"><img src="./toolbar/raiden5.png" draggable="false" /></i>
+          <div style="font-size:20px" class="mdui-list-item-content">Update</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png"
+              draggable="false" /></i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+
+          <a style="font-size:20px" href="./index" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/cobcannon.png" draggable="false" />Home</a>
+          <a style="font-size:20px" href="https://link1s.com/R6B4" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/donate.png" draggable="false" />Free Donate</a>
+          <a style="font-size:20px" href="./update" class=" mdui-list-item mdui-ripple"><img src="./toolbar/update.png"
+              draggable="false" />Update Change</a>
+          <a style="font-size:20px" href="./downloadtool" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/download.png" draggable="false" />Tools Download</a>
+          <a style="font-size:20px" href="./credit" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/coldsnap.png" draggable="false" />Credits</a>
+          <a style="font-size:20px" href="./tutorial" class=" mdui-list-item mdui-ripple"><img src="./toolbar/egret.png"
+              draggable="false" />Tutorial</a>
+        </div>
+      </div>
+      <div class="
+          mdui-collapse-item
+          ">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+          <i class="
+              mdui-list-item-icon
+              mdui-icon
+              material-icons
+              mdui-text-color-brown"><img src="./toolbar/raiden4.png" draggable="false" /></i>
+          <div style="font-size:20px" class="mdui-list-item-content">Other Option</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons"><img src="./toolbar/sword.png"
+              draggable="false" /></i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+
+          <a style="font-size:20px" href="./download" class=" mdui-list-item mdui-ripple"><img src="./toolbar/hocus.png"
+              draggable="false" />RSB Download</a>
+
+          <a style="font-size:20px" href="./jsonedit" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/sexyjapan.png" draggable="false" />JSON Editor</a>
+          <a style="font-size:20px" href="./unix" class=" mdui-list-item mdui-ripple"><img
+              src="./toolbar/snapdragon.png" draggable="false" />Time Convert</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <a id="anchor-top"></a>
+  </div>
+  <center>
+    <p></p>
+    <center>
+
+      <script src="./necromancy/cleopatra.js"></script>
+      <link rel="stylesheet" href="./necromancy/cleopatra.css" />
+      <script src="./necromancy/boostile1000.js"></script>
+      <p> </p>
+      <img src="./HarumaTools/grids/snowstorm.png" draggable="false" style="display: none;">
+      <label class="mdui-switch" style="display: none;">
+        <input onclick="goldFunction()" type="checkbox" id="snowstorm" style="width: 1%" value="">
+        <i class="mdui-switch-icon"></i>
+      </label>
+
+      <div id="cleopatra_warning">Only Use With Ultimate OBB</div>
+      <img src="./HarumaTools/grids/sandstorm.png" draggable="false" style="display: none;">
+      <label class="mdui-switch" style="display: none;">
+        <input type="checkbox" onclick="fireFunction()" id="sandstorm" style="width: 1%" value="">
+        <i class="mdui-switch-icon"></i>
+      </label>
+      <p> </p>
+      <p style="font-size:40px;margin-top:20px"> Level Maker for Sky City </p>
+      <div id="input-rng" style="width:1000px;height: 80px">
+        <div style="font-size:25px;width:450px;height:80px;float:left"
+          class="mdui-textfield mdui-textfield-floating-label">
+          <label style="font-size:25px" class="mdui-textfield-label">Wave Number</label>
+          <input style="font-size:25px;text-align:center" class="mdui-textfield-input" onclick="recycleFunction()"
+            id="wavenumber" type="text" />
+        </div>
+        <div style="width:50px;height:100px;float:left"></div>
+        <div style="font-size:25px;width:450px;height:80px;float:left"
+          class="mdui-textfield mdui-textfield-floating-label">
+          <label style="font-size:25px" class="mdui-textfield-label">Additional Plantfood</label>
+          <input style="font-size:25px;text-align:center" onclick="warningFunction()" class="mdui-textfield-input"
+            id="plantfood" value="0" type="text" />
+        </div>
+
+      </div>
+      <div id="d-rng" style="width:1000px;height: 100px">
+        <div class="mdui-container mdui-valign" style="font-size:25px;width:320px;height100px;float:left">
+          <label class="mdui-textfield-label" style="font-size:30px">Disable Random Spawns</label>
+          <select id="random" class="mdui-select" mdui-select>
+            <option style="font-size:25px" value="true">True</option>
+            <option style="font-size:25px" value="false">False</option>
+          </select>
+        </div>
+        <div style="width:50px;height:100px;float:left"></div>
+        <div class="mdui-container mdui-valign" style="font-size:25px;width:250px;height100px;float:left">
+          <label class="mdui-textfield-label" style="font-size:30px">Jam Enabled</label>
+          <select id="jamquiz" class="mdui-select" mdui-select>
+            <option style="font-size:25px" value="false">False</option>
+            <option style="font-size:25px" value="true">True</option>
+          </select>
+        </div>
+        <div style="width:50px;height:100px;float:left"></div>
+        <div style="width:50px;height:100px;float:left"></div>
+        <div class="mdui-container mdui-valign" style="font-size:25px;width:250px;height100px;float:right">
+          <label class="mdui-textfield-label" style="font-size:30px">Jam Mode</label>
+          <select id="jam" class="mdui-select" mdui-select>
+            <option style="font-size:25px" value="null">null</option>
+            <option style="font-size:25px" value="jam_rap">Rap</option>
+            <option style="font-size:25px" value="jam_pop">Pop</option>
+            <option style="font-size:25px" value="jam_metal">Metalhead</option>
+            <option style="font-size:25px" value="jam_punk">Punk</option>
+            <option style="font-size:25px" value="jam_ballad">Ballad</option>
+            <option style="font-size:25px" value="jam_8bit">8bit</option>
+          </select>
+        </div>
+      </div>
+      <img src="./HarumaTools/grids/nothing.png" draggable="false" />
+      <div
+        style="background-image:url('./HarumaTools/grids/brainbackground.png');border-radius:10px;border:2px solid #17171c; width: 700; height: auto;margin-top: 10px;">
+        <img src="./HarumaTools/zombies/skycity.png" draggable="false">
+        <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="skycity"
+          style="width: 3%" value="0">
+        <img src="./HarumaTools/zombies/skycity_electric.png" draggable="false">
+        <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled"
+          id="skycity_electric" style="width: 3%" value="0">
+        <p> </p>
+        <p>
+          <img src="./HarumaTools/zombies/skycity_armor1.png" draggable="false">
+          <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled"
+            id="skycity_armor1" style="width: 3%" value="0">
+          <img src="./HarumaTools/zombies/skycity_armor2.png" draggable="false">
+          <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled"
+            id="skycity_armor2" style="width: 3%" value="0">
+          <img src="./HarumaTools/zombies/skycity_flag.png" draggable="false">
+          <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled" id="skycity_flag"
+            style="width: 3%" value="0">
+          <img src="./HarumaTools/zombies/skycity_battleplane.png" draggable="false">
+          <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled"
+            id="skycity_battleplane" style="width: 3%" value="0">
+          <img src="./HarumaTools/zombies/skycity_twinsplane.png" draggable="false">
+          <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled"
+            id="skycity_twinsplane" style="width: 3%" value="0">
+        <p> </p>
+        <p>
+          <img src="./HarumaTools/zombies/skycity_ggtimp.png" draggable="false">
+          <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled"
+            id="skycity_ggtimp" style="width: 3%" value="0">
+          <img src="./HarumaTools/zombies/skycity_gargantuar.png" draggable="false">
+          <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled"
+            id="skycity_gargantuar" style="width: 3%" value="0">
+          <img src="./HarumaTools/zombies/air_missile_launcher.png" draggable="false">
+          <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled"
+            id="air_missile_launcher" style="width: 3%" value="0">
+          <img src="./HarumaTools/zombies/invisible_plane.png" draggable="false">
+          <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled"
+            id="invisible_plane" style="width: 3%" value="0">
+          <img src="./HarumaTools/zombies/zombossmech_skycity.png" draggable="false">
+          <input type="text" onclick="placeFunction()" class="mdui-btn mdui-btn-dense mdui-textfiled"
+            id="zombossmech_skycity" style="width: 3%" value="0">
+        <p> </p>
+        <p>
+        <p> </p>
+      </div>
+      <script type="text/javascript">
+        function click(e) {
+          if (!e)
+            e = window.event;
+          if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+            if (window.opera)
+              window.alert("");
+            return false;
+          }
+        }
+        if (document.layers)
+          document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown = click;
+        document.oncontextmenu = click;
+      </script>
+      <style>
+        #snackbar {
+          visibility: hidden;
+          min-width: 250px;
+          margin-left: -125px;
+          background-color: #07DD17;
+          color: #fff;
+          text-align: center;
+          border-radius: 2px;
+          padding: 16px;
+          position: fixed;
+          z-index: 1;
+          left: 50%;
+          bottom: 30px;
+          font-size: 17px;
+        }
+
+        #snackbar.show {
+          visibility: visible;
+          -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+          animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        @-webkit-keyframes fadein {
+          from {
+            bottom: 0;
+            opacity: 0;
+          }
+
+          to {
+            bottom: 30px;
+            opacity: 1;
+          }
+        }
+
+        @keyframes fadein {
+          from {
+            bottom: 0;
+            opacity: 0;
+          }
+
+          to {
+            bottom: 30px;
+            opacity: 1;
+          }
+        }
+
+        @-webkit-keyframes fadeout {
+          from {
+            bottom: 30px;
+            opacity: 1;
+          }
+
+          to {
+            bottom: 0;
+            opacity: 0;
+          }
+        }
+
+        @keyframes fadeout {
+          from {
+            bottom: 30px;
+            opacity: 1;
+          }
+
+          to {
+            bottom: 0;
+            opacity: 0;
+          }
+        }
+      </style>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("snackbar");
+          x.className = "show";
+          setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+      </script>
+      <script>
+        function eraseText() {
+          document.getElementById("output").value = "";
+        }
+      </script>
+      <div style="width:750px;height:50px">
+        <button class="mdui-btn mdui-btn-dense mdui-textfiled"
+          style="font-size:15px;width:100px;height:100px;float:left" onclick="CompileLevelXML();finishFunction()">Build
+          Code</button>
+        <div style="width:50px;height:100px;float:left"></div>
+        <button class="mdui-btn mdui-btn-dense mdui-textfiled"
+          style="font-size:15px;width:200px;height:100px;float:left" type="button"
+          onclick="download();downloadFunction()">Download Build</button>
+        <div style="width:50px;height:100px;float:left"></div>
+        <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left"
+          type="button" value="Copy Build" id="copy" onclick="copyText();copyFunction();">
+        <div style="width:50px;height:100px;float:left"></div>
+        <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px;width:100px;height:100px;float:left"
+          type="button" value="Clear Build" onclick="javascript:eraseText();clearFunction()">
+      </div>
+      <script>
+        function refresh() {
+          window.location.reload("Refresh")
+        }
+      </script>
+      <script>
+        function eraseText() {
+          document.getElementById("output").value = "";
+        }
+      </script>
+      <script>
+        function eraseText() {
+          document.getElementById("output").value = "";
+        }
+      </script>
+      <script>
+        //I'm lazyyyy
+        function download() {
+          var text = document.getElementById("output").value;
+          text = text.replace(/\n/g, "\r\n");
+          var blob = new Blob([text], { type: "text/plain" });
+          var anchor = document.createElement("a");
+          anchor.download = "RNG.json";
+          anchor.href = window.URL.createObjectURL(blob);
+          anchor.target = "_blank";
+          anchor.style.display = "none";
+          document.body.appendChild(anchor);
+          anchor.click();
+          document.body.removeChild(anchor);
+        }
+ //Don't want to code this anymore
+      </script>
+      <script type="text/javascript">
+
+        function copyText() {
+          document.getElementById("output").select();
+          document.execCommand('copy');
+        }
+      </script>
+      <p> </p>
+      <p> <textarea id="xml" rows="20" cols="50" style="display: none;"></textarea>
+        <textarea id="wavenumber" rows="10" cols="50" style="display: none;"></textarea>
+      <div style="width: 600px;height:200px">
+        <textarea id="output" style="font-size:20px" class="mdui-textfield-input" rows="100" cols="150"></textarea>
+      </div>
+
+      <script type="text/javascript">
+        var version = 1.0;
+        var eraser = 547;
+        document.getElementById('xml').style.display = "none";
+        document.getElementById('output').style.display = "none";
+        document.getElementById("xml").value = "";
+        document.getElementById("wavenumber").value = "";
+        document.getElementById("output").value = "";
+        //document.getElementById("output").value = "\"RTID\(Gravestones\@CurrentLevel\)\"\n\n";
+        //document.getElementById("xml").value += "\{\n            \"aliases\"\: \[\n                \"Gravestones\"\n            \],\n            \"objclass\"\: \"GravestoneProperties\",\n            \"objdata\"\: \{\n                \"ForceSpawnData\"\: \[\n";
+        function toggleoutputvisibility() {
+          var display = document.getElementById('output').style.display;
+          if (display == "none")
+            document.getElementById('output').style.display = "block";
+        }
+        function ShowArrays() {
+          var display = document.getElementById('xml').style.display;
+          if (display == "none") {
+            document.getElementById('xml').style.display = "block";
+            document.getElementById('wavenumber').style.display = "block";
+          }
+          if (display == "block") {
+            document.getElementById('xml').style.display = "none";
+            document.getElementById('wavenumber').style.display = "none";
+          }
+        }
+        function CompileLevelXML() {
+          var clear_output = document.getElementById("output").value;
+          clear_output = "";
+          var jamquiz = document.getElementById("jamquiz").value;
+          console.log(jamquiz);
+          var jamenabling = (jamquiz === 'true');
+          var str = document.getElementById("xml").value;
+          var pok = document.getElementById("random").value;
+          var plantfood_count = parseInt(document.getElementById("plantfood").value);
+          var randomize = (pok === 'true');
+          var jam_will_be_enabled = document.getElementById("jam").value;
+          console.log(jamquiz);
+          var jamenabling = (jamquiz === 'true');
+          toggleoutputvisibility();
+          DoShitWithItemInputs();
+          DoShitWithZombieInputs();
+          document.getElementById("output").value += "        {\n            \"aliases\"\: \[\n                \"Wave" + document.getElementById("wavenumber").value + "\"\n            \],\n            \"objclass\"\: \"SpawnZombiesJitteredWaveActionProps\",\n            \"objdata\"\: { \n";
+
+          if (plantfood_count >= 1) {
+            document.getElementById("output").value += "                \"AdditionalPlantfood\": " + plantfood_count + ", \n";
+          }
+          else {
+            console.log("No plantfood");
+          }
+          if (randomize == false) {
+            document.getElementById("output").value += "                \"DisableRandomSpawns\": " + document.getElementById("random").value + ",\n"
+          }
+          else {
+            console.log("No Random Spawn");
+          }
+          if ((jamenabling == true) && (jam_will_be_enabled != "null")) {
+            document.getElementById("output").value += "                \"NotificationEvents\": [\n                    \"" + document.getElementById("jam").value + "\"\n                ],\n";
+          }
+          document.getElementById("output").value += "                \"Zombies\"\: \[\n" + document.getElementById("xml").value + "\n                \]\n            \}\n        \},";
+        }
+
+        function DoShitWithItemInputs() {
+          var sandstorm = document.getElementById("sandstorm");
+          var snowstorm = document.getElementById("snowstorm");
+          var next = "\""
+          var after = "\",";
+          if (snowstorm.checked == true) {
+            console.log(document.getElementById("wavenumber").value);
+            document.getElementById("wavenumber").value += (document.getElementById("wavenumber").value.endsWith("\"") ? ",\n" : "") + next + "snowstorm" + after;
+          }
+          if (sandstorm.checked == true) {
+            document.getElementById("wavenumber").value += (document.getElementById("wavenumber").value.endsWith("\"") ? ",\n" : "") + next + "sandstorm" + after;
+          }
+        }
+        function DoShitWithZombieInputs() {
+          var skycity = document.getElementById("skycity").value;
+          var skycity_armor1 = document.getElementById("skycity_armor1").value;
+          var skycity_armor2 = document.getElementById("skycity_armor2").value;
+          var skycity_flag = document.getElementById("skycity_flag").value;
+          var skycity_battleplane = document.getElementById("skycity_battleplane").value;
+          var skycity_twinsplane = document.getElementById("skycity_twinsplane").value;
+          var skycity_ggtimp = document.getElementById("skycity_ggtimp").value;
+          var skycity_gargantuar = document.getElementById("skycity_gargantuar").value;
+          var skycity_electric = document.getElementById("skycity_electric").value;
+          var air_missile_launcher = document.getElementById("air_missile_launcher").value;
+          var invisible_plane = document.getElementById("invisible_plane").value;
+          var zombossmech_skycity = document.getElementById("zombossmech_skycity").value;
+
+          const row_number = [1, 2, 3, 4, 5];
+
+
+          var next = "                    \{ \n"
+          var zombie_type = "                        \"Type\"\: \"RTID\("
+          var after = "\@ZombieTypes\)\"\n                    \}";
+          var row_start = '                        "Row": "';
+          var row_end = '",\n';
+          if (skycity != 0) {
+            for (x = 0; x < skycity; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "skycity" + after;
+            }
+          }
+          if (skycity_electric != 0) {
+            for (x = 0; x < skycity_electric; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "skycity_electric" + after;
+            }
+          }
+          if (skycity_armor1 != 0) {
+            for (x = 0; x < skycity_armor1; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "skycity_armor1" + after;
+            }
+          }
+          if (skycity_armor2 != 0) {
+            for (x = 0; x < skycity_armor2; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "skycity_armor2" + after;
+            }
+          }
+          if (skycity_flag != 0) {
+            for (x = 0; x < skycity_flag; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "skycity_flag" + after;
+            }
+          }
+          if (skycity_battleplane != 0) {
+            for (x = 0; x < skycity_battleplane; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "skycity_battleplane" + after;
+            }
+          }
+          if (skycity_twinsplane != 0) {
+            for (x = 0; x < skycity_twinsplane; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "skycity_twinsplane" + after;
+            }
+          }
+          if (skycity_ggtimp != 0) {
+            for (x = 0; x < skycity_ggtimp; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "skycity_ggtimp" + after;
+            }
+          }
+          if (skycity_gargantuar != 0) {
+            for (x = 0; x < skycity_gargantuar; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "skycity_gargantuar" + after;
+            }
+          }
+          if (air_missile_launcher != 0) {
+            for (x = 0; x < air_missile_launcher; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "air_missile_launcher" + after;
+            }
+          }
+          if (invisible_plane != 0) {
+            for (x = 0; x < invisible_plane; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "invisible_plane" + after;
+            }
+          }
+          if (zombossmech_skycity != 0) {
+            for (x = 0; x < zombossmech_skycity; x++) {
+              const random_row = Math.floor(Math.random() * row_number.length);
+              var zombie_row = row_start + row_number[random_row] + row_end;
+              document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + zombie_row + zombie_type + "zombossmech_skycity" + after;
+            }
+          }
+        }
+      </script>
+
+      <style>
+        p {
+          color: white;
+        }
+
+        .paragraph1 {
+          font-size: 20px;
+          font-family: myFirstFont;
+          src: url(fbUsv8C5eI-Black.woff) line-height: 2px;
+        }
+
+        .paragraph2 {
+          font-size: 20px;
+          font-family: myFirstFont;
+          src: url(fbUsv8C5eI-Black.woff)
+        }
+      </style>
+    </center>
+</body>
+
+</html>

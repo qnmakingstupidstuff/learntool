@@ -1,408 +1,428 @@
 <title>Haruma's Tool</title>
-<script src="https://cmp.osano.com/AzZmS6TGVY3D6IPM/654c4c7d-7d40-4afb-8f34-c45989e74f87/osano.js"></script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9643890132712137" crossorigin="anonymous"></script>
+<script src="https://cmp.osano.com/AzZmS6TGVY3D6IPM/654c4c7d-7d40-4afb-8f34-c45989e74f87/osano.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9643890132712137"
+    crossorigin="anonymous"></script>
 <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCipslKJZFecvls5KwxQvK7rf88NyMDWDw",
-    authDomain: "harumatool.firebaseapp.com",
-    projectId: "harumatool",
-    storageBucket: "harumatool.appspot.com",
-    messagingSenderId: "464019290644",
-    appId: "1:464019290644:web:680bffdb5deb6d6bff4501",
-    measurementId: "G-6TJ8H33ZVH"
-  };
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyCipslKJZFecvls5KwxQvK7rf88NyMDWDw",
+        authDomain: "harumatool.firebaseapp.com",
+        projectId: "harumatool",
+        storageBucket: "harumatool.appspot.com",
+        messagingSenderId: "464019290644",
+        appId: "1:464019290644:web:680bffdb5deb6d6bff4501",
+        measurementId: "G-6TJ8H33ZVH"
+    };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
 </script>
-<html translate="no"></html>
-<link rel='icon' href="./icons/hutao.png"rel="shortcut icon"  >
-<style> 
+<html translate="no">
 
+</html>
+<link rel='icon' href="./icons/hutao.png" rel="shortcut icon">
+<style>
+    @font-face {
+        font-size: 55px;
+        font-family: myFirstFont;
+        src: url(fbUsv8C5eI-Black.woff);
+    }
 
-@font-face {
-font-size: 55px;
-   font-family: myFirstFont;
-   src: url(fbUsv8C5eI-Black.woff);
-}
-
-* {
-   font-family: myFirstFont;
-}
+    * {
+        font-family: myFirstFont;
+    }
 </style>
 
 <head>
-<meta name="google" content="notranslate">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="./assets/mdui-v0.4.3/css/mdui.min.css"/>
+    <meta name="google" content="notranslate">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./assets/mdui-v0.4.3/css/mdui.min.css" />
 </head>
-<body  class="mdui-text-color-white mdui-theme-layout-dark mdui-text-color-black-icon">
-<script src="./assets/mdui-v0.4.3/js/mdui.min.js"></script>
-         <script src="./snackbar/success.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="./snackbar/finished.js"></script>
-<script src="./snackbar/place.js"></script>
-<script src="./snackbar/copy.js"></script>
-<script src="./snackbar/clear.js"></script>
-<script src="./snackbar/recycle.js"></script>
-<link rel="stylesheet" href="./snackbar/success.css"/>
-<link rel="stylesheet" href="./snackbar/recycle.css"/>
-<link rel="stylesheet" href="./snackbar/place.css"/>
-  <link rel="stylesheet" href="./snackbar/finished.css"/>
-  <link rel="stylesheet" href="./snackbar/copy.css"/>
-  <link rel="stylesheet" href="./snackbar/clear.css"/>        <script src="./snackbar/success.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="./snackbar/finished.js"></script>
-<script src="./snackbar/place.js"></script>
-<script src="./snackbar/copy.js"></script>
-<script src="./snackbar/clear.js"></script>
-<script src="./snackbar/recycle.js"></script>
-<link rel="stylesheet" href="./snackbar/success.css"/>
-<link rel="stylesheet" href="./snackbar/recycle.css"/>
-<link rel="stylesheet" href="./snackbar/place.css"/>
-  <link rel="stylesheet" href="./snackbar/finished.css"/>
-  <link rel="stylesheet" href="./snackbar/copy.css"/>
-  <link rel="stylesheet" href="./snackbar/clear.css"/>
-</head>
-<div id="snackbar">Download success</div>
-<div id="snackbar1">Success, check textarea here</div>
-<div id="snackbar2">Copied</div>
-<div id="snackbar3">Cleared textarea</div>
-<div id="snackbar4">Selected dino</div>
-<div id="snackbar5">Selected trash bin</div>
-<div class="mdui-container">
-  <div class="mdui-tab mdui-tab-scrollable" mdui-tab>
-    <a style="font-size:20px"  href="WaveCreator.html"  class="mdui-ripple">Wave Creator</a>
-    <a style="font-size:20px"  href="HarumaLab.html" class="mdui-ripple">Level Gen</a>
-	<a style="font-size:20px" href="PlantSet.html" class="mdui-ripple">Seedbank</a><a style="font-size:20px" href="Sandsnow.html" class="mdui-ripple">Storm Event</a><a style="font-size:20px" href="RaidingParty.html" class="mdui-ripple">Raiding Party</a>
-    <a style="font-size:20px"  href="Tide.html" class="mdui-ripple">Tide Creator</a>
-    <a style="font-size:20px"  href="Tidal.html" class="mdui-ripple">Tidal Change</a>
-    <a style="font-size:20px"  href="LowTide.html" class="mdui-ripple">Low Tide</a>
-    <a style="font-size:20px"  href="Grids.html" class="mdui-ripple">Place Grid</a>
-    <a style="font-size:20px"  href="Necromancy.html" class="mdui-ripple">Necromancy</a>
-    <a style="font-size:20px"  href="ItemSpawn.html" class="mdui-ripple">Item spawn</a>
-    <a style="font-size:20px"  href="FrozenZomb.html" class="mdui-ripple">Frozen Zombie</a>
-    <a style="font-size:20px"  href="Dino.html" class="mdui-tab-active">DinoSpawn</a>	
-	<a style="font-size:20px"  href="PML.html" class="mdui-ripple">Rail Creator</a>
-    <a style="font-size:20px"  href="Winds.html" class="mdui-ripple">FrostWind</a>
-    <a style="font-size:20px"  href="Planks.html" class="mdui-ripple">Place Planks</a>
-    <a style="font-size:20px"  href="Zomboss.html" class="mdui-ripple">Zomboss Spawner</a>
-    <a style="font-size:20px"  href="MoldColony.html" class="mdui-ripple">Mold Colonies</a>
-    <a style="font-size:20px"  href="DangerP.html" class="mdui-ripple">Endangered plant</a>
-    <a style="font-size:20px"  href="PlantPlant.html" class="mdui-ripple">Place Plant</a>
-    <a style="font-size:20px"  href="PPT.html" class="mdui-ripple">Portal Spawner</a>
-    <a style="font-size:20px"  href="PlantPower.html" class="mdui-ripple">Power Tile</a>
-    <a style="font-size:20px"  href="Olaf.html" class="mdui-ripple">Chaos Dimension</a>
-	
-    <a style="font-size:20px" href="Spidy.html" class="mdui-ripple">Spidy</a>
-	
-	<a style="font-size:20px" href="jsonedit.html" class="mdui-ripple">PVZH Edit</a>
-	<a style="font-size:20px" href="internalcode.html" class="mdui-ripple">Internal Code (P)</a>
-  </div>
-</div>
-</head>
+
+<body class="mdui-text-color-white mdui-theme-layout-dark mdui-text-color-black-icon">
+    <script src="./assets/mdui-v0.4.3/js/mdui.min.js"></script>
+    <script src="./snackbar/success.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./snackbar/finished.js"></script>
+    <script src="./snackbar/place.js"></script>
+    <script src="./snackbar/copy.js"></script>
+    <script src="./snackbar/clear.js"></script>
+    <script src="./snackbar/recycle.js"></script>
+    <link rel="stylesheet" href="./snackbar/success.css" />
+    <link rel="stylesheet" href="./snackbar/recycle.css" />
+    <link rel="stylesheet" href="./snackbar/place.css" />
+    <link rel="stylesheet" href="./snackbar/finished.css" />
+    <link rel="stylesheet" href="./snackbar/copy.css" />
+    <link rel="stylesheet" href="./snackbar/clear.css" />
+    <script src="./snackbar/success.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./snackbar/finished.js"></script>
+    <script src="./snackbar/place.js"></script>
+    <script src="./snackbar/copy.js"></script>
+    <script src="./snackbar/clear.js"></script>
+    <script src="./snackbar/recycle.js"></script>
+    <link rel="stylesheet" href="./snackbar/success.css" />
+    <link rel="stylesheet" href="./snackbar/recycle.css" />
+    <link rel="stylesheet" href="./snackbar/place.css" />
+    <link rel="stylesheet" href="./snackbar/finished.css" />
+    <link rel="stylesheet" href="./snackbar/copy.css" />
+    <link rel="stylesheet" href="./snackbar/clear.css" />
+    </head>
+    <div id="snackbar">Download success</div>
+    <div id="snackbar1">Success, check textarea here</div>
+    <div id="snackbar2">Copied</div>
+    <div id="snackbar3">Cleared textarea</div>
+    <div id="snackbar4">Selected dino</div>
+    <div id="snackbar5">Selected trash bin</div>
+    <div class="mdui-container">
+        <div class="mdui-tab mdui-tab-scrollable" mdui-tab>
+            <a style="font-size:20px" href="WaveCreator.html" class="mdui-ripple">Wave Creator</a>
+            <a style="font-size:20px" href="HarumaLab.html" class="mdui-ripple">Level Gen</a>
+            <a style="font-size:20px" href="PlantSet.html" class="mdui-ripple">Seedbank</a><a style="font-size:20px"
+                href="Sandsnow.html" class="mdui-ripple">Storm Event</a><a style="font-size:20px"
+                href="RaidingParty.html" class="mdui-ripple">Raiding Party</a>
+            <a style="font-size:20px" href="Tide.html" class="mdui-ripple">Tide Creator</a>
+            <a style="font-size:20px" href="Tidal.html" class="mdui-ripple">Tidal Change</a>
+            <a style="font-size:20px" href="LowTide.html" class="mdui-ripple">Low Tide</a>
+            <a style="font-size:20px" href="Grids.html" class="mdui-ripple">Place Grid</a>
+            <a style="font-size:20px" href="Necromancy.html" class="mdui-ripple">Necromancy</a>
+            <a style="font-size:20px" href="ItemSpawn.html" class="mdui-ripple">Item spawn</a>
+            <a style="font-size:20px" href="FrozenZomb.html" class="mdui-ripple">Frozen Zombie</a>
+            <a style="font-size:20px" href="Dino.html" class="mdui-tab-active">DinoSpawn</a>
+            <a style="font-size:20px" href="PML.html" class="mdui-ripple">Rail Creator</a>
+            <a style="font-size:20px" href="Winds.html" class="mdui-ripple">FrostWind</a>
+            <a style="font-size:20px" href="Planks.html" class="mdui-ripple">Place Planks</a>
+            <a style="font-size:20px" href="Zomboss.html" class="mdui-ripple">Zomboss Spawner</a>
+            <a style="font-size:20px" href="MoldColony.html" class="mdui-ripple">Mold Colonies</a>
+            <a style="font-size:20px" href="DangerP.html" class="mdui-ripple">Endangered plant</a>
+            <a style="font-size:20px" href="PlantPlant.html" class="mdui-ripple">Place Plant</a>
+            <a style="font-size:20px" href="PPT.html" class="mdui-ripple">Portal Spawner</a>
+            <a style="font-size:20px" href="PlantPower.html" class="mdui-ripple">Power Tile</a>
+            <a style="font-size:20px" href="Olaf.html" class="mdui-ripple">Chaos Dimension</a>
+
+            <a style="font-size:20px" href="Spidy.html" class="mdui-ripple">Spidy</a>
+
+            <a style="font-size:20px" href="jsonedit.html" class="mdui-ripple">PVZH Edit</a>
+            <a style="font-size:20px" href="internalcode.html" class="mdui-ripple">Internal Code (P)</a>
+        </div>
+    </div>
+    </head>
     <div style="font-size:20px" style="margin-top: 15px">
-	<center>
-	<p style="font-size:30px" >Creature Type for adding Dino</p>
-	<p>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:20px"  class="mdui-textfield-label"> Creature Name</label>
-      <input  id="zombiename"  class="mdui-textfield-input" type="text" required/>
-      <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
-    </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:20px"  class="mdui-textfield-label"> Creature Class</label>
-      <input  id="class"  class="mdui-textfield-input" type="text" required/>
-      <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
-    </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:20px"  class="mdui-textfield-label"> ResourceGroups</label>
-      <input  id="resgroup1"  class="mdui-textfield-input" type="text" required/>
-      <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
-    </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:20px"  class="mdui-textfield-label"> AudioGroups</label>
-      <input  id="resgroup2"  class="mdui-textfield-input" type="text" required/>
-      <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
-    </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:20px"  class="mdui-textfield-label"> Properties</label>
-      <input  id="prop"  class="mdui-textfield-input" type="text" required/>
-      <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
-    </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:20px"  class="mdui-textfield-label"> AnimRigClass</label>
-      <input  id="anim"  class="mdui-textfield-input" type="text" required/>
-      <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
-    </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:20px"  class="mdui-textfield-label"> PopAnim</label>
-      <input  id="popanim"  class="mdui-textfield-input" type="text" required/>
-      <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
-    </div>
-	<div class="mdui-textfield mdui-textfield-floating-label">
-      <label style="font-size:20px"  class="mdui-textfield-label"> HomeWorld</label>
-      <input  id="home"  class="mdui-textfield-input" value="dino" type="text" required/>
-      <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
-    </div>
-    </p>
-	<div>
-    </div>
-<div>
-    </p></div>
-   
-    <textarea id="xml" rows="20" cols="50" style="display: none;"></textarea> 
-     <p> </p>
-    <button class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" onclick="CompileLevelXML();finishFunction()">Finished</button>
-	<button class="mdui-btn mdui-btn-dense mdui-textfiled" type="button" onclick="download();downloadFunction()">Download File </button>
-	<input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Copy" id="copy" onclick="copyText();copyFunction();">
-	
+        <center>
+            <p style="font-size:30px">Creature Type for adding Dino</p>
+            <p>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <label style="font-size:20px" class="mdui-textfield-label"> Creature Name</label>
+                <input id="zombiename" class="mdui-textfield-input" type="text" required />
+                <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
+            </div>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <label style="font-size:20px" class="mdui-textfield-label"> Creature Class</label>
+                <input id="class" class="mdui-textfield-input" type="text" required />
+                <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
+            </div>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <label style="font-size:20px" class="mdui-textfield-label"> ResourceGroups</label>
+                <input id="resgroup1" class="mdui-textfield-input" type="text" required />
+                <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
+            </div>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <label style="font-size:20px" class="mdui-textfield-label"> AudioGroups</label>
+                <input id="resgroup2" class="mdui-textfield-input" type="text" required />
+                <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
+            </div>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <label style="font-size:20px" class="mdui-textfield-label"> Properties</label>
+                <input id="prop" class="mdui-textfield-input" type="text" required />
+                <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
+            </div>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <label style="font-size:20px" class="mdui-textfield-label"> AnimRigClass</label>
+                <input id="anim" class="mdui-textfield-input" type="text" required />
+                <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
+            </div>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <label style="font-size:20px" class="mdui-textfield-label"> PopAnim</label>
+                <input id="popanim" class="mdui-textfield-input" type="text" required />
+                <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
+            </div>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <label style="font-size:20px" class="mdui-textfield-label"> HomeWorld</label>
+                <input id="home" class="mdui-textfield-input" value="dino" type="text" required />
+                <div style="font-size:20px" class="mdui-textfield-error">Don't leave this field empty</div>
+            </div>
+            </p>
+            <div>
+            </div>
+            <div>
+                </p>
+            </div>
+
+            <textarea id="xml" rows="20" cols="50" style="display: none;"></textarea>
+            <p> </p>
+            <button class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px"
+                onclick="CompileLevelXML();finishFunction()">Finished</button>
+            <button class="mdui-btn mdui-btn-dense mdui-textfiled" type="button"
+                onclick="download();downloadFunction()">Download File </button>
+            <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Copy"
+                id="copy" onclick="copyText();copyFunction();">
 
 
-	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" type="button" value="Clear Box" onclick="javascript:eraseText();clearFunction()"> 
-	 <input type="button" onclick="location.href='CREATURETYPES.JSON';" class="mdui-btn mdui-btn-dense mdui-textfiled" value="Original file" />
-	 <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Refresh" onClick="refresh(this)">
-<script>
-  function refresh(){
-        window.location.reload("Refresh")
-      }
-</script>
-	 <script>
-	 function eraseText() {
-    document.getElementById("output").value = "";
-}
-</script>
-<script type="text/javascript">
-function click (e) {
-  if (!e)
-    e = window.event;
-  if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
-    if (window.opera)
-      window.alert("");
-    return false;
-  }
-}
-if (document.layers)
-  document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown = click;
-document.oncontextmenu = click;
-</script>
-	 <script>
-	 function eraseText() {
-    document.getElementById("output").value = "";
-}
-</script>
-	<script>
-	//I'm lazyyyy
-	function download(){
-    var text = document.getElementById("output").value;
-    text = text.replace(/\n/g, "\r\n");
-    var blob = new Blob([text], { type: "text/plain"});
-    var anchor = document.createElement("a");
-    anchor.download = "CreatureType.json";
-    anchor.href = window.URL.createObjectURL(blob);
-    anchor.target ="_blank";
-    anchor.style.display = "none"; 
-    document.body.appendChild(anchor);
-    anchor.click();
-    document.body.removeChild(anchor);
- }
+
+            <input class="mdui-btn mdui-btn-dense mdui-textfiled" type="button" value="Clear Box"
+                onclick="javascript:eraseText();clearFunction()">
+            <input type="button" onclick="location.href='CREATURETYPES.JSON';"
+                class="mdui-btn mdui-btn-dense mdui-textfiled" value="Original file" />
+            <input class="mdui-btn mdui-btn-dense mdui-textfiled" style="font-size:15px" type="button" value="Refresh"
+                onClick="refresh(this)">
+            <script>
+                function refresh() {
+                    window.location.reload("Refresh")
+                }
+            </script>
+            <script>
+                function eraseText() {
+                    document.getElementById("output").value = "";
+                }
+            </script>
+            <script type="text/javascript">
+                function click(e) {
+                    if (!e)
+                        e = window.event;
+                    if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+                        if (window.opera)
+                            window.alert("");
+                        return false;
+                    }
+                }
+                if (document.layers)
+                    document.captureEvents(Event.MOUSEDOWN);
+                document.onmousedown = click;
+                document.oncontextmenu = click;
+            </script>
+            <script>
+                function eraseText() {
+                    document.getElementById("output").value = "";
+                }
+            </script>
+            <script>
+                //I'm lazyyyy
+                function download() {
+                    var text = document.getElementById("output").value;
+                    text = text.replace(/\n/g, "\r\n");
+                    var blob = new Blob([text], { type: "text/plain" });
+                    var anchor = document.createElement("a");
+                    anchor.download = "CreatureType.json";
+                    anchor.href = window.URL.createObjectURL(blob);
+                    anchor.target = "_blank";
+                    anchor.style.display = "none";
+                    document.body.appendChild(anchor);
+                    anchor.click();
+                    document.body.removeChild(anchor);
+                }
  //Don't want to code this anymore
- </script>
-<script type="text/javascript">
+            </script>
+            <script type="text/javascript">
 
-function copyText(){
- document.getElementById("output").select();
- document.execCommand('copy');
-}
-</script>
-<input type="checkbox" id="icecubed" style="display: none;" onclick="" value="">
-     <p> </p>
-    <textarea   style="font-size:20px"  class="mdui-textfield-input"  style="display: none;" id="output" rows="100" cols="150"></textarea> 
-	<script src="./script/js/levelgen.min.js"></script>
-        <script type="text/javascript">
-        var version = 1.0;
-        var eraser = 547;
-        var iceblock = 548;
-        var array = new Array();
-        document.getElementById('output').style.display = "none";   
-        document.getElementById("xml").value = "";
-        document.getElementById("output").value = ""
-        var mouseOverSprite = document.createElement("img");
-            mouseOverSprite.style.display="block";
-            mouseOverSprite.style.position = "absolute";
-            mouseOverSprite.style.zIndex = "-1";
-        document.body.insertBefore(mouseOverSprite,document.body.firstChild);
-        document.getElementById('xml').style.display = "none";
-        document.addEventListener("mousemove",mouseMoveFunction);
-        var lastGridId = null;
+                function copyText() {
+                    document.getElementById("output").select();
+                    document.execCommand('copy');
+                }
+            </script>
+            <input type="checkbox" id="icecubed" style="display: none;" onclick="" value="">
+            <p> </p>
+            <textarea style="font-size:20px" class="mdui-textfield-input" style="display: none;" id="output" rows="100"
+                cols="150"></textarea>
+            <script src="./script/js/levelgen.min.js"></script>
+            <script type="text/javascript">
+                var version = 1.0;
+                var eraser = 547;
+                var iceblock = 548;
+                var array = new Array();
+                document.getElementById('output').style.display = "none";
+                document.getElementById("xml").value = "";
+                document.getElementById("output").value = ""
+                var mouseOverSprite = document.createElement("img");
+                mouseOverSprite.style.display = "block";
+                mouseOverSprite.style.position = "absolute";
+                mouseOverSprite.style.zIndex = "-1";
+                document.body.insertBefore(mouseOverSprite, document.body.firstChild);
+                document.getElementById('xml').style.display = "none";
+                document.addEventListener("mousemove", mouseMoveFunction);
+                var lastGridId = null;
 
-        function mouseMoveFunction(e){
-            var p1 = document.getElementById("p1");
-            if(e.target.nodeName == "CANVAS"){
-                p1.innerHTML = " Grid ID: "+e.target.id
+                function mouseMoveFunction(e) {
+                    var p1 = document.getElementById("p1");
+                    if (e.target.nodeName == "CANVAS") {
+                        p1.innerHTML = " Grid ID: " + e.target.id
 
-                if(e.target.id == lastGridId){
-                    return;
-                }
-                lastGridId = e.target.id;
-                mouseOverSprite.style.visibility ="visible";
-                mouseOverSprite.style.top = e.target.offsetTop+"px";
-                mouseOverSprite.style.left = e.target.offsetLeft+"px";
-            }
-            else{
-                mouseOverSprite.style.visibility ="hidden";
-            }
-        }
-        document.addEventListener("click",mouseClickFunction);
-        function mouseClickFunction(e){
-            if(mouseOverSprite.style.visibility == "visible" && e.target.nodeName == "CANVAS"  && selectedSpriteId != eraser)
-            {
-                var icecubed = document.getElementById("icecubed");
-                var targetRect = e.target.getBoundingClientRect();
-                var a = e.target.id;
-                var x = a.charAt(0);
-				var d = a.charAt(0)-2;
-                var b = e.target.id;
-                var y = b.charAt(2);
-                if(selectedSpriteId != iceblock){
-                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                    "  
-                if(icecubed.checked == true) {
-                document.getElementById("xml").value += "";
-                }
-                document.getElementById("xml").value += "\{ \n                                              \"Row\"\:\ \"" + y + "\" \n                    }";
-            }
-                var icecubed = document.getElementById("icecubed");
-                var newImg = document.createElement("img");
-                newImg.src = mouseOverSprite.src;
-                newImg.style.position = "absolute";
-                newImg.style.left = targetRect.x+"px";
-                newImg.style.top = targetRect.y+"px";
-                newImg.style.zIndex = -1;
-                newImg.className = "newImg";
-                if(icecubed.checked == true){
-                    newImg.style.outline = "red solid 1px";
-                    e.target.style.outline = "rgb(0, 255, 255) solid 2.5px";
-                }
-                newImg.addEventListener("click",function(){
-                if(selectedSpriteId == eraser){
-                    var victim = "";
-                    console.log(e.target.style.outline);
-                        if(e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px"){
-                         victim = "\n                    {\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
-                         e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px";
+                        if (e.target.id == lastGridId) {
+                            return;
                         }
-                        if(e.target.style.outline == "rgb(0, 255, 255) solid 2.5px"){
-                            console.log("yay");
-                         victim = "\n                    {\n                        \"Condition\"\: \"icecubed\",\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
-                         e.target.style.outlineColor = "rgba(0, 0, 0, 0.2)";
-                         e.target.style.outlineStyle = "solid";
-                         e.target.style.outlineWidth = "1px";
+                        lastGridId = e.target.id;
+                        mouseOverSprite.style.visibility = "visible";
+                        mouseOverSprite.style.top = e.target.offsetTop + "px";
+                        mouseOverSprite.style.left = e.target.offsetLeft + "px";
+                    }
+                    else {
+                        mouseOverSprite.style.visibility = "hidden";
+                    }
+                }
+                document.addEventListener("click", mouseClickFunction);
+                function mouseClickFunction(e) {
+                    if (mouseOverSprite.style.visibility == "visible" && e.target.nodeName == "CANVAS" && selectedSpriteId != eraser) {
+                        var icecubed = document.getElementById("icecubed");
+                        var targetRect = e.target.getBoundingClientRect();
+                        var a = e.target.id;
+                        var x = a.charAt(0);
+                        var d = a.charAt(0) - 2;
+                        var b = e.target.id;
+                        var y = b.charAt(2);
+                        if (selectedSpriteId != iceblock) {
+                            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                    "
+                            if (icecubed.checked == true) {
+                                document.getElementById("xml").value += "";
+                            }
+                            document.getElementById("xml").value += "\{ \n                                              \"Row\"\:\ \"" + y + "\" \n                    }";
                         }
-                         console.log(victim);
-
-                        xml = document.getElementById("xml").value;
-                        document.getElementById("xml").value = xml.substr(0,xml.indexOf(victim)) + xml.substr(xml.indexOf(victim) + victim.length + 1, xml.length);
-                        this.remove();
-                        xml3 = document.getElementById("xml").value;
-                        xml4 = xml3.slice(0, -1);
-                        if(xml3.endsWith(",")){
-                        console.log(xml4);
-                            document.getElementById("xml").value = xml4;
+                        var icecubed = document.getElementById("icecubed");
+                        var newImg = document.createElement("img");
+                        newImg.src = mouseOverSprite.src;
+                        newImg.style.position = "absolute";
+                        newImg.style.left = targetRect.x + "px";
+                        newImg.style.top = targetRect.y + "px";
+                        newImg.style.zIndex = -1;
+                        newImg.className = "newImg";
+                        if (icecubed.checked == true) {
+                            newImg.style.outline = "red solid 1px";
+                            e.target.style.outline = "rgb(0, 255, 255) solid 2.5px";
                         }
+                        newImg.addEventListener("click", function () {
+                            if (selectedSpriteId == eraser) {
+                                var victim = "";
+                                console.log(e.target.style.outline);
+                                if (e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px") {
+                                    victim = "\n                    {\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \"" + this.src.substring(this.src.lastIndexOf('/') + 1).split('.')[0] + "\"\n                    }";
+                                    e.target.style.outline == "rgba(0, 0, 0, 0.2) solid 1px";
+                                }
+                                if (e.target.style.outline == "rgb(0, 255, 255) solid 2.5px") {
+                                    console.log("yay");
+                                    victim = "\n                    {\n                        \"Condition\"\: \"icecubed\",\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \"" + this.src.substring(this.src.lastIndexOf('/') + 1).split('.')[0] + "\"\n                    }";
+                                    e.target.style.outlineColor = "rgba(0, 0, 0, 0.2)";
+                                    e.target.style.outlineStyle = "solid";
+                                    e.target.style.outlineWidth = "1px";
+                                }
+                                console.log(victim);
 
-                   }
-                }
-            );
-                document.body.appendChild(newImg);
-                
-                if(allAddedItems[e.target.id]==null)
-                    allAddedItems[e.target.id] = new Array(newImg);
-                else
-                    allAddedItems[e.target.id].push(newImg); 
-            }
-        }
-        var allAddedItems = new Array();
-        var selectedSpriteId = 1;
-        document.getElementById(selectedSpriteId).style.outline=".5px solid red";
-        mouseOverSprite.src = document.getElementById(selectedSpriteId).src;
+                                xml = document.getElementById("xml").value;
+                                document.getElementById("xml").value = xml.substr(0, xml.indexOf(victim)) + xml.substr(xml.indexOf(victim) + victim.length + 1, xml.length);
+                                this.remove();
+                                xml3 = document.getElementById("xml").value;
+                                xml4 = xml3.slice(0, -1);
+                                if (xml3.endsWith(",")) {
+                                    console.log(xml4);
+                                    document.getElementById("xml").value = xml4;
+                                }
 
-        function selectSprite(e){
-            document.getElementById(selectedSpriteId).style.outline="";
-            e.currentTarget.style.outline = ".5px solid red";
-            selectedSpriteId = e.currentTarget.id;
-            mouseOverSprite.src = e.currentTarget.src;
-            var canvases = document.getElementsByClassName('newImg');
-            if(selectedSpriteId == eraser){
-                mouseOverSprite.style.pointerEvents="none";
-                //document.getElementById('gridDiv').style.pointerEvents="none";
-                for(i=0;i<canvases.length;i++){
-                    canvases[i].style.zIndex=1;
+                            }
+                        }
+                        );
+                        document.body.appendChild(newImg);
+
+                        if (allAddedItems[e.target.id] == null)
+                            allAddedItems[e.target.id] = new Array(newImg);
+                        else
+                            allAddedItems[e.target.id].push(newImg);
+                    }
                 }
-            } else {
-                mouseOverSprite.style.pointerEvents="";
-                for(i=0;i<canvases.length;i++){
-                    canvases[i].style.zIndex=-1;
+                var allAddedItems = new Array();
+                var selectedSpriteId = 1;
+                document.getElementById(selectedSpriteId).style.outline = ".5px solid red";
+                mouseOverSprite.src = document.getElementById(selectedSpriteId).src;
+
+                function selectSprite(e) {
+                    document.getElementById(selectedSpriteId).style.outline = "";
+                    e.currentTarget.style.outline = ".5px solid red";
+                    selectedSpriteId = e.currentTarget.id;
+                    mouseOverSprite.src = e.currentTarget.src;
+                    var canvases = document.getElementsByClassName('newImg');
+                    if (selectedSpriteId == eraser) {
+                        mouseOverSprite.style.pointerEvents = "none";
+                        //document.getElementById('gridDiv').style.pointerEvents="none";
+                        for (i = 0; i < canvases.length; i++) {
+                            canvases[i].style.zIndex = 1;
+                        }
+                    } else {
+                        mouseOverSprite.style.pointerEvents = "";
+                        for (i = 0; i < canvases.length; i++) {
+                            canvases[i].style.zIndex = -1;
+                        }
+                    }
                 }
-            }
-        }
-        function togglexmlvisibility() {
-        var display = document.getElementById('xml').style.display;
-        if(display == "none") {
-              document.getElementById('xml').style.display = "block";
-        }
-        if(display == "block") {
-              document.getElementById('xml').style.display = "none";
-        }
-     }
-function toggleoutputvisibility() {
-        var display = document.getElementById('output').style.display;
-        if(display == "none")
-              document.getElementById('output').style.display = "block";
-        }
-        function CompileLevelXML() {
-		//var zombiename = document.getElementById("zombiename").value;
-		//var resgroup1 = document.getElementById("resgroup1").value;
-		//var framework = document.getElementById("framework").value;
-		//var resgroup2 = document.getElementById("resgroup2").value;
-		//var prop = document.getElementById("prop").value;
-		//var anim = document.getElementById("anim").value;
-		//var popanim = document.getElementById("popanim").value;
-		//var offset = document.getElementById("offset").value;
-		//var scale = document.getElementById("scale").value;
-		//var home = document.getElementById("home").value;
-		//var family = document.getElementById("family").value;
-		//var imitate = document.getElementById("imitate").value;
-		//var class = document.getElementById("class").value;
-    var str = document.getElementById("xml").value;
-    toggleoutputvisibility();
-        document.getElementById("output").value += "        {\ \n    \"#comment\":\ \"This Creature was made by GK's Tool\",\   \n            \"objclass\": \"CreatureType\",  \n            \"aliases\":\ \[   \n                \"" + document.getElementById("zombiename").value + "\"\ \n            ],\n            \"objdata\":\ {\  \n                \"TypeName\": \"" + document.getElementById("zombiename").value + "\",\n                \"CreatureClass\": \"" + document.getElementById("class").value + "\",\n                \"Properties\": \"RTID(" + document.getElementById("prop").value + "\@PropertySheets)\",\n                \"ResourceGroups\":\ [\  \n                    \"" + document.getElementById("resgroup1").value + "\",\n                    \"" + document.getElementById("resgroup2").value + "\"\n                ],\n                \"AudioGroups\":\ [],\n                \"AnimRigClass\": \"" + document.getElementById("anim").value + "\",\n                \"HomeWorld\": \"" + document.getElementById("home").value + "\"\,\n                \"PopAnim\": \"" + document.getElementById("popanim").value + "\"\  \n            }\n        },"  
-        document.getElementById("output").value += str;
-        document.getElementById("output").value += "";
-        console.log(allAddedItems);
-        }
-    </script>
-    <style>
-        p {
-            color: white;
-        }
-        .paragraph1 {
-            font-size: 12px;
-             font-family: Verdana, Arial, Helvetica, sans-serif;
-            line-height: 2px;
-        }
-        .paragraph2 {
-            font-size: 13px;
-             font-family: Verdana, Arial, Helvetica, sans-serif;
-        }
-    </style>
-</center>
-</div></div>
-</body></html>
+                function togglexmlvisibility() {
+                    var display = document.getElementById('xml').style.display;
+                    if (display == "none") {
+                        document.getElementById('xml').style.display = "block";
+                    }
+                    if (display == "block") {
+                        document.getElementById('xml').style.display = "none";
+                    }
+                }
+                function toggleoutputvisibility() {
+                    var display = document.getElementById('output').style.display;
+                    if (display == "none")
+                        document.getElementById('output').style.display = "block";
+                }
+                function CompileLevelXML() {
+                    //var zombiename = document.getElementById("zombiename").value;
+                    //var resgroup1 = document.getElementById("resgroup1").value;
+                    //var framework = document.getElementById("framework").value;
+                    //var resgroup2 = document.getElementById("resgroup2").value;
+                    //var prop = document.getElementById("prop").value;
+                    //var anim = document.getElementById("anim").value;
+                    //var popanim = document.getElementById("popanim").value;
+                    //var offset = document.getElementById("offset").value;
+                    //var scale = document.getElementById("scale").value;
+                    //var home = document.getElementById("home").value;
+                    //var family = document.getElementById("family").value;
+                    //var imitate = document.getElementById("imitate").value;
+                    //var class = document.getElementById("class").value;
+                    var str = document.getElementById("xml").value;
+                    toggleoutputvisibility();
+                    document.getElementById("output").value += "        {\ \n    \"#comment\":\ \"This Creature was made by GK's Tool\",\   \n            \"objclass\": \"CreatureType\",  \n            \"aliases\":\ \[   \n                \"" + document.getElementById("zombiename").value + "\"\ \n            ],\n            \"objdata\":\ {\  \n                \"TypeName\": \"" + document.getElementById("zombiename").value + "\",\n                \"CreatureClass\": \"" + document.getElementById("class").value + "\",\n                \"Properties\": \"RTID(" + document.getElementById("prop").value + "\@PropertySheets)\",\n                \"ResourceGroups\":\ [\  \n                    \"" + document.getElementById("resgroup1").value + "\",\n                    \"" + document.getElementById("resgroup2").value + "\"\n                ],\n                \"AudioGroups\":\ [],\n                \"AnimRigClass\": \"" + document.getElementById("anim").value + "\",\n                \"HomeWorld\": \"" + document.getElementById("home").value + "\"\,\n                \"PopAnim\": \"" + document.getElementById("popanim").value + "\"\  \n            }\n        },"
+                    document.getElementById("output").value += str;
+                    document.getElementById("output").value += "";
+                    console.log(allAddedItems);
+                }
+            </script>
+            <style>
+                p {
+                    color: white;
+                }
+
+                .paragraph1 {
+                    font-size: 12px;
+                    font-family: Verdana, Arial, Helvetica, sans-serif;
+                    line-height: 2px;
+                }
+
+                .paragraph2 {
+                    font-size: 13px;
+                    font-family: Verdana, Arial, Helvetica, sans-serif;
+                }
+            </style>
+        </center>
+    </div>
+    </div>
+</body>
+
+</html>

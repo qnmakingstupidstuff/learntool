@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Haruma's Tool</title>
-    </head>
-    <body>
-        <select id="products-pick">
-            <option>Free Shop</option>
-            <option>Gems Shop</option>
-            <option>Coins Shop</option>
-            <option>Ads Shop</option>
-            <option>Mints Shop</option>
-        </select>
-        <button onclick="submittingData()">Create Blob</button>
-        <div id="FreeShop" style="display: none">
+
+<head>
+    <title>Haruma's Tool</title>
+</head>
+
+<body>
+    <select id="products-pick">
+        <option>Free Shop</option>
+        <option>Gems Shop</option>
+        <option>Coins Shop</option>
+        <option>Ads Shop</option>
+        <option>Mints Shop</option>
+    </select>
+    <button onclick="submittingData()">Create Blob</button>
+    <div id="FreeShop" style="display: none">
         <textarea id="freeshop_output" style="width:500px;height:500px"></textarea>
         <button onclick="freeShopUtil()">Change Code</button>
-        </div>
-        <div id="GemShop" style="display: none">
-            <input id="gem_value" type="text" placeholder="Gem Value"/>
-            <input id="gem_lim" type="text" placeholder ="Gem Scan Limit"/>
-            </br>
-            <textarea id="gemshop_output" style="width:500px;height:500px"></textarea>
-            <button onclick="gemShopUtil()">Change Code</button>
-            </div>
-            <div id="CoinShop" style="display: none">
-                <input id="coin_value" type="text" placeholder="Coin Value"/>
-                <input id="coin_lim" type="text" placeholder ="Coin Scan Limit"/>
-                </br>
-                <textarea id="coinshop_output" style="width:500px;height:500px"></textarea>
-                <button onclick="coinShopUtil()">Change Code</button>
-            </div>
-            <div id="adsShop" style="display: none">
-                <textarea id="adsshop_output" style="width:500px;height:500px"></textarea>
-                <button onclick="adsShopUtil()">Change Code</button>
-            </div>
-            <div id="mintShop" style="display: none">
-                <input id="mint_value" type="text" placeholder="Mints Value"/>
-                <input id="mint_lim" type="text" placeholder ="Mints Scan Limit"/>
-                </br>
-                <textarea id="mintshop_output" style="width:500px;height:500px"></textarea>
-                <button onclick="mintShopUtil()">Change Code</button>
-            </div>
-        <script src="Shops/DataReader.js"></script>
-        <script src="Shops/Freeshop-Util.js"></script>
-        <script src="Shops/Gem-Util.js"></script>
-        <script src="Shops/Coin-Util.js"></script>
-        <script src="Shops/Ads-Util.js"></script>
-        <script src="Shops/Mints-Util.js"></script>
-    </body>
+    </div>
+    <div id="GemShop" style="display: none">
+        <input id="gem_value" type="text" placeholder="Gem Value" />
+        <input id="gem_lim" type="text" placeholder="Gem Scan Limit" />
+        </br>
+        <textarea id="gemshop_output" style="width:500px;height:500px"></textarea>
+        <button onclick="gemShopUtil()">Change Code</button>
+    </div>
+    <div id="CoinShop" style="display: none">
+        <input id="coin_value" type="text" placeholder="Coin Value" />
+        <input id="coin_lim" type="text" placeholder="Coin Scan Limit" />
+        </br>
+        <textarea id="coinshop_output" style="width:500px;height:500px"></textarea>
+        <button onclick="coinShopUtil()">Change Code</button>
+    </div>
+    <div id="adsShop" style="display: none">
+        <textarea id="adsshop_output" style="width:500px;height:500px"></textarea>
+        <button onclick="adsShopUtil()">Change Code</button>
+    </div>
+    <div id="mintShop" style="display: none">
+        <input id="mint_value" type="text" placeholder="Mints Value" />
+        <input id="mint_lim" type="text" placeholder="Mints Scan Limit" />
+        </br>
+        <textarea id="mintshop_output" style="width:500px;height:500px"></textarea>
+        <button onclick="mintShopUtil()">Change Code</button>
+    </div>
+    <script src="Shops/DataReader.js"></script>
+    <script src="Shops/Freeshop-Util.js"></script>
+    <script src="Shops/Gem-Util.js"></script>
+    <script src="Shops/Coin-Util.js"></script>
+    <script src="Shops/Ads-Util.js"></script>
+    <script src="Shops/Mints-Util.js"></script>
+</body>
+
 </html>
