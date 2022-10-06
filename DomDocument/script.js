@@ -664,7 +664,7 @@ function DomtoJSON(){
                 output += '        {\n';
                 output += '           "start": '+storage_audio_index[i]+',\n';
                 output += '           "duration": '+storage_audio_duration[i]+',\n';
-                output += '           "action": "'+storage_audio_call[i]+'"\n';
+                output += '           "audio": "'+storage_audio_call[i]+'"\n';
                 output += '        }\n';
                 output += '    ]\n';
             }
@@ -672,7 +672,7 @@ function DomtoJSON(){
                 output += '        {\n';
                 output += '           "start": '+storage_audio_index[i]+',\n';
                 output += '           "duration": '+storage_audio_duration[i]+',\n';
-                output += '           "action": "'+storage_audio_call[i]+'"\n';
+                output += '           "audio": "'+storage_audio_call[i]+'"\n';
                 output += '        },\n';
             }
         }
