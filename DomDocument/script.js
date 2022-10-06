@@ -5,6 +5,7 @@ function domRead(){
     const fix_core = document.getElementById('fix-option');
     const loadProcess = document.getElementById('loadProcess');
     loadElement.style.display = "none";
+    //Script Info
     const version = 1.0;
     const owner = "Haruma";
     var document_split = [];
@@ -19,6 +20,7 @@ function domRead(){
         }
         
     }
+    //Try with frameRate
     var frame_find = -1;
     var bool = -1;
     var count_bititem = 0;
@@ -41,6 +43,7 @@ function domRead(){
             bool = i;
         }
     }
+    //Checking SPCUtil
     var spcutil = -1;
     var frame_firstindex = -1;
     var frame_lastindex = -1;
@@ -108,6 +111,7 @@ function domRead(){
             count_a++;
         }
     }
+    //Finding A
     if(count_a != 0){
         var count_value = 0;
         var split_a = [];
@@ -134,6 +138,7 @@ function domRead(){
         input.style.fontSize = "15px";
         picture_util.appendChild(input);
     }
+    //Building M_Elements
     var m_util = document.getElementById("m_util");
     m_util.style.display = "block";
     for (let i = 0; i < split_m.length; i++){
@@ -146,6 +151,7 @@ function domRead(){
         input.style.fontSize = "15px";
         m_util.appendChild(input);
     }
+    //Building A_Elements
     var a_util = document.getElementById("a_util");
     a_util.style.display = "block";
     for (let i = 0; i < split_a.length; i++){
@@ -175,12 +181,15 @@ function domRead(){
             break
         }
     }
+    //ShellData Build
+    shellData[last_labels] = '';
     var labels = [];
     var count_label = 0;
     for (let i = first_label; i < last_labels; i++){
         labels[count_label] = document_split[i];
         count_label++;
     }
+    //Counting domframe
     var count_domframe = 0;
     var first_domframe = -1;
     for (let i = 0; i < labels.length; i++){
@@ -263,5 +272,141 @@ function domRead(){
         label_util.appendChild(label_total);
         var spacebar = document.createElement('br');
         label_util.appendChild(spacebar);
+    }
+    //Cloning core
+    var core_data = [];
+    for (let i = 0; i < document_split.length; i++){
+        core_data[i] = document_split[i];
+    }
+    //Reading Animation Action
+    var action_first = -1;
+    var action_last = -1;
+    //Getting first Shell
+    for(let i = 0; i < core_data.length; i++){
+        var nutshell = core_data[i].search('<DOMLayer name="actions">');
+        if (nutshell != -1){
+            action_first = i;
+            break
+        }
+    }
+    //Getting last shell
+    for (let i = action_first; i < core_data.length; i++){
+        var action_find = core_data[i].search('</DOMLayer>');
+        if (action_find != -1 ){
+            action_last = i;
+            break
+        }
+    }
+    //Read Structure
+    var get_action = [];
+    var action_count = 0;
+    for (let i = action_first; i < action_last; i++){
+        get_action[action_count] = core_data[i];
+        action_count++;
+    }
+    //Get all DOMFrame
+    var domFrame_count = 0;
+    for (let i = 0; i < get_action.length; i++){
+        find_action_trigger = get_action[i].search('<DOMFrame index="');
+        if(find_action_trigger != 0){
+            domFrame_count ++
+        }
+    }
+    //Finding action
+    var action_index_main = [];
+    var action_duration_main = [];
+    var action_index_shell = [];
+    var action_core_count = 0;
+    var action_shell_count = 0;
+    for (let i = 0; i < get_action.length; i++){
+        find_actual_action = get_action[i].search('<DOMFrame index="');
+        find_action = get_action[i].search('duration');
+        if ((find_actual_action != -1)){
+            if (find_action != -1){
+                const replace_action = get_action[i].replaceAll('<DOMFrame index="', '');
+                const replace_trigger = replace_action.replaceAll('" duration="',' ');
+                const replace_shell = replace_trigger.replaceAll('" />','');
+                var cut_action = replace_shell.split(' ');
+                if(cut_action.length == 2){
+                    action_index_main[action_core_count] = cut_action[0];
+                    action_duration_main[action_core_count] = cut_action[1];
+                    action_core_count++;
+                }
+            }
+            else{
+                const replace_action = get_action[i].replaceAll('<DOMFrame index="', '');
+                const replace_trigger = replace_action.replaceAll('">', '');
+                var cut_action = replace_trigger.split(' ');
+                if (cut_action.length == 1){
+                    action_index_shell[action_shell_count] = cut_action[0];
+                    action_shell_count++;
+                }
+            }
+        }
+    }
+    //Working on action stop, use_action
+    var count_event = 0;
+    for (let i = 0; i < get_action.length; i++){
+        let find_event = get_action[i].search('CDATA');
+        if (find_event != -1){
+            count_event++
+        }
+    }
+    //Getting all events properties
+    var events_list = [];
+    var count_eventlist = 0;
+    for (let i = 0; i < get_action.length; i++){
+        let find_event = get_action[i].search('CDATA');
+        if (find_event != -1){
+            const replace_action = get_action[i].replaceAll('<![CDATA[', '');
+            const replace_trigger = replace_action.replaceAll(';]]>', '');
+            var cut_action = replace_trigger.split(' ');
+            events_list[count_eventlist] = cut_action;
+            count_eventlist++
+        } 
+    }
+    console.log(count_eventlist)
+    //Putting to the tab
+    const anim_action = document.getElementById('anim_action');
+    anim_action.style.display = "block";
+    for (let i = 0; i < count_eventlist; i++){
+        //Core of index
+        var action_index_core = document.createElement('input');
+        action_index_core.type = "text";
+        action_index_core.setAttribute('id',action_index_main[i]);
+        action_index_core.setAttribute('value',action_index_main[i]);
+        action_index_core.style.width = "auto";
+        action_index_core.style.height = "auto";
+        action_index_core.style.fontSize = "15px";
+        anim_action.appendChild(action_index_core);
+        //Core of duration
+        var action_duration_core = document.createElement('input');
+        action_duration_core.type = "text";
+        action_duration_core.setAttribute('id',action_duration_main[i]);
+        action_duration_core.setAttribute('value',action_duration_main[i]);
+        action_duration_core.style.width = "auto";
+        action_duration_core.style.height = "auto";
+        action_duration_core.style.fontSize = "15px";
+        anim_action.appendChild(action_duration_core);
+        //Core of index duration
+        var action_frame_core = document.createElement('input');
+        action_frame_core.type = "text";
+        action_frame_core.setAttribute('id',action_index_shell[i]);
+        action_frame_core.setAttribute('value',action_index_shell[i]);
+        action_frame_core.style.width = "auto";
+        action_frame_core.style.height = "auto";
+        action_frame_core.style.fontSize = "15px";
+        anim_action.appendChild(action_frame_core);
+        //Core of Anim Action
+        var action_trigger_event = document.createElement('input');
+        action_trigger_event.type = "text";
+        action_trigger_event.setAttribute('id',events_list[i]);
+        action_trigger_event.setAttribute('value',events_list[i]);
+        action_trigger_event.style.width = "auto";
+        action_trigger_event.style.height = "auto";
+        action_trigger_event.style.fontSize = "15px";
+        anim_action.appendChild(action_trigger_event);
+        var spacebar = document.createElement('br');
+        anim_action.appendChild(spacebar);
     }
 }
