@@ -17,18 +17,9 @@
                 <p>FPS-Core</p>
                 <input type = "text" id = "fps_edit" value="" />
             </div>
-            <button onclick="openImg()" value="">Open Img</button>
-            <button onclick="openImg()" value="">Close Img</button>
-            <button onclick="openImg()" value="">Open M Elements</button>
-            <button onclick="openImg()" value="">Close M Elements</button>
-            <button onclick="openImg()" value="">Open A Elements</button>
-            <button onclick="openImg()" value="">Close A Elements</button>
-            <button onclick="openImg()" value="">Open Labels</button>
-            <button onclick="openImg()" value="">Close Labels</button>
-            <button onclick="openImg()" value="">Open Actions</button>
-            <button onclick="openImg()" value="">Close Actions</button>
-            <button onclick="openImg()" value="">Open Audio</button>
-            <button onclick="openImg()" value="">Close Audio</button>
+            <p>Enter JSON name</p>
+            <input id="json_name" value="" />
+            <button onclick="DomtoJSON()" value="">DOM to JSON</button>
             <p>Pictures Data</p>
             <div id="picture_util" style="display: block">
             </div>
@@ -53,6 +44,13 @@
                 <div id = "action-duration"> Duration</div>
                 <div id = "action-event"> Action Trigge</div>
                 <div>r</div>
+            </div>
+            <p>Animate Audio</p>
+            <div id="anim_audio" style="display: block">
+                <div id = "audio-index"> Index</div>
+                <div id = "audio-duration"> Duration</div>
+                <div id = "audio-event"> Audio Cal</div>
+                <div>l</div>
             </div>
         </div>
         <div id = "loadProcess" style="display:none">
