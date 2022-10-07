@@ -109,7 +109,7 @@ function JSON2Dom(){
         }
     }
     //Let A into Array
-    var sprite_array = new Array();
+    var sprite_array = [];
     let count_sprite = 0;
     for (let i = find_a_data; i < find_label_data; i++){
         sprite_array[count_sprite] = json_split[i];
@@ -118,7 +118,7 @@ function JSON2Dom(){
     sprite_array.shift();
     sprite_array.pop();
     sprite_array.pop();
-    console.log(sprite_array)
+    sprite_array.pop();
     //Importing A Elements
     for (let i = 0; i < sprite_array.length; i++){
         var a_element = sprite_array[i];

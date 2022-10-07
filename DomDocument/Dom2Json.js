@@ -616,7 +616,7 @@ function DomtoJSON(){
         output += '],\n'
     }
     output += '"#reminder": "You dont need to edit start, i only put there so you can easily use it to change action. The tool will only read duration, name and action here.",'
-    output += '"#ehem": "If you add another action such as "use_action", you need to decrease the number of duration by one in the next "use_action" you make",'
+    output += '"#ehem": "If you add another action such as use_action, you need to decrease the number of duration by one in the next use_action you make",'
     output += '    "Labels": [\n';
     for (let i = 0; i < storage_labels_name.length; i++){
         if(i == (storage_labels_name.length - 1)){
