@@ -2,22 +2,24 @@
 <html>
     <head>
         <title>Haruma's Tool</title>
-        <script src= "Dom2Json.js"></script>
         <script src= "buttons.js"></script>
     </head>
     <body>
         <div id="loadElement" style="display: block">
-            <textarea id="documentDom" style="width:500px;height:500px"></textarea>
-            <button onclick="domRead()">Submit</button>
+            <input id="importFile" type="file" />
+            <textarea id="documentDom" style="width:500px;height:500px;display:none"></textarea>
+            <p>Enter JSON name</p>
+            <input id="json_name" value="" />
+            <p></p>
+            <button onclick="domRead()">Dom to JSON</button>
             <link rel="stylesheet" href="AnimateUtil.css" />
         </div>
+        <script src= "Dom2Json.js"></script>
         <div id = "fix-option" style="display:none">
            <div id="fps-debug">
                 <p>FPS-Core</p>
                 <input type = "text" id = "fps_edit" value="" />
             </div>
-            <p>Enter JSON name</p>
-            <input id="json_name" value="" />
             <button onclick="DomtoJSON()" value="">DOM to JSON</button>
             <p>Pictures Data</p>
             <div id="picture_util" style="display: block">

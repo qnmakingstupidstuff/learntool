@@ -1,3 +1,12 @@
+//Upload File
+document.getElementById('importFile').addEventListener('change', function(){
+    var fr = new FileReader();
+    fr.onload = function(){
+        document.getElementById('documentDom').textContent = fr.result;
+    }
+    fr.readAsText(this.files[0]) 
+})
+
 var count_source = 0;
 var count_image = 0;
 var count_labels_core = 0;
@@ -25,7 +34,7 @@ function domRead(){
     const loadElement = document.getElementById('loadElement');
     const fix_core = document.getElementById('fix-option');
     const loadProcess = document.getElementById('loadProcess');
-    loadElement.style.display = "none";
+    loadElement.style.display = "block";
     //Script Info
     const version = 1.0;
     const owner = "Haruma";
@@ -46,7 +55,7 @@ function domRead(){
     var bool = -1;
     var count_bititem = 0;
     var count_Melement = 0;
-    fix_core.style.display = "block";
+    fix_core.style.display = "none";
     for (let i = 0; i < document_split.length; i++){
         let frame_rate = document_split[i].search("frameRate");
         let bitmap_line = document_split[i].search('DOMBitmapItem');
@@ -162,7 +171,7 @@ function domRead(){
     }
     //Calling database
     var picture_util = document.getElementById("picture_util");
-    picture_util.style.display = "block";
+    picture_util.style.display = "none";
     for (let i = 0; i < split_core.length; i++){
         var input = document.createElement('input');
         input.type = "text";
@@ -176,7 +185,7 @@ function domRead(){
     }
     //Building M_Elements
     var m_util = document.getElementById("m_util");
-    m_util.style.display = "block";
+    m_util.style.display = "none";
     for (let i = 0; i < split_m.length; i++){
         var input = document.createElement('input');
         input.type = "text";
@@ -191,7 +200,7 @@ function domRead(){
     }
     //Building A_Elements
     var a_util = document.getElementById("a_util");
-    a_util.style.display = "block";
+    a_util.style.display = "none";
     for (let i = 0; i < split_a.length; i++){
         var input = document.createElement('input');
         input.type = "text";
@@ -278,7 +287,7 @@ function domRead(){
     //Labels core done
     //Importing to animation tab
     var label_util = document.getElementById("labels_util");
-    label_util.style.display = "block";
+    label_util.style.display = "none";
     for (let i = 0; i < count_core_label; i++){
         var label_shells = document.createElement('input');
         label_shells.type = "text";
@@ -419,7 +428,7 @@ function domRead(){
     count_actions_core = count_eventlist;
     //Putting to the tab
     const anim_action = document.getElementById('anim_action');
-    anim_action.style.display = "block";
+    anim_action.style.display = "none";
     for (let i = 0; i < count_eventlist; i++){
         //Core of index
         var action_index_core = document.createElement('input');
@@ -548,7 +557,7 @@ function domRead(){
     }
     //Porting to Web
     var anim_audio = document.getElementById('anim_audio');
-    anim_audio.style.display = "block";
+    anim_audio.style.display = "none";
     //Port JSON
     for(let i = 0; i < audio_count; i++){
         storage_audio_index[i] = parseInt(audio_index_list[i]);
@@ -557,6 +566,7 @@ function domRead(){
     for (let i = 0; i < soundbank_list.length; i++){
         storage_audio_call[i] = audio_event[i];
     }
+    DomtoJSON()
 }
 function DomtoJSON(){
     var duration_count = 0;

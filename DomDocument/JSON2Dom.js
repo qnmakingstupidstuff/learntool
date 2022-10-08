@@ -1,7 +1,7 @@
 //Upload File
 document.getElementById('json_input').addEventListener('change',function(){
     var fr = new FileReader();
-    var json_take = ''
+    var json_take = '';
     fr.onload = function(){
         json_take += fr.result;
         document.getElementById('output').textContent = json_take;
