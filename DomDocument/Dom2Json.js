@@ -714,4 +714,6 @@ function DomtoJSON(){
     document.body.appendChild(anchor);
     anchor.click();
     document.body.removeChild(anchor);
+    var donateCall = document.getElementById('donateCall');
+    donateCall.style.display = "block";
 }
